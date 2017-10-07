@@ -1,0 +1,742 @@
+html.SHINE.shine-grid div.thing.promoted,
+html.SHINE.shine-grid #siteTable_organic,
+html.SHINE.shine-grid .happening-now-wrap,
+html.SHINE.shine-grid body > .content #siteTable .clearleft,
+html.SHINE.shine-grid .NERPageMarker,
+html.SHINE.shine-grid body > .content #siteTable .thing p.parent,
+html.SHINE.shine-grid body > .content #siteTable .thing span.rank,
+html.SHINE.shine-grid body > .content #siteTable .thing a.thumbnail,
+html.SHINE.shine-grid body > .content #siteTable .thing .expando,
+html.SHINE.shine-grid body > .content #siteTable .thing .expando-button,
+html.SHINE.shine-grid body > .content #siteTable .thing .child,
+html.SHINE.shine-grid body > .content #siteTable .thing span.nsfw-stamp.stamp,
+html.SHINE.shine-grid body > .content #siteTable .thing ul.flat-list li.share,
+html.SHINE.shine-grid body > .content #siteTable .thing ul.flat-list li.report-button,
+html.SHINE.shine-grid body > .content #siteTable .thing ul.flat-list li:last-of-type,
+html.SHINE.shine-grid body > .content #siteTable .thing .newComments,
+html.SHINE.shine-grid body .nav-buttons{
+	display:none !important;
+}
+
+html.SHINE.shine-grid body{
+	background:#f1f1f1;
+}
+
+html.SHINE.shine-grid body > .content .spacer{
+	padding:0px !important;
+	margin:0px !important;
+}
+
+html.SHINE.shine-grid body > .content {
+    margin: 0px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    padding: 45px;
+}
+
+html.SHINE.shine-grid div#siteTable,
+html.SHINE.shine-grid div#siteTable .sitetable {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing {
+    display: flex;
+    box-sizing: border-box;
+    box-shadow:-2px 2px 4px rgba(0,0,0,.1);
+    background: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:0px;
+    position: relative;
+    border:0px !important;
+    margin-bottom:45px;
+    margin-right:5px;
+    margin-left:5px;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing.nopreview p.title{
+    flex-grow:1;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing .entry .preview {
+    order:2;
+    background:transparent;
+    flex-grow:1;
+    height:auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing:border-box;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+html.SHINE.shine-grid.shine-hide-nsfw body > .content #siteTable .thing.over18 .entry .preview{
+    -webkit-filter:blur(10px);
+}
+
+html.SHINE.shine-grid.shine-hide-nsfw body > .content #siteTable .thing.over18:hover .entry .preview{
+    -webkit-filter:blur(0px);
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing .RES-keyNav-activeElement{
+	background-color: transparent !important;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing .entry,
+html.SHINE.shine-grid body > .content #siteTable .thing .top-matter {
+    order: 1;
+    padding:0px;
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+	flex-grow: 1;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing .midcol {
+    order: 2;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+
+html.SHINE.shine-grid body > .content #siteTable .thing span.linkflairlabel{
+    display:block;
+    margin-bottom:5px;
+    float:left;
+    left: auto;
+    position: relative;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+html.SHINE.shine-grid body.front-page > .content #siteTable .thing span.linkflairlabel{
+    display: block;
+    color: rgba(255,103,0,1);
+    background: transparent;
+    border: 0px;
+    font-size: 10px;
+    line-height: 24px;
+    vertical-align: bottom;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-transform: uppercase; 
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing .entry p.title {
+    order: 1;
+    margin: 0;
+    padding: 15px;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing .entry p.title a.title{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight:400;
+    margin: 0px;
+    overflow: visible;
+    display:block;
+    clear:both;
+    line-height:20px;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing.nopreview .entry p.title a.title{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing .entry p.tagline {
+    order: 3;
+    padding: 15px 15px 5px 15px;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing .entry ul.flat-list {
+    order: 4;
+    text-align:right;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing span.domain {
+	color: rgba(255,255,255,0);
+    display: block;
+    left: -2px;
+    position: relative;
+    clear:both;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing span.domain a {
+    color: #333;
+    font-size: 10px;
+    display: inline;
+    margin-top: 3px;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing ul.flat-list li{
+    margin-left:10px !important;
+    display:inline-block !important;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing ul.flat-list li,
+html.SHINE.shine-grid body > .content #siteTable .thing ul.flat-list li a{
+    font-size:16px;
+    font-weight:100 !important;
+    margin: 0px;
+    padding: 0px;
+    display:inline-block;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: top;
+    color:#000;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing ul.flat-list li a:hover{
+	text-decoration: none;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing ul.flat-list li a.comments{
+    padding-right: 20px;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/comments.svg');
+    background-repeat:no-repeat;
+    background-size:15px;
+    background-position:right center;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing ul.flat-list li.save-button a{
+	width: 18px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/save.svg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 18px;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing ul.flat-list .hide-button a{
+	width: 15px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/hide.svg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 13px;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing .arrow.up,
+html.SHINE.shine-grid body > .content #siteTable .thing .arrow.upmod{
+    text-indent: 100%;
+    white-space: nowrap;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/upvote.svg') !important;
+    width: 20px !important;
+    background-size: 18px !important;
+    display: inline-block;
+    height: 20px !important;
+    vertical-align: top;
+    -webkit-filter: grayscale(100%);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50% 50% !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing .arrow.down,
+html.SHINE.shine-grid body > .content #siteTable .thing .arrow.downmod{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/downvote.svg') !important;
+    background-repeat:no-repeat;
+    background-position: center !important;
+    width: 20px !important;
+    background-size: 18px !important;
+    display: inline-block;
+    height: 20px !important;
+    vertical-align: top;
+    margin:0px;
+    padding:0px;
+    -webkit-filter:grayscale(100%);
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing .arrow.upmod,
+html.SHINE.shine-grid body > .content #siteTable .thing .arrow.downmod{
+    -webkit-filter:grayscale(0%);
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing .remove-button,
+html.SHINE.shine-grid body > .content #siteTable .thing .approve-button,
+html.SHINE.shine-grid body > .content #siteTable .thing .marknsfw-button {
+    display: none !important;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing .score{
+    font-size:16px;
+    font-weight:400;
+    height:20px;
+    line-height:20px;
+    padding:0 5px;
+    vertical-align: top;
+}
+
+html.SHINE.shine-grid .preview-image,
+html.SHINE.shine-grid .preview-album,
+html.SHINE.shine-grid .preview-gifv,
+html.SHINE.shine-grid .preview-gfycat,
+html.SHINE.shine-grid .preview-youtube,
+html.SHINE.shine-grid .preview-vimeo,
+html.SHINE.shine-grid .preview-wikipedia {
+    background-color: #000 !important;
+}
+
+html.SHINE.shine-grid .preview-youtube::after,
+html.SHINE.shine-grid .preview-vimeo::after{
+    content:'';
+    display:block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-image:url('chrome-extension://__MSG_@@extension_id__/youtube.svg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:75px auto;
+}
+
+html.SHINE.shine-grid .preview-gifv::after,
+html.SHINE.shine-grid .preview-gfycat::after{
+    content:'';
+    display:block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-image:url('chrome-extension://__MSG_@@extension_id__/gif.svg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:75px auto;
+}
+
+html.SHINE.shine-grid .preview-album::after{
+    content:'';
+    display:block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-image:url('chrome-extension://__MSG_@@extension_id__/album.svg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:75px auto;    
+}
+
+html.SHINE.shine-grid .preview-text {
+    padding: 15px;
+    word-wrap:break-word;
+}
+
+html.SHINE.shine-grid .reading .preview-text{
+    overflow-y:auto !important;
+}
+
+html.SHINE.shine-grid .reading .preview-text::after{
+    display:none;
+}
+
+html.SHINE.shine-grid .preview-text p{
+    font-size:14px;
+    line-height:24px;
+    color:#333;
+    font-weight:400;
+    margin-bottom:15px;
+    overflow:hidden;
+}
+
+html.SHINE.shine-grid .preview-text::after{
+    content:'';
+    display:block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+}
+
+html.SHINE.shine-grid .preview-soundcloud{
+    display:flex;
+}
+
+html.SHINE.shine-grid .preview-soundcloud iframe{
+    width:100%;
+    flex-grow:1;
+}
+
+html.SHINE.shine-grid .shine-expand{
+    position:fixed;
+    top:60px;
+    left:60px;
+    width:calc(100% - 120px);
+    height:calc(100% - 120px);
+    background:rgba(0,0,0,1);
+    z-index:10000;
+    display:none;
+}
+
+html.SHINE.shine-grid.expanding .shine-expand{
+    display:block;
+}
+
+html.SHINE.shine-grid .shine-expand .large-image,
+html.SHINE.shine-grid .shine-expand .large-youtube,
+html.SHINE.shine-grid .shine-expand .large-html5,
+html.SHINE.shine-grid .shine-expand .large-album,
+html.SHINE.shine-grid .shine-expand .album-thumbnails{
+    display:none;
+    z-index:11000;
+}
+
+html.SHINE.shine-grid.expand-images .shine-expand .large-image{
+    display:block;
+}
+
+html.SHINE.shine-grid.expand-youtubes .shine-expand .large-youtube{
+    display:block;
+}
+
+html.SHINE.shine-grid.expand-html5s .shine-expand .large-html5{
+    display:block;
+}
+
+html.SHINE.shine-grid.expand-albums .shine-expand .large-album,
+html.SHINE.shine-grid.expand-albums .shine-expand .album-thumbnails{
+    display:block;
+}
+
+html.SHINE.shine-grid .shine-expand .large-image,
+html.SHINE.shine-grid .shine-expand .large-youtube,
+html.SHINE.shine-grid .shine-expand .large-html5{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:70%;
+    box-sizing:border-box;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+html.SHINE.shine-grid.shine-split-6040 .shine-expand .large-image,
+html.SHINE.shine-grid.shine-split-6040 .shine-expand .large-youtube,
+html.SHINE.shine-grid.shine-split-6040 .shine-expand .large-html5{
+	width:60%;
+}
+
+html.SHINE.shine-grid.shine-split-5050 .shine-expand .large-image,
+html.SHINE.shine-grid.shine-split-5050 .shine-expand .large-youtube,
+html.SHINE.shine-grid.shine-split-5050 .shine-expand .large-html5{
+	width:50%;
+}
+
+html.SHINE.shine-grid.shine-split-4060 .shine-expand .large-image,
+html.SHINE.shine-grid.shine-split-4060 .shine-expand .large-youtube,
+html.SHINE.shine-grid.shine-split-4060 .shine-expand .large-html5{
+	width:40%;
+}
+
+html.SHINE.shine-grid.shine-split-3070 .shine-expand .large-image,
+html.SHINE.shine-grid.shine-split-3070 .shine-expand .large-youtube,
+html.SHINE.shine-grid.shine-split-3070 .shine-expand .large-html5{
+	width:30%;
+}
+
+
+html.SHINE.shine-grid .shine-expand .large-album{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:60%;
+    box-sizing:border-box;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+html.SHINE.shine-grid.shine-split-6040 .shine-expand .large-album{
+	width:50%;
+}
+
+html.SHINE.shine-grid.shine-split-5050 .shine-expand .large-album{
+	width:40%;
+}
+
+html.SHINE.shine-grid.shine-split-4060 .shine-expand .large-album{
+	width:35%;
+}
+
+html.SHINE.shine-grid.shine-split-3070 .shine-expand .large-album{
+	width:25%;
+}
+
+html.SHINE.shine-grid .shine-expand .album-thumbnails{
+    position: absolute;
+    top:0px;
+    left:60%;
+    width:10%;
+    height:100%;
+    box-sizing:border-box;
+    background:#333;
+    padding:15px;
+    overflow-y:auto;
+}
+
+html.SHINE.shine-grid.shine-split-6040 .shine-expand .album-thumbnails{
+	left:50%;
+}
+
+html.SHINE.shine-grid.shine-split-5050 .shine-expand .album-thumbnails{
+	left:40%;
+}
+
+html.SHINE.shine-grid.shine-split-4060 .shine-expand .album-thumbnails{
+	left:35%;
+	width:5%;
+}
+
+html.SHINE.shine-grid.shine-split-3070 .shine-expand .album-thumbnails{
+	left:25%;
+	width:5%;
+}
+
+html.SHINE.shine-grid .shine-expand .album-thumbnails img{
+    width:100%;
+    height:auto;
+    margin-bottom:15px;
+    display:block;
+    box-sizing:border-box;
+    cursor: pointer;
+}
+
+html.SHINE.shine-grid .shine-expand .album-thumbnails img.active-thumb{
+    border:2px solid rgba(255,103,31,1);
+}
+
+html.SHINE .album-captions{
+    display:none;
+}
+
+html.SHINE.expand-albums .album-captions{
+    width:30px;
+    height:30px;
+    overflow:hidden;
+    display:block;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    z-index: 12000;
+    cursor: help;
+}
+
+html.SHINE.expand-albums.activate-captions .album-captions {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 60%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C */
+    box-sizing: border-box;
+    padding: 60px;
+    height: auto;
+}
+
+html.SHINE.shine-split-6040.expand-albums.activate-captions .album-captions{
+	width:50%;
+}
+
+html.SHINE.shine-split-5050.expand-albums.activate-captions .album-captions{
+	width:40%;
+}
+
+html.SHINE.shine-split-4060.expand-albums.activate-captions .album-captions{
+	width:35%;
+}
+
+html.SHINE.shine-split-3070.expand-albums.activate-captions .album-captions{
+	width:25%;
+}
+
+html.SHINE .album-captions .caption-text{
+    display:none;
+}
+
+html.SHINE.activate-captions .album-captions .caption-text{
+    display:block;
+}
+
+html.SHINE .album-captions strong{
+    display:block;
+    font-size:30px;
+    font-weight:100;
+    margin-bottom:15px;
+    color:#fff;
+}
+
+
+html.SHINE .album-captions p{
+    line-height: 24px;    
+    color: #fff;
+    font-size: 16px;    
+}
+
+html.SHINE .show-captions {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 0px;
+    left: 0px;
+    background: #fff;
+    box-sizing: border-box;
+    cursor: help;
+    padding: 7px 5px 5px 5px;
+    z-index: 100;
+}
+
+html.SHINE.shine-grid .shine-expand .side-comments{
+    position: absolute;
+    right:0px;
+    top:0px;
+    height:100%;
+    width:30%;
+    background:#fff;
+    box-sizing:border-box;
+    overflow-y:scroll;
+    padding: 15px 15px 60px 15px;
+    z-index: 11000;
+}
+
+html.SHINE.shine-grid.shine-split-6040 .shine-expand .side-comments{
+	width:40%;
+}
+
+html.SHINE.shine-grid.shine-split-5050 .shine-expand .side-comments{
+	width:50%;
+}
+
+html.SHINE.shine-grid.shine-split-4060 .shine-expand .side-comments{
+	width:60%;
+}
+
+html.SHINE.shine-grid.shine-split-3070 .shine-expand .side-comments{
+	width:70%;
+}
+
+html.SHINE.shine-grid.expand-comments .shine-expand .side-comments{
+    width:100%;
+    padding:45px;
+}
+
+
+
+
+/* SHINE LIGHT STUFF */
+
+html.SHINE.shine-grid body > .content #siteTable .thing.shine-prompt-thing{
+    cursor: pointer !important;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing.shine-prompt-thing a.title{
+    color:rgb(255,105,0) !important;
+}
+
+html.SHINE.shine-grid body > .content #siteTable .thing.shine-prompt-thing .preview{
+    background:rgb(255,105,0) url('chrome-extension://__MSG_@@extension_id__/sunburst.png') no-repeat center center;
+    background-size:contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+/* NIGHT MODE STUFF */
+
+html.SHINE.shine-grid.res-nightmode body > .content #siteTable .thing {
+    background: #000;
+}
+
+html.SHINE.shine-grid.res-nightmode body > .content #siteTable .thing span.domain a {
+    color: #AAA;
+}
+
+html.SHINE.shine-grid.res-nightmode body > .content #siteTable .thing .entry ul.flat-list {
+    border-top: 1px solid #333;
+}
+
+html.SHINE.shine-grid.res-nightmode .preview-text::after {
+    background: linear-gradient(rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+}
+
+html.SHINE.shine-grid.res-nightmode .preview-text p {
+    color: #AAA;
+}
+
+html.SHINE.shine-grid.res-nightmode body > .content #siteTable .thing ul.flat-list li, 
+html.SHINE.shine-grid.res-nightmode body > .content #siteTable .thing ul.flat-list li a {
+    color: #fff;
+}
+
+html.SHINE.shine-grid.res-nightmode body > .content #siteTable .thing ul.flat-list li a.comments{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/night-comments.svg');
+    opacity:.5;
+}
+
+html.SHINE.shine-grid.res-nightmode body > .content #siteTable .thing ul.flat-list li.save-button a{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/night-save.svg');
+    opacity:.5;
+}
+
+html.SHINE.shine-grid.res-nightmode body > .content #siteTable .thing ul.flat-list .hide-button a{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/night-hide.svg');
+    opacity:.5;
+}
+
+html.SHINE.shine-grid.res-nightmode .shine-expand .side-comments{
+    background:#151515;
+}

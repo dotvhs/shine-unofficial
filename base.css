@@ -1,0 +1,1850 @@
+.newsletterbar,
+.trending-subreddits{
+    display:none !important;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    opacity:0 !important;
+    transition:opacity 300ms ease;
+}
+
+html.SHINE body{
+    padding-top:45px;    
+}
+
+html.SHINE.shine-ready body{
+	opacity:1 !important;
+}
+
+html.SHINE.show-shortcuts body{
+	padding-top:65px;
+}
+
+html.SHINE #header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background: #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+    height:45px;
+    box-sizing:border-box;
+}
+
+html.SHINE.show-shortcuts #header{
+	height:65px;
+}
+
+html.SHINE div#sr-header-area {
+    background-color: #fff;
+    border: 0px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    height: 20px;
+    box-sizing: border-box;
+    padding: 1px;
+    display:none;
+}
+
+html.SHINE.res div#sr-header-area{
+	overflow: hidden;
+}
+
+html.SHINE.show-shortcuts div#sr-header-area{
+	display:block;
+}
+
+html.SHINE #sr-header-area a {
+    color: #777;
+}
+
+html.SHINE #sr-header-area a.RESShortcutsCurrentSub,
+html.SHINE #sr-header-area li.selected a{
+	color: rgba(255,103,31,1) !important;
+}
+
+html.SHINE #RESShortcutsSort,
+html.SHINE #RESShortcutsRight,
+html.SHINE #RESShortcutsLeft,
+html.SHINE #RESShortcutsAdd,
+html.SHINE #RESShortcutsTrash {
+    background: #fff !important;
+}
+
+html.SHINE #RESShortcutsEditContainer{
+	overflow: hidden;
+	background-color: transparent;
+}
+
+html.SHINE a#sr-more-link {
+    background: #fff;
+    border-left: 1px solid #ccc;
+}
+
+html.SHINE a#sr-more-link:hover{
+	background: rgba(255,103,31,1);
+	color:#fff;
+	text-decoration: none !important;
+}
+
+html.SHINE #header .layout-switch {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 20px);
+    bottom: 10px;
+    height: 25px;
+    display:none;
+}
+
+html.SHINE.shine-grid #header .layout-switch,
+html.SHINE.shine-list #header .layout-switch{
+    display:block;
+}
+
+html.SHINE #header .layout-switch svg{
+    transition:all 200ms ease;
+    cursor: pointer;
+    opacity: .25;
+    top:0px;
+    position: absolute;
+    height:25px;
+}
+
+html.SHINE #header .layout-switch svg.grid-switch {
+    left: 0px;
+    width: 30px;
+}
+
+html.SHINE #header .layout-switch svg.list-switch {
+    right: 0px;
+    width: 24px;
+}
+
+html.SHINE #header .layout-switch svg:hover{
+    opacity:.5;
+}
+
+html.SHINE.shine-grid #header .layout-switch svg.grid-switch{
+    opacity:1;
+}
+
+html.SHINE.shine-list #header .layout-switch svg.list-switch{
+    opacity:1;
+}
+
+html.SHINE div#header-bottom-left {
+    height: 45px;
+    box-sizing: border-box;
+	position: relative;
+}
+
+html.SHINE #header-img-a img{
+	display:none;
+}
+
+html.SHINE body #header #header-bottom-left .pagename{
+	height:45px;
+	line-height:45px;
+	font-size:16px;
+	padding:0px 0px 0px 15px;
+	box-sizing:border-box;
+	float:left;
+	display:block;
+	margin-right:0px;
+	font-variant: normal;
+	font-weight:100;
+    position: relative;
+    bottom: 0px;
+}
+
+html.SHINE #header-bottom-left .pagename:before{
+	content:'/';
+	font-weight:100;
+	font-size:16px;
+	padding-right:15px;
+	color:#AAA;
+}
+
+html.SHINE span.pagename a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    text-transform: lowercase;
+}
+
+html.SHINE span.pagename a:hover{
+	text-decoration: none;
+}
+
+html.SHINE #header-bottom-left #header-img-a,
+html.SHINE #header-bottom-left #header-img.default-header{
+	display:block;
+	height:45px;
+	margin:0px;
+	background:url('chrome-extension://__MSG_@@extension_id__/shine.svg') no-repeat center center;
+	position: relative;
+	float:left;
+	top:0;
+	left:0;
+    background-size: auto 15px;
+    width: 70px;
+    margin-right:-10px;
+}
+
+html.SHINE #header ul.tabmenu {
+    margin: 0px !important;
+	position: relative;
+	left: 0px;
+	top:10px;
+	max-height:25px;
+	overflow:hidden !important;
+	float:left;
+	width:auto;
+	display:flex;
+	flex-direction:column;
+	padding:0px;
+	background:#fff;
+	box-shadow:0px 0px 0px rgba(0,0,0,0);
+	justify-content:space-around;
+}
+
+html.SHINE #header ul.tabmenu:hover{
+	box-shadow: 0px 5px 5px rgba(0,0,0,.1);
+	top:0px;
+	max-height:300px;
+	padding:10px 0;
+}
+
+html.SHINE #header ul.tabmenu li {
+    display: block;
+    margin: 0px;
+    margin-left:0px !important;
+    font-weight: 100;
+    font-size:16px;
+    display:flex;
+    order:2;
+	height:30px;
+	opacity:0;
+}
+
+html.SHINE #header ul.tabmenu:hover li{
+	opacity:1;
+}
+
+html.SHINE #header ul.tabmenu li.selected{
+	order:1;
+	opacity:1;
+}
+
+html.SHINE #header ul.tabmenu li a,
+html.SHINE #header ul.tabmenu li.selected a{
+	display:block;
+	padding:0px;
+	font-size:16px;
+	font-weight:100;
+	background-color:transparent;
+	color:#333;
+	height:25px;
+	box-sizing:border-box;
+	line-height:25px;
+	border:0px;
+	padding:0px 45px 0px 15px;
+	width:100%;
+}
+
+html.SHINE #header ul.tabmenu li.selected a{
+	font-weight:400;
+}
+
+html.SHINE #header ul.tabmenu li a:before{
+	content:'/';
+	display:inline-block;
+	margin-right:10px;
+}
+
+html.SHINE #header-bottom-right{
+	position: absolute;
+    bottom: 10px;
+    height: 25px;
+    box-sizing: border-box;
+    top: auto;
+    background: transparent;
+    right: 15px;
+    font-size:14px;
+    font-weight:400;
+    line-height: 25px;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+html.SHINE #header-bottom-right a{
+	color:#333;
+	font-weight:400;
+}
+
+html.SHINE #header-bottom-right a:hover{
+	text-decoration: none;
+}
+
+html.SHINE #header-bottom-right #userbarToggle,
+html.SHINE #header-bottom-right .beta-hint,
+html.SHINE #header-bottom-right span.separator,
+html.SHINE #header-bottom-right ul.flat-list{
+	display:none;
+}
+
+html.SHINE #header-bottom-right .user{
+	color:rgba(255,255,255,0);
+}
+
+html.SHINE #header-bottom-right .user .userkarma{
+    color:#333;
+}
+
+html.SHINE form.logout a {
+    display: inline-block;
+    height: 25px;
+    vertical-align: top;
+    top: auto;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/account-logout.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 14px;
+    margin: 0px 0px 0px 9px;
+    width: 17px;
+    text-indent: -1000000px;
+    cursor: pointer;
+}
+
+html.SHINE #header-bottom-right #mail, 
+html.SHINE #header-bottom-right #modmail {
+    display: inline-block;
+    height: 25px;
+    background-image: url();
+    width: 17px !important;
+    vertical-align: top;
+    top: auto;
+    min-width: none !important;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/nomail.svg');
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:contain;
+    margin:0 7px;
+}
+
+html.SHINE #header-bottom-right #mail.havemail, 
+html.SHINE #header-bottom-right #modmail.havemail {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/yesmail.svg');
+    background-position:center 2px;
+}
+
+html.SHINE #header-bottom-right a.message-count {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
+    padding: 0px;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: top;
+    margin: 2px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 12px;
+    background:rgba(255,103,0,1);
+}
+
+html.SHINE #header-bottom-right #RESAccountSwitcherIcon {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/account-switcher.svg');
+	margin: 0 5px 0 10px;
+    display: inline-block;
+    width: 20px;
+    background-size: contain;
+    background-position: center center;
+    height: 25px;
+    vertical-align: top;
+}
+
+html.SHINE #header-bottom-right .login-required {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/login.svg');
+    margin: 0 5px 0 10px;
+    display: inline-block;
+    width: 20px;
+    background-size: 13px;
+    background-repeat: no-repeat;
+    margin-right: 0px;
+    background-position: center center;
+    height: 25px;
+    vertical-align: top;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+html.SHINE #header-bottom-right #RESSettingsButton {
+    display: inline-block;
+    height: 25px;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/res.svg');
+    width: 17px;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin:0 0 0 5px;
+}
+
+html.SHINE #header-bottom-right .gearIcon::before, 
+html.SHINE #header-bottom-right .gearIcon::after{
+	display:none !important;
+}
+
+html.SHINE #NREFloat{
+	display:none !important;
+}
+
+html.SHINE #RESAccountSwitcherIconOverlay{
+	opacity:0 !important;
+}
+
+@keyframes ACCOUNTSWITCHER {
+  0%   { opacity: 0; margin-top:-10px; }
+  100% { opacity: 1; margin-top:0px; }
+}
+
+html.SHINE ul#RESAccountSwitcherDropdown {
+    position: fixed;
+    top: 45px !important;
+    border: 0px;
+    border-radius: 0px;
+    padding: 5px 15px 15px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.1);
+    background:#fff;
+    animation: ACCOUNTSWITCHER 300ms backwards ease;
+}
+
+html.SHINE body.loggedin ul#RESAccountSwitcherDropdown{
+    right:150px;
+}
+
+html.SHINE.show-shortcuts ul#RESAccountSwitcherDropdown{
+	top:65px !important;
+}
+
+html.SHINE ul#RESAccountSwitcherDropdown li {
+    color: #333;
+    font-weight: 100;
+    background: transparent;
+    border: 0px;
+    line-height:25px;
+    padding: 3px 0px;
+    font-size: 14px;
+    text-align: right;    
+}
+
+html.SHINE ul#RESAccountSwitcherDropdown li.accountName{
+	border-bottom:1px solid #DDD;
+}
+
+html.SHINE #RESMainGearOverlay{
+	display:none !important;
+}
+
+html.SHINE div#RESPrefsDropdown {
+    background: #fff;
+    padding: 15px;
+    position: fixed;
+    top: 45px !important;
+    right: 0px !important;
+    left: auto !important;
+    border: 0px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.1);
+    animation: ACCOUNTSWITCHER 300ms backwards ease;
+}
+
+html.SHINE.show-shortcuts div#RESPrefsDropdown{
+	top: 65px !important;
+}
+
+html.SHINE #RESPrefsDropdown li {
+    border-bottom: 1px solid #DDD;
+    height: auto;
+    font-weight: 100;
+    color: #333;
+    font-size: 14px;
+    padding:0px;
+}
+
+html.SHINE #RESPrefsDropdown li a{
+	color:#333;
+}
+
+html.SHINE #RESPrefsDropdown li:hover{
+	background-color:transparent !important;
+	color:#333 !important;
+	border-bottom: 1px solid #DDD !important;
+}
+
+html.SHINE #RESPrefsDropdown li a:hover{
+	background-color:transparent !important;
+	color:#333 !important;
+}
+
+html.SHINE #RESSearchMenuItem{
+	display:none !important;
+}
+
+html.SHINE.expanding body,
+html.SHINE.show-search body,
+html.SHINE.show-settings body,
+html.SHINE.show-shine-bright body{
+    position: absolute;
+    overflow: hidden;
+    width:100%;
+    height:100%;
+}
+
+html.SHINE .dark-background{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.75);
+    z-index:9000;
+    display:none;
+}
+
+html.SHINE.expanding .dark-background,
+html.SHINE.show-settings .dark-background,
+html.SHINE.show-shine-bright .dark-background{
+    display:block;
+}
+
+html.SHINE .shine-nav{
+    position: fixed;
+    bottom:0px;
+    right:0px;
+    padding: 15px 60px 60px 15px;
+    z-index: 12001;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+html.SHINE.expanding .shine-nav{
+    display:none;
+}
+
+@keyframes NAVICON {
+  0%   { transform:scale(0,0); }
+  100% { transform:scale(1,1); }
+}
+
+html.SHINE .shine-menu-button {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display:none !important;
+    background:#fff;
+    cursor: pointer;
+    transition:transform 200ms ease;
+    transform:scale(1,1);
+    background-size: 15px;
+    outline:none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: NAVICON 500ms 100ms backwards cubic-bezier(.17,.67,.15,1.61);
+    margin: 0px !important;
+    margin-right: 0px !important;
+    padding: 0px !important;
+    margin-top: 15px !important;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.3) !important;
+    border: 1px solid #DDD !important;
+}
+
+html.SHINE .shine-menu-button.shine-subscribe{
+    font-size:.5px;
+    color:rgba(1,1,1,0);
+    background-size: 20px auto;
+}
+
+html.SHINE .shine-menu-button:hover{
+    transform:scale(1.1,1.1);
+}
+
+html.SHINE .shine-menu-button.shine-navicon:hover{
+    transform:scale(1,1) !important;
+}
+
+.shine-menu-button label{
+    position: absolute;
+    display: block;
+    right: 60px;
+    background: #777;
+    padding: 5px;
+    white-space: nowrap;
+    border-radius: 2px;
+    color: #FFF;
+    top: 10px;
+    font-weight:100;
+    font-size: 12px;
+    opacity:0;
+    transform:translate3d(15px,0,0);
+    transition:all 200ms ease;
+}
+
+.shine-menu-button.shine-bright-nav label{
+    background:rgb(255,105,0);
+}
+
+html.SHINE .add.shine-menu-button.shine-subscribe::before,
+html.SHINE .remove.shine-menu-button.shine-subscribe::before{
+    position: absolute;
+    display: block;
+    right: 60px;
+    padding: 5px;
+    font-weight:100;
+    white-space: nowrap;
+    border-radius: 2px;
+    color: #FFF;
+    top: 10px;
+    font-size: 12px;
+    opacity:0;
+    transform:translate3d(15px,0,0);
+    transition:all 200ms ease;
+}
+
+html.SHINE .add.shine-menu-button.shine-subscribe::before{
+    content:'subscribe';
+    background-color:#070;
+}
+
+html.SHINE .remove.shine-menu-button.shine-subscribe::before{
+    content:'unsubscribe';
+    background-color:#700;
+}
+
+html.SHINE .shine-nav .fancy-toggle-button:hover .shine-menu-button::before,
+html.SHINE .shine-menu-button:hover label{
+    opacity:1;
+    transform:translate3d(0,0,0);
+}
+
+html.SHINE .shine-nav .shine-navicon{
+    width:56px;
+    height:56px;
+    display:block;
+    background: rgba(255,103,0,1);
+    animation: NAVICON 500ms 1s backwards cubic-bezier(.17,.67,.15,1.61);
+    display:block !important;
+    border:0px !important;
+}
+
+html.SHINE .shine-navicon .lines{
+    width:26px;
+    height:3px;
+    background:#fff;
+    position: absolute;
+    top:27px;
+    left:15px;
+    transition:all 500ms ease;
+}
+
+html.SHINE .shine-navicon .lines::before{
+    content:'';
+    position: absolute;
+    top: -9px;
+    left:0px;
+    width: 26px;
+    height:3px;
+    background:#fff;
+    transition:transform 500ms ease;
+    transform-origin: right;
+}
+
+html.SHINE .shine-navicon .lines::after{
+    content:'';
+    position: absolute;
+    top: 9px;
+    left:0px;
+    width: 26px;
+    height:3px;
+    background:#fff;
+    transition:transform 500ms ease;
+    transform-origin: right;
+}
+
+/*
+
+html.SHINE .shine-nav:hover .shine-navicon .lines{
+    background:transparent;
+    left:11px;
+}
+
+html.SHINE .shine-nav:hover .shine-navicon .lines::before{
+    transform: rotate(-45deg);
+}
+
+html.SHINE .shine-nav:hover .shine-navicon .lines::after{
+    transform: rotate(45deg);
+}
+
+*/
+
+html.SHINE .shine-nav:hover .shine-submit,
+html.SHINE .shine-nav:hover .shine-multi,
+html.SHINE .shine-nav:hover .shine-sidebar,
+html.SHINE .shine-nav:hover .shine-settings,
+html.SHINE .shine-nav:hover .shine-search,
+html.SHINE .shine-nav:hover .shine-bright-nav,
+html.SHINE .shine-nav:hover .shine-subscribe.active{
+    display:block !important;
+}
+
+html.SHINE .shine-nav:hover .shine-submit{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/submit.svg');
+}
+
+html.SHINE .shine-nav:hover .shine-sidebar{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/sidebar.svg');
+}
+
+html.SHINE .shine-nav:hover .shine-multi{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/multis.svg');
+}
+
+html.SHINE .shine-nav:hover .shine-settings{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/settings.svg');
+}
+
+html.SHINE .shine-nav:hover .shine-search{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/search.svg');
+}
+
+html.SHINE .shine-nav:hover .add.shine-subscribe{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/subscribe.svg');
+}
+
+html.SHINE .shine-nav:hover .remove.shine-subscribe{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/unsubscribe.svg');
+}
+
+html.SHINE .shine-nav:hover .shine-bright-nav{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/shinebright.svg');
+}
+
+
+
+
+
+
+
+/* SIDEBAR */
+
+html.SHINE .side{
+	display:none !important;
+}
+
+html.SHINE.show-sidebar .side {
+    display:block !important;
+    padding:30px;
+    margin:0px !important;
+}
+
+html.SHINE.shine-grid.show-sidebar body > .content {
+    width: calc(100% - 360px);
+}
+
+
+/* SEARCH */
+
+html.SHINE #shine-search{
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    top: 0;
+    z-index: 9000;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;      
+}
+
+html.SHINE.show-search #shine-search{
+    display:flex; 
+}
+
+#shine-search input[type="text"] {
+    display: block;
+    width: 100%;
+    -webkit-appearance: none;
+    border: 0px;
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 100;
+    color: #fff;
+    outline:none;
+    margin-bottom:30px;
+    box-sizing:border-box;
+    text-align: center;
+}
+
+#shine-search input[type="submit"] {
+    display: none;
+}
+
+#shine-search a {
+    color: #fff;
+    font-size: 12px;
+}
+
+html.SHINE body div.listing-chooser{
+    width: 200px;
+    height: calc(100% - 45px);
+    bottom: 0px;
+    left: 0px;
+    top: auto;
+    z-index: 10 !important;
+    background: #FFF;
+    overflow-y: auto;
+    position: fixed;
+    display:none;
+    box-sizing:border-box;
+    padding:30px;
+    transition:none !important;
+    -webkit-transition:none !important;
+}
+
+html.SHINE body div.listing-chooser form{
+    float: left;
+    margin-bottom: 15px;    
+    background-color:transparent;
+}
+
+html.SHINE .listing-chooser li.selected:before {
+    display: none;
+}
+
+html.SHINE .listing-chooser .grippy {
+    display: none !important;
+}
+
+html.SHINE.show-shortcuts body div.listing-chooser{
+    height: calc(100% - 65px);
+}
+
+html.SHINE.show-multireddits body div.listing-chooser {
+    display:block;
+}
+
+html.SHINE.show-multireddits body > div.content{
+    padding-left:260px !important;
+}
+
+html.SHINE .listing-chooser h3,
+html.SHINE .listing-chooser .global{
+    display:none;
+}
+
+html.SHINE .listing-chooser li {
+    display: block;
+    width: 100%;
+    margin: 0 0 5px 0 !important;
+    transition: none;
+    -webkit-transition: none;
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+    background: transparent;
+}
+
+html.SHINE .listing-chooser li a::before {
+    content: '/ ';
+    color:#AAA;
+    font-size:20px;
+    font-weight:100;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: -5px;
+}
+
+html.SHINE .listing-chooser li a {
+    border-bottom:1px solid #e3e3e3;
+    margin-bottom:10px !important;
+    float:left;
+    width:100%;
+    text-overflow: ellipsis;
+    font-size: 14px !important;
+    padding: 0px 0 10px 15px !important;
+    box-sizing: border-box;
+}
+
+html.SHINE .listing-chooser .create button {
+    -webkit-appearance: none;
+    border: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background: rgb(255, 105, 0);
+    color: rgb(255, 255, 255);
+    text-transform: lowercase;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px 5px 10px 0px;
+    display: inline-block;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px;
+    outline: none;
+    opacity: 1;
+}
+
+html.SHINE .listing-chooser input.multi-name {
+    outline: none;
+    box-sizing: border-box;
+    resize: none;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.0980392) 2px 2px 3px;
+    border: 1px solid rgb(221, 221, 221);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    width: 100%;
+    margin-top: 15px !important;
+    float: left;
+}
+
+
+/* COMMENTS STYLING */
+
+html.SHINE.shine-grid .shine-expand .side-comments #siteTable .thumbnail,
+html.SHINE.shine-list .shine-expand .side-comments #siteTable .thumbnail,
+html.SHINE.shine-grid .shine-expand .side-comments #siteTable .midcol,
+html.SHINE.shine-list .shine-expand .side-comments #siteTable .midcol,
+html.SHINE.shine-grid .shine-expand .side-comments #siteTable .domain,
+html.SHINE.shine-list .shine-expand .side-comments #siteTable .domain,
+html.SHINE.shine-grid .shine-expand .side-comments #siteTable .tagline,
+html.SHINE.shine-list .shine-expand .side-comments #siteTable .tagline,
+html.SHINE.shine-grid .shine-expand .side-comments #siteTable .flat-list,
+html.SHINE.shine-list .shine-expand .side-comments #siteTable .flat-list,
+html.SHINE.shine-grid .shine-expand .side-comments .panestack-title,
+html.SHINE.shine-lsit .shine-expand .side-comments .panestack-title,
+html.SHINE.shine-grid .shine-expand .side-comments .menuarea,
+html.SHINE.shine-list .shine-expand .side-comments .menuarea,
+html.SHINE.shine-grid .shine-expand .side-comments .linkflairlabel,
+html.SHINE.shine-list .shine-expand .side-comments .linkflairlabel,
+html.SHINE.shine-grid .shine-expand .side-comments .expando-button,
+html.SHINE.shine-list .shine-expand .side-comments .expando-button,
+html.SHINE.shine-grid .shine-expand .side-comments .report-button,
+html.SHINE.shine-list .shine-expand .side-comments .report-button{    
+    display:none;
+}
+
+html.SHINE.shine-list .shine-expand .side-comments .entry,
+html.SHINE.shine-grid .shine-expand .side-comments .entry{
+    margin-left:0px;
+}
+
+/*html.SHINE .side-comments .expando,
+html.SHINE .side-comments .expando-button{
+    display:none !important;
+}*/
+
+html.SHINE.shine-list .shine-expand .side-comments #siteTable .thing,
+html.SHINE.shine-grid .shine-expand .side-comments #siteTable .thing{
+    margin:0px;
+    padding:0px;
+}
+
+html.SHINE.shine-list .shine-expand .side-comments div#siteTable,
+html.SHINE.shine-grid .shine-expand .side-comments div#siteTable{
+    display:block;
+}
+
+html.SHINE.shine-list .shine-expand .side-comments form.usertext,
+html.SHINE.shine-grid .shine-expand .side-comments form.usertext{
+    margin:0px;
+    overflow:visible;
+}
+
+html.SHINE.shine-list .shine-expand .side-comments .usertext-edit,
+html.SHINE.shine-grid .shine-expand .side-comments .usertext-edit{
+    width:100% !important;
+    padding:0px;
+}
+
+html.SHINE.shine-list .shine-expand .side-comments textarea,
+html.SHINE.shine-grid .shine-expand .side-comments textarea{
+    width:100% !important;
+    outline:none;
+    box-sizing:border-box;
+    resize:none;
+    padding:5px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+    border: 1px solid #ddd;
+}
+
+html.SHINE.shine-grid .shine-expand .side-comments a.title{
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 28px;
+    margin: 0 0 10px 0 !important;
+    display: block;    
+}
+
+html.SHINE.shine-list .shine-expand .side-comments button.save,
+html.SHINE.shine-grid .shine-expand .side-comments button.save{
+    -webkit-appearance: none;
+    border: 0px;
+    background: rgba(255,105,0,1);
+    color: #fff;
+    text-transform: lowercase;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    margin-right:5px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);    
+    outline:none;
+}
+
+html.SHINE.shine-list .shine-expand .side-comments button.cancel,
+html.SHINE.shine-grid .shine-expand .side-comments button.cancel{
+    -webkit-appearance: none;
+    border: 0px;
+    background: #777;
+    color: #fff;
+    text-transform: lowercase;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    margin-right:5px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);    
+    outline:none;
+}
+
+html.SHINE.shine-list .shine-expand .side-comments .usertext-buttons,
+html.SHINE.shine-grid .shine-expand .side-comments .usertext-buttons{
+    margin-bottom:15px;
+}
+
+html.SHINE.shine-list .side-comments .shine-comment::after,
+html.SHINE.shine-grid .side-comments .shine-comment::after {
+    padding: 0px 8px;
+    margin: 0 15px 5px 10px;
+    background: rgb(255,105,0);
+    border-radius: 2px;
+    color: #fff;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    box-sizing:border-box;
+    display:inline-block;
+}
+
+html.SHINE.shine-list .side-comments .comment-youtube::after,
+html.SHINE.shine-list .side-comments .comment-html5::after,
+html.SHINE.shine-list .side-comments .comment-gfycat::after,
+html.SHINE.shine-grid .side-comments .comment-youtube::after,
+html.SHINE.shine-grid .side-comments .comment-html5::after,
+html.SHINE.shine-grid .side-comments .comment-gfycat::after{
+    content:'watch';
+}
+
+html.SHINE.shine-list .side-comments .comment-album::after,
+html.SHINE.shine-grid .side-comments .comment-album::after{
+    content:'view album';
+}
+
+html.SHINE.shine-list .side-comments .comment-image::after,
+html.SHINE.shine-grid .side-comments .comment-image::after{
+    content:'view';
+}
+
+html.SHINE.shine-list .side-comments #siteTable .md,
+html.SHINE.shine-grid .side-comments #siteTable .md{
+    border: 0px;
+    border-radius: 0px;
+    background: transparent;
+    padding: 0px;
+    margin: 0 0 15px 0;
+}
+
+html.SHINE.shine-list .shine-expand .toggle-child-comments,
+html.SHINE.shine-grid .shine-expand .toggle-child-comments {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 11000;
+    background: #eee;
+    box-sizing: border-box;
+    width: 30%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+html.SHINE.shine-list.shine-split-6040 .shine-expand .toggle-child-comments,
+html.SHINE.shine-grid.shine-split-6040 .shine-expand .toggle-child-comments{
+	width:40%;
+}
+
+html.SHINE.shine-list.shine-split-5050 .shine-expand .toggle-child-comments,
+html.SHINE.shine-grid.shine-split-5050 .shine-expand .toggle-child-comments{
+	width:50%;
+}
+
+html.SHINE.shine-list.shine-split-4060 .shine-expand .toggle-child-comments,
+html.SHINE.shine-grid.shine-split-4060 .shine-expand .toggle-child-comments{
+	width:60%;
+}
+
+html.SHINE.shine-list.shine-split-3070 .shine-expand .toggle-child-comments,
+html.SHINE.shine-grid.shine-split-3070 .shine-expand .toggle-child-comments{
+	width:70%;
+}
+
+
+html.SHINE.shine-list .shine-expand.just-comments .toggle-child-comments,
+html.SHINE.shine-grid.expand-comments .shine-expand .toggle-child-comments{
+    width:100% !important;
+}
+
+html.SHINE.shine-list .shine-expand .toggle-child-comments::before,
+html.SHINE.shine-grid .shine-expand .toggle-child-comments::before{
+    content:'Hide ';
+}
+
+html.SHINE.shine-list .shine-expand.shine-hide-children .toggle-child-comments::before,
+html.SHINE.shine-grid.shine-hide-children .shine-expand .toggle-child-comments::before{
+    content:'Show ';
+}
+
+html.SHINE.shine-list .shine-expand.shine-hide-children .side-comments .thing,
+html.SHINE.shine-grid.shine-hide-children .side-comments .thing{
+    margin-bottom:20px;
+}
+
+html.SHINE.shine-list .shine-expand.shine-hide-children .side-comments .thing .child,
+html.SHINE.shine-grid.shine-hide-children .side-comments .thing .child{
+    display:none;
+}
+
+html.SHINE.shine-list .side-comments .thing.show-child-comments .child,
+html.SHINE.shine-grid .side-comments .thing.show-child-comments .child{
+    display:block !important;
+}
+
+html.SHINE.shine-list .side-comments .thing.hide-child-comments .child,
+html.SHINE.shine-grid .side-comments .thing.hide-child-comments .child{
+    display:none !important;
+}
+
+html.SHINE.shine-list .side-comments .inline-child-toggle,
+html.SHINE.shine-grid .side-comments .inline-child-toggle{
+    cursor: pointer;
+}
+
+html.SHINE .shine-expand .large-youtube iframe,
+html.SHINE .shine-expand .large-html5 video,
+html.SHINE .shine-expand .large-soundcloud iframe{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+}
+
+html.SHINE .shine-expand a.shine-comment.closecommentmedia:after {
+    content: 'X close' !important;
+}
+
+html.SHINE .shine-grid .side-comments .RES-keyNav-activeElement .md-container,
+html.SHINE .shine-list .side-comments .RES-keyNav-activeElement .md-container{
+    background-color: transparent !important;
+}
+
+html.SHINE .settings-panel{
+    display:none;
+    position: fixed;
+    width: 50%;
+    height: 60%;
+    left: 25%;
+    top: 25%;
+    background: #fff;
+    z-index: 10000;
+    color:#000;
+}
+
+html.SHINE.show-settings .settings-panel{
+    display:block;
+}
+
+html.SHINE .settings-tabs {
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    background: #EEE;
+    margin-top: -50px;
+}
+
+html.SHINE .settings-tabs .tab {
+    width: calc(100% / 3);
+    position: absolute;
+    top: 0px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight:100;
+}
+
+html.SHINE .settings-tabs .tab-default {
+    left: 0px;
+}
+
+html.SHINE .settings-tabs .tab-grid {
+    left: calc(100% / 3);
+}
+
+html.SHINE .settings-tabs .tab-list{
+    right:0px;
+}
+
+html.SHINE .settings-tabs .tab-active {
+    background-color: #fff;
+    cursor: default;
+}
+
+html.SHINE .settings-panel .panel{
+    position: absolute;
+    width:100%;
+    height:100%;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding: 30px;
+    box-sizing:border-box;
+    opacity:0;
+    z-index:10;
+    transition:opacity 200ms ease;
+}
+
+html.SHINE .settings-panel .panel.panel-active{
+    opacity:1;
+    z-index:12;
+}
+
+.settings-panel label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px 0px 5px;
+}
+
+span.settings-small-print {
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    float: left;
+    width: 100%;
+}
+
+.settings-panel select{
+    -webkit-appearance:none;
+    width:100%;
+    box-sizing:border-box;
+    max-width:600px;
+    margin-bottom:30px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+    color: #000;
+    border: 1px solid #AAA;
+    border-radius: 3px;    
+    outline:none;
+    background:url('chrome-extension://__MSG_@@extension_id__/dropdown.svg') no-repeat calc(100% - 15px) center;
+    background-size:15px;
+}
+
+.settings-panel select:disabled {
+    background-color: #CCC;
+    color: #AAA;
+    cursor: not-allowed;
+}
+
+.shine-settings-prompt {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: rgb(255,105,0);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 100;
+    border-radius: 4px;
+}
+
+html.SHINE.shinebright .shine-settings-prompt{
+    display:none !important;
+}
+
+.settings-panel .settings-thirds {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.settings-panel .settings-column-third {
+    width: 30%;
+}
+
+.settings-panel .settings-halves {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.settings-panel .settings-column-half {
+    width: 47%;
+}
+
+.settings-panel p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.settings-panel li {
+    display: block;
+    margin-bottom:5px;
+    border-bottom:1px solid #EEE;
+    line-height:20px;
+    cursor: default;
+}
+
+.settings-panel li a{
+    font-size:15px;
+    line-height:20px;
+    padding:5px 0;
+    display:inline-block;
+    color:rgb(255,103,0);
+}
+
+.settings-panel li .default-view{
+    float:right;
+    font-size:12px;
+    line-height:25px;
+}
+
+.settings-panel li .remove-default{
+    background:url('chrome-extension://__MSG_@@extension_id__/hide.svg') no-repeat center center;
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    opacity: .2;
+    background-size:contain;
+    float:right;
+    cursor: pointer;
+    transition:opacity 300ms ease;
+}
+
+.settings-panel li:hover .remove-default{
+    opacity:.6;
+}
+
+.settings-panel .settings-saved {
+    position: absolute;
+    top: calc(100% + 30px);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    opacity:0;
+    transition:opacity 500ms ease;
+}
+
+html.settings-are-saved .settings-panel .settings-saved{
+    opacity:1;  
+}
+
+
+
+
+/* MESSAGE CSS */
+
+html.SHINE .shine-message {
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    margin: 45px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+html.SHINE .shine-message h1 {
+    font-size: 30px;
+    font-weight: 100;
+    margin: 0 0 15px 0;
+}
+
+html.SHINE .shine-message p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+html.SHINE .shine-message a.message-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: rgb(255,105,0);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 3px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.shine-message span.message-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 100;
+    opacity: .3;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* SORTING CONTENT */
+
+html.SHINE .menuarea {
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    border: 0px;
+    font-size: 16px;
+    font-weight: 100;
+    overflow:visible;
+}
+
+html.SHINE.shine-grid .menuarea{
+    margin-bottom:30px;
+}
+
+html.SHINE.shine-list .menuarea{
+    margin-top:30px;
+    margin-bottom:-20px;
+}
+
+html.SHINE .menuarea .spacer {
+    margin: 0px;
+    display: block;
+    float: none;
+}
+
+html.SHINE .menuarea .dropdown.lightdrop .selected{
+    background:none !important;
+    margin:0px !important;
+    cursor: pointer;
+    color:rgb(255,105,0);
+    font-weight:400;
+    padding-right:0px !important;
+    text-decoration: none;
+}
+
+html.SHINE .menuarea .drop-choices {
+    position: absolute;
+    left: 0px !important;
+    width: 100% !important;
+    border: 0px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.3);
+    padding: 50px 15px 15px;
+    box-sizing: border-box;
+    top: -15px !important;
+}
+
+html.SHINE .menuarea span.dropdown-title.lightdrop,
+html.SHINE .menuarea .dropdown.lightdrop{
+    position: relative;
+    z-index:200;
+}
+
+html.SHINE .menuarea .drop-choices a {
+    color: #333;
+    text-align: left;
+    display: block;
+    padding: 5px 0;
+    font-weight:100;
+}
+
+html.SHINE .menuarea .drop-choices a:hover{
+    background-color:transparent !important;
+}
+
+html.SHINE .menuarea .drop-choices a::before {
+    content:'/';
+    display:inline-block;
+    margin:0px 5px;
+    color:#AAA;
+}
+
+
+
+/* SUBREDDIT STYLING */
+
+#shine-subreddit-header{
+    background-color: #cee3f8;
+    position: relative;
+}
+
+
+
+
+
+
+
+/* SHINE BRIGHT STYLING */
+
+.shine-bright-panel {
+    display:none;
+    width: calc(100% - 300px);
+    height: 90%;
+    max-width: 1400px;
+    max-height: 800px;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    position: fixed;
+    z-index: 10000;
+    background: #fff;
+    overflow: hidden;
+    color:#000;
+}
+
+html.SHINE.show-shine-bright .shine-bright-panel{
+    display:block !important;
+}
+
+#header .header-shine-bright{
+    background:url('chrome-extension://__MSG_@@extension_id__/whiteshinebright.svg') no-repeat calc(100% - 15px) center;
+    background-size:15px auto;
+    float: left;
+    background-color: rgb(255,105,0);
+    height: 100%;
+    line-height: 45px;
+    padding:0px 45px 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;    
+    cursor: pointer;
+    width:215px;
+    margin-left:-215px;
+    overflow:hidden;
+    display:inline-block;
+    box-sizing:border-box;
+    transition:all 1s ease;
+}
+
+html.SHINE.shine-scrolling #header .header-shine-bright{
+    margin-left:0px;
+}
+
+html.SHINE.shinelight .shine-comment::after{
+    background: #777 !important;
+    color: #DDD !important;
+}
+
+.shining-bright {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(235,80,0,1)), color-stop(100%,rgba(255,105,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(235,80,0,1) 0%,rgba(255,105,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(to bottom,  rgba(235,80,0,1) 0%,rgba(255,105,0,1) 100%); /* W3C */
+
+}
+
+html.SHINE .shining-bright #sunburst{
+    position:absolute;
+    bottom:-100px;
+    left:0px;
+    width:100%;
+    height:1px;
+    overflow:visible;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform:rotate(0deg);
+    }
+    to {
+        -webkit-transform:rotate(360deg);
+    }
+}
+
+html.SHINE .shining-bright #sunburst img {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 45000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;    
+}
+
+.shining-bright h1 {
+    font-size: 90px;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-weight: bold;
+    float: left;
+    width: 80%;
+    text-align: center;
+    max-width: 750px;
+    position: relative;
+    z-index: 10;
+    border-bottom:0px !important;
+}
+
+
+.shining-bright p {
+    width: 80%;
+    max-width: 750px;
+    float: left;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 30px;
+    text-align: justify;
+    position: relative;
+    z-index: 10;
+}
+
+.shining-bright p i{
+    font-style:oblique;
+}
+
+.shining-bright a{
+    color:#fff !important;
+    text-decoration: underline;
+}
+
+div#shine-bright-logout {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    z-index: 10;
+    font-size: 13px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+#shine-bright-logout img {
+    height: 15px;
+    width: auto;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: text-top;
+}
+
+
+
+
+/* NIGHTMODE STUFF */
+
+html.res-nightmode,
+html.res-nightmode body,
+html.res-nightmode body > .content{
+    background:#333 !important;
+}
+
+html.res-nightmode #header,
+html.SHINE.res-nightmode div#header-bottom-left
+{
+    background:#000 !important;
+}
+
+html.SHINE.res-nightmode #header-bottom-left #header-img-a, 
+html.SHINE.res-nightmode #header-bottom-left #header-img.default-header{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/night-shine.svg');
+}
+
+html.SHINE.res-nightmode #header ul.tabmenu {
+    background: #000;
+}
+
+html.SHINE.res-nightmode #header ul.tabmenu li a, html.SHINE.res-nightmode #header ul.tabmenu li.selected a {
+    color: #FFF;
+}
+
+html.SHINE.res-nightmode .menuarea .drop-choices a {
+    color: #fff;
+}
+
+html.SHINE.res-nightmode #header-bottom-right a {
+    color: #fff;
+}
+
+html.SHINE.res-nightmode #header-bottom-right #RESAccountSwitcherIcon{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/night-account-switcher.svg');
+}
+
+html.SHINE.res-nightmode ul#RESAccountSwitcherDropdown {
+    background: #000;
+}
+
+html.SHINE.res-nightmode ul#RESAccountSwitcherDropdown li {
+    color: #fff;
+}
+
+html.SHINE.res-nightmode #header-bottom-right #mail, 
+html.SHINE.res-nightmode #header-bottom-right #modmail{
+    background-image: url('chrome-extension://__MSG_@@extension_id__/night-nomail.svg');
+}
+
+html.SHINE.res-nightmode #header-bottom-right #RESSettingsButton{
+    background-image: url('chrome-extension://__MSG_@@extension_id__/night-res.svg');
+}
+
+html.SHINE.res-nightmode span.pagename a{
+    color:#fff;
+}
+
+html.SHINE.res-nightmode div#RESPrefsDropdown{
+    background-color:rgb(68, 68, 68) !important;
+}
+
+html.SHINE.res-nightmode #RESPrefsDropdown li a{
+    color:#fff !important;
+}
+
+html.SHINE.res-nightmode #RESPrefsDropdown li{
+    color:#fff !important;
+}
+
+html.SHINE.shine-list.res-nightmode .shine-expand .side-comments textarea, 
+html.SHINE.shine-grid.res-nightmode .shine-expand .side-comments textarea {
+    border-color: transparent;
+}
+
+html.SHINE.shine-list.res-nightmode .shine-expand .side-comments .content, 
+html.SHINE.shine-grid.res-nightmode .shine-expand .side-comments .content{
+    background:transparent;
+}
+
+html.SHINE.shine-list.res-nightmode .shine-expand .toggle-child-comments, 
+html.SHINE.shine-grid.res-nightmode .shine-expand .toggle-child-comments{
+    background:#333;
+}
+
+html.SHINE.res-nightmode #header .layout-switch svg.grid-switch,
+html.SHINE.res-nightmode #header .layout-switch svg.list-switch{
+    fill:#fff;
+}
+
+html.SHINE.res-nightmode #header-bottom-right .login-required{
+    background-image: url('chrome-extension://__MSG_@@extension_id__/night-login.svg');
+}
+
+html.SHINE.res-nightmode div#sr-header-area {
+    background-color: #000;
+    border-bottom: 1px solid #555;
+}
+
+html.SHINE.res-nightmode div#RESShortcutsEditContainer, 
+html.SHINE.res-nightmode div#RESShortcutsSort, 
+html.SHINE.res-nightmode div#RESShortcutsRight, 
+html.SHINE.res-nightmode div#RESShortcutsLeft, 
+html.SHINE.res-nightmode div#RESShortcutsAdd, 
+html.SHINE.res-nightmode div#RESShortcutsTrash {
+    background-color: transparent !important;
+}
+
+html.SHINE.res-nightmode form.logout a {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/night-account-logout.svg');
+}
+
+html.SHINE table#srList {
+    position: fixed !important;
+    top: 65px !important;
+    max-height: calc(100vh - 65px) !important;
+}
+
+html.SHINE .drop-choices.srdrop.inuse {
+    position: fixed !important;
+    z-index: 10000 !important;
+    left: 0px !important;
+    margin: 0px !important;
+    height: calc(100vh - 65px) !important;
+    top: 65px !important;
+    overflow-y: scroll !important;
+    padding: 15px !important;
+    box-sizing: border-box !important;
+}

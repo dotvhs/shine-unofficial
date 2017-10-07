@@ -1,0 +1,34 @@
+html.SHINE.shine-default #REScommentNavToggle{
+	display:none !important;
+}
+
+html.SHINE body > div.content {
+    padding: 30px !important;
+    box-sizing: border-box;
+    margin: 0px !important;
+}
+
+html.SHINE body > div.content #siteTable .thing .RES-keyNav-activeElement{
+	background-color:transparent !important;
+}
+
+html.SHINE body > div.content #siteTable .thing a.thumbnail {
+    margin-right: 15px;
+    display: block;
+}
+
+html.SHINE.shine-default .panestack-title {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 15px;
+    margin:0px 0px 15px 0px;
+}
+
+html.SHINE.shine-default .menuarea{
+	float:right;
+}
+
+html.SHINE.shine-default .messages-page .menuarea{
+	float: none;
+    text-align: left;
+    margin: 0px;
+}

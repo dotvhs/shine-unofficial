@@ -1,0 +1,28 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon-128.png"
+   },
+   "content_scripts": [ {
+      "css": [ "fonts.css", "base.css", "shine-grid.css", "shine-list.css", "shine-list-classic.css", "shine-default.css", "themes/nightmode.css", "themes/cleandark.css" ],
+      "js": [ "jquery.js", "base.js" ],
+      "matches": [ "*://*.reddit.com/*" ]
+   } ],
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "description": "Experience reddit with new modern list and grid view interfaces that focus on bringing the content to you.",
+   "icons": {
+      "128": "icon-128.png",
+      "16": "icon-16.png",
+      "48": "icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq2flgtIP0hsysk0MoTfR2EAIdrBSg7kLUFddRAt+diy1gyhINoDCJgxJ8eNj+8Mo7+IHS7U5JbHc2boGg0rJ1Wa+4StCoR7uRtcw0OyatnJbSPyTQeVJqf42XxP9eEotpcvWF1P1bL/fHN6LC3VbKUFF6DNvg8HNz3o1bDjG/GArWAs6PeCoxwLXhgQwundV9AmoqoWmDD7psalrnSpwXnmlK0G3h9q1KOkzx6UfGHO6P4POJhNytucP3bA2ADRmrhJMvc9e9Iy/FgKdDBlrBNy7VqnkKoXU5ki8BLKnAZqvFNlr116/DnVaPX35dCJUzdQpmXak8i2x+PoTF96VEwIDAQAB",
+   "manifest_version": 2,
+   "name": "SHINE for reddit (unofficial)",
+   "permissions": [ "storage" ],
+   "short_name": "SHINE",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.5.5",
+   "web_accessible_resources": [ "jquery.zoom.min.js", "shine-grid.js", "shine-list.js", "account-switcher.svg", "nomail.svg", "yesmail.svg", "res.svg", "comments.svg", "save.svg", "unsave.svg", "hide.svg", "upvote.svg", "downvote.svg", "login.svg", "youtube.svg", "gif.svg", "album.svg", "submit.svg", "sidebar.svg", "multis.svg", "settings.svg", "search.svg", "logo.svg", "shine.svg", "dropdown.svg", "subscribe.svg", "unsubscribe.svg", "shinebright.svg", "whiteshinebright.svg", "sunburst.png", "logout.svg", "newtab.svg", "account-logout.svg", "night-account-logout.svg", "night-shine.svg", "night-account-switcher.svg", "night-nomail.svg", "night-res.svg", "night-comments.svg", "night-save.svg", "night-hide.svg", "night-newtab.svg", "night-login.svg", "shine01.jpg", "shine02.jpg", "shine03.jpg", "shine04.jpg", "shine05.jpg", "shine06.jpg" ]
+}

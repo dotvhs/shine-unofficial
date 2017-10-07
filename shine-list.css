@@ -1,0 +1,493 @@
+html.SHINE.shine-list #siteTable_organic,
+html.SHINE.shine-list .NERPageMarker,
+html.SHINE.shine-list body > div.content #siteTable .thing .expando-button,
+html.SHINE.shine-list body > div.content .thing ul.flat-list li.share,
+html.SHINE.shine-list body > div.content .thing ul.flat-list li.report-button,
+html.SHINE.shine-list .side-comments .thumbnail,
+html.SHINE.shine-list .side-comments #siteTable .midcol,
+html.SHINE.shine-list .side-comments #siteTable p.title,
+html.SHINE.shine-list .side-comments #siteTable p.tagline,
+html.SHINE.shine-list .side-comments #siteTable .entry::before,
+html.SHINE.shine-list .side-comments .panestack-title,
+html.SHINE.shine-list .side-comments .menuarea,
+html.SHINE.shine-list .side-comments #siteTable ul.flat-list
+{
+	display:none !important;
+}
+
+html.SHINE.shine-list .thing.last-clicked{
+	border:0px;
+}
+
+html.SHINE.shine-list body{
+	background:#f1f1f1;
+}
+
+html.SHINE.shine-list body > div.content div#siteTable.linklisting {
+    width: 90%;
+    margin: 20px auto 0;
+    box-shadow:1px 1px 5px rgba(0,0,0,.3);
+    display:flex;
+    flex-direction:column;
+}
+
+html.SHINE.shine-list body > div.content .side-comments div#siteTable.linklisting{
+	margin: 0px;
+    box-shadow: none;
+}
+
+html.SHINE.shine-list body > div.content{
+	box-sizing:border-box;
+}
+
+html.SHINE.shine-list body > div.content div#siteTable.linklisting > .thing{
+	background:#fff;
+	margin: 0px;
+    box-sizing: border-box;
+    padding: 10px 60px 10px 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    cursor: pointer;
+    border-left:5px solid #fff;
+    transition:border 300ms ease;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+html.SHINE.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing{
+    border-left:5px solid rgb(255,105,0);
+}
+
+html.SHINE.shine-list body > div.content div#siteTable.linklisting > .sitetable.linklisting > .thing{
+    display:none;
+}
+
+html.SHINE.shine-list body > .content #siteTable .thing.link > .child {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 60px;
+    top: 50%;
+    transform: translate3d(0,-50%,0);
+    box-sizing: border-box;
+    background:url('chrome-extension://__MSG_@@extension_id__/newtab.svg') no-repeat center center;
+    background-size:20px auto;
+    opacity:.2;
+    transition:opacity 300ms ease;
+}
+
+html.SHINE.shine-list body > .content #siteTable .side-comments .thing.link > .child{
+    display:none !important;
+}
+
+html.SHINE.shine-list body > .content #siteTable .thing.link:hover > .child{
+    opacity:.6;
+}
+
+html.SHINE.shine-list body > div.content .side-comments div#siteTable.linklisting > .thing{
+	border-bottom:0px;
+	padding:0px;
+	cursor: default;
+	background:transparent;
+}
+
+html.SHINE.shine-list body > div.content{
+	margin:0px;
+	width:100%;
+}
+
+html.SHINE.shine-list.show-sidebar body > div.content {
+    width: calc(100% - 360px);
+}
+
+html.SHINE.shine-list body > div.content div#siteTable > .thing span.rank {
+    position: absolute;
+    display: block;
+    left: -45px;
+    text-align: center;
+    color: #777;
+    float: none;
+    padding: 0px;
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    top: calc(50% - 15px);
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html.SHINE.shine-list body > div.content div#siteTable > .thing a.thumbnail {
+    overflow: hidden;
+    z-index:2;
+	width: 70px;
+    min-width:70px;
+    height: 50px;
+    margin: 0px;
+    order:1;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+html.SHINE.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title{
+    color:rgb(255,105,0) !important;
+}
+
+html.SHINE.shine-list body > div.content div#siteTable > .thing a.thumbnail img {
+    width: auto !important;
+    height: 100%;
+}
+
+html.SHINE.shine-list body > div.content div#siteTable > .thing .RES-keyNav-activeElement{
+	background-color:transparent !important;
+}
+
+html.SHINE.shine-list body > div.content div#siteTable > .thing ul.flat-list{
+	display:inline-block;
+}
+
+html.SHINE.shine-list body > div.content div#siteTable > .thing .entry {
+    float: none;
+    width: auto;
+    margin: 0px;
+    padding: 0px 0px 0px 5px;
+    display: block;
+    order:3;
+}
+
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.up,
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.upmod{
+    text-indent: 100% !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/upvote.svg') !important;
+    background-repeat:no-repeat !important;
+    background-position: center !important;
+    width: 15px !important;
+    background-size: contain !important;
+    display: inline-block !important;
+    height: 15px !important;
+    vertical-align: top !important;
+    margin:0px !important;
+    padding:0px !important;
+    -webkit-filter:grayscale(100%) !important;
+    opacity:.5 !important;
+}
+
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.upmod{
+    opacity:1 !important;
+    -webkit-filter:grayscale(0%) !important;
+}
+
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.down,
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.downmod{
+    text-indent: 100% !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/downvote.svg') !important;
+    background-repeat:no-repeat !important;
+    background-position: center !important;
+    width: 15px !important;
+    background-size: contain !important;
+    display: inline-block !important;
+    height: 15px !important;
+    vertical-align: top !important;
+    margin:0px !important;
+    padding:0px !important;
+    -webkit-filter:grayscale(100%) !important;
+    opacity:.5 !important;
+}
+
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.downmod{
+    opacity:1 !important;
+    -webkit-filter:grayscale(0%) !important;
+}
+
+html.SHINE.shine-list body > .content #siteTable > .thing .midcol {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 70px;
+    min-width:70px;
+    max-width:70px;
+    float: left;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    order:2;
+}
+
+html.SHINE.shine-list body > .content #siteTable > .thing .midcol .score{
+    margin:3px 0;
+}
+
+html.SHINE.shine-list body > .content .nav-buttons{
+    display:none !important;
+}
+
+/* THIS IS THE EXPAND STYLING */
+
+html.SHINE.shine-list .shine-expand {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 70vh;
+    background: #FFF;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    position: relative;
+    z-index: 1;
+}
+
+html.SHINE.shine-list .large-area{
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width:70%;
+    background: #000;
+}
+
+html.SHINE.shine-list.shine-split-6040 .large-area{
+	width:60%;
+}
+
+html.SHINE.shine-list.shine-split-5050 .large-area{
+	width:50%;
+}
+
+html.SHINE.shine-list.shine-split-4060 .large-area{
+	width:40%;
+}
+
+html.SHINE.shine-list.shine-split-3070 .large-area{
+	width:30%;
+}
+
+html.SHINE.shine-list .large-image, 
+html.SHINE.shine-list .large-youtube, 
+html.SHINE.shine-list .large-html5,
+html.SHINE.shine-list .large-soundcloud {
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    background: #000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+html.SHINE.shine-list .side-comments {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 30%;
+    height: 100%;
+    box-sizing:border-box;
+    padding:15px 15px 100px 15px;
+    overflow-y:auto;
+    background:#fff;
+}
+
+html.SHINE.shine-list.shine-split-6040 .side-comments{
+	width:40%;
+}
+
+html.SHINE.shine-list.shine-split-5050 .side-comments{
+	width:50%;
+}
+
+html.SHINE.shine-list.shine-split-4060 .side-comments{
+	width:60%;
+}
+
+html.SHINE.shine-list.shine-split-3070 .side-comments{
+	width:70%;
+}
+
+html.SHINE.shine-list .just-comments .side-comments {
+    width: 100%;
+    padding:30px 30px 100px 30px;
+}
+
+html.SHINE.shine-list .large-album{
+    width: 85%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    background: #000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+html.SHINE.shine-list .shine-expand .album-thumbnails{
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:15%;
+    height:100%;
+    box-sizing:border-box;
+    background:#333;
+    padding:15px;
+    overflow-y:auto;
+}
+
+html.SHINE.shine-list .shine-expand .album-thumbnails img{
+    width:100%;
+    height:auto;
+    margin-bottom:15px;
+    display:block;
+    box-sizing:border-box;
+    cursor: pointer;
+}
+
+html.SHINE.shine-list .shine-expand .album-thumbnails img.active-thumb{
+    border:2px solid rgba(255,103,31,1);
+}
+
+html.SHINE .album-captions{
+    width:30px;
+    height:30px;
+    overflow:hidden;
+    display:block;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    z-index: 12000;
+    cursor: help;
+}
+
+html.SHINE .activate-captions .album-captions {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 85%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C */
+    box-sizing: border-box;
+    padding: 60px;
+    height: auto;
+}
+
+html.SHINE .album-captions .caption-text{
+    display:none;
+}
+
+html.SHINE .activate-captions .album-captions .caption-text{
+    display:block;
+}
+
+html.SHINE .album-captions strong{
+    display:block;
+    font-size:30px;
+    font-weight:100;
+    margin-bottom:15px;
+    color:#fff;
+}
+
+
+html.SHINE .album-captions p{
+    line-height: 24px;    
+    color: #fff;
+    font-size: 16px;    
+}
+
+html.SHINE .show-captions {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 0px;
+    left: 0px;
+    background: #fff;
+    box-sizing: border-box;
+    cursor: help;
+    padding: 7px 5px 5px 5px;
+    z-index: 100;
+}
+
+html.SHINE.shine-list .shine-expand .side-comments #siteTable > .thing,
+html.SHINE.shine-list .shine-expand .side-comments form,
+html.SHINE.shine-list .shine-expand .side-comments .content{
+	margin:0px;
+	padding:0px;
+}
+
+
+
+
+/* SHINE LIGHT STUFF */
+
+html.SHINE.shine-list body > div.content div#siteTable.linklisting > .thing.shine-prompt-thing{
+    background: rgb(255,105,0) !important;
+    border-left-color: rgb(255,105,0) !important;
+}
+
+html.SHINE.shine-list body > div.content div#siteTable.linklisting > .thing.shine-prompt-thing a,
+html.SHINE.shine-list body > div.content div#siteTable.linklisting > .thing.shine-prompt-thing p,
+html.SHINE.shine-list body > div.content div#siteTable.linklisting > .thing.shine-prompt-thing span{
+    color:#fff !important;
+}
+
+html.SHINE.shine-list body > div.content div#siteTable.linklisting > .thing.shine-prompt-thing a.thumbnail{
+    background:url('chrome-extension://__MSG_@@extension_id__/whiteshinebright.svg') no-repeat center center;
+    background-size:30px auto;
+}
+
+html.SHINE.shine-list body > div.content div#siteTable.linklisting > .thing.shine-prompt-thing .entry::before{
+    display:none !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* NIGHT MODE STUFF */
+
+html.SHINE.shine-list.res-nightmode body > div.content div#siteTable.linklisting > .thing {
+    background: #000;
+    border-bottom: 1px solid #333;
+    border-left: 5px solid #000;
+}
+
+html.SHINE.shine-list.res-nightmode body > .content div#siteTable > .thing .entry::before {
+    border-color: #333;
+}
+
+html.SHINE.shine-list.res-nightmode .shine-expand {
+    border-bottom: 1px solid #333;
+}
+
+html.SHINE.shine-list.res-nightmode .side-comments{
+    background:#151515;
+}
+
+html.SHINE.shine-list.res-nightmode body > div.content .side-comments div#siteTable.linklisting > .thing{
+    background:transparent;
+    border-bottom:0px;
+    border-left:0px;
+}
+
+html.SHINE.shine-list.res-nightmode body > .content #siteTable .thing.link > .child {
+    background:url('chrome-extension://__MSG_@@extension_id__/night-newtab.svg') no-repeat center center;
+    background-size:20px auto;
+}

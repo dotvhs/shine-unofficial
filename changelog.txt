@@ -1,0 +1,36 @@
+* main reason was because apparently the Chrome Webstore doesn't like extensions making AJAX calls (which is how we were doing the whole create account and sign in process) so we've moved from using AJAX calls to iframes.
+
+* shrank the size of the hover area around navicon
+
+* removed navicon hover "X" since clicking it doesn't actually do anything
+
+* changed default media / comments split to 60 / 40
+
+* fixed YouTube videos not starting at timestamp
+
+* added support for reddituploads.com
+
+* fixed multireddit bar display issue
+
+* replaced thumbs with arrows because I was a moron for using thumbs in the first place
+
+* fixed subreddit list position issue, it's now fixed as you scroll
+
+* got imgur galleries working finally
+
+* grid view - fixed spacing issue on text previews that were too tall
+
+* grid view - fixed padding at the bottom of the comments next to media, now you can see the last comment's links beneath it
+
+* grid view - fixed issue with youtube thumbnail not displaying correctly if video has a timestamp
+
+
+
+
+
+
+
+
+
+
+

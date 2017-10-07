@@ -1,0 +1,114 @@
+html.SHINE.shine-list.shine-list-classic body > div.content div#siteTable.linklisting{
+	width:calc(50% - 30px) !important;
+	float: left !important;
+    margin-left: 30px !important;
+}
+
+html.SHINE.shine-list.shine-list-classic body > div.content .side-comments div#siteTable.linklisting {
+    width: auto !important;
+    margin-left: 0px !important;
+}
+
+html.SHINE.shine-list.shine-list-classic body #shine-subreddit-header{
+	display:none !important;
+}
+
+html.SHINE.shine-list.shine-list-classic body > div.content div#siteTable.linklisting{
+	margin-top:0px !important;
+}
+
+
+
+
+/* DIFFERENT SIZES */
+
+html.SHINE.shine-list.shine-list-classic .shine-expand {
+    position: fixed !important;
+    left: calc(50% + 30px) !important;
+    width: calc(50% - 60px) !important;
+    box-shadow: rgba(0, 0, 0, 0.298039) 1px 1px 5px !important;    
+    overflow-y:auto !important;
+    top: 75px !important;
+    height: calc(100% - 110px) !important;    
+}
+
+html.SHINE.shine-list.shine-list-classic.show-shortcuts .shine-expand {
+    top: 100px !important;
+    height: calc(100% - 130px) !important;
+}
+
+html.SHINE.shine-list.shine-list-classic.show-sidebar .shine-expand {
+    left: calc(50% - 150px) !important;
+    width: calc(50% - 240px) !important;
+}
+
+html.SHINE.shine-list.shine-list-classic.show-multireddits .shine-expand {
+    left: calc(50% + 140px) !important;
+    width: calc(50% - 160px) !important;
+}
+
+html.SHINE.shine-list.shine-list-classic.show-multireddits.show-sidebar .shine-expand {
+    left: calc(50% + -30px) !important;
+    width: calc(50% - 360px) !important;
+}
+
+/* END DIFFERENT SIZES */
+
+
+
+
+html.SHINE.shine-list.shine-list-classic .just-comments .large-area{
+	display:none !important;
+}
+
+html.SHINE.shine-list.shine-list-classic .large-area {
+    position: relative !important;
+    width: 100% !important;
+    height: calc(100% - 40px) !important;
+}
+
+html.SHINE.shine-list.shine-list-classic .side-comments {
+    position: relative !important;
+    width: 100% !important;
+    overflow:hidden !important;
+    height:auto !important;
+}
+
+html.SHINE.shine-list.shine-list-classic .shine-expand .toggle-child-comments {
+    position: relative !important;
+    bottom: auto !important;
+    width: 100% !important;
+    left: auto !important;
+}
+
+
+html.SHINE.shine-list.shine-list-classic .side-comments .shine-comment::after{
+    background-color: #777 !important;
+}
+
+html.SHINE.shine-list.shine-list-classic div#progressIndicator {
+    width: 30% !important;
+    float: left !important;
+    clear: both !important;
+    margin-left: 30px !important;
+    margin-top: 30px !important;
+}
+
+html.SHINE.shine-list-classic .shine-nav{
+    padding:15px !important;
+}
+
+/*
+
+html.SHINE.shine-list-classic .shine-nav{
+    right:auto !important;
+    left:30px !important;
+    bottom:30px !important;
+}
+
+html.SHINE.shine-list-classic .shine-menu-button label {
+    right: auto !important;
+    left: 60px !important;
+}
+
+*/
