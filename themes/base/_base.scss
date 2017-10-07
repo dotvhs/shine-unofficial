@@ -1,0 +1,175 @@
+
+//@extend-elements
+//original selectors
+//html.SHINE.res-nightmode.theme-#{$themename} .flair, html.SHINE.res-nightmode.theme-#{$themename} .linkflairlabel
+%extend_1 {
+	color: $color_bg_flair;
+	border: 1px solid $color_bg_flairborder;
+}
+
+//original selectors
+//html.SHINE.res-nightmode.theme-#{$themename} input[type="text"], html.SHINE.res-nightmode.theme-#{$themename} input[type="password"], html.SHINE.res-nightmode.theme-#{$themename} .c-form-control
+%extend_2 {
+	background-color: $color_bg_darkest !important;
+	border-color: $color_bg_textfield_border !important;
+}
+
+//original selectors
+//html.SHINE.res-nightmode.theme-#{$themename} .sidebox, html.SHINE.res-nightmode.theme-#{$themename} .subredditbox, html.SHINE.res-nightmode.theme-#{$themename} .subreddit-info, html.SHINE.res-nightmode.theme-#{$themename} .raisedbox, html.SHINE.res-nightmode.theme-#{$themename} .login-form-side, html.SHINE.res-nightmode.theme-#{$themename} .morelink
+%extend_3 {
+	background: $color_bg_dark !important;
+}
+
+
+html.SHINE {
+	&.res-nightmode.theme-#{$themename} {
+		&.shine-list {
+			body {
+				background: $color_bg_darkest !important;
+				> div.content div#siteTable {
+					> .thing {
+						background: $color_bg_darker !important;
+						border-bottom: 1px solid $color_bg_darkest !important;
+						border-left: 5px solid $color_bg_darker !important;
+						border-top: 0 !important;
+						border-right: 0 !important;
+					}
+					&.res-ner-listing > .thing:hover {
+						background: $color_bg_dark !important;
+						border-left: 5px solid $color_bg_dark !important;
+					}
+				}
+			}
+			.shine-expand {
+				background: $color_bg_darker !important;
+				.toggle-child-comments {
+					background: $color_bg_dark !important;
+				}
+			}
+			.side-comments {
+				background: $color_bg_darker !important;
+			}
+			&.shine-list-classic .side-comments {
+				.shine-comment::after {
+					color: $color_bg_shinecomment !important;
+					border: 1px solid $color_bg_shinecomment_border;
+				}
+			}
+		}
+		body {
+			background: $color_bg_darkest !important;
+			> .content {
+				background: $color_bg_darkest !important;
+			}
+		}
+		#header {
+			background: $color_bg_darker !important;
+			ul.tabmenu {
+				background: $color_bg_darker !important;
+			}
+		}
+		div {
+			&#header-bottom-left {
+				background: $color_bg_darker !important;
+			}
+			&#sr-header-area {
+				background: $color_bg_darker !important;
+				background: $color_bg_darker !important;
+			}
+		}
+		.md {
+			blockquote {
+				background: $color_bg_dark !important;
+			}
+		}
+		a {
+			&#sr-more-link {
+				background: $color_bg_darkest;
+				border-left: 1px solid $color_bg_darker;
+			}
+		}
+		.comment {
+			.child {
+				border-left: 1px solid $color_bg_textfield_border;
+			}
+			.showreplies {
+				border-left: 1px solid $color_bg_textfield_border;
+			}
+		}
+		.flair {
+			@extend %extend_1;
+		}
+		.linkflairlabel {
+			@extend %extend_1;
+		}
+		textarea {
+			background-color: $color_bg_darkest !important;
+			border-color: $color_bg_textfield_border !important;
+		}
+		input[type="text"] {
+			@extend %extend_2;
+		}
+		input[type="password"] {
+			@extend %extend_2;
+		}
+		.c-form-control {
+			@extend %extend_2;
+		}
+		.sidebox {
+			@extend %extend_3;
+			.spacer {
+				background: rgba($color_bg_darkest, .3) !important;
+			}
+		}
+		.subredditbox {
+			@extend %extend_3;
+		}
+		.subreddit-info {
+			@extend %extend_3;
+		}
+		.raisedbox {
+			@extend %extend_3;
+		}
+		.login-form-side {
+			@extend %extend_3;
+		}
+		.morelink {
+			@extend %extend_3;
+		}
+		.side {
+			.linkinfo {
+				background: rgba($color_bg_darkest, .3) !important;
+			}
+		}
+		.RESCloseButton {
+			background-color: $color_bg_darker !important;
+		}
+		.read-next {
+			background-color: $color_bg_darker !important;
+		}
+		.drop-choices {
+			background-color: $color_bg_darker !important;
+		}
+		&.show-sidebar .side {
+			background: $color_bg_darker;
+		}
+		&.shine-default .panestack-title {
+			border-bottom: 1px solid $color_bg_darker;
+		}
+		.message.new > .entry {
+			background-color: $color_bg_darker !important;
+		}
+		&.shine-grid body > .content #siteTable .thing {
+			background: $color_bg_darker !important;
+			&:hover {
+				background: $color_bg_dark !important;
+			}
+		}
+		.res-nightmode #progressIndicator {
+    		box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
+		    color: rgba(255,255,255,.4);
+		    background-color: rgba($color_bg_darker, .7);
+		    border-color: rgba($color_bg_darker, .4);
+		}
+	}
+}

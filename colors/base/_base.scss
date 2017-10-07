@@ -1,0 +1,89 @@
+//original selectors
+//html.SHINE.res-nightmode.color-#{$colorname}.shine-list .shine-expand .side-comments button.save, html.SHINE.res-nightmode.color-#{$colorname}.shine-grid .shine-expand .side-comments button.save
+%extend_4 {
+	background: $color_main_accent !important;
+}
+
+
+html.SHINE {
+	&.res-nightmode.color-#{$colorname} {
+		&.shine-list {
+			body {
+				> div.content div#siteTable {
+					&.linklisting > .thing.active-thing {
+						border-left: 5px solid $color_main_accent !important;
+						&:hover {
+							border-left: 5px solid $color_main_accent !important;
+						}
+					}
+				}
+				> .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
+					color: $color_main_accent !important;
+				}
+			}
+			.shine-expand {
+				.side-comments button.save {
+					@extend %extend_4;
+				}
+			}
+			&.shine-list-classic .side-comments {
+				.shine-comment:hover::after {
+					border: 1px solid $color_main_accent;
+					color: $color_main_accent !important;
+				}
+			}
+		}
+		div {
+			&#sr-header-area {
+				a {
+					&#sr-more-link:hover {
+						background: $color_main_accent !important;
+					}
+				}
+			}
+		}
+		.md {
+			a {
+				color: $color_main_accent;
+			}
+		}
+		.tagline {
+			a {
+				color: $color_main_accent !important;
+			}
+		}
+		a {
+			color: $color_main_accent !important;
+		}
+		.search-result-meta a {
+			color: $color_main_accent !important;
+		}
+		&.shine-grid .shine-expand .side-comments button.save {
+			@extend %extend_4;
+		}
+		.menuarea .dropdown.lightdrop .selected {
+			color: $color_main_accent;
+		}
+		.shine-nav .shine-navicon {
+			background-color: $color_fab_color;
+			transition: background-color 200ms;
+		}
+		.res-nightmode #progressIndicator {
+			h2 {
+				color: $color_main_accent;
+			}
+			.RESLoadingSpinner {
+				color: $color_main_accent;			
+			}
+		}
+	}
+
+	.colorselect label.#{$colorname} .button {
+		span {
+			background-color: $color_main_accent;
+		}
+		span.right {
+			background-color: $color_fab_color;
+		}
+	}
+}

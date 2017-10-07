@@ -1,0 +1,18 @@
+$themename: 'gray';
+
+//backgrounds
+$color_bg_darkest: rgb(25, 25, 25);
+$color_bg_darker: rgb(33, 33, 33);
+$color_bg_dark: rgb(39, 39, 39);
+
+$color_bg_flair: rgb(147, 147, 147);
+$color_bg_flairborder: rgb(97, 97, 97);
+
+$color_bg_shinecomment: rgb(97, 97, 97);
+$color_bg_shinecomment_border: rgb(97, 97, 97);
+$color_bg_textfield_border: rgba(255,255,255, .1);
+
+
+@import "base/dark";
+
+@import "base/base";
