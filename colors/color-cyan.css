@@ -1,0 +1,35 @@
+html.SHINE.res-nightmode.color-cyan.shine-list .shine-expand .side-comments button.save, html.SHINE.res-nightmode.color-cyan.shine-grid .shine-expand .side-comments button.save {
+  background: #00bcd4 !important; }
+
+html.SHINE.res-nightmode.color-cyan.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
+  border-left: 5px solid #00bcd4 !important; }
+  html.SHINE.res-nightmode.color-cyan.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
+    border-left: 5px solid #00bcd4 !important; }
+html.SHINE.res-nightmode.color-cyan.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
+  color: #00bcd4 !important; }
+html.SHINE.res-nightmode.color-cyan.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
+  border: 1px solid #00bcd4;
+  color: #00bcd4 !important; }
+html.SHINE.res-nightmode.color-cyan div#sr-header-area a#sr-more-link:hover {
+  background: #00bcd4 !important; }
+html.SHINE.res-nightmode.color-cyan .md a {
+  color: #00bcd4; }
+html.SHINE.res-nightmode.color-cyan .tagline a {
+  color: #00bcd4 !important; }
+html.SHINE.res-nightmode.color-cyan a {
+  color: #00bcd4 !important; }
+html.SHINE.res-nightmode.color-cyan .search-result-meta a {
+  color: #00bcd4 !important; }
+html.SHINE.res-nightmode.color-cyan .menuarea .dropdown.lightdrop .selected {
+  color: #00bcd4; }
+html.SHINE.res-nightmode.color-cyan .shine-nav .shine-navicon {
+  background-color: #0097A7;
+  transition: background-color 200ms; }
+html.SHINE.res-nightmode.color-cyan .res-nightmode #progressIndicator h2 {
+  color: #00bcd4; }
+html.SHINE.res-nightmode.color-cyan .res-nightmode #progressIndicator .RESLoadingSpinner {
+  color: #00bcd4; }
+html.SHINE .colorselect label.cyan .button span {
+  background-color: #00bcd4; }
+html.SHINE .colorselect label.cyan .button span.right {
+  background-color: #0097A7; }
