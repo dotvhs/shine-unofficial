@@ -13,7 +13,7 @@ First of all this is clutter-free version, all tracking was removed as well as G
 
 #### Features
 * Fixes for imgur photos and gifs
-* Support for many new video sources (v.redd.it, clips.twitch.tv and streamable.com - thanks to u/itzblitz94)
+* Support for many new video sources (v.redd.it, clips.twitch.tv and streamable.com - thanks to [u/itzblitz94](https://www.reddit.com/u/itzblitz94)
 * Basic theme support
 * Firefox version
 
@@ -26,4 +26,4 @@ First of all this is clutter-free version, all tracking was removed as well as G
 * **TheTyGoss** - *Original author*
 * **vhs** - *Current maintainer*
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/voythas/shine-unofficial/contributors) who participated in this project.
