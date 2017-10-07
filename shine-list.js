@@ -961,6 +961,42 @@ $('body').on('click','div.content div#siteTable.linklisting > .thing:not(.shine-
 		}
 
 
+		////////////////////////////
+		//NSFW INTEGRATIONS
+		////////////////////////////
+
+		//PORNHUB.COM INTEGRATION
+		else if( url.toLowerCase().indexOf("pornhub.com") != -1 ){
+      		vidID = url.substr(url.toLowerCase().indexOf("?viewkey=") + 9);
+
+      		$(theExpand).find(".large-area").html('<div class="large-youtube"><iframe src="//www.pornhub.com/embed/' + vidID + '" frameborder="0" width="560" height="315" scrolling="no" allowfullscreen autoplay /></div>');
+
+      		$(theExpand).attr("data-original-type", "twitch");
+			$(theExpand).attr("data-original-data", '//www.pornhub.com/embed/' + vidID);
+		}
+
+		//XHAMSTER.COM INTEGRATION
+		else if( url.toLowerCase().indexOf("xhamster.com") != -1 ){
+      		vidID = url.substr(url.toLowerCase().lastIndexOf("-") + 1);
+
+      		$(theExpand).find(".large-area").html('<div class="large-youtube"><iframe src="//xhamster.com/xembed.php?video=' + vidID + '" frameborder="0" width="560" height="315" scrolling="no" allowfullscreen autoplay /></div>');
+
+      		$(theExpand).attr("data-original-type", "twitch");
+			$(theExpand).attr("data-original-data", '//xhamster.com/xembed.php?video=' + vidID);
+		}
+
+		//XVIDEOS.COM INTEGRATION
+		else if( url.toLowerCase().indexOf("xvideos.com") != -1 ){
+      		vidID = url.substr(url.toLowerCase().indexOf("/video") + 6);
+      		vidID = vidID.substr('-'+vidID.length,vidID.indexOf("/") + 1);
+
+      		$(theExpand).find(".large-area").html('<div class="large-youtube"><iframe src="//flashservice.xvideos.com/embedframe/' + vidID + '" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" /></div>');
+
+      		$(theExpand).attr("data-original-type", "twitch");
+			$(theExpand).attr("data-original-data", '//flashservice.xvideos.com/embedframe/' + vidID);
+		}
+
+
 
 		//YOUTUBE SHARE
 		else if( url.toLowerCase().indexOf("youtu.be") != -1 ){
