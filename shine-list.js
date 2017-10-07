@@ -792,27 +792,26 @@ $('body').on('click','div.content div#siteTable.linklisting > .thing:not(.shine-
 
 				html5 = url.substr(url.toLowerCase().indexOf("imgur.com/") + 10);
 				html5 = html5.substring(0, html5.length - 4);
-
-				convertGiftoGfy(theExpand, url);
-
   
 				$.ajax({
-				    url: 'http://i.imgur.com/' + id + '.mp4',
+				    url: '//i.imgur.com/' + html5 + '.mp4',
 				    type: 'HEAD',
 				    error: function()
 				    {
+				    	console.log('URL:'+url);
+				    	console.log('HTML5:'+html5);
 						convertGiftoGfy(theExpand, url);
 				    },
 				    success: function ()
 				    {
-						$(theExpand).find('.large-area').html('<div class="large-html5"><video controls preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline ><source src="//i.imgur.com/' + id + '.gif" /></video></div>');
+						$(theExpand).find('.large-area').html('<div class="large-html5"><video controls preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline ><source src="//i.imgur.com/' + html5 + '.mp4" /></video></div>');
 				    }
 				});
 
 				//$(theExpand).find('.large-area').html('<div class="large-html5"><video controls preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline ><source src="//i.imgur.com/' + html5  + '.mp4" /></video></div>');
 
-				//$(theExpand).attr("data-original-type", "html5");
-				//$(theExpand).attr("data-original-data", '//i.imgur.com/' + html5  + '.mp4');
+				$(theExpand).attr("data-original-type", "html5");
+				$(theExpand).attr("data-original-data", '//i.imgur.com/' + html5  + '.mp4');
 
 			}else{
 
