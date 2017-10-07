@@ -1,17 +1,6 @@
 
 $('html').addClass("shine-ready");
 
-
-
-
-
-
-
-
-
-
-
-
 // imgur authorization
 function setHeader(xhr) {
     xhr.setRequestHeader('Authorization', 'Client-ID 4120f4b7ddae1ea');
@@ -60,21 +49,29 @@ function convertGiftoGfy(target, url){
       type: 'GET',
       dataType: 'json',
       success: function(data) { 
-	     
-	     if( data.gfyname != undefined ){
 
-	     	$(target).find('.large-area').html("<div class='large-html5'><video controls preload='auto' autoplay='autoplay' muted='muted' loop='loop' webkit-playsinline ><source src='//fat.gfycat.com/" + data.gfyname + ".mp4' type='video/mp4' /><source src='//giant.gfycat.com/" + data.gfyname + ".mp4' type='video/mp4' /><source src='//zippy.gfycat.com/" + data.gfyname + ".mp4' type='video/mp4' /></video></div>");
+      	if(data.mp4Url != undefined) {
+
+	     	$(target).find('.large-area').html("<div class='large-html5'><video controls preload='auto' autoplay='autoplay' muted='muted' loop='loop' webkit-playsinline ><source src='" + data.mp4Url +"' type='video/mp4' /></video></div>");
 
 	     	$(target).attr("data-original-type", "gfycat");
 			$(target).attr("data-original-data", data.gfyname);
-	     
-	     }
+
+		}else{
+
+	     	$(target).find('.large-area').html("<div class='large-youtube'><iframe src='https://gfycat.com/ifr/" + data.gfyname + "?theme=dark' frameborder='0' scrolling='yes' allowfullscreen /></div>");
+
+	     	$(target).attr("data-original-type", "gfycat");
+			$(target).attr("data-original-data", data.gfyname);
+
+		}
 	      
 	  },
       error: function(request, status, message) { 
       	console.log(message); 
       }
-    });		
+	
+	});		
 	
 }
 
@@ -118,11 +115,22 @@ function getImageFromServer(path, id, target){
             var imageType = getImageType(this.response);
 			
 			if( imageType == "image/gif" ){
-
-				$(target).find('.large-area').html('<div class="large-html5"><video controls preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline ><source src="//i.imgur.com/' + id + '.mp4" /></video></div>');
+      
+				$.ajax({
+				    url: 'http://i.imgur.com/' + id + '.mp4',
+				    type: 'HEAD',
+				    error: function()
+				    {
+						$(target).find('.large-area').html('<div class="large-html5"><video controls preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline ><source src="//i.imgur.com/' + id + '.gif" /></video></div>');
+				    },
+				    success: function ()
+				    {
+						$(target).find('.large-area').html('<div class="large-html5"><video controls preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline ><source src="//i.imgur.com/' + id + '.gif" /></video></div>');
+				    }
+				});
 
 				$(target).attr("data-original-type", "html5");
-				$(target).attr("data-original-data", '//i.imgur.com/' + id + '.mp4');
+				$(target).attr("data-original-data", '//i.imgur.com/' + id + '.gif');
 				
 			}else{
 
@@ -205,17 +213,6 @@ function getImageType(arrayBuffer){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // gets YOUTUBE TIME STAMP
 function getYouTubeTimeStamp(timeStamp){
     
@@ -247,23 +244,6 @@ function getYouTubeTimeStamp(timeStamp){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // these are all our actions / click events
 function resetInterfaces(){
 
@@ -283,27 +263,8 @@ function resetInterfaces(){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // VAriABLE DELCARATION
 var startCheckingComments;
-
-
-
-
-
-
-
 
 
 function checkSideComments(){
@@ -451,12 +412,13 @@ function checkSideComments(){
 
 		}
 
+	/*
 		// this is a gfycat link
 		else if( url.toLowerCase().indexOf("gfycat.com") != -1 ){
 
 			url = url.split(/[?#]/)[0]; // REMOVES QUERY STRING AND HASH
 	        
-	        gfyID = url.substr(url.toLowerCase().indexOf("gfycat.com/") + 11);
+	        gfyID = url.substr(url.indexOf("gfycat.com/") + 11);
 	        
 	        if( gfyID.indexOf(".webm") != -1 || gfyID.indexOf(".gifv") != -1 ){
 		        gfyID = gfyID.substring(0, gfyID.length - 5);
@@ -469,7 +431,7 @@ function checkSideComments(){
 			$(theSideCommentLinks[i]).addClass("shine-comment comment-gfycat");
 
         }
-        
+ 		*/      
 		else{
 
 			$(theSideCommentLinks[i]).addClass("shine-comment");
@@ -503,15 +465,6 @@ function checkSideComments(){
 	});
 
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -823,19 +776,7 @@ $('body').on('click','div.content div#siteTable.linklisting > .thing:not(.shine-
 			    });
 
 				
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-				
+	
 			}else if( url.toLowerCase().indexOf(".gifv") != -1 ){
 
 				
@@ -852,10 +793,26 @@ $('body').on('click','div.content div#siteTable.linklisting > .thing:not(.shine-
 				html5 = url.substr(url.toLowerCase().indexOf("imgur.com/") + 10);
 				html5 = html5.substring(0, html5.length - 4);
 
-				$(theExpand).find('.large-area').html('<div class="large-html5"><video controls preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline ><source src="//i.imgur.com/' + html5  + '.mp4" /></video></div>');
+				convertGiftoGfy(theExpand, url);
 
-				$(theExpand).attr("data-original-type", "html5");
-				$(theExpand).attr("data-original-data", '//i.imgur.com/' + html5  + '.mp4');
+  
+				$.ajax({
+				    url: 'http://i.imgur.com/' + id + '.mp4',
+				    type: 'HEAD',
+				    error: function()
+				    {
+						convertGiftoGfy(theExpand, url);
+				    },
+				    success: function ()
+				    {
+						$(theExpand).find('.large-area').html('<div class="large-html5"><video controls preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline ><source src="//i.imgur.com/' + id + '.gif" /></video></div>');
+				    }
+				});
+
+				//$(theExpand).find('.large-area').html('<div class="large-html5"><video controls preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline ><source src="//i.imgur.com/' + html5  + '.mp4" /></video></div>');
+
+				//$(theExpand).attr("data-original-type", "html5");
+				//$(theExpand).attr("data-original-data", '//i.imgur.com/' + html5  + '.mp4');
 
 			}else{
 
@@ -985,14 +942,23 @@ $('body').on('click','div.content div#siteTable.linklisting > .thing:not(.shine-
 		else if( url.toLowerCase().indexOf("streamable.com") != -1 ){
       		url = url.split(/[?#]/)[0]; // REMOVES QUERY STRING AND HASH
 			url = decodeURIComponent(url);
-      		shortcode = url.substr(url.toLowerCase().indexOf("streamable.com/") + 15);
+      		vidID = url.substr(url.toLowerCase().indexOf("streamable.com/") + 15);
 
-      		$(theExpand).find(".large-area").html('<div class="large-youtube"><iframe frameborder="0" allowfullscreen src="https://streamable.com/s/'+shortcode+'" /></div>');
+      		$(theExpand).find(".large-area").html('<div class="large-youtube"><iframe frameborder="0" allowfullscreen src="https://streamable.com/s/' + vidID + '?autoplay=1" /></div>');
 
       		$(theExpand).attr("data-original-type", "streamable");
-			$(theExpand).attr("data-original-data", shortcode + '/omydpg');
+			$(theExpand).attr("data-original-data", '//streamable.com/s/' + vidID);
+		}
 
 
+		//CLIPS.TWITCH.TV INTEGRATION
+		else if( url.toLowerCase().indexOf("clips.twitch.tv") != -1 ){
+      		vidID = url.substr(url.toLowerCase().indexOf("clips.twitch.tv/") + 16);
+
+      		$(theExpand).find(".large-area").html('<div class="large-youtube"><iframe frameborder="0" allowfullscreen="true" src="https://clips.twitch.tv/embed?clip=' + vidID + '&autoplay=true" /></div>');
+
+      		$(theExpand).attr("data-original-type", "twitch");
+			$(theExpand).attr("data-original-data", '//clips.twitch.tv/embed?clip=' + vidID + '&autoplay=true');
 		}
 
 
@@ -1097,27 +1063,25 @@ $('body').on('click','div.content div#siteTable.linklisting > .thing:not(.shine-
 
 
 
-
-
-
-
         //GFYCAT
         else if( url.toLowerCase().indexOf("gfycat.com") != -1 ){
 
+
 	        url = url.split(/[?#]/)[0]; // REMOVES QUERY STRING AND HASH
+
+	        gfyRegex = /([^/]+$)/;
+	        gfyID = gfyRegex.exec(url);
 	        
-	        gfyID = url.substr(url.toLowerCase().indexOf("gfycat.com/") + 11);
-	        
-	        if( gfyID.indexOf(".webm") != -1 || gfyID.indexOf(".gifv") != -1 ){
+	        /*if( gfyID.indexOf(".webm") != -1 || gfyID.indexOf(".gifv") != -1 ){
 		        gfyID = gfyID.substring(0, gfyID.length - 5);
 	        }else if ( gfyID.indexOf(".ogg") != -1 || gfyID.indexOf(".ogv") != -1 || gfyID.indexOf(".mp4") != -1){
 	        	gfyID = gfyID.substring(0, gfyID.length - 4);
-	        }
+	        }*/
             
-			$(theExpand).find('.large-area').html("<div class='large-html5'><video controls preload='auto' autoplay='autoplay' muted='muted' loop='loop' webkit-playsinline ><source src='//fat.gfycat.com/" + gfyID + ".mp4' type='video/mp4' /><source src='//giant.gfycat.com/" + gfyID + ".mp4' type='video/mp4' /><source src='//zippy.gfycat.com/" + gfyID + ".mp4' type='video/mp4' /></video></div>");
+			$(theExpand).find('.large-area').html("<div class='large-youtube'><iframe src='https://gfycat.com/ifr/" + gfyID[1] + "?theme=dark' frameborder='0' scrolling='yes' allowfullscreen /></div>");
 
 			$(theExpand).attr("data-original-type", "gfycat");
-			$(theExpand).attr("data-original-data", gfyID);
+			$(theExpand).attr("data-original-data", gfyID[1]);
 	        
         }
 
@@ -1278,14 +1242,6 @@ $('body').on('click','.thing.link > .child', function(e){
 
 
 
-
-
-
-
-
-
-
-
 $('body').on('click','div.content div#siteTable .thing ul.flat-list', function(e){
 
 	e.stopPropagation();
@@ -1435,12 +1391,6 @@ $('body').on('click','.toggle-child-comments', function(){
 
 
 
-
-
-
-
-
-
 function getCommentAlbumImages( api, target ){
 
 	$.ajax({
@@ -1499,12 +1449,6 @@ function getCommentAlbumImages( api, target ){
     });
 
 }
-
-
-
-
-
-
 
 
 
@@ -1569,17 +1513,9 @@ function replaceExpand(type,data,button){
 
   }else if( type === "album"){
 
-
-
-
     getCommentAlbumImages( data, $(button).parents(".shine-expand") );
 
-
-
-
   }
-
-
 
 
   if( !$(button).hasClass("closecommentmedia") ){
@@ -1589,16 +1525,7 @@ function replaceExpand(type,data,button){
     $('.shine-comment').removeClass("closecommentmedia");
   }
 
-
-
-
 }
-
-
-
-
-
-
 
 
 $('html').not('.shinelight, .shine-list-classic').on('click','.comment-image:not(.closecommentmedia)',function(e){
@@ -1692,18 +1619,6 @@ $('html').not('.shinelight, .shine-list-classic').on('click','.comment-image:not
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 $('body').on('focus','input, textarea', function(){
 	$('html').addClass("disable-shift");
 });
@@ -1728,14 +1643,6 @@ $(document).on('keyup keydown', function(e){
 
 
 
-
-
-
-
-
-
-
-
 function shineHREF(){
 
 	theShinedThings = $('body > .content #siteTable > .thing').not(".shined-thing");
@@ -1751,10 +1658,6 @@ function shineHREF(){
 }
 
 shineHREF();
-
-
-
-
 
 
 // when RES loads new things, run our JS on them

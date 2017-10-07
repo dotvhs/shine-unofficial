@@ -1,0 +1,244 @@
+html.SHINE.res-nightmode.theme-violet .flair, html.SHINE.res-nightmode.theme-violet .linkflairlabel {
+  background: transparent;
+  padding: 0 4px; }
+
+html.SHINE.res-nightmode.theme-violet input[type="text"], html.SHINE.res-nightmode.theme-violet input[type="password"], html.SHINE.res-nightmode.theme-violet .c-form-control {
+  color: rgba(255, 255, 255, 0.9) !important; }
+
+html.SHINE.res-nightmode.theme-violet .sidebox, html.SHINE.res-nightmode.theme-violet .subredditbox, html.SHINE.res-nightmode.theme-violet .subreddit-info, html.SHINE.res-nightmode.theme-violet .raisedbox, html.SHINE.res-nightmode.theme-violet .login-form-side, html.SHINE.res-nightmode.theme-violet .morelink {
+  color: rgba(255, 255, 255, 0.75) !important;
+  border: 0; }
+
+html.SHINE.res-nightmode.theme-violet.shine-list .shine-expand .side-comments button.save, html.SHINE.res-nightmode.theme-violet.shine-grid .shine-expand .side-comments button.save {
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px; }
+
+html.SHINE.res-nightmode.theme-violet.shine-list body > div.content div#siteTable > .thing {
+  transition: all 200ms ease; }
+html.SHINE.res-nightmode.theme-violet.shine-list .shine-expand .toggle-child-comments {
+  color: rgba(255, 255, 255, 0.75) !important; }
+html.SHINE.res-nightmode.theme-violet.shine-list.shine-list-classic .side-comments .shine-comment::after {
+  background-color: transparent !important;
+  transition: all 200ms ease;
+  margin: 0 5px 5px 10px; }
+html.SHINE.res-nightmode.theme-violet body {
+  background-color: transparent;
+  border: 0; }
+  html.SHINE.res-nightmode.theme-violet body .content {
+    background-color: transparent;
+    border: 0; }
+html.SHINE.res-nightmode.theme-violet #header {
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px !important; }
+  html.SHINE.res-nightmode.theme-violet #header ul.tabmenu:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px !important; }
+html.SHINE.res-nightmode.theme-violet div#header-bottom-left {
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px !important; }
+html.SHINE.res-nightmode.theme-violet div#sr-header-area {
+  border-bottom: 0 solid rgba(255, 255, 255, 0.85) !important; }
+  html.SHINE.res-nightmode.theme-violet div#sr-header-area a {
+    color: rgba(255, 255, 255, 0.5) !important; }
+    html.SHINE.res-nightmode.theme-violet div#sr-header-area a#sr-more-link:hover {
+      color: white !important;
+      text-decoration: none !important; }
+html.SHINE.res-nightmode.theme-violet .md {
+  color: rgba(255, 255, 255, 0.9) !important; }
+  html.SHINE.res-nightmode.theme-violet .md del {
+    color: rgba(255, 255, 255, 0.9) !important; }
+  html.SHINE.res-nightmode.theme-violet .md blockquote {
+    color: rgba(255, 255, 255, 0.75) !important;
+    padding: 6px 8px;
+    border-left: 0; }
+html.SHINE.res-nightmode.theme-violet .tagline {
+  color: rgba(255, 255, 255, 0.5) !important; }
+html.SHINE.res-nightmode.theme-violet #header-bottom-right a {
+  color: rgba(255, 255, 255, 0.7); }
+html.SHINE.res-nightmode.theme-violet #header-bottom-right .user .userkarma {
+  color: rgba(255, 255, 255, 0.75); }
+html.SHINE.res-nightmode.theme-violet svg {
+  fill: rgba(255, 255, 255, 0.9); }
+html.SHINE.res-nightmode.theme-violet .arrow {
+  opacity: 0.3; }
+html.SHINE.res-nightmode.theme-violet textarea {
+  color: rgba(255, 255, 255, 0.9) !important; }
+html.SHINE.res-nightmode.theme-violet .sidebox .spacer {
+  margin-top: 0 !important; }
+html.SHINE.res-nightmode.theme-violet .side {
+  background-color: transparent;
+  border: 0; }
+  html.SHINE.res-nightmode.theme-violet .side .linkinfo {
+    margin-top: 0 !important; }
+  html.SHINE.res-nightmode.theme-violet .side .leavemoderator {
+    background-color: transparent;
+    border: 0; }
+  html.SHINE.res-nightmode.theme-violet .side .leavecontributor-button {
+    background-color: transparent;
+    border: 0; }
+  html.SHINE.res-nightmode.theme-violet .side .titlebox {
+    background-color: transparent;
+    border: 0; }
+    html.SHINE.res-nightmode.theme-violet .side .titlebox .flairtoggle {
+      background-color: transparent;
+      border: 0; }
+    html.SHINE.res-nightmode.theme-violet .side .titlebox form.flairtoggle {
+      background: transparent; }
+  html.SHINE.res-nightmode.theme-violet .side .spacer .title {
+    margin-top: 20px; }
+  html.SHINE.res-nightmode.theme-violet .side .spacer .titlebox .redditname {
+    background-color: transparent;
+    border: 0; }
+  html.SHINE.res-nightmode.theme-violet .side .md ol {
+    background: transparent; }
+  html.SHINE.res-nightmode.theme-violet .side .md ul {
+    background: transparent; }
+  html.SHINE.res-nightmode.theme-violet .side .usertext-body .md ol {
+    background-color: transparent;
+    border: 0; }
+    html.SHINE.res-nightmode.theme-violet .side .usertext-body .md ol ol {
+      background-color: transparent;
+      border: 0; }
+      html.SHINE.res-nightmode.theme-violet .side .usertext-body .md ol ol li {
+        background-color: transparent;
+        border: 0; }
+  html.SHINE.res-nightmode.theme-violet .side .recommend-box .rec-item {
+    background-color: transparent;
+    border: 0; }
+html.SHINE.res-nightmode.theme-violet .nsfw-stamp {
+  color: #bf4040; }
+  html.SHINE.res-nightmode.theme-violet .nsfw-stamp acronym {
+    color: #bf4040; }
+html.SHINE.res-nightmode.theme-violet .RESCloseButton {
+  border: 0; }
+html.SHINE.res-nightmode.theme-violet .read-next {
+  border: 0; }
+html.SHINE.res-nightmode.theme-violet .drop-choices {
+  border: 0; }
+html.SHINE.res-nightmode.theme-violet .modal-body {
+  background-color: transparent;
+  border: 0; }
+html.SHINE.res-nightmode.theme-violet .thing .title {
+  color: rgba(255, 255, 255, 0.9) !important; }
+  html.SHINE.res-nightmode.theme-violet .thing .title:visited {
+    color: rgba(255, 255, 255, 0.7) !important; }
+html.SHINE.res-nightmode.theme-violet.show-sidebar .side {
+  color: rgba(255, 255, 255, 0.75); }
+  html.SHINE.res-nightmode.theme-violet.show-sidebar .side .md {
+    color: rgba(255, 255, 255, 0.7); }
+  html.SHINE.res-nightmode.theme-violet.show-sidebar .side a.reddit-link-title {
+    color: rgba(255, 255, 255, 0.7) !important; }
+html.SHINE.res-nightmode.theme-violet .sidecontentbox .content {
+  border: 0 !important;
+  background: transparent !important; }
+html.SHINE.res-nightmode.theme-violet .link .usertext-body .md {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 0 solid #336699;
+  border-radius: 0;
+  padding: 10px 0; }
+html.SHINE.res-nightmode.theme-violet .entry .buttons li a {
+  color: rgba(255, 255, 255, 0.5) !important; }
+html.SHINE.res-nightmode.theme-violet .trending-subreddits strong {
+  color: rgba(255, 255, 255, 0.5) !important; }
+html.SHINE.res-nightmode.theme-violet .message.new > .entry {
+  border: 0; }
+html.SHINE.res-nightmode.theme-violet .icon-menu a {
+  background-color: transparent;
+  border: 0; }
+html.SHINE.res-nightmode.theme-violet .modactionlisting table * {
+  background-color: transparent;
+  border: 0; }
+html.SHINE.res-nightmode.theme-violet .fancy-toggle-button a {
+  color: white !important; }
+html.SHINE.res-nightmode.theme-violet .dropdown.srdrop .selected {
+  color: rgba(255, 255, 255, 0.75); }
+html.SHINE.res-nightmode.theme-violet .trophy-area .content {
+  background: transparent; }
+html.SHINE.res-nightmode.theme-violet .tagline a.moderator {
+  color: white !important; }
+html.SHINE.res-nightmode.theme-violet .tagline a.submitter {
+  color: white !important; }
+html.SHINE.res-nightmode.theme-violet .tagline a.admin {
+  color: white !important; }
+html.SHINE.shine-grid body > .content #siteTable .thing {
+  transition: all 200ms ease; }
+
+html.SHINE.res-nightmode.theme-violet .flair, html.SHINE.res-nightmode.theme-violet .linkflairlabel {
+  color: #aeadb3;
+  border: 1px solid #86858b; }
+
+html.SHINE.res-nightmode.theme-violet input[type="text"], html.SHINE.res-nightmode.theme-violet input[type="password"], html.SHINE.res-nightmode.theme-violet .c-form-control {
+  background-color: #19181d !important;
+  border-color: rgba(255, 255, 255, 0.1) !important; }
+
+html.SHINE.res-nightmode.theme-violet .sidebox, html.SHINE.res-nightmode.theme-violet .subredditbox, html.SHINE.res-nightmode.theme-violet .subreddit-info, html.SHINE.res-nightmode.theme-violet .raisedbox, html.SHINE.res-nightmode.theme-violet .login-form-side, html.SHINE.res-nightmode.theme-violet .morelink {
+  background: #2c2b31 !important; }
+
+html.SHINE.res-nightmode.theme-violet.shine-list body {
+  background: #19181d !important; }
+  html.SHINE.res-nightmode.theme-violet.shine-list body > div.content div#siteTable > .thing {
+    background: #222127 !important;
+    border-bottom: 1px solid #19181d !important;
+    border-left: 5px solid #222127 !important;
+    border-top: 0 !important;
+    border-right: 0 !important; }
+  html.SHINE.res-nightmode.theme-violet.shine-list body > div.content div#siteTable.res-ner-listing > .thing:hover {
+    background: #2c2b31 !important;
+    border-left: 5px solid #2c2b31 !important; }
+html.SHINE.res-nightmode.theme-violet.shine-list .shine-expand {
+  background: #222127 !important; }
+  html.SHINE.res-nightmode.theme-violet.shine-list .shine-expand .toggle-child-comments {
+    background: #2c2b31 !important; }
+html.SHINE.res-nightmode.theme-violet.shine-list .side-comments {
+  background: #222127 !important; }
+html.SHINE.res-nightmode.theme-violet.shine-list.shine-list-classic .side-comments .shine-comment::after {
+  color: #7b7c81 !important;
+  border: 1px solid #494a4f; }
+html.SHINE.res-nightmode.theme-violet body {
+  background: #19181d !important; }
+  html.SHINE.res-nightmode.theme-violet body > .content {
+    background: #19181d !important; }
+html.SHINE.res-nightmode.theme-violet #header {
+  background: #222127 !important; }
+  html.SHINE.res-nightmode.theme-violet #header ul.tabmenu {
+    background: #222127 !important; }
+html.SHINE.res-nightmode.theme-violet div#header-bottom-left {
+  background: #222127 !important; }
+html.SHINE.res-nightmode.theme-violet div#sr-header-area {
+  background: #222127 !important;
+  background: #222127 !important; }
+html.SHINE.res-nightmode.theme-violet .md blockquote {
+  background: #2c2b31 !important; }
+html.SHINE.res-nightmode.theme-violet a#sr-more-link {
+  background: #19181d;
+  border-left: 1px solid #222127; }
+html.SHINE.res-nightmode.theme-violet .comment .child {
+  border-left: 1px solid rgba(255, 255, 255, 0.1); }
+html.SHINE.res-nightmode.theme-violet .comment .showreplies {
+  border-left: 1px solid rgba(255, 255, 255, 0.1); }
+html.SHINE.res-nightmode.theme-violet textarea {
+  background-color: #19181d !important;
+  border-color: rgba(255, 255, 255, 0.1) !important; }
+html.SHINE.res-nightmode.theme-violet .sidebox .spacer {
+  background: rgba(25, 24, 29, 0.3) !important; }
+html.SHINE.res-nightmode.theme-violet .side .linkinfo {
+  background: rgba(25, 24, 29, 0.3) !important; }
+html.SHINE.res-nightmode.theme-violet .RESCloseButton {
+  background-color: #222127 !important; }
+html.SHINE.res-nightmode.theme-violet .read-next {
+  background-color: #222127 !important; }
+html.SHINE.res-nightmode.theme-violet .drop-choices {
+  background-color: #222127 !important; }
+html.SHINE.res-nightmode.theme-violet.show-sidebar .side {
+  background: #222127; }
+html.SHINE.res-nightmode.theme-violet.shine-default .panestack-title {
+  border-bottom: 1px solid #222127; }
+html.SHINE.res-nightmode.theme-violet .message.new > .entry {
+  background-color: #222127 !important; }
+html.SHINE.res-nightmode.theme-violet.shine-grid body > .content #siteTable .thing {
+  background: #222127 !important; }
+  html.SHINE.res-nightmode.theme-violet.shine-grid body > .content #siteTable .thing:hover {
+    background: #2c2b31 !important; }
+html.SHINE.res-nightmode.theme-violet .res-nightmode #progressIndicator {
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
+  color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(34, 33, 39, 0.7);
+  border-color: rgba(34, 33, 39, 0.4); }

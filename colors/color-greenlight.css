@@ -1,0 +1,35 @@
+html.SHINE.res-nightmode.color-greenlight.shine-list .shine-expand .side-comments button.save, html.SHINE.res-nightmode.color-greenlight.shine-grid .shine-expand .side-comments button.save {
+  background: #8bc34a !important; }
+
+html.SHINE.res-nightmode.color-greenlight.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
+  border-left: 5px solid #8bc34a !important; }
+  html.SHINE.res-nightmode.color-greenlight.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
+    border-left: 5px solid #8bc34a !important; }
+html.SHINE.res-nightmode.color-greenlight.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
+  color: #8bc34a !important; }
+html.SHINE.res-nightmode.color-greenlight.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
+  border: 1px solid #8bc34a;
+  color: #8bc34a !important; }
+html.SHINE.res-nightmode.color-greenlight div#sr-header-area a#sr-more-link:hover {
+  background: #8bc34a !important; }
+html.SHINE.res-nightmode.color-greenlight .md a {
+  color: #8bc34a; }
+html.SHINE.res-nightmode.color-greenlight .tagline a {
+  color: #8bc34a !important; }
+html.SHINE.res-nightmode.color-greenlight a {
+  color: #8bc34a !important; }
+html.SHINE.res-nightmode.color-greenlight .search-result-meta a {
+  color: #8bc34a !important; }
+html.SHINE.res-nightmode.color-greenlight .menuarea .dropdown.lightdrop .selected {
+  color: #8bc34a; }
+html.SHINE.res-nightmode.color-greenlight .shine-nav .shine-navicon {
+  background-color: #558B2F;
+  transition: background-color 200ms; }
+html.SHINE.res-nightmode.color-greenlight .res-nightmode #progressIndicator h2 {
+  color: #8bc34a; }
+html.SHINE.res-nightmode.color-greenlight .res-nightmode #progressIndicator .RESLoadingSpinner {
+  color: #8bc34a; }
+html.SHINE .colorselect label.greenlight .button span {
+  background-color: #8bc34a; }
+html.SHINE .colorselect label.greenlight .button span.right {
+  background-color: #558B2F; }

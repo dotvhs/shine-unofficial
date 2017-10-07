@@ -72,7 +72,7 @@ html.SHINE.shine-list body > .content #siteTable .thing.link > .child {
     top: 50%;
     transform: translate3d(0,-50%,0);
     box-sizing: border-box;
-    background:url('chrome-extension://__MSG_@@extension_id__/newtab.svg') no-repeat center center;
+    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItMjkwIDM4OCAxOCAxOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtMjkwIDM4OCAxOCAxODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0tMjc0LDQwNGgtMTR2LTE0aDd2LTJoLTdjLTEuMSwwLTIsMC45LTIsMnYxNGMwLDEuMSwwLjksMiwyLDJoMTRjMS4xLDAsMi0wLjksMi0ydi03aC0yVjQwNHogTS0yNzksMzg4djJoMy42bC05LjgsOS44bDEuNCwxLjRsOS44LTkuOHYzLjZoMnYtN0gtMjc5eiIvPjwvc3ZnPg==) no-repeat center center;
     background-size:20px auto;
     opacity:.2;
     transition:opacity 300ms ease;
@@ -164,7 +164,7 @@ html.SHINE.shine-list body > .content #siteTable > .thing .arrow.upmod{
     text-indent: 100% !important;
     white-space: nowrap !important;
     overflow: hidden !important;
-    background-image: url('chrome-extension://__MSG_@@extension_id__/upvote.svg') !important;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjIgMjAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIyIDIwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGOEI2MDt9PC9zdHlsZT48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC0xMDM2LjQpIj48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTUuMiwxMDU2LjNINi43di05LjlIMWw5LjktOS45bDkuOSw5LjloLTUuN1YxMDU2LjN6Ii8+PC9nPjwvc3ZnPg==) !important;
     background-repeat:no-repeat !important;
     background-position: center !important;
     width: 15px !important;
@@ -188,7 +188,7 @@ html.SHINE.shine-list body > .content #siteTable > .thing .arrow.downmod{
     text-indent: 100% !important;
     white-space: nowrap !important;
     overflow: hidden !important;
-    background-image: url('chrome-extension://__MSG_@@extension_id__/downvote.svg') !important;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjEuOSAxOS45IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMS45IDE5Ljk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojOTM5M0ZGO308L3N0eWxlPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTEwMzYuNCkiPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02LjcsMTAzNi40aDguNXY5LjloNS43bC05LjksOS45bC05LjktOS45aDUuN1YxMDM2LjR6Ii8+PC9nPjwvc3ZnPg==) !important;
     background-repeat:no-repeat !important;
     background-position: center !important;
     width: 15px !important;
@@ -444,7 +444,7 @@ html.SHINE.shine-list body > div.content div#siteTable.linklisting > .thing.shin
 }
 
 html.SHINE.shine-list body > div.content div#siteTable.linklisting > .thing.shine-prompt-thing a.thumbnail{
-    background:url('chrome-extension://__MSG_@@extension_id__/whiteshinebright.svg') no-repeat center center;
+    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItNTg2IDc3Mi40IDE2IDIxLjMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTU4NiA3NzIuNCAxNiAyMS4zOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGRkZGRjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNLTU3Ni41LDc3Mi40YzAsMCwwLjcsMi42LDAuNyw0LjhjMCwyLjEtMS4zLDMuNy0zLjQsMy43Yy0yLjEsMC0zLjYtMS43LTMuNi0zLjd2LTAuNGMtMiwyLjQtMy4yLDUuNS0zLjIsOC45YzAsNC40LDMuNiw4LDgsOHM4LTMuNiw4LThDLTU3MCw3ODAuMy01NzIuNiw3NzUuNS01NzYuNSw3NzIuNHogTS01NzguMyw3OTAuN2MtMS44LDAtMy4yLTEuNC0zLjItMy4xYzAtMS42LDEuMS0yLjgsMi44LTMuMWMxLjgtMC40LDMuNi0xLjIsNC42LTIuNmMwLjQsMS4zLDAuNiwyLjcsMC42LDRDLTU3My41LDc4OC42LTU3NS42LDc5MC43LTU3OC4zLDc5MC43eiIvPjwvc3ZnPg==) no-repeat center center;
     background-size:30px auto;
 }
 
@@ -488,6 +488,6 @@ html.SHINE.shine-list.res-nightmode body > div.content .side-comments div#siteTa
 }
 
 html.SHINE.shine-list.res-nightmode body > .content #siteTable .thing.link > .child {
-    background:url('chrome-extension://__MSG_@@extension_id__/night-newtab.svg') no-repeat center center;
+    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItMjkwIDM4OCAxOCAxOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtMjkwIDM4OCAxOCAxODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTS0yNzQsNDA0aC0xNHYtMTRoN3YtMmgtN2MtMS4xLDAtMiwwLjktMiwydjE0YzAsMS4xLDAuOSwyLDIsMmgxNGMxLjEsMCwyLTAuOSwyLTJ2LTdoLTJWNDA0eiBNLTI3OSwzODh2MmgzLjZsLTkuOCw5LjhsMS40LDEuNGw5LjgtOS44djMuNmgydi03SC0yNzl6Ii8+PC9zdmc+) no-repeat center center;
     background-size:20px auto;
 }
