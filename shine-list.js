@@ -872,7 +872,7 @@ $('body').on('click','div.content div#siteTable.linklisting > .thing:not(.shine-
 
 			// this is any other image
 
-			url = url.split(/[?#]/)[0]; // REMOVES QUERY STRING AND HASH
+			// url = url.split(/[?#]/)[0]; // REMOVES QUERY STRING AND HASH
 			
 			$(theExpand).find('.large-area').html('<div class="large-image" style="background-image:url(' + url + ');"></div>');
 
