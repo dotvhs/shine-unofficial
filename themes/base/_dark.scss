@@ -2,11 +2,11 @@ $white: rgb(255, 255, 255);
 $black: rgb(0, 0, 0);
 
 $color_gray_approx: rgba($white, .5); 
-$color_mountain_mist_approx: rgba($white, .7);
 $color_nobel_approx: rgba($white, .75);
 $color_quill_gray_approx: rgba($white, .8);
 $color_alto_approx: rgba($white, .85);
-$color_gallery_approx: rgba($white, .9);
+$color_gallery_approx: mix($color_bg_darker, $white, 10%);
+$color_mountain_mist_approx: mix($color_bg_darker, $white, 50%);
 
 $color_azure_approx: rgb(51, 102, 153);
 
@@ -254,7 +254,7 @@ html.SHINE {
 			border: 0;
 		}
 		.thing .title {
-			color: $color_gallery_approx !important;
+			color: $color_gallery_approx;
 			&:visited {
 				color: $color_mountain_mist_approx !important;
 			}
@@ -265,7 +265,7 @@ html.SHINE {
 				color: $color_mountain_mist_approx;
 			}
 			a.reddit-link-title {
-				color: $color_mountain_mist_approx !important;
+				color: $color_mountain_mist_approx;
 			}
 		}
 		.sidecontentbox .content {
@@ -326,5 +326,10 @@ html.SHINE {
 	&.shine-grid body > .content #siteTable .thing {
 		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
 		transition: all 200ms ease;
+	}
+	.themeselect label.#{$themename} .foreground {
+    	span {
+    		color: $color_gallery_approx;
+    	}
 	}
 }

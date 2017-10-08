@@ -3,7 +3,7 @@ html.SHINE.res-nightmode.theme-black .flair, html.SHINE.res-nightmode.theme-blac
   padding: 0 4px; }
 
 html.SHINE.res-nightmode.theme-black input[type="text"], html.SHINE.res-nightmode.theme-black input[type="password"], html.SHINE.res-nightmode.theme-black .c-form-control {
-  color: rgba(255, 255, 255, 0.9) !important; }
+  color: #e6e6e6 !important; }
 
 html.SHINE.res-nightmode.theme-black .sidebox, html.SHINE.res-nightmode.theme-black .subredditbox, html.SHINE.res-nightmode.theme-black .subreddit-info, html.SHINE.res-nightmode.theme-black .raisedbox, html.SHINE.res-nightmode.theme-black .login-form-side, html.SHINE.res-nightmode.theme-black .morelink {
   color: rgba(255, 255, 255, 0.75) !important;
@@ -41,9 +41,9 @@ html.SHINE.res-nightmode.theme-black div#sr-header-area {
       color: white !important;
       text-decoration: none !important; }
 html.SHINE.res-nightmode.theme-black .md {
-  color: rgba(255, 255, 255, 0.9) !important; }
+  color: #e6e6e6 !important; }
   html.SHINE.res-nightmode.theme-black .md del {
-    color: rgba(255, 255, 255, 0.9) !important; }
+    color: #e6e6e6 !important; }
   html.SHINE.res-nightmode.theme-black .md blockquote {
     color: rgba(255, 255, 255, 0.75) !important;
     padding: 6px 8px;
@@ -51,15 +51,15 @@ html.SHINE.res-nightmode.theme-black .md {
 html.SHINE.res-nightmode.theme-black .tagline {
   color: rgba(255, 255, 255, 0.5) !important; }
 html.SHINE.res-nightmode.theme-black #header-bottom-right a {
-  color: rgba(255, 255, 255, 0.7); }
+  color: gray; }
 html.SHINE.res-nightmode.theme-black #header-bottom-right .user .userkarma {
   color: rgba(255, 255, 255, 0.75); }
 html.SHINE.res-nightmode.theme-black svg {
-  fill: rgba(255, 255, 255, 0.9); }
+  fill: #e6e6e6; }
 html.SHINE.res-nightmode.theme-black .arrow {
   opacity: 0.3; }
 html.SHINE.res-nightmode.theme-black textarea {
-  color: rgba(255, 255, 255, 0.9) !important; }
+  color: #e6e6e6 !important; }
 html.SHINE.res-nightmode.theme-black .sidebox .spacer {
   margin-top: 0 !important; }
 html.SHINE.res-nightmode.theme-black .side {
@@ -116,15 +116,15 @@ html.SHINE.res-nightmode.theme-black .modal-body {
   background-color: transparent;
   border: 0; }
 html.SHINE.res-nightmode.theme-black .thing .title {
-  color: rgba(255, 255, 255, 0.9) !important; }
+  color: #e6e6e6; }
   html.SHINE.res-nightmode.theme-black .thing .title:visited {
-    color: rgba(255, 255, 255, 0.7) !important; }
+    color: gray !important; }
 html.SHINE.res-nightmode.theme-black.show-sidebar .side {
   color: rgba(255, 255, 255, 0.75); }
   html.SHINE.res-nightmode.theme-black.show-sidebar .side .md {
-    color: rgba(255, 255, 255, 0.7); }
+    color: gray; }
   html.SHINE.res-nightmode.theme-black.show-sidebar .side a.reddit-link-title {
-    color: rgba(255, 255, 255, 0.7) !important; }
+    color: gray; }
 html.SHINE.res-nightmode.theme-black .sidecontentbox .content {
   border: 0 !important;
   background: transparent !important; }
@@ -160,6 +160,8 @@ html.SHINE.res-nightmode.theme-black .tagline a.admin {
   color: white !important; }
 html.SHINE.shine-grid body > .content #siteTable .thing {
   transition: all 200ms ease; }
+html.SHINE .themeselect label.black .foreground span {
+  color: #e6e6e6; }
 
 html.SHINE.res-nightmode.theme-black .flair, html.SHINE.res-nightmode.theme-black .linkflairlabel {
   color: #939393;
@@ -176,7 +178,7 @@ html.SHINE.res-nightmode.theme-black.shine-list body {
   background: black !important; }
   html.SHINE.res-nightmode.theme-black.shine-list body > div.content div#siteTable > .thing {
     background: black !important;
-    border-bottom: 1px solid black !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
     border-left: 5px solid black !important;
     border-top: 0 !important;
     border-right: 0 !important; }
@@ -242,3 +244,9 @@ html.SHINE.res-nightmode.theme-black .res-nightmode #progressIndicator {
   color: rgba(255, 255, 255, 0.4);
   background-color: rgba(0, 0, 0, 0.7);
   border-color: rgba(0, 0, 0, 0.4); }
+html.SHINE .themeselect label.black .foreground {
+  background-color: black; }
+  html.SHINE .themeselect label.black .foreground .background {
+    background-color: black; }
+  html.SHINE .themeselect label.black .foreground .secondary {
+    background-color: #0c0c0c; }

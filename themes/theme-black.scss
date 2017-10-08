@@ -12,6 +12,8 @@ $color_bg_shinecomment: rgb(97, 97, 97);
 $color_bg_shinecomment_border: rgb(97, 97, 97);
 $color_bg_textfield_border: rgba(255,255,255, .1);
 
+$color_row_bottom_border: $color_bg_textfield_border;
+
 
 @import "base/dark";
 

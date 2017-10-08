@@ -17,7 +17,7 @@ html.SHINE.res-nightmode.color-greenlight .md a {
 html.SHINE.res-nightmode.color-greenlight .tagline a {
   color: #8bc34a !important; }
 html.SHINE.res-nightmode.color-greenlight a {
-  color: #8bc34a !important; }
+  color: #8bc34a; }
 html.SHINE.res-nightmode.color-greenlight .search-result-meta a {
   color: #8bc34a !important; }
 html.SHINE.res-nightmode.color-greenlight .menuarea .dropdown.lightdrop .selected {
@@ -29,7 +29,9 @@ html.SHINE.res-nightmode.color-greenlight .res-nightmode #progressIndicator h2 {
   color: #8bc34a; }
 html.SHINE.res-nightmode.color-greenlight .res-nightmode #progressIndicator .RESLoadingSpinner {
   color: #8bc34a; }
+html.SHINE.res-nightmode.color-greenlight .themeselect input:checked ~ .foreground {
+  border: 3px solid #8bc34a; }
+html.SHINE.res-nightmode.color-greenlight .themeselect input:checked ~ .theme-name {
+  color: #8bc34a; }
 html.SHINE .colorselect label.greenlight .button span {
   background-color: #8bc34a; }
-html.SHINE .colorselect label.greenlight .button span.right {
-  background-color: #558B2F; }

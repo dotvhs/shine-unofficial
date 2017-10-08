@@ -1897,3 +1897,107 @@ html.SHINE .colorselect label {
 html.SHINE .colorselect .button:hover span {
     padding: 5px !important;
 }
+
+
+
+html.SHINE .themeselect .foreground {
+    display: inline-block;
+    width: 120px;
+    height: 80px;
+    position: relative;
+    border: 3px solid #e6e6e6;
+}
+
+html.SHINE .themeselect .foreground span {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 80px;
+    font-size: 21px;
+    color: white;
+    font-weight: 400;
+}
+
+html.SHINE .themeselect .background {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+html.SHINE .themeselect .secondary {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+html.SHINE .themeselect label {
+    display: inline-block;
+    width: 126px;
+    margin-right: 16px;
+    margin-bottom: 20px;
+}
+
+html.SHINE .themeselect label:nth-child(3n+3) {
+    margin-right: 0px;
+}
+
+html.SHINE .themeselect label:hover {
+    cursor: pointer;
+}
+
+html.SHINE .themeselect label input {
+    visibility: hidden;
+    position: absolute;
+}
+
+html.SHINE .themeselect .theme-name {
+    color: black;
+}
+
+html.SHINE .themeselect label.legacy-white .foreground {
+    background-color: #fff;
+}
+
+html.SHINE .themeselect label.legacy-white .foreground .background {
+    background-color: #f4f4f4;
+}
+
+html.SHINE .themeselect label.legacy-white .foreground .secondary {
+    background-color: #f4f4f4;
+}
+
+html.SHINE .themeselect label.legacy-white .foreground span {
+    color: #0000ff;
+}
+
+.themeselect label.legacy-white input:checked ~ .foreground {
+    border: 3px solid rgb(255, 103, 0);
+}
+
+.themeselect label.legacy-white input:checked ~ .theme-name {
+    color: rgb(255, 103, 0);
+}
+
+html.SHINE .themeselect label.legacy-night .foreground {
+    background-color: #000;
+}
+
+html.SHINE .themeselect label.legacy-night .foreground .background {
+    background-color: #333333;
+}
+
+html.SHINE .themeselect label.legacy-night .foreground .secondary {
+    background-color: #333333;
+}
+
+html.SHINE .themeselect label.legacy-night .foreground span {
+    color: #3577a1;
+}

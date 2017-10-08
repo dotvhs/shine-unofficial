@@ -3,7 +3,7 @@ html.SHINE.res-nightmode.theme-material .flair, html.SHINE.res-nightmode.theme-m
   padding: 0 4px; }
 
 html.SHINE.res-nightmode.theme-material input[type="text"], html.SHINE.res-nightmode.theme-material input[type="password"], html.SHINE.res-nightmode.theme-material .c-form-control {
-  color: rgba(255, 255, 255, 0.9) !important; }
+  color: #e9ebeb !important; }
 
 html.SHINE.res-nightmode.theme-material .sidebox, html.SHINE.res-nightmode.theme-material .subredditbox, html.SHINE.res-nightmode.theme-material .subreddit-info, html.SHINE.res-nightmode.theme-material .raisedbox, html.SHINE.res-nightmode.theme-material .login-form-side, html.SHINE.res-nightmode.theme-material .morelink {
   color: rgba(255, 255, 255, 0.75) !important;
@@ -41,9 +41,9 @@ html.SHINE.res-nightmode.theme-material div#sr-header-area {
       color: white !important;
       text-decoration: none !important; }
 html.SHINE.res-nightmode.theme-material .md {
-  color: rgba(255, 255, 255, 0.9) !important; }
+  color: #e9ebeb !important; }
   html.SHINE.res-nightmode.theme-material .md del {
-    color: rgba(255, 255, 255, 0.9) !important; }
+    color: #e9ebeb !important; }
   html.SHINE.res-nightmode.theme-material .md blockquote {
     color: rgba(255, 255, 255, 0.75) !important;
     padding: 6px 8px;
@@ -51,15 +51,15 @@ html.SHINE.res-nightmode.theme-material .md {
 html.SHINE.res-nightmode.theme-material .tagline {
   color: rgba(255, 255, 255, 0.5) !important; }
 html.SHINE.res-nightmode.theme-material #header-bottom-right a {
-  color: rgba(255, 255, 255, 0.7); }
+  color: #93999c; }
 html.SHINE.res-nightmode.theme-material #header-bottom-right .user .userkarma {
   color: rgba(255, 255, 255, 0.75); }
 html.SHINE.res-nightmode.theme-material svg {
-  fill: rgba(255, 255, 255, 0.9); }
+  fill: #e9ebeb; }
 html.SHINE.res-nightmode.theme-material .arrow {
   opacity: 0.3; }
 html.SHINE.res-nightmode.theme-material textarea {
-  color: rgba(255, 255, 255, 0.9) !important; }
+  color: #e9ebeb !important; }
 html.SHINE.res-nightmode.theme-material .sidebox .spacer {
   margin-top: 0 !important; }
 html.SHINE.res-nightmode.theme-material .side {
@@ -116,15 +116,15 @@ html.SHINE.res-nightmode.theme-material .modal-body {
   background-color: transparent;
   border: 0; }
 html.SHINE.res-nightmode.theme-material .thing .title {
-  color: rgba(255, 255, 255, 0.9) !important; }
+  color: #e9ebeb; }
   html.SHINE.res-nightmode.theme-material .thing .title:visited {
-    color: rgba(255, 255, 255, 0.7) !important; }
+    color: #93999c !important; }
 html.SHINE.res-nightmode.theme-material.show-sidebar .side {
   color: rgba(255, 255, 255, 0.75); }
   html.SHINE.res-nightmode.theme-material.show-sidebar .side .md {
-    color: rgba(255, 255, 255, 0.7); }
+    color: #93999c; }
   html.SHINE.res-nightmode.theme-material.show-sidebar .side a.reddit-link-title {
-    color: rgba(255, 255, 255, 0.7) !important; }
+    color: #93999c; }
 html.SHINE.res-nightmode.theme-material .sidecontentbox .content {
   border: 0 !important;
   background: transparent !important; }
@@ -160,6 +160,8 @@ html.SHINE.res-nightmode.theme-material .tagline a.admin {
   color: white !important; }
 html.SHINE.shine-grid body > .content #siteTable .thing {
   transition: all 200ms ease; }
+html.SHINE .themeselect label.material .foreground span {
+  color: #e9ebeb; }
 
 html.SHINE.res-nightmode.theme-material .flair, html.SHINE.res-nightmode.theme-material .linkflairlabel {
   color: #adaeb3;
@@ -242,3 +244,9 @@ html.SHINE.res-nightmode.theme-material .res-nightmode #progressIndicator {
   color: rgba(255, 255, 255, 0.4);
   background-color: rgba(38, 50, 56, 0.7);
   border-color: rgba(38, 50, 56, 0.4); }
+html.SHINE .themeselect label.material .foreground {
+  background-color: #263238; }
+  html.SHINE .themeselect label.material .foreground .background {
+    background-color: #1e282d; }
+  html.SHINE .themeselect label.material .foreground .secondary {
+    background-color: #2e3c43; }

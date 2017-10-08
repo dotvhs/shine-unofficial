@@ -32,7 +32,7 @@ var defaultSettings = {
 	"global" : {
 		"layout" : "list", 
 		"shortcuts" : "show", 
-		"night" : "off", 
+		"theme" : "legacy-white", 
 		"sidebar" : "", 
 		"multis" : "",
 		"color" : "orange"
@@ -191,22 +191,64 @@ function SHINE(){
 				'</div>'+
 			'</div>'+
 			'<div class="panel panel-theme">'+
-				'<p>The settings below are applied to all Grid View pages.</p>'+
 				'<div class="settings-halves">'+
 					'<div class="settings-column-half">'+
-						'<label for="settings-night-mode">Main Theme</label>'+
+						'<label for="settings-main-theme">Main Theme</label>'+
 						'<span class="settings-small-print">If you have RES, turn it on Night Mode for dark themes too.</span>'+
-						'<select name="settings-night-mode" id="settings-night-mode">'+
-							'<option value="off">White</option>'+
-							'<option value="on">Night</option>'+
-							'<option value="violet">Clean</option>'+
-							'<option value="gray">Pale</option>'+
-							'<option value="material">Material</option>'+
-							'<option value="black">Pure Black</option>'+
-						'</select>'+
+						'<div class="themeselect">'+
+							'<label class="legacy-white">'+
+								'<input type="radio" name="settings-main-theme" value="legacy-white">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Legacy White</div>'+
+							'</label>'+
+							'<label class="legacy-night">'+
+								'<input type="radio" name="settings-main-theme" value="legacy-night">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Legacy Night</div>'+
+							'</label>'+
+							'<label class="violet">'+
+								'<input type="radio" name="settings-main-theme" value="violet">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Clean Dark</div>'+
+							'</label>'+
+							'<label class="gray">'+
+								'<input type="radio" name="settings-main-theme" value="gray">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Pale Gray</div>'+
+							'</label>'+
+							'<label class="black">'+
+								'<input type="radio" name="settings-main-theme" value="black">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Pure Black</div>'+
+							'</label>'+
+							'<label class="material">'+
+								'<input type="radio" name="settings-main-theme" value="material">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Material Dark</div>'+
+							'</label>'+
+						'</div>'+
 					'</div>'+
 					'<div class="settings-column-half">'+
 						'<label for="settings-color-theme">Color Selector</label>'+
+						'<span class="settings-small-print">Pick your color accent.</span>'+
 						'<div class="colorselect">'+
 							'<label class="orange">'+
 							  '<input type="radio" name="settings-color-theme" value="orange">'+
@@ -222,30 +264,6 @@ function SHINE(){
 							'</label>'+
 							'<label class="cyan">'+
 							  '<input type="radio" name="settings-color-theme" value="cyan">'+
-							  '<div class="button"><span></span></div>'+
-							'</label>'+
-						'</div>'+
-					'</div>'+
-				'</div>'+
-				'<div class="settings-halves">'+
-					'<div class="settings-column-half">'+
-						'<label for="settings-night-mode">Main Theme</label>'+
-						'<span class="settings-small-print">If you have RES, turn it on Night Mode for dark themes too.</span>'+
-						'<div class="themeselect">'+
-							'<label class="orange">'+
-							  '<input type="radio" name="settings-main-theme" value="orange">'+
-							  '<div class="button"><span></span></div>'+
-							'</label>'+
-							'<label class="lime">'+
-							  '<input type="radio" name="settings-main-theme" value="lime">'+
-							  '<div class="button"><span></span></div>'+
-							'</label>'+
-							'<label class="greenlight">'+
-							  '<input type="radio" name="settings-main-theme" value="greenlight">'+
-							  '<div class="button"><span></span></div>'+
-							'</label>'+
-							'<label class="cyan">'+
-							  '<input type="radio" name="settings-main-theme" value="cyan">'+
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
 						'</div>'+
@@ -350,7 +368,9 @@ function SHINE(){
 
 	/* NIGHT MODE */
 
-	$('#settings-night-mode').val( currentSettings.global.night );
+	//$('#settings-main-theme').val( currentSettings.global.night );
+
+	$('input[type="radio"][name="settings-main-theme"][value="'+currentSettings.global.theme+'"]').attr('checked', true);
 
 	/* COLOR THEME */
 
@@ -378,14 +398,23 @@ function SHINE(){
 	}
 
 
+	if( currentSettings.global.theme == undefined || currentSettings.global.theme == "" ){
+		if (currentSettings.global.night == "on") {
+			currentSettings.global.theme = "legacy-night";
+		} else {
+			currentSettings.global.theme = "legacy-white";
+		}
+	}
+
+
 	// this adds the nightmode class
-	if( currentSettings.global.night == "on" ){
+	if( currentSettings.global.theme == "legacy-night" ){
 		$('html').addClass("res-nightmode");
 		$('body').addClass("res-nightmode");
-	}else if( currentSettings.global.night == "off" ){
+	}else if( currentSettings.global.theme == "legacy-white" ){
 	}else{
-		$('html').addClass("res-nightmode theme-"+currentSettings.global.night);
-		$('body').addClass("res-nightmode theme-"+currentSettings.global.night);
+		$('html').addClass("res-nightmode theme-"+currentSettings.global.theme);
+		$('body').addClass("res-nightmode theme-"+currentSettings.global.theme);
 	}
 
 
@@ -1121,11 +1150,11 @@ $('body').on('change','#settings-number-columns',function(){
 
 });
 
-$('body').on('change','#settings-night-mode',function(){
+$('body').on('change','input[type=radio][name=settings-main-theme]',function(){
 
-	if( $(this).val() == "on" ){
+	if( $(this).val() == "legacy-dark" ){
 
-		currentSettings.global.night = "on";
+		currentSettings.global.theme = "legacy-dark";
 
 		chrome.storage.local.set({"shine": currentSettings}, function(){
 
@@ -1156,9 +1185,9 @@ $('body').on('change','#settings-night-mode',function(){
 
 		});
 
-	}else if( $(this).val() == "off" ){
+	}else if( $(this).val() == "legacy-white" ){
 
-		currentSettings.global.night = "off";
+		currentSettings.global.theme = "legacy-white";
 
 		chrome.storage.local.set({"shine": currentSettings}, function(){
 
@@ -1184,7 +1213,7 @@ $('body').on('change','#settings-night-mode',function(){
 
 	}else{
 
-		currentSettings.global.night = $(this).val();
+		currentSettings.global.theme = $(this).val();
 
 		chrome.storage.local.set({"shine": currentSettings}, function(){
 
@@ -1204,8 +1233,8 @@ $('body').on('change','#settings-night-mode',function(){
 			    return (className.match (/\btheme-\S+/g) || []).join(' ');
 			});
 
-			$('html').addClass("theme-"+currentSettings.global.night);
-			$('body').addClass("theme-"+currentSettings.global.night);
+			$('html').addClass("theme-"+currentSettings.global.theme);
+			$('body').addClass("theme-"+currentSettings.global.theme);
 
 			saveSettingsMessage();
 

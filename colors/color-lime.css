@@ -17,7 +17,7 @@ html.SHINE.res-nightmode.color-lime .md a {
 html.SHINE.res-nightmode.color-lime .tagline a {
   color: #cddc39 !important; }
 html.SHINE.res-nightmode.color-lime a {
-  color: #cddc39 !important; }
+  color: #cddc39; }
 html.SHINE.res-nightmode.color-lime .search-result-meta a {
   color: #cddc39 !important; }
 html.SHINE.res-nightmode.color-lime .menuarea .dropdown.lightdrop .selected {
@@ -29,7 +29,9 @@ html.SHINE.res-nightmode.color-lime .res-nightmode #progressIndicator h2 {
   color: #cddc39; }
 html.SHINE.res-nightmode.color-lime .res-nightmode #progressIndicator .RESLoadingSpinner {
   color: #cddc39; }
+html.SHINE.res-nightmode.color-lime .themeselect input:checked ~ .foreground {
+  border: 3px solid #cddc39; }
+html.SHINE.res-nightmode.color-lime .themeselect input:checked ~ .theme-name {
+  color: #cddc39; }
 html.SHINE .colorselect label.lime .button span {
   background-color: #cddc39; }
-html.SHINE .colorselect label.lime .button span.right {
-  background-color: #AFB42B; }

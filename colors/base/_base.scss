@@ -53,7 +53,7 @@ html.SHINE {
 			}
 		}
 		a {
-			color: $color_main_accent !important;
+			color: $color_main_accent;
 		}
 		.search-result-meta a {
 			color: $color_main_accent !important;
@@ -76,14 +76,19 @@ html.SHINE {
 				color: $color_main_accent;			
 			}
 		}
+
+		.themeselect input:checked ~ .foreground {
+			border: 3px solid $color_main_accent;
+		}
+
+		.themeselect input:checked ~ .theme-name {
+			color: $color_main_accent;
+		}
 	}
 
 	.colorselect label.#{$colorname} .button {
 		span {
 			background-color: $color_main_accent;
-		}
-		span.right {
-			background-color: $color_fab_color;
 		}
 	}
 }
