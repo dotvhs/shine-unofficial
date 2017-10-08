@@ -412,6 +412,8 @@ function SHINE(){
 		$('html').addClass("res-nightmode");
 		$('body').addClass("res-nightmode");
 	}else if( currentSettings.global.theme == "legacy-white" ){
+		$('html').removeClass("res-nightmode");
+		$('body').removeClass("res-nightmode");
 	}else{
 		$('html').addClass("res-nightmode theme-"+currentSettings.global.theme);
 		$('body').addClass("res-nightmode theme-"+currentSettings.global.theme);
