@@ -33,10 +33,10 @@ html.SHINE {
 						border-left: 5px solid $color_bg_darker !important;
 						border-top: 0 !important;
 						border-right: 0 !important;
-					}
-					&.res-ner-listing > .thing:hover {
-						background: $color_bg_dark !important;
-						border-left: 5px solid $color_bg_dark !important;
+						&:hover {
+							background: $color_bg_dark !important;
+							border-left: 5px solid $color_bg_dark !important;
+						}
 					}
 				}
 			}

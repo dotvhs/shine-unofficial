@@ -182,9 +182,9 @@ html.SHINE.res-nightmode.theme-black.shine-list body {
     border-left: 5px solid black !important;
     border-top: 0 !important;
     border-right: 0 !important; }
-  html.SHINE.res-nightmode.theme-black.shine-list body > div.content div#siteTable.res-ner-listing > .thing:hover {
-    background: #0c0c0c !important;
-    border-left: 5px solid #0c0c0c !important; }
+    html.SHINE.res-nightmode.theme-black.shine-list body > div.content div#siteTable > .thing:hover {
+      background: #0c0c0c !important;
+      border-left: 5px solid #0c0c0c !important; }
 html.SHINE.res-nightmode.theme-black.shine-list .shine-expand {
   background: black !important; }
   html.SHINE.res-nightmode.theme-black.shine-list .shine-expand .toggle-child-comments {

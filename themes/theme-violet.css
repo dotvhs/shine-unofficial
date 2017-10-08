@@ -182,9 +182,9 @@ html.SHINE.res-nightmode.theme-violet.shine-list body {
     border-left: 5px solid #222127 !important;
     border-top: 0 !important;
     border-right: 0 !important; }
-  html.SHINE.res-nightmode.theme-violet.shine-list body > div.content div#siteTable.res-ner-listing > .thing:hover {
-    background: #2c2b31 !important;
-    border-left: 5px solid #2c2b31 !important; }
+    html.SHINE.res-nightmode.theme-violet.shine-list body > div.content div#siteTable > .thing:hover {
+      background: #2c2b31 !important;
+      border-left: 5px solid #2c2b31 !important; }
 html.SHINE.res-nightmode.theme-violet.shine-list .shine-expand {
   background: #222127 !important; }
   html.SHINE.res-nightmode.theme-violet.shine-list .shine-expand .toggle-child-comments {
