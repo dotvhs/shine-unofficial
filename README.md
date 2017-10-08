@@ -1,4 +1,4 @@
-# SHINE for Reddit (unofficial)
+# <img src="https://github.com/JosefNemec/voythas/shine-unofficial/raw/master/icon-128.png" width="32"> SHINE for Reddit (unofficial)
 
 SHINE for Reddit was originally Chrome Extension made by [u/TheTyGoss](https://www.reddit.com/user/thetygoss/posts/). This fork was created right after the extension was sold to another dev who immediately pushed update that was tracking all user activity in the internet.
 
