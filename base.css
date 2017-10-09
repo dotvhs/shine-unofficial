@@ -1833,6 +1833,13 @@ html.SHINE .drop-choices.srdrop.inuse {
     box-sizing: border-box !important;
 }
 
+html.SHINE .dark-background {
+    transition: background 400ms ease;
+}
+
+html.SHINE .dark-background.hide-bg {
+    background: rgba(0,0,0,0);
+}
 
 
 html.SHINE .colorselect {
@@ -1844,7 +1851,7 @@ html.SHINE .colorselect input {
     position: absolute;
 }
 
-html.SHINE .colorselect .button {
+html.SHINE .colorselect label .button {
   display: inline-block;
   position: relative;
   width: 50px;
@@ -1865,24 +1872,12 @@ html.SHINE .colorselect .button span {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
-    transition: ease .3s;
+    transition: ease 200ms;
     border-radius: 100%;
-}
-
-
-html.SHINE .colorselect .button span.left {
-    left: calc(50% - 12.5px);
-    border-bottom-left-radius: 100px;
-    border-top-left-radius: 100px;
-}
-html.SHINE .colorselect .button span.right {
-    left: calc(50% + 12.5px);
-    border-bottom-right-radius: 100px;
-    border-top-right-radius: 100px;
+    border: 3px solid #e6e6e6;
 }
 
 html.SHINE .colorselect input:checked ~ .button span {
@@ -1892,10 +1887,9 @@ html.SHINE .colorselect input:checked ~ .button span {
 
 html.SHINE .colorselect label {
     display: inline-block;
-}
-
-html.SHINE .colorselect .button:hover span {
-    padding: 5px !important;
+    margin: 0px;
+    width: 62px;
+    height: 62px;
 }
 
 

@@ -1,0 +1,20 @@
+$themename: 'blue';
+
+//backgrounds
+$color_bg_darkest: #071019;
+$color_bg_darker: #0a1724;
+$color_bg_dark: #0f2336;
+
+$color_bg_flair: mix($color_bg_dark, #fff, 50%);
+$color_bg_flairborder: mix($color_bg_dark, #fff, 70%);
+
+$color_bg_shinecomment: mix($color_bg_dark, #fff, 95%);
+$color_bg_shinecomment_border: mix($color_bg_dark, #fff, 90%);
+$color_bg_textfield_border: mix($color_bg_dark, #fff, 95%);
+
+$color_row_bottom_border: $color_bg_darkest;
+
+
+@import "base/dark";
+
+@import "base/base";

@@ -42,6 +42,7 @@ html.SHINE {
 			}
 			.shine-expand {
 				background: $color_bg_darker !important;
+				border-bottom: 1px solid $color_bg_dark;
 				.toggle-child-comments {
 					background: $color_bg_dark !important;
 				}

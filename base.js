@@ -244,14 +244,30 @@ function SHINE(){
 								'</div>'+
 								'<div class="theme-name">Material Dark</div>'+
 							'</label>'+
+							'<label class="blue">'+
+								'<input type="radio" name="settings-main-theme" value="blue">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Night Time</div>'+
+							'</label>'+
 						'</div>'+
 					'</div>'+
 					'<div class="settings-column-half">'+
 						'<label for="settings-color-theme">Color Selector</label>'+
 						'<span class="settings-small-print">Pick your color accent.</span>'+
 						'<div class="colorselect">'+
+							'<label class="red">'+
+							  '<input type="radio" name="settings-color-theme" value="red">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
 							'<label class="orange">'+
 							  '<input type="radio" name="settings-color-theme" value="orange">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+							'<label class="amber">'+
+							  '<input type="radio" name="settings-color-theme" value="amber">'+
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
 							'<label class="lime">'+
@@ -264,6 +280,14 @@ function SHINE(){
 							'</label>'+
 							'<label class="cyan">'+
 							  '<input type="radio" name="settings-color-theme" value="cyan">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+							'<label class="blue">'+
+							  '<input type="radio" name="settings-color-theme" value="blue">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+							'<label class="indigo">'+
+							  '<input type="radio" name="settings-color-theme" value="indigo">'+
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
 						'</div>'+
@@ -1311,4 +1335,16 @@ $(window).scroll(function() {
     else {
         $('html').removeClass("shine-scrolling");
     }
+});
+
+
+
+$('body').on('click','.settings-panel .tab',function(){
+
+	if($(".tab-theme").hasClass("tab-active")) {
+		$('.dark-background').addClass("hide-bg")
+	}else{
+		$('.dark-background').removeClass("hide-bg")
+	}
+
 });

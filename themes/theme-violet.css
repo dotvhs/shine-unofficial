@@ -186,7 +186,8 @@ html.SHINE.res-nightmode.theme-violet.shine-list body {
       background: #2c2b31 !important;
       border-left: 5px solid #2c2b31 !important; }
 html.SHINE.res-nightmode.theme-violet.shine-list .shine-expand {
-  background: #222127 !important; }
+  background: #222127 !important;
+  border-bottom: 1px solid #2c2b31; }
   html.SHINE.res-nightmode.theme-violet.shine-list .shine-expand .toggle-child-comments {
     background: #2c2b31 !important; }
 html.SHINE.res-nightmode.theme-violet.shine-list .side-comments {

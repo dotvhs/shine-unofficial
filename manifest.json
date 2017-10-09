@@ -22,16 +22,21 @@
          "themes/theme-violet.css", 
          "themes/theme-gray.css", 
          "themes/theme-black.css", 
+         "themes/theme-blue.css", 
          "themes/theme-material.css"
       ],
       "matches": [ "*://*.reddit.com/*" ],
       "run_at":"document_start"
    }, {
       "css": [ 
-         "colors/color-greenlight.css", 
-         "colors/color-lime.css", 
+         "colors/color-red.css",
          "colors/color-orange.css",
-         "colors/color-cyan.css"
+         "colors/color-amber.css",
+         "colors/color-lime.css", 
+         "colors/color-greenlight.css", 
+         "colors/color-cyan.css",
+         "colors/color-blue.css",
+         "colors/color-indigo.css"
       ],
       "matches": [ "*://*.reddit.com/*" ],
       "run_at":"document_start"

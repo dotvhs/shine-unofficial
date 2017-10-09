@@ -1,38 +1,38 @@
 html.SHINE.color-orange.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
-  border-left: 5px solid #de8e30 !important; }
+  border-left: 5px solid #FF9800 !important; }
   html.SHINE.color-orange.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
-    border-left: 5px solid #de8e30 !important; }
+    border-left: 5px solid #FF9800 !important; }
 html.SHINE.color-orange.res-nightmode.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
-  color: #de8e30 !important; }
+  color: #FF9800 !important; }
 html.SHINE.color-orange.res-nightmode.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
-  border: 1px solid #de8e30;
-  color: #de8e30 !important; }
+  border: 1px solid #FF9800;
+  color: #FF9800 !important; }
 html.SHINE.color-orange.res-nightmode .md a {
-  color: #de8e30; }
+  color: #FF9800; }
 html.SHINE.color-orange.res-nightmode .tagline a {
-  color: #de8e30 !important; }
+  color: #FF9800 !important; }
 html.SHINE.color-orange.res-nightmode a {
-  color: #de8e30; }
+  color: #FF9800; }
 html.SHINE.color-orange.res-nightmode .search-result-meta a {
-  color: #de8e30 !important; }
+  color: #FF9800 !important; }
 html.SHINE.color-orange.res-nightmode .menuarea .dropdown.lightdrop .selected {
-  color: #de8e30; }
+  color: #FF9800; }
 html.SHINE.color-orange.res-nightmode .res-nightmode #progressIndicator h2 {
-  color: #de8e30; }
+  color: #FF9800; }
 html.SHINE.color-orange.res-nightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
-  color: #de8e30; }
+  color: #FF9800; }
 html.SHINE.color-orange .shine-expand .side-comments button.save {
-  background: #de8e30 !important; }
+  background: #FF9800 !important; }
 html.SHINE.color-orange div#sr-header-area a#sr-more-link:hover {
-  background: #de8e30 !important; }
+  background: #FF9800 !important; }
 html.SHINE.color-orange div#sr-header-area li.selected a {
-  color: #de8e30 !important; }
+  color: #FF9800 !important; }
 html.SHINE.color-orange .themeselect input:checked ~ .foreground {
-  border: 3px solid #de8e30; }
+  border: 3px solid #FF9800; }
 html.SHINE.color-orange .themeselect input:checked ~ .theme-name {
-  color: #de8e30; }
+  color: #FF9800; }
 html.SHINE.color-orange .shine-nav .shine-navicon {
-  background-color: #ff6700;
+  background-color: #E65100;
   transition: background-color 200ms; }
 html.SHINE .colorselect label.orange .button span {
-  background-color: #de8e30; }
+  background-color: #FF9800; }

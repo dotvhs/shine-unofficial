@@ -1,0 +1,38 @@
+html.SHINE.color-red.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
+  border-left: 5px solid #F44336 !important; }
+  html.SHINE.color-red.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
+    border-left: 5px solid #F44336 !important; }
+html.SHINE.color-red.res-nightmode.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
+  color: #F44336 !important; }
+html.SHINE.color-red.res-nightmode.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
+  border: 1px solid #F44336;
+  color: #F44336 !important; }
+html.SHINE.color-red.res-nightmode .md a {
+  color: #F44336; }
+html.SHINE.color-red.res-nightmode .tagline a {
+  color: #F44336 !important; }
+html.SHINE.color-red.res-nightmode a {
+  color: #F44336; }
+html.SHINE.color-red.res-nightmode .search-result-meta a {
+  color: #F44336 !important; }
+html.SHINE.color-red.res-nightmode .menuarea .dropdown.lightdrop .selected {
+  color: #F44336; }
+html.SHINE.color-red.res-nightmode .res-nightmode #progressIndicator h2 {
+  color: #F44336; }
+html.SHINE.color-red.res-nightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
+  color: #F44336; }
+html.SHINE.color-red .shine-expand .side-comments button.save {
+  background: #F44336 !important; }
+html.SHINE.color-red div#sr-header-area a#sr-more-link:hover {
+  background: #F44336 !important; }
+html.SHINE.color-red div#sr-header-area li.selected a {
+  color: #F44336 !important; }
+html.SHINE.color-red .themeselect input:checked ~ .foreground {
+  border: 3px solid #F44336; }
+html.SHINE.color-red .themeselect input:checked ~ .theme-name {
+  color: #F44336; }
+html.SHINE.color-red .shine-nav .shine-navicon {
+  background-color: #D32F2F;
+  transition: background-color 200ms; }
+html.SHINE .colorselect label.red .button span {
+  background-color: #F44336; }
