@@ -27,9 +27,9 @@ html.SHINE.color-greenlight div#sr-header-area a#sr-more-link:hover {
   background: #8bc34a !important; }
 html.SHINE.color-greenlight div#sr-header-area li.selected a {
   color: #8bc34a !important; }
-html.SHINE.color-greenlight .themeselect input:checked ~ .foreground {
+html.SHINE.color-greenlight #themeselect input:checked ~ .foreground {
   border: 3px solid #8bc34a; }
-html.SHINE.color-greenlight .themeselect input:checked ~ .theme-name {
+html.SHINE.color-greenlight #themeselect input:checked ~ .theme-name {
   color: #8bc34a; }
 html.SHINE.color-greenlight .shine-nav .shine-navicon {
   background-color: #558B2F;

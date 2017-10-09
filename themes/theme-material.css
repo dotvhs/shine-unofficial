@@ -158,9 +158,11 @@ html.SHINE.res-nightmode.theme-material .tagline a.submitter {
   color: white !important; }
 html.SHINE.res-nightmode.theme-material .tagline a.admin {
   color: white !important; }
+html.SHINE.res-nightmode.theme-material .usertext.grayed .usertext-body div p {
+  color: #93999c; }
 html.SHINE.shine-grid body > .content #siteTable .thing {
   transition: all 200ms ease; }
-html.SHINE .themeselect label.material .foreground span {
+html.SHINE #themeselect label.material .foreground span {
   color: #e9ebeb; }
 
 html.SHINE.res-nightmode.theme-material .flair, html.SHINE.res-nightmode.theme-material .linkflairlabel {
@@ -193,8 +195,8 @@ html.SHINE.res-nightmode.theme-material.shine-list .shine-expand {
 html.SHINE.res-nightmode.theme-material.shine-list .side-comments {
   background: #263238 !important; }
 html.SHINE.res-nightmode.theme-material.shine-list.shine-list-classic .side-comments .shine-comment::after {
-  color: #7c7b81 !important;
-  border: 1px solid #4a494f; }
+  color: #adaeb3 !important;
+  border: 1px solid #85868b; }
 html.SHINE.res-nightmode.theme-material body {
   background: #1e282d !important; }
   html.SHINE.res-nightmode.theme-material body > .content {
@@ -240,14 +242,16 @@ html.SHINE.res-nightmode.theme-material.shine-grid body > .content #siteTable .t
   background: #263238 !important; }
   html.SHINE.res-nightmode.theme-material.shine-grid body > .content #siteTable .thing:hover {
     background: #2e3c43 !important; }
-html.SHINE.res-nightmode.theme-material .res-nightmode #progressIndicator {
+html.SHINE.res-nightmode.theme-material #progressIndicator {
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
   color: rgba(255, 255, 255, 0.4);
   background-color: rgba(38, 50, 56, 0.7);
   border-color: rgba(38, 50, 56, 0.4); }
-html.SHINE .themeselect label.material .foreground {
+html.SHINE.res-nightmode.theme-material .usertext.grayed .usertext-body {
+  background-color: #1e282d; }
+html.SHINE #themeselect label.material .foreground {
   background-color: #263238; }
-  html.SHINE .themeselect label.material .foreground .background {
+  html.SHINE #themeselect label.material .foreground .background {
     background-color: #1e282d; }
-  html.SHINE .themeselect label.material .foreground .secondary {
+  html.SHINE #themeselect label.material .foreground .secondary {
     background-color: #2e3c43; }

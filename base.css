@@ -1851,7 +1851,7 @@ html.SHINE .colorselect input {
     position: absolute;
 }
 
-html.SHINE .colorselect label .button {
+html.SHINE .colorselect label.color .button {
   display: inline-block;
   position: relative;
   width: 50px;
@@ -1885,7 +1885,7 @@ html.SHINE .colorselect input:checked ~ .button span {
     background-size: 24px;
 }
 
-html.SHINE .colorselect label {
+html.SHINE .colorselect label.color {
     display: inline-block;
     margin: 0px;
     width: 62px;
@@ -1894,7 +1894,7 @@ html.SHINE .colorselect label {
 
 
 
-html.SHINE .themeselect .foreground {
+html.SHINE #themeselect .foreground {
     display: inline-block;
     width: 120px;
     height: 80px;
@@ -1902,7 +1902,7 @@ html.SHINE .themeselect .foreground {
     border: 3px solid #e6e6e6;
 }
 
-html.SHINE .themeselect .foreground span {
+html.SHINE #themeselect .foreground span {
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -1916,7 +1916,7 @@ html.SHINE .themeselect .foreground span {
     font-weight: 400;
 }
 
-html.SHINE .themeselect .background {
+html.SHINE #themeselect .background {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -1924,7 +1924,7 @@ html.SHINE .themeselect .background {
     right: 0;
 }
 
-html.SHINE .themeselect .secondary {
+html.SHINE #themeselect .secondary {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -1932,66 +1932,66 @@ html.SHINE .themeselect .secondary {
     right: 0;
 }
 
-html.SHINE .themeselect label {
+html.SHINE #themeselect label {
     display: inline-block;
     width: 126px;
     margin-right: 16px;
     margin-bottom: 20px;
 }
 
-html.SHINE .themeselect label:nth-child(3n+3) {
+html.SHINE #themeselect label:nth-child(3n+3) {
     margin-right: 0px;
 }
 
-html.SHINE .themeselect label:hover {
+html.SHINE #themeselect label:hover {
     cursor: pointer;
 }
 
-html.SHINE .themeselect label input {
+html.SHINE #themeselect label input {
     visibility: hidden;
     position: absolute;
 }
 
-html.SHINE .themeselect .theme-name {
+html.SHINE #themeselect .theme-name {
     color: black;
 }
 
-html.SHINE .themeselect label.legacy-white .foreground {
+html.SHINE #themeselect label.legacy-white .foreground {
     background-color: #fff;
 }
 
-html.SHINE .themeselect label.legacy-white .foreground .background {
+html.SHINE #themeselect label.legacy-white .foreground .background {
     background-color: #f4f4f4;
 }
 
-html.SHINE .themeselect label.legacy-white .foreground .secondary {
+html.SHINE #themeselect label.legacy-white .foreground .secondary {
     background-color: #f4f4f4;
 }
 
-html.SHINE .themeselect label.legacy-white .foreground span {
+html.SHINE #themeselect label.legacy-white .foreground span {
     color: #0000ff;
 }
 
-.themeselect label.legacy-white input:checked ~ .foreground {
+#themeselect label.legacy-white input:checked ~ .foreground {
     border: 3px solid rgb(255, 103, 0);
 }
 
-.themeselect label.legacy-white input:checked ~ .theme-name {
+#themeselect label.legacy-white input:checked ~ .theme-name {
     color: rgb(255, 103, 0);
 }
 
-html.SHINE .themeselect label.legacy-night .foreground {
+html.SHINE #themeselect label.legacy-night .foreground {
     background-color: #000;
 }
 
-html.SHINE .themeselect label.legacy-night .foreground .background {
+html.SHINE #themeselect label.legacy-night .foreground .background {
     background-color: #333333;
 }
 
-html.SHINE .themeselect label.legacy-night .foreground .secondary {
+html.SHINE #themeselect label.legacy-night .foreground .secondary {
     background-color: #333333;
 }
 
-html.SHINE .themeselect label.legacy-night .foreground span {
+html.SHINE #themeselect label.legacy-night .foreground span {
     color: #3577a1;
 }

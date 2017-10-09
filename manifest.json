@@ -22,6 +22,7 @@
          "themes/theme-violet.css", 
          "themes/theme-gray.css", 
          "themes/theme-black.css", 
+         "themes/theme-dark.css", 
          "themes/theme-blue.css", 
          "themes/theme-material.css"
       ],
@@ -34,6 +35,7 @@
          "colors/color-amber.css",
          "colors/color-lime.css", 
          "colors/color-greenlight.css", 
+         "colors/color-teal.css",
          "colors/color-cyan.css",
          "colors/color-blue.css",
          "colors/color-indigo.css"

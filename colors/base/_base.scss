@@ -71,11 +71,11 @@ html.SHINE {
 			}
 		}
 
-		.themeselect input:checked ~ .foreground {
+		#themeselect input:checked ~ .foreground {
 			border: 3px solid $color_main_accent;
 		}
 
-		.themeselect input:checked ~ .theme-name {
+		#themeselect input:checked ~ .theme-name {
 			color: $color_main_accent;
 		}
 

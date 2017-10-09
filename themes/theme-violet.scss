@@ -1,16 +1,14 @@
 $themename: 'violet';
 
 //backgrounds
-$color_bg_darkest: rgb(25, 24, 29);
-$color_bg_darker: rgb(34, 33, 39);
-$color_bg_dark: rgb(44, 43, 49);
+$color_bg_darkest: #212432;
+$color_bg_darker: #292d3e;
+$color_bg_dark: #32374d;
 
-$color_bg_flair: rgb(174, 173, 179);
-$color_bg_flairborder: rgb(134, 133, 139);
+$color_bg_flair: mix($color_bg_dark, #fff, 50%);
+$color_bg_flairborder: mix($color_bg_dark, #fff, 70%);
 
-$color_bg_shinecomment: rgb(123, 124, 129);
-$color_bg_shinecomment_border: rgb(73, 74, 79);
-$color_bg_textfield_border: rgba(255,255,255, .1);
+$color_bg_textfield_border: mix($color_bg_dark, #fff, 95%);
 
 $color_row_bottom_border: $color_bg_darkest;
 

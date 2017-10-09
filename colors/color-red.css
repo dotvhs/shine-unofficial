@@ -27,9 +27,9 @@ html.SHINE.color-red div#sr-header-area a#sr-more-link:hover {
   background: #F44336 !important; }
 html.SHINE.color-red div#sr-header-area li.selected a {
   color: #F44336 !important; }
-html.SHINE.color-red .themeselect input:checked ~ .foreground {
+html.SHINE.color-red #themeselect input:checked ~ .foreground {
   border: 3px solid #F44336; }
-html.SHINE.color-red .themeselect input:checked ~ .theme-name {
+html.SHINE.color-red #themeselect input:checked ~ .theme-name {
   color: #F44336; }
 html.SHINE.color-red .shine-nav .shine-navicon {
   background-color: #D32F2F;

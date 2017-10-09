@@ -195,7 +195,7 @@ function SHINE(){
 					'<div class="settings-column-half">'+
 						'<label for="settings-main-theme">Main Theme</label>'+
 						'<span class="settings-small-print">If you have RES, turn it on Night Mode for dark themes too.</span>'+
-						'<div class="themeselect">'+
+						'<div id="themeselect">'+
 							'<label class="legacy-white">'+
 								'<input type="radio" name="settings-main-theme" value="legacy-white">'+
 								'<div class="foreground"><span>Aa</span>'+
@@ -212,14 +212,6 @@ function SHINE(){
 								'</div>'+
 								'<div class="theme-name">Legacy Night</div>'+
 							'</label>'+
-							'<label class="violet">'+
-								'<input type="radio" name="settings-main-theme" value="violet">'+
-								'<div class="foreground"><span>Aa</span>'+
-									'<div class="background"></div>'+
-									'<div class="secondary"></div>'+
-								'</div>'+
-								'<div class="theme-name">Clean Dark</div>'+
-							'</label>'+
 							'<label class="gray">'+
 								'<input type="radio" name="settings-main-theme" value="gray">'+
 								'<div class="foreground"><span>Aa</span>'+
@@ -228,13 +220,13 @@ function SHINE(){
 								'</div>'+
 								'<div class="theme-name">Pale Gray</div>'+
 							'</label>'+
-							'<label class="black">'+
-								'<input type="radio" name="settings-main-theme" value="black">'+
+							'<label class="violet">'+
+								'<input type="radio" name="settings-main-theme" value="violet">'+
 								'<div class="foreground"><span>Aa</span>'+
 									'<div class="background"></div>'+
 									'<div class="secondary"></div>'+
 								'</div>'+
-								'<div class="theme-name">Pure Black</div>'+
+								'<div class="theme-name">Violet Dark</div>'+
 							'</label>'+
 							'<label class="material">'+
 								'<input type="radio" name="settings-main-theme" value="material">'+
@@ -252,41 +244,61 @@ function SHINE(){
 								'</div>'+
 								'<div class="theme-name">Night Time</div>'+
 							'</label>'+
+							'<label class="dark">'+
+								'<input type="radio" name="settings-main-theme" value="dark">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Mono Dark</div>'+
+							'</label>'+
+							'<label class="black">'+
+								'<input type="radio" name="settings-main-theme" value="black">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Pure Black</div>'+
+							'</label>'+
 						'</div>'+
 					'</div>'+
 					'<div class="settings-column-half">'+
 						'<label for="settings-color-theme">Color Selector</label>'+
 						'<span class="settings-small-print">Pick your color accent.</span>'+
 						'<div class="colorselect">'+
-							'<label class="red">'+
+							'<label class="color red">'+
 							  '<input type="radio" name="settings-color-theme" value="red">'+
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
-							'<label class="orange">'+
+							'<label class="color orange">'+
 							  '<input type="radio" name="settings-color-theme" value="orange">'+
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
-							'<label class="amber">'+
+							'<label class="color amber">'+
 							  '<input type="radio" name="settings-color-theme" value="amber">'+
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
-							'<label class="lime">'+
+							'<label class="color lime">'+
 							  '<input type="radio" name="settings-color-theme" value="lime">'+
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
-							'<label class="greenlight">'+
+							'<label class="color greenlight">'+
 							  '<input type="radio" name="settings-color-theme" value="greenlight">'+
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
-							'<label class="cyan">'+
+							'<label class="color teal">'+
+							  '<input type="radio" name="settings-color-theme" value="teal">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+							'<label class="color cyan">'+
 							  '<input type="radio" name="settings-color-theme" value="cyan">'+
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
-							'<label class="blue">'+
+							'<label class="color blue">'+
 							  '<input type="radio" name="settings-color-theme" value="blue">'+
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
-							'<label class="indigo">'+
+							'<label class="color indigo">'+
 							  '<input type="radio" name="settings-color-theme" value="indigo">'+
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
@@ -1339,12 +1351,19 @@ $(window).scroll(function() {
 
 
 
-$('body').on('click','.settings-panel .tab',function(){
+$('body').on('mouseover','#themeselect',function(){
+	$('.dark-background').addClass("hide-bg");
+});
 
-	if($(".tab-theme").hasClass("tab-active")) {
-		$('.dark-background').addClass("hide-bg")
-	}else{
-		$('.dark-background').removeClass("hide-bg")
-	}
+$('body').on('mouseout','#themeselect',function(){
+	$('.dark-background').removeClass("hide-bg");
+});
 
+
+$('body').on('mouseover','.colorselect',function(){
+	$('.dark-background').addClass("hide-bg");
+});
+
+$('body').on('mouseout','.colorselect',function(){
+	$('.dark-background').removeClass("hide-bg");
 });

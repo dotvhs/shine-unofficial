@@ -27,9 +27,9 @@ html.SHINE.color-amber div#sr-header-area a#sr-more-link:hover {
   background: #FFC107 !important; }
 html.SHINE.color-amber div#sr-header-area li.selected a {
   color: #FFC107 !important; }
-html.SHINE.color-amber .themeselect input:checked ~ .foreground {
+html.SHINE.color-amber #themeselect input:checked ~ .foreground {
   border: 3px solid #FFC107; }
-html.SHINE.color-amber .themeselect input:checked ~ .theme-name {
+html.SHINE.color-amber #themeselect input:checked ~ .theme-name {
   color: #FFC107; }
 html.SHINE.color-amber .shine-nav .shine-navicon {
   background-color: #FFB300;

@@ -27,9 +27,9 @@ html.SHINE.color-orange div#sr-header-area a#sr-more-link:hover {
   background: #FF9800 !important; }
 html.SHINE.color-orange div#sr-header-area li.selected a {
   color: #FF9800 !important; }
-html.SHINE.color-orange .themeselect input:checked ~ .foreground {
+html.SHINE.color-orange #themeselect input:checked ~ .foreground {
   border: 3px solid #FF9800; }
-html.SHINE.color-orange .themeselect input:checked ~ .theme-name {
+html.SHINE.color-orange #themeselect input:checked ~ .theme-name {
   color: #FF9800; }
 html.SHINE.color-orange .shine-nav .shine-navicon {
   background-color: #E65100;
