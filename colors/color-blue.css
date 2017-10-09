@@ -34,5 +34,5 @@ html.SHINE.color-blue #themeselect input:checked ~ .theme-name {
 html.SHINE.color-blue .shine-nav .shine-navicon {
   background-color: #2196F3;
   transition: background-color 200ms; }
-html.SHINE .colorselect label.blue .button span {
+html.SHINE #colorselect label.blue .button span {
   background-color: #42A5F5; }

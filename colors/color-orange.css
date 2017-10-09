@@ -34,5 +34,5 @@ html.SHINE.color-orange #themeselect input:checked ~ .theme-name {
 html.SHINE.color-orange .shine-nav .shine-navicon {
   background-color: #E65100;
   transition: background-color 200ms; }
-html.SHINE .colorselect label.orange .button span {
+html.SHINE #colorselect label.orange .button span {
   background-color: #FF9800; }

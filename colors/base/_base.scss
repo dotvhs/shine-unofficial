@@ -85,7 +85,7 @@ html.SHINE {
 		}
 	}
 
-	.colorselect label.#{$colorname} .button {
+	#colorselect label.#{$colorname} .button {
 		span {
 			background-color: $color_main_accent;
 		}

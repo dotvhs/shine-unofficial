@@ -34,5 +34,5 @@ html.SHINE.color-indigo #themeselect input:checked ~ .theme-name {
 html.SHINE.color-indigo .shine-nav .shine-navicon {
   background-color: #304FFE;
   transition: background-color 200ms; }
-html.SHINE .colorselect label.indigo .button span {
+html.SHINE #colorselect label.indigo .button span {
   background-color: #536DFE; }

@@ -34,5 +34,5 @@ html.SHINE.color-greenlight #themeselect input:checked ~ .theme-name {
 html.SHINE.color-greenlight .shine-nav .shine-navicon {
   background-color: #558B2F;
   transition: background-color 200ms; }
-html.SHINE .colorselect label.greenlight .button span {
+html.SHINE #colorselect label.greenlight .button span {
   background-color: #8bc34a; }

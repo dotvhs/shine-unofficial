@@ -34,5 +34,5 @@ html.SHINE.color-lime #themeselect input:checked ~ .theme-name {
 html.SHINE.color-lime .shine-nav .shine-navicon {
   background-color: #AFB42B;
   transition: background-color 200ms; }
-html.SHINE .colorselect label.lime .button span {
+html.SHINE #colorselect label.lime .button span {
   background-color: #cddc39; }

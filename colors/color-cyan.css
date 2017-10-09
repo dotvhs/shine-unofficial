@@ -34,5 +34,5 @@ html.SHINE.color-cyan #themeselect input:checked ~ .theme-name {
 html.SHINE.color-cyan .shine-nav .shine-navicon {
   background-color: #0097A7;
   transition: background-color 200ms; }
-html.SHINE .colorselect label.cyan .button span {
+html.SHINE #colorselect label.cyan .button span {
   background-color: #00bcd4; }

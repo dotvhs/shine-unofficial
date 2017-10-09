@@ -34,5 +34,5 @@ html.SHINE.color-red #themeselect input:checked ~ .theme-name {
 html.SHINE.color-red .shine-nav .shine-navicon {
   background-color: #D32F2F;
   transition: background-color 200ms; }
-html.SHINE .colorselect label.red .button span {
+html.SHINE #colorselect label.red .button span {
   background-color: #F44336; }

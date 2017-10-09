@@ -1842,16 +1842,16 @@ html.SHINE .dark-background.hide-bg {
 }
 
 
-html.SHINE .colorselect {
+html.SHINE #colorselect {
     /*margin-left: 20px;*/
 }
 
-html.SHINE .colorselect input {
+html.SHINE #colorselect input {
     visibility:hidden;
     position: absolute;
 }
 
-html.SHINE .colorselect label.color .button {
+html.SHINE #colorselect label.color .button {
   display: inline-block;
   position: relative;
   width: 50px;
@@ -1860,7 +1860,7 @@ html.SHINE .colorselect label.color .button {
   cursor: pointer;
 }
 
-html.SHINE .colorselect .button span {
+html.SHINE #colorselect .button span {
     display: block;
     position: absolute;
     width: 50px;
@@ -1880,12 +1880,12 @@ html.SHINE .colorselect .button span {
     border: 3px solid #e6e6e6;
 }
 
-html.SHINE .colorselect input:checked ~ .button span {
+html.SHINE #colorselect input:checked ~ .button span {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI0IDI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGRkZGRjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjAuMywyTDksMTMuNmwtNS4zLTVMMCwxMi4zTDksMjFMMjQsNS43TDIwLjMsMnoiLz48L3N2Zz4=);
     background-size: 24px;
 }
 
-html.SHINE .colorselect label.color {
+html.SHINE #colorselect label.color {
     display: inline-block;
     margin: 0px;
     width: 62px;

@@ -265,7 +265,7 @@ function SHINE(){
 					'<div class="settings-column-half">'+
 						'<label for="settings-color-theme">Color Selector</label>'+
 						'<span class="settings-small-print">Pick your color accent.</span>'+
-						'<div class="colorselect">'+
+						'<div id="colorselect">'+
 							'<label class="color red">'+
 							  '<input type="radio" name="settings-color-theme" value="red">'+
 							  '<div class="button"><span></span></div>'+
@@ -1360,10 +1360,10 @@ $('body').on('mouseout','#themeselect',function(){
 });
 
 
-$('body').on('mouseover','.colorselect',function(){
+$('body').on('mouseover','#colorselect',function(){
 	$('.dark-background').addClass("hide-bg");
 });
 
-$('body').on('mouseout','.colorselect',function(){
+$('body').on('mouseout','#colorselect',function(){
 	$('.dark-background').removeClass("hide-bg");
 });

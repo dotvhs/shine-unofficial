@@ -34,5 +34,5 @@ html.SHINE.color-amber #themeselect input:checked ~ .theme-name {
 html.SHINE.color-amber .shine-nav .shine-navicon {
   background-color: #FFB300;
   transition: background-color 200ms; }
-html.SHINE .colorselect label.amber .button span {
+html.SHINE #colorselect label.amber .button span {
   background-color: #FFC107; }

@@ -34,5 +34,5 @@ html.SHINE.color-teal #themeselect input:checked ~ .theme-name {
 html.SHINE.color-teal .shine-nav .shine-navicon {
   background-color: #00BFA5;
   transition: background-color 200ms; }
-html.SHINE .colorselect label.teal .button span {
+html.SHINE #colorselect label.teal .button span {
   background-color: #1DE9B6; }
