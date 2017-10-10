@@ -142,7 +142,7 @@ function getVimeoThumbnail(vidID, target){
 
         var vimeoThumb = data[0].thumbnail_large;
 
-		    $(target).find('.preview-replace').replaceWith("<div class='preview preview-vimeo' data-url='//player.vimeo.com/video/" + vidID + "?autoplay=1' style='background-image:url(" + vimeoThumb + ")' ></div>");
+		    $(target).find('.preview-replace').replaceWith("<div class='preview preview-vimeo' data-video='//player.vimeo.com/video/" + vidID + "?autoplay=1' style='background-image:url(" + vimeoThumb + ")' ></div>");
 
       },
       error: function(request, status, message) {
@@ -168,7 +168,7 @@ function getTwitchThumbnail(vidID, target){
 
         var twitchThumb = data.thumbnails.medium;
 
-        $(target).find('.preview-replace').replaceWith("<div class='preview preview-vimeo' data-url='//clips.twitch.tv/embed?clip=" + vidID +"?autoplay=true' style='background-image:url(" + twitchThumb + ")'></div>");
+        $(target).find('.preview-replace').replaceWith("<div class='preview preview-youtube' data-video='//clips.twitch.tv/embed?clip=" + vidID +"&autoplay=true' style='background-image:url(" + twitchThumb + ")'></div>");
 
       },
       error: function(request, status, message) {
@@ -177,14 +177,6 @@ function getTwitchThumbnail(vidID, target){
     });
 
 }
-
-
-
-
-
-
-
-
 
 
 
