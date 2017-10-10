@@ -154,6 +154,31 @@ function getVimeoThumbnail(vidID, target){
 }
 
 
+// this gets our clips.twitch.tv thumbnail
+function getTwitchThumbnail(vidID, target){
+
+  $.ajax({
+      url: '//api.twitch.tv/kraken/clips/' + vidID,
+      type: 'GET',
+      headers: {
+       'Client-ID': 'wtf8dir4p97yu2eopunfrukdhs7myx',
+       'Accept': 'application/vnd.twitchtv.v5+json'
+      },
+      success: function(data) {
+
+        var twitchThumb = data.thumbnails.medium;
+
+        $(target).find('.preview-replace').replaceWith("<div class='preview preview-vimeo' data-url='//clips.twitch.tv/embed?clip=" + vidID +"?autoplay=true' style='background-image:url(" + twitchThumb + ")'></div>");
+
+      },
+      error: function(request, status, message) {
+        console.log(message);
+      }
+    });
+
+}
+
+
 
 
 
@@ -871,16 +896,24 @@ function createPreviews(theThings){
 
     //STREAMABLE INTEGRATION BY u/itzblitz94
     else if(url.toLowerCase().indexOf("streamable.com") != -1){
-
       url = url.split(/[?#]/)[0]; // REMOVES QUERY STRING AND HASH
       url = decodeURIComponent(url);
       shortcode = url.substr(url.toLowerCase().indexOf("streamable.com/") + 15);
+
       $(theThings[i]).find(whereToPlace).append("<div style='background-image:url(//cdn-e2.streamable.com/image/"+ shortcode +".jpg)' class='preview preview-youtube' data-video='https://streamable.com/s/" + shortcode + "'></div>");
-
-
     }
 
 
+    //CLIPS.TWITCH.TV INTEGRATION
+    else if( url.toLowerCase().indexOf("clips.twitch.tv") != -1 ){
+          vidID = url.substr(url.toLowerCase().indexOf("clips.twitch.tv/") + 16);
+
+          $(theThings[i]).find(whereToPlace).append("<div class='preview preview-replace'></div>");
+
+          getTwitchThumbnail(vidID,  ".id-" + $(theThings[i]).attr("data-fullname"));
+
+          //$(theThings[i]).find(whereToPlace).append('<div class="preview preview-youtube" data-video="https://clips.twitch.tv/embed?clip=' + vidID + '&autoplay=true"></div>');
+    }
 
 
 
