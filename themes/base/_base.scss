@@ -160,12 +160,26 @@ html.SHINE {
 		.message.new > .entry {
 			background-color: $color_bg_darker !important;
 		}
-		&.shine-grid body > .content #siteTable .thing {
-			background: $color_bg_darker !important;
-			&:hover {
-				background: $color_bg_dark !important;
+		&.shine-grid {
+			body > .content #siteTable .thing {
+				background: $color_bg_darker !important;
+				&:hover {
+					background: $color_bg_dark !important;
+				}
+				.entry ul.flat-list {
+	    			border-top: 1px solid $color_row_bottom_border;
+				}
+			}
+			.shine-expand {
+				.side-comments {
+					background: $color_bg_darker !important;
+				}
+				.toggle-child-comments {
+					background: $color_bg_dark !important;
+				}
 			}
 		}
+
 		#progressIndicator {
     		box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
 		    color: rgba(255,255,255,.4);

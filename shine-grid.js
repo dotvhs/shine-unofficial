@@ -390,6 +390,30 @@ function getRedditText(url, content, target){
 
 }
 
+function getvreddit(url, target){
+
+  $.ajax({
+    url:url,
+    type:'GET',
+    success: function(data){
+
+      if( $(data).filter('meta[property="og:image"]') != undefined  ){
+
+        $(target).find('.preview-replace').replaceWith("<div style='background-image:url(" + $(data).filter('meta[property="og:image"]').attr("content") + ")' class='preview preview-vreddit' data-video='" + $(data).find('a.thumbnail').attr('href') +"' />");
+
+        //$(target).find('.preview-text a').attr("target","_blank");
+
+      }else{
+
+        $(target).find('.preview-replace').remove();
+        $(target).addClass("nopreview");
+
+      }
+
+    }
+  });
+
+}
 
 
 
@@ -905,6 +929,19 @@ function createPreviews(theThings){
           getTwitchThumbnail(vidID,  ".id-" + $(theThings[i]).attr("data-fullname"));
 
           //$(theThings[i]).find(whereToPlace).append('<div class="preview preview-youtube" data-video="https://clips.twitch.tv/embed?clip=' + vidID + '&autoplay=true"></div>');
+    }
+
+
+    //v.redd.it
+    else if( $(theThings[i]).find('span.domain a').html() == "v.redd.it" ){
+      url = $(theThings[i]).find('a.comments').attr("href");
+      url = url.split(/[?#]/)[0]; // REMOVES QUERY STRING AND HASH
+
+      $(theThings[i]).find(whereToPlace).append("<div class='preview preview-replace'></div>");
+
+      getvreddit(url, ".id-" + $(theThings[i]).attr("data-fullname") );
+
+      //$(theThings[i]).find(whereToPlace).append("<div style='background-image:url("+ thumbVReddit +")' class='preview preview-youtube' data-video=''></div>");
     }
 
 
@@ -1445,6 +1482,50 @@ $('body').on('click','.preview-youtube', function(){
 
   $('.shine-expand').attr("data-original-type", "youtube");
   $('.shine-expand').attr("data-original-data", $(this).data("video"));
+
+});
+
+$('body').on('click','.preview-vreddit', function(){
+
+  resetInterfaces();
+
+  var posturl = $(this).parents('.thing').find('a.comments').attr("href");
+
+  $.ajax({
+    url:posturl,
+    type:'GET',
+    success: function(data){
+
+      theContent = $(data).find(".media-preview-content");
+
+      $('.shine-expand').find('.large-youtube').html( theContent );
+      $('.no-constraints-when-pinned').removeAttr('style');
+      $('.reddit-video-player-root').css({
+        'position' : 'absolute',
+        'height' : '100%'
+      });
+    
+    }
+  });
+  
+  // theContent = $.get("//www.reddit.com" + url, function(data) {
+  //   $(data).find(".media-preview-content");
+  // });
+
+  // $('.shine-expand').find('.large-youtube').html(theContent);
+
+  // $('.no-constraints-when-pinned').removeAttr('style');
+  // $('.reddit-video-player-root').css({
+  //   'position' : 'absolute',
+  //   'height' : '100%'
+  // });
+
+  loadSideComments( $('.shine-expand .side-comments'), $(this).parents('.thing').find('a.comments').attr("href") );
+
+  $('html').addClass("expanding expand-youtubes");
+
+      $('.shine-expand').attr("data-original-type", "comments");
+      $('.shine-expand').attr("data-original-data", "comments");
 
 });
 

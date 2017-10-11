@@ -242,6 +242,12 @@ html.SHINE.res-nightmode.theme-violet.shine-grid body > .content #siteTable .thi
   background: #292d3e !important; }
   html.SHINE.res-nightmode.theme-violet.shine-grid body > .content #siteTable .thing:hover {
     background: #32374d !important; }
+  html.SHINE.res-nightmode.theme-violet.shine-grid body > .content #siteTable .thing .entry ul.flat-list {
+    border-top: 1px solid #212432; }
+html.SHINE.res-nightmode.theme-violet.shine-grid .shine-expand .side-comments {
+  background: #292d3e !important; }
+html.SHINE.res-nightmode.theme-violet.shine-grid .shine-expand .toggle-child-comments {
+  background: #32374d !important; }
 html.SHINE.res-nightmode.theme-violet #progressIndicator {
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
   color: rgba(255, 255, 255, 0.4);

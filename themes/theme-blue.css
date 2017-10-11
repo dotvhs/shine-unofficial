@@ -242,6 +242,12 @@ html.SHINE.res-nightmode.theme-blue.shine-grid body > .content #siteTable .thing
   background: #0a1724 !important; }
   html.SHINE.res-nightmode.theme-blue.shine-grid body > .content #siteTable .thing:hover {
     background: #0f2336 !important; }
+  html.SHINE.res-nightmode.theme-blue.shine-grid body > .content #siteTable .thing .entry ul.flat-list {
+    border-top: 1px solid #071019; }
+html.SHINE.res-nightmode.theme-blue.shine-grid .shine-expand .side-comments {
+  background: #0a1724 !important; }
+html.SHINE.res-nightmode.theme-blue.shine-grid .shine-expand .toggle-child-comments {
+  background: #0f2336 !important; }
 html.SHINE.res-nightmode.theme-blue #progressIndicator {
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
   color: rgba(255, 255, 255, 0.4);

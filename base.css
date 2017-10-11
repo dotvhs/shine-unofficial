@@ -126,7 +126,7 @@ html.SHINE #header .layout-switch svg{
     opacity: .25;
     top:0px;
     position: absolute;
-    height:25px;
+    height:24px;
 }
 
 html.SHINE #header .layout-switch svg.grid-switch {
