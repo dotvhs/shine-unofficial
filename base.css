@@ -1995,3 +1995,31 @@ html.SHINE #themeselect label.legacy-night .foreground .secondary {
 html.SHINE #themeselect label.legacy-night .foreground span {
     color: #3577a1;
 }
+
+.thumbnail.spoiler, .thumbnail.nsfw, .thumbnail.default, .thumbnail.image, .thumbnail.self {
+    background-image: none !important;
+    filter: none !important;
+}
+
+.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
+    font-family: 'Material Icons';
+    font-size: 24px;
+    padding: 13px;
+    border-radius: 100%;
+}
+
+.thumbnail.spoiler::before {
+    content: 'visibility';
+}
+.thumbnail.nsfw::before {
+    content: 'warning';
+}
+.thumbnail.default::before {
+    content: 'link';
+}
+.thumbnail.image::before {
+    content: 'photo';
+}
+.thumbnail.self::before {
+    content: 'chat';
+}

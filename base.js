@@ -38,7 +38,7 @@ var defaultSettings = {
 		"color" : "orange"
 	},
 
-    "list" :  {"split" : "6040", "columns" : "one"},
+    "list" :  {"split" : "6040", "columns" : "two"},
 
     "grid" :  {"columns" : "5", "nsfw" : "no", "split" : "6040"},
 
@@ -125,6 +125,8 @@ function SHINE(){
     	'</form>';
 
 	$('body').append(htmlToAdd);
+
+	$('head').append('<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />');
 
 	$('#header').append(''+
 

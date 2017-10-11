@@ -255,6 +255,9 @@ html.SHINE.res-nightmode.theme-material #progressIndicator {
   border-color: rgba(38, 50, 56, 0.4); }
 html.SHINE.res-nightmode.theme-material .usertext.grayed .usertext-body {
   background-color: #1e282d; }
+html.SHINE.res-nightmode.theme-material .thumbnail.spoiler::before, html.SHINE.res-nightmode.theme-material .thumbnail.nsfw::before, html.SHINE.res-nightmode.theme-material .thumbnail.default::before, html.SHINE.res-nightmode.theme-material .thumbnail.image::before, html.SHINE.res-nightmode.theme-material .thumbnail.self::before {
+  color: rgba(255, 255, 255, 0.5) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important; }
 html.SHINE #themeselect label.material .foreground {
   background-color: #263238; }
   html.SHINE #themeselect label.material .foreground .background {

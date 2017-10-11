@@ -34,5 +34,10 @@ html.SHINE.color-cyan #themeselect input:checked ~ .theme-name {
 html.SHINE.color-cyan .shine-nav .shine-navicon {
   background-color: #0097A7;
   transition: background-color 200ms; }
+html.SHINE.color-cyan #header-bottom-right a.message-count {
+  color: white !important;
+  background: #00bcd4; }
+html.SHINE.color-cyan .thumbnail.spoiler::before, html.SHINE.color-cyan .thumbnail.nsfw::before, html.SHINE.color-cyan .thumbnail.default::before, html.SHINE.color-cyan .thumbnail.image::before, html.SHINE.color-cyan .thumbnail.self::before {
+  color: #00bcd4; }
 html.SHINE #colorselect label.cyan .button span {
   background-color: #00bcd4; }

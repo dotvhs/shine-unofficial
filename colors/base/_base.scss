@@ -83,6 +83,14 @@ html.SHINE {
 			background-color: $color_fab_color;
 			transition: background-color 200ms;
 		}
+		#header-bottom-right a.message-count {
+		    color: white !important;
+		    background: $color_main_accent;
+		}
+
+		.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
+		    color: $color_main_accent;
+		}
 	}
 
 	#colorselect label.#{$colorname} .button {

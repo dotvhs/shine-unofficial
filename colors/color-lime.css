@@ -34,5 +34,10 @@ html.SHINE.color-lime #themeselect input:checked ~ .theme-name {
 html.SHINE.color-lime .shine-nav .shine-navicon {
   background-color: #AFB42B;
   transition: background-color 200ms; }
+html.SHINE.color-lime #header-bottom-right a.message-count {
+  color: white !important;
+  background: #cddc39; }
+html.SHINE.color-lime .thumbnail.spoiler::before, html.SHINE.color-lime .thumbnail.nsfw::before, html.SHINE.color-lime .thumbnail.default::before, html.SHINE.color-lime .thumbnail.image::before, html.SHINE.color-lime .thumbnail.self::before {
+  color: #cddc39; }
 html.SHINE #colorselect label.lime .button span {
   background-color: #cddc39; }

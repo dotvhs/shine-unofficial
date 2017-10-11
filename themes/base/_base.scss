@@ -189,6 +189,11 @@ html.SHINE {
 		.usertext.grayed .usertext-body {
 			background-color: $color_bg_darkest;
 		}
+
+		.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
+		    color: $color_posttype !important;
+		    background-color: $color_posttype_bg !important;
+		}
 	}
 	#themeselect label.#{$themename} .foreground {
     	background-color: $color_bg_darker;

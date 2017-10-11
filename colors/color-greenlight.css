@@ -34,5 +34,10 @@ html.SHINE.color-greenlight #themeselect input:checked ~ .theme-name {
 html.SHINE.color-greenlight .shine-nav .shine-navicon {
   background-color: #558B2F;
   transition: background-color 200ms; }
+html.SHINE.color-greenlight #header-bottom-right a.message-count {
+  color: white !important;
+  background: #8bc34a; }
+html.SHINE.color-greenlight .thumbnail.spoiler::before, html.SHINE.color-greenlight .thumbnail.nsfw::before, html.SHINE.color-greenlight .thumbnail.default::before, html.SHINE.color-greenlight .thumbnail.image::before, html.SHINE.color-greenlight .thumbnail.self::before {
+  color: #8bc34a; }
 html.SHINE #colorselect label.greenlight .button span {
   background-color: #8bc34a; }

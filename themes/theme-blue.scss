@@ -10,6 +10,9 @@ $color_bg_flairborder: mix($color_bg_dark, #fff, 70%);
 
 $color_bg_textfield_border: mix($color_bg_dark, #fff, 95%);
 
+$color_posttype: rgba(255,255,255, .5);
+$color_posttype_bg: $color_bg_textfield_border;
+
 $color_row_bottom_border: $color_bg_darkest;
 
 

@@ -34,5 +34,10 @@ html.SHINE.color-amber #themeselect input:checked ~ .theme-name {
 html.SHINE.color-amber .shine-nav .shine-navicon {
   background-color: #FFB300;
   transition: background-color 200ms; }
+html.SHINE.color-amber #header-bottom-right a.message-count {
+  color: white !important;
+  background: #FFC107; }
+html.SHINE.color-amber .thumbnail.spoiler::before, html.SHINE.color-amber .thumbnail.nsfw::before, html.SHINE.color-amber .thumbnail.default::before, html.SHINE.color-amber .thumbnail.image::before, html.SHINE.color-amber .thumbnail.self::before {
+  color: #FFC107; }
 html.SHINE #colorselect label.amber .button span {
   background-color: #FFC107; }
