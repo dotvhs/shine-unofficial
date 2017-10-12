@@ -24,6 +24,7 @@
          "themes/theme-black.css", 
          "themes/theme-dark.css", 
          "themes/theme-blue.css", 
+         "themes/theme-brown.css", 
          "themes/theme-material.css"
       ],
       "matches": [ "*://*.reddit.com/*" ],

@@ -254,6 +254,14 @@ function SHINE(){
 								'</div>'+
 								'<div class="theme-name">Mono Dark</div>'+
 							'</label>'+
+							'<label class="brown">'+
+								'<input type="radio" name="settings-main-theme" value="brown">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Milk Chocolate</div>'+
+							'</label>'+
 							'<label class="black">'+
 								'<input type="radio" name="settings-main-theme" value="black">'+
 								'<div class="foreground"><span>Aa</span>'+
@@ -1368,4 +1376,10 @@ $('body').on('mouseover','#colorselect',function(){
 
 $('body').on('mouseout','#colorselect',function(){
 	$('.dark-background').removeClass("hide-bg");
+});
+
+$('body').keyup(function(e) {
+     if (e.keyCode == 27) {
+     	resetInterfaces();
+    }
 });
