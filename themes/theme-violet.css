@@ -2,7 +2,7 @@ html.SHINE.res-nightmode.theme-violet .flair, html.SHINE.res-nightmode.theme-vio
   background: transparent;
   padding: 0 4px; }
 
-html.SHINE.res-nightmode.theme-violet input[type="text"], html.SHINE.res-nightmode.theme-violet input[type="password"], html.SHINE.res-nightmode.theme-violet .c-form-control {
+html.SHINE.res-nightmode.theme-violet input[type="text"], html.SHINE.res-nightmode.theme-violet input[type="password"], html.SHINE.res-nightmode.theme-violet .c-form-control, html.SHINE.res-nightmode.theme-violet .submit textarea, html.SHINE.res-nightmode.theme-violet .submit #url, html.SHINE.res-nightmode.theme-violet .submit #sr-autocomplete, html.SHINE.res-nightmode.theme-violet .usertext-edit textarea, html.SHINE.res-nightmode.theme-violet .RESDialogSmall, html.SHINE.res-nightmode.theme-violet .c-close, html.SHINE.res-nightmode.theme-violet #REScommentNavBox, html.SHINE.res-nightmode.theme-violet #BigEditor #BigText, html.SHINE.res-nightmode.theme-violet #liveupdate-statusbar, html.SHINE.res-nightmode.theme-violet #liveupdate-statusbar.complete, html.SHINE.res-nightmode.theme-violet #newlink-with-image-upload .image-upload-drop-target {
   color: #eaeaec !important; }
 
 html.SHINE.res-nightmode.theme-violet .sidebox, html.SHINE.res-nightmode.theme-violet .subredditbox, html.SHINE.res-nightmode.theme-violet .subreddit-info, html.SHINE.res-nightmode.theme-violet .raisedbox, html.SHINE.res-nightmode.theme-violet .login-form-side, html.SHINE.res-nightmode.theme-violet .morelink {
@@ -171,7 +171,7 @@ html.SHINE.res-nightmode.theme-violet .flair, html.SHINE.res-nightmode.theme-vio
   color: #999ba6;
   border: 1px solid #707382; }
 
-html.SHINE.res-nightmode.theme-violet input[type="text"], html.SHINE.res-nightmode.theme-violet input[type="password"], html.SHINE.res-nightmode.theme-violet .c-form-control {
+html.SHINE.res-nightmode.theme-violet input[type="text"], html.SHINE.res-nightmode.theme-violet input[type="password"], html.SHINE.res-nightmode.theme-violet .c-form-control, html.SHINE.res-nightmode.theme-violet .submit textarea, html.SHINE.res-nightmode.theme-violet .submit #url, html.SHINE.res-nightmode.theme-violet .submit #sr-autocomplete, html.SHINE.res-nightmode.theme-violet .usertext-edit textarea, html.SHINE.res-nightmode.theme-violet .RESDialogSmall, html.SHINE.res-nightmode.theme-violet .c-close, html.SHINE.res-nightmode.theme-violet #REScommentNavBox, html.SHINE.res-nightmode.theme-violet #BigEditor #BigText, html.SHINE.res-nightmode.theme-violet #liveupdate-statusbar, html.SHINE.res-nightmode.theme-violet #liveupdate-statusbar.complete, html.SHINE.res-nightmode.theme-violet #newlink-with-image-upload .image-upload-drop-target {
   background-color: #212432 !important;
   border-color: #3c4156 !important; }
 
@@ -205,6 +205,17 @@ html.SHINE.res-nightmode.theme-violet body {
   background: #212432 !important; }
   html.SHINE.res-nightmode.theme-violet body > .content {
     background: #212432 !important; }
+  html.SHINE.res-nightmode.theme-violet body .roundfield {
+    background-color: #32374d; }
+  html.SHINE.res-nightmode.theme-violet body.submit .roundfield {
+    background-color: #32374d; }
+  html.SHINE.res-nightmode.theme-violet body.with-listing-chooser .listing-chooser {
+    background-color: #212432; }
+    html.SHINE.res-nightmode.theme-violet body.with-listing-chooser .listing-chooser li a {
+      border-color: #32374d; }
+    html.SHINE.res-nightmode.theme-violet body.with-listing-chooser .listing-chooser .intro {
+      background-color: #292d3e;
+      padding: 8px; }
 html.SHINE.res-nightmode.theme-violet #header {
   background: #292d3e !important; }
   html.SHINE.res-nightmode.theme-violet #header ul.tabmenu {
@@ -252,6 +263,10 @@ html.SHINE.res-nightmode.theme-violet.shine-grid .shine-expand .side-comments {
   background: #292d3e !important; }
 html.SHINE.res-nightmode.theme-violet.shine-grid .shine-expand .toggle-child-comments {
   background: #32374d !important; }
+html.SHINE.res-nightmode.theme-violet .infobar:not(.newsletterbar) {
+  background-color: #32374d;
+  color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(112, 115, 130, 0.5); }
 html.SHINE.res-nightmode.theme-violet #progressIndicator {
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
   color: rgba(255, 255, 255, 0.4);
@@ -259,6 +274,8 @@ html.SHINE.res-nightmode.theme-violet #progressIndicator {
   border-color: rgba(41, 45, 62, 0.4); }
 html.SHINE.res-nightmode.theme-violet .usertext.grayed .usertext-body {
   background-color: #212432; }
+html.SHINE.res-nightmode.theme-violet .usertext.border .usertext-body {
+  background-color: #32374d; }
 html.SHINE.res-nightmode.theme-violet .thumbnail.spoiler::before, html.SHINE.res-nightmode.theme-violet .thumbnail.nsfw::before, html.SHINE.res-nightmode.theme-violet .thumbnail.default::before, html.SHINE.res-nightmode.theme-violet .thumbnail.image::before, html.SHINE.res-nightmode.theme-violet .thumbnail.self::before {
   color: rgba(255, 255, 255, 0.7) !important;
   background-color: #3c4156 !important; }

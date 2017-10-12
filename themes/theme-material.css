@@ -2,7 +2,7 @@ html.SHINE.res-nightmode.theme-material .flair, html.SHINE.res-nightmode.theme-m
   background: transparent;
   padding: 0 4px; }
 
-html.SHINE.res-nightmode.theme-material input[type="text"], html.SHINE.res-nightmode.theme-material input[type="password"], html.SHINE.res-nightmode.theme-material .c-form-control {
+html.SHINE.res-nightmode.theme-material input[type="text"], html.SHINE.res-nightmode.theme-material input[type="password"], html.SHINE.res-nightmode.theme-material .c-form-control, html.SHINE.res-nightmode.theme-material .submit textarea, html.SHINE.res-nightmode.theme-material .submit #url, html.SHINE.res-nightmode.theme-material .submit #sr-autocomplete, html.SHINE.res-nightmode.theme-material .usertext-edit textarea, html.SHINE.res-nightmode.theme-material .RESDialogSmall, html.SHINE.res-nightmode.theme-material .c-close, html.SHINE.res-nightmode.theme-material #REScommentNavBox, html.SHINE.res-nightmode.theme-material #BigEditor #BigText, html.SHINE.res-nightmode.theme-material #liveupdate-statusbar, html.SHINE.res-nightmode.theme-material #liveupdate-statusbar.complete, html.SHINE.res-nightmode.theme-material #newlink-with-image-upload .image-upload-drop-target {
   color: #e9ebeb !important; }
 
 html.SHINE.res-nightmode.theme-material .sidebox, html.SHINE.res-nightmode.theme-material .subredditbox, html.SHINE.res-nightmode.theme-material .subreddit-info, html.SHINE.res-nightmode.theme-material .raisedbox, html.SHINE.res-nightmode.theme-material .login-form-side, html.SHINE.res-nightmode.theme-material .morelink {
@@ -171,7 +171,7 @@ html.SHINE.res-nightmode.theme-material .flair, html.SHINE.res-nightmode.theme-m
   color: #adaeb3;
   border: 1px solid #85868b; }
 
-html.SHINE.res-nightmode.theme-material input[type="text"], html.SHINE.res-nightmode.theme-material input[type="password"], html.SHINE.res-nightmode.theme-material .c-form-control {
+html.SHINE.res-nightmode.theme-material input[type="text"], html.SHINE.res-nightmode.theme-material input[type="password"], html.SHINE.res-nightmode.theme-material .c-form-control, html.SHINE.res-nightmode.theme-material .submit textarea, html.SHINE.res-nightmode.theme-material .submit #url, html.SHINE.res-nightmode.theme-material .submit #sr-autocomplete, html.SHINE.res-nightmode.theme-material .usertext-edit textarea, html.SHINE.res-nightmode.theme-material .RESDialogSmall, html.SHINE.res-nightmode.theme-material .c-close, html.SHINE.res-nightmode.theme-material #REScommentNavBox, html.SHINE.res-nightmode.theme-material #BigEditor #BigText, html.SHINE.res-nightmode.theme-material #liveupdate-statusbar, html.SHINE.res-nightmode.theme-material #liveupdate-statusbar.complete, html.SHINE.res-nightmode.theme-material #newlink-with-image-upload .image-upload-drop-target {
   background-color: #1e282d !important;
   border-color: rgba(255, 255, 255, 0.1) !important; }
 
@@ -205,6 +205,17 @@ html.SHINE.res-nightmode.theme-material body {
   background: #1e282d !important; }
   html.SHINE.res-nightmode.theme-material body > .content {
     background: #1e282d !important; }
+  html.SHINE.res-nightmode.theme-material body .roundfield {
+    background-color: #2e3c43; }
+  html.SHINE.res-nightmode.theme-material body.submit .roundfield {
+    background-color: #2e3c43; }
+  html.SHINE.res-nightmode.theme-material body.with-listing-chooser .listing-chooser {
+    background-color: #1e282d; }
+    html.SHINE.res-nightmode.theme-material body.with-listing-chooser .listing-chooser li a {
+      border-color: #2e3c43; }
+    html.SHINE.res-nightmode.theme-material body.with-listing-chooser .listing-chooser .intro {
+      background-color: #263238;
+      padding: 8px; }
 html.SHINE.res-nightmode.theme-material #header {
   background: #263238 !important; }
   html.SHINE.res-nightmode.theme-material #header ul.tabmenu {
@@ -252,6 +263,10 @@ html.SHINE.res-nightmode.theme-material.shine-grid .shine-expand .side-comments 
   background: #263238 !important; }
 html.SHINE.res-nightmode.theme-material.shine-grid .shine-expand .toggle-child-comments {
   background: #2e3c43 !important; }
+html.SHINE.res-nightmode.theme-material .infobar:not(.newsletterbar) {
+  background-color: #2e3c43;
+  color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(133, 134, 139, 0.5); }
 html.SHINE.res-nightmode.theme-material #progressIndicator {
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
   color: rgba(255, 255, 255, 0.4);
@@ -259,6 +274,8 @@ html.SHINE.res-nightmode.theme-material #progressIndicator {
   border-color: rgba(38, 50, 56, 0.4); }
 html.SHINE.res-nightmode.theme-material .usertext.grayed .usertext-body {
   background-color: #1e282d; }
+html.SHINE.res-nightmode.theme-material .usertext.border .usertext-body {
+  background-color: #2e3c43; }
 html.SHINE.res-nightmode.theme-material .thumbnail.spoiler::before, html.SHINE.res-nightmode.theme-material .thumbnail.nsfw::before, html.SHINE.res-nightmode.theme-material .thumbnail.default::before, html.SHINE.res-nightmode.theme-material .thumbnail.image::before, html.SHINE.res-nightmode.theme-material .thumbnail.self::before {
   color: rgba(255, 255, 255, 0.7) !important;
   background-color: rgba(255, 255, 255, 0.1) !important; }

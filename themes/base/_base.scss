@@ -26,22 +26,24 @@ html.SHINE {
 		&.shine-list {
 			body {
 				background: $color_bg_darkest !important;
-				> div.content div#siteTable {
-					> .thing {
-						background: $color_bg_darker !important;
-						border-bottom: 1px solid $color_row_bottom_border !important;
-						border-left: 5px solid $color_bg_darker !important;
-						border-top: 0 !important;
-						border-right: 0 !important;
-						&:hover {
-							background: $color_bg_dark !important;
-							border-left: 5px solid $color_bg_dark !important;
-						}
-						&.link > .child {
-							color: #fff;
+				> div.content {
+					div#siteTable {
+						> .thing {
+							background: $color_bg_darker !important;
+							border-bottom: 1px solid $color_row_bottom_border !important;
+							border-left: 5px solid $color_bg_darker !important;
+							border-top: 0 !important;
+							border-right: 0 !important;
+							&:hover {
+								background: $color_bg_dark !important;
+								border-left: 5px solid $color_bg_dark !important;
+							}
+							&.link > .child {
+								color: #fff;
+							}
 						}
 					}
-				}
+				} 
 			}
 			.shine-expand {
 				background: $color_bg_darker !important;
@@ -65,6 +67,35 @@ html.SHINE {
 			> .content {
 				background: $color_bg_darkest !important;
 			}
+
+			.roundfield {
+				background-color: $color_bg_dark;
+			}
+
+			&.submit .roundfield {
+				background-color: $color_bg_dark;
+			}
+
+			&.with-listing-chooser {
+				.listing-chooser {
+					background-color: $color_bg_darkest;
+					li a {
+						border-color: $color_bg_dark;
+					}
+					.intro {
+						background-color: $color_bg_darker;
+						padding: 8px;
+					}
+				}
+			}
+		}
+
+		.submit textarea, .submit #url, .submit #sr-autocomplete, .usertext-edit textarea, .RESDialogSmall, .c-close, #REScommentNavBox, #BigEditor #BigText, #liveupdate-statusbar, #liveupdate-statusbar.complete {
+			@extend %extend_2;
+		}
+
+		#newlink-with-image-upload .image-upload-drop-target {
+			@extend %extend_2;
 		}
 		#header {
 			background: $color_bg_darker !important;
@@ -183,6 +214,12 @@ html.SHINE {
 			}
 		}
 
+		.infobar:not(.newsletterbar) {
+		    background-color: $color_bg_dark;
+		    color: rgba(white,.7);
+		    border-color: rgba($color_bg_flairborder,.5);
+		}
+
 		#progressIndicator {
     		box-shadow: rgba($black, 0.3) 1px 1px 5px;
 		    color: rgba($white,.4);
@@ -191,6 +228,9 @@ html.SHINE {
 		}
 		.usertext.grayed .usertext-body {
 			background-color: $color_bg_darkest;
+		}
+		.usertext.border .usertext-body {
+			background-color: $color_bg_dark;
 		}
 
 		.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
