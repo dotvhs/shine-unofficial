@@ -49,6 +49,20 @@ html.SHINE {
 					color: $color_main_accent;			
 				}
 			}
+
+			div {
+				&#sr-header-area {
+					li.selected a {
+					    color: $color_main_accent !important;
+					}
+				}
+			}
+		
+			#header-bottom-left {
+				#header-img-a::after, #header-img.default-header::after {
+					background-color: transparent !important;
+				}
+			}
 		}
 		
 		.shine-expand {
@@ -66,7 +80,7 @@ html.SHINE {
 					}
 				}
 				li.selected a {
-				    color: $color_main_accent !important;
+				    color: $color_fab_color !important;
 				}
 			}
 		}
@@ -88,9 +102,18 @@ html.SHINE {
 		    background: $color_main_accent;
 		}
 
-		.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
-		    color: $color_main_accent;
+		.colorful {
+			#header-bottom-left {
+				#header-img-a::after, #header-img.default-header::after {
+					background-color: $color_fab_color;
+				}
+			}
+
+			.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
+			    background-color: $color_fab_color;
+			}	
 		}
+		
 	}
 
 	#colorselect label.#{$colorname} .button {

@@ -15,6 +15,8 @@ html.SHINE.res-nightmode.theme-violet.shine-list .shine-expand .side-comments bu
 
 html.SHINE.res-nightmode.theme-violet.shine-list body > div.content div#siteTable > .thing {
   transition: all 200ms ease; }
+html.SHINE.res-nightmode.theme-violet.shine-list body .domain a {
+  color: rgba(255, 255, 255, 0.5); }
 html.SHINE.res-nightmode.theme-violet.shine-list .shine-expand .toggle-child-comments {
   color: rgba(255, 255, 255, 0.75) !important; }
 html.SHINE.res-nightmode.theme-violet.shine-list.shine-list-classic .side-comments .shine-comment::after {
@@ -187,6 +189,8 @@ html.SHINE.res-nightmode.theme-violet.shine-list body {
     html.SHINE.res-nightmode.theme-violet.shine-list body > div.content div#siteTable > .thing:hover {
       background: #32374d !important;
       border-left: 5px solid #32374d !important; }
+    html.SHINE.res-nightmode.theme-violet.shine-list body > div.content div#siteTable > .thing.link > .child {
+      color: #fff; }
 html.SHINE.res-nightmode.theme-violet.shine-list .shine-expand {
   background: #292d3e !important;
   border-bottom: 1px solid #32374d; }
@@ -258,6 +262,8 @@ html.SHINE.res-nightmode.theme-violet .usertext.grayed .usertext-body {
 html.SHINE.res-nightmode.theme-violet .thumbnail.spoiler::before, html.SHINE.res-nightmode.theme-violet .thumbnail.nsfw::before, html.SHINE.res-nightmode.theme-violet .thumbnail.default::before, html.SHINE.res-nightmode.theme-violet .thumbnail.image::before, html.SHINE.res-nightmode.theme-violet .thumbnail.self::before {
   color: rgba(255, 255, 255, 0.7) !important;
   background-color: #3c4156 !important; }
+html.SHINE.res-nightmode.theme-violet #header-bottom-left #header-img-a, html.SHINE.res-nightmode.theme-violet #header-bottom-left #header-img.default-header {
+  color: white !important; }
 html.SHINE #themeselect label.violet .foreground {
   background-color: #292d3e; }
   html.SHINE #themeselect label.violet .foreground .background {

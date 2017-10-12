@@ -15,6 +15,8 @@ html.SHINE.res-nightmode.theme-dark.shine-list .shine-expand .side-comments butt
 
 html.SHINE.res-nightmode.theme-dark.shine-list body > div.content div#siteTable > .thing {
   transition: all 200ms ease; }
+html.SHINE.res-nightmode.theme-dark.shine-list body .domain a {
+  color: rgba(255, 255, 255, 0.5); }
 html.SHINE.res-nightmode.theme-dark.shine-list .shine-expand .toggle-child-comments {
   color: rgba(255, 255, 255, 0.75) !important; }
 html.SHINE.res-nightmode.theme-dark.shine-list.shine-list-classic .side-comments .shine-comment::after {
@@ -187,6 +189,8 @@ html.SHINE.res-nightmode.theme-dark.shine-list body {
     html.SHINE.res-nightmode.theme-dark.shine-list body > div.content div#siteTable > .thing:hover {
       background: #151515 !important;
       border-left: 5px solid #151515 !important; }
+    html.SHINE.res-nightmode.theme-dark.shine-list body > div.content div#siteTable > .thing.link > .child {
+      color: #fff; }
 html.SHINE.res-nightmode.theme-dark.shine-list .shine-expand {
   background: #0d0d0d !important;
   border-bottom: 1px solid #151515; }
@@ -258,6 +262,8 @@ html.SHINE.res-nightmode.theme-dark .usertext.grayed .usertext-body {
 html.SHINE.res-nightmode.theme-dark .thumbnail.spoiler::before, html.SHINE.res-nightmode.theme-dark .thumbnail.nsfw::before, html.SHINE.res-nightmode.theme-dark .thumbnail.default::before, html.SHINE.res-nightmode.theme-dark .thumbnail.image::before, html.SHINE.res-nightmode.theme-dark .thumbnail.self::before {
   color: rgba(255, 255, 255, 0.7) !important;
   background-color: #212121 !important; }
+html.SHINE.res-nightmode.theme-dark #header-bottom-left #header-img-a, html.SHINE.res-nightmode.theme-dark #header-bottom-left #header-img.default-header {
+  color: white !important; }
 html.SHINE #themeselect label.dark .foreground {
   background-color: #0d0d0d; }
   html.SHINE #themeselect label.dark .foreground .background {

@@ -21,12 +21,16 @@ html.SHINE.color-greenlight.res-nightmode .res-nightmode #progressIndicator h2 {
   color: #8bc34a; }
 html.SHINE.color-greenlight.res-nightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
   color: #8bc34a; }
+html.SHINE.color-greenlight.res-nightmode div#sr-header-area li.selected a {
+  color: #8bc34a !important; }
+html.SHINE.color-greenlight.res-nightmode #header-bottom-left #header-img-a::after, html.SHINE.color-greenlight.res-nightmode #header-bottom-left #header-img.default-header::after {
+  background-color: transparent !important; }
 html.SHINE.color-greenlight .shine-expand .side-comments button.save {
   background: #8bc34a !important; }
 html.SHINE.color-greenlight div#sr-header-area a#sr-more-link:hover {
   background: #8bc34a !important; }
 html.SHINE.color-greenlight div#sr-header-area li.selected a {
-  color: #8bc34a !important; }
+  color: #558B2F !important; }
 html.SHINE.color-greenlight #themeselect input:checked ~ .foreground {
   border: 3px solid #8bc34a; }
 html.SHINE.color-greenlight #themeselect input:checked ~ .theme-name {
@@ -37,7 +41,9 @@ html.SHINE.color-greenlight .shine-nav .shine-navicon {
 html.SHINE.color-greenlight #header-bottom-right a.message-count {
   color: white !important;
   background: #8bc34a; }
-html.SHINE.color-greenlight .thumbnail.spoiler::before, html.SHINE.color-greenlight .thumbnail.nsfw::before, html.SHINE.color-greenlight .thumbnail.default::before, html.SHINE.color-greenlight .thumbnail.image::before, html.SHINE.color-greenlight .thumbnail.self::before {
-  color: #8bc34a; }
+html.SHINE.color-greenlight .colorful #header-bottom-left #header-img-a::after, html.SHINE.color-greenlight .colorful #header-bottom-left #header-img.default-header::after {
+  background-color: #558B2F; }
+html.SHINE.color-greenlight .colorful .thumbnail.spoiler::before, html.SHINE.color-greenlight .colorful .thumbnail.nsfw::before, html.SHINE.color-greenlight .colorful .thumbnail.default::before, html.SHINE.color-greenlight .colorful .thumbnail.image::before, html.SHINE.color-greenlight .colorful .thumbnail.self::before {
+  background-color: #558B2F; }
 html.SHINE #colorselect label.greenlight .button span {
   background-color: #8bc34a; }

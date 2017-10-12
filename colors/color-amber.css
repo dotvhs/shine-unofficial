@@ -21,12 +21,16 @@ html.SHINE.color-amber.res-nightmode .res-nightmode #progressIndicator h2 {
   color: #FFC107; }
 html.SHINE.color-amber.res-nightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
   color: #FFC107; }
+html.SHINE.color-amber.res-nightmode div#sr-header-area li.selected a {
+  color: #FFC107 !important; }
+html.SHINE.color-amber.res-nightmode #header-bottom-left #header-img-a::after, html.SHINE.color-amber.res-nightmode #header-bottom-left #header-img.default-header::after {
+  background-color: transparent !important; }
 html.SHINE.color-amber .shine-expand .side-comments button.save {
   background: #FFC107 !important; }
 html.SHINE.color-amber div#sr-header-area a#sr-more-link:hover {
   background: #FFC107 !important; }
 html.SHINE.color-amber div#sr-header-area li.selected a {
-  color: #FFC107 !important; }
+  color: #FFB300 !important; }
 html.SHINE.color-amber #themeselect input:checked ~ .foreground {
   border: 3px solid #FFC107; }
 html.SHINE.color-amber #themeselect input:checked ~ .theme-name {
@@ -37,7 +41,9 @@ html.SHINE.color-amber .shine-nav .shine-navicon {
 html.SHINE.color-amber #header-bottom-right a.message-count {
   color: white !important;
   background: #FFC107; }
-html.SHINE.color-amber .thumbnail.spoiler::before, html.SHINE.color-amber .thumbnail.nsfw::before, html.SHINE.color-amber .thumbnail.default::before, html.SHINE.color-amber .thumbnail.image::before, html.SHINE.color-amber .thumbnail.self::before {
-  color: #FFC107; }
+html.SHINE.color-amber .colorful #header-bottom-left #header-img-a::after, html.SHINE.color-amber .colorful #header-bottom-left #header-img.default-header::after {
+  background-color: #FFB300; }
+html.SHINE.color-amber .colorful .thumbnail.spoiler::before, html.SHINE.color-amber .colorful .thumbnail.nsfw::before, html.SHINE.color-amber .colorful .thumbnail.default::before, html.SHINE.color-amber .colorful .thumbnail.image::before, html.SHINE.color-amber .colorful .thumbnail.self::before {
+  background-color: #FFB300; }
 html.SHINE #colorselect label.amber .button span {
   background-color: #FFC107; }

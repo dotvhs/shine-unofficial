@@ -15,6 +15,8 @@ html.SHINE.res-nightmode.theme-blue.shine-list .shine-expand .side-comments butt
 
 html.SHINE.res-nightmode.theme-blue.shine-list body > div.content div#siteTable > .thing {
   transition: all 200ms ease; }
+html.SHINE.res-nightmode.theme-blue.shine-list body .domain a {
+  color: rgba(255, 255, 255, 0.5); }
 html.SHINE.res-nightmode.theme-blue.shine-list .shine-expand .toggle-child-comments {
   color: rgba(255, 255, 255, 0.75) !important; }
 html.SHINE.res-nightmode.theme-blue.shine-list.shine-list-classic .side-comments .shine-comment::after {
@@ -187,6 +189,8 @@ html.SHINE.res-nightmode.theme-blue.shine-list body {
     html.SHINE.res-nightmode.theme-blue.shine-list body > div.content div#siteTable > .thing:hover {
       background: #0f2336 !important;
       border-left: 5px solid #0f2336 !important; }
+    html.SHINE.res-nightmode.theme-blue.shine-list body > div.content div#siteTable > .thing.link > .child {
+      color: #fff; }
 html.SHINE.res-nightmode.theme-blue.shine-list .shine-expand {
   background: #0a1724 !important;
   border-bottom: 1px solid #0f2336; }
@@ -258,6 +262,8 @@ html.SHINE.res-nightmode.theme-blue .usertext.grayed .usertext-body {
 html.SHINE.res-nightmode.theme-blue .thumbnail.spoiler::before, html.SHINE.res-nightmode.theme-blue .thumbnail.nsfw::before, html.SHINE.res-nightmode.theme-blue .thumbnail.default::before, html.SHINE.res-nightmode.theme-blue .thumbnail.image::before, html.SHINE.res-nightmode.theme-blue .thumbnail.self::before {
   color: rgba(255, 255, 255, 0.7) !important;
   background-color: #1b2e40 !important; }
+html.SHINE.res-nightmode.theme-blue #header-bottom-left #header-img-a, html.SHINE.res-nightmode.theme-blue #header-bottom-left #header-img.default-header {
+  color: white !important; }
 html.SHINE #themeselect label.blue .foreground {
   background-color: #0a1724; }
   html.SHINE #themeselect label.blue .foreground .background {

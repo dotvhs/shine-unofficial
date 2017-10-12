@@ -78,11 +78,11 @@ html.SHINE.shine-list body > .content #siteTable .thing.link > .child {
     background-size:20px auto;
     opacity:.2;
     transition:opacity 300ms ease;
+    color: #000;
 }
 
 html.SHINE.shine-list body > .content #siteTable .thing.link > .child::after {
     content: "\F3CC";
-    color: #fff;
     width: 24px;
     height: 24px;
     position: absolute;

@@ -52,6 +52,9 @@ html.SHINE {
 						transition: all 200ms ease;
 					}
 				}
+				.domain a {
+					color: $color_gray_approx;
+				}
 			}
 			.shine-expand {
 				.toggle-child-comments {

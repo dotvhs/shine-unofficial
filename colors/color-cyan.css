@@ -21,12 +21,16 @@ html.SHINE.color-cyan.res-nightmode .res-nightmode #progressIndicator h2 {
   color: #00bcd4; }
 html.SHINE.color-cyan.res-nightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
   color: #00bcd4; }
+html.SHINE.color-cyan.res-nightmode div#sr-header-area li.selected a {
+  color: #00bcd4 !important; }
+html.SHINE.color-cyan.res-nightmode #header-bottom-left #header-img-a::after, html.SHINE.color-cyan.res-nightmode #header-bottom-left #header-img.default-header::after {
+  background-color: transparent !important; }
 html.SHINE.color-cyan .shine-expand .side-comments button.save {
   background: #00bcd4 !important; }
 html.SHINE.color-cyan div#sr-header-area a#sr-more-link:hover {
   background: #00bcd4 !important; }
 html.SHINE.color-cyan div#sr-header-area li.selected a {
-  color: #00bcd4 !important; }
+  color: #0097A7 !important; }
 html.SHINE.color-cyan #themeselect input:checked ~ .foreground {
   border: 3px solid #00bcd4; }
 html.SHINE.color-cyan #themeselect input:checked ~ .theme-name {
@@ -37,7 +41,9 @@ html.SHINE.color-cyan .shine-nav .shine-navicon {
 html.SHINE.color-cyan #header-bottom-right a.message-count {
   color: white !important;
   background: #00bcd4; }
-html.SHINE.color-cyan .thumbnail.spoiler::before, html.SHINE.color-cyan .thumbnail.nsfw::before, html.SHINE.color-cyan .thumbnail.default::before, html.SHINE.color-cyan .thumbnail.image::before, html.SHINE.color-cyan .thumbnail.self::before {
-  color: #00bcd4; }
+html.SHINE.color-cyan .colorful #header-bottom-left #header-img-a::after, html.SHINE.color-cyan .colorful #header-bottom-left #header-img.default-header::after {
+  background-color: #0097A7; }
+html.SHINE.color-cyan .colorful .thumbnail.spoiler::before, html.SHINE.color-cyan .colorful .thumbnail.nsfw::before, html.SHINE.color-cyan .colorful .thumbnail.default::before, html.SHINE.color-cyan .colorful .thumbnail.image::before, html.SHINE.color-cyan .colorful .thumbnail.self::before {
+  background-color: #0097A7; }
 html.SHINE #colorselect label.cyan .button span {
   background-color: #00bcd4; }

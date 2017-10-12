@@ -208,6 +208,7 @@ html.SHINE #header-bottom-left #header-img.default-header{
     background-size: auto 15px;
     width: 60px;
     margin-right:-10px;
+    color: rgb(51,51,51);
 }
 
 
@@ -219,14 +220,14 @@ html.SHINE #header-bottom-left #header-img.default-header::after {
     width: 24px;
     height: 24px;
     font-size: 24px;
-    padding: 12px;
-    color: #fff;
+    padding: 3px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -20px;
-    margin-top: -26px;
+    margin-left: -11px;
+    margin-top: -16px;
     text-indent: 0;
+    border-radius: 100%;
 }
 
 html.SHINE #header ul.tabmenu {
@@ -704,6 +705,10 @@ html.SHINE .shine-navicon .lines::before{
 }
 */
 
+html.SHINE .shine-navicon .lines {
+    color: #fff;
+}
+
 html.SHINE .shine-navicon .lines::after{
     content: "\F44D";
     transition:transform 400ms ease;
@@ -716,7 +721,6 @@ html.SHINE .shine-navicon .lines::after{
     margin-left: -18px;
     width:36px;
     height:36px;
-    color: #fff;
 }
 
 html.SHINE .shine-nav:hover .shine-navicon .lines::after {
@@ -2037,6 +2041,7 @@ html.SHINE #themeselect label.legacy-night .foreground span {
     background-image: none !important;
     filter: none !important;
     position: relative;
+    color: #fff;
 }
 
 .thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
@@ -2051,6 +2056,7 @@ html.SHINE #themeselect label.legacy-night .foreground span {
     width:24px;
     height:24px;
     border-radius: 100%;
+    background-color: #ccc;
 }
 
 .thumbnail.spoiler::before {
