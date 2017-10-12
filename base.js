@@ -126,7 +126,7 @@ function SHINE(){
 
 	$('body').append(htmlToAdd);
 
-	$('head').append('<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />');
+	$('head').append('<link href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet" />');
 
 	$('#header').append(''+
 

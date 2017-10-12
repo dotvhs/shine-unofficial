@@ -68,14 +68,28 @@ html.SHINE.shine-list body > .content #siteTable .thing.link > .child {
     position: absolute;
     right: 0px;
     height: 100%;
+    line-height: 100%;
+    text-align: center;
     width: 60px;
-    top: 50%;
-    transform: translate3d(0,-50%,0);
+    top: 0;
+    font: normal normal normal 24px/1 "Material Design Icons";
     box-sizing: border-box;
-    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItMjkwIDM4OCAxOCAxOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtMjkwIDM4OCAxOCAxODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0tMjc0LDQwNGgtMTR2LTE0aDd2LTJoLTdjLTEuMSwwLTIsMC45LTIsMnYxNGMwLDEuMSwwLjksMiwyLDJoMTRjMS4xLDAsMi0wLjksMi0ydi03aC0yVjQwNHogTS0yNzksMzg4djJoMy42bC05LjgsOS44bDEuNCwxLjRsOS44LTkuOHYzLjZoMnYtN0gtMjc5eiIvPjwvc3ZnPg==) no-repeat center center;
+    /*background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItMjkwIDM4OCAxOCAxOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtMjkwIDM4OCAxOCAxODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0tMjc0LDQwNGgtMTR2LTE0aDd2LTJoLTdjLTEuMSwwLTIsMC45LTIsMnYxNGMwLDEuMSwwLjksMiwyLDJoMTRjMS4xLDAsMi0wLjksMi0ydi03aC0yVjQwNHogTS0yNzksMzg4djJoMy42bC05LjgsOS44bDEuNCwxLjRsOS44LTkuOHYzLjZoMnYtN0gtMjc5eiIvPjwvc3ZnPg==) no-repeat center center;*/
     background-size:20px auto;
     opacity:.2;
     transition:opacity 300ms ease;
+}
+
+html.SHINE.shine-list body > .content #siteTable .thing.link > .child::after {
+    content: "\F3CC";
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
 }
 
 html.SHINE.shine-list body > .content #siteTable .side-comments .thing.link > .child{
@@ -488,6 +502,5 @@ html.SHINE.shine-list.res-nightmode body > div.content .side-comments div#siteTa
 }
 
 html.SHINE.shine-list.res-nightmode body > .content #siteTable .thing.link > .child {
-    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItMjkwIDM4OCAxOCAxOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtMjkwIDM4OCAxOCAxODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTS0yNzQsNDA0aC0xNHYtMTRoN3YtMmgtN2MtMS4xLDAtMiwwLjktMiwydjE0YzAsMS4xLDAuOSwyLDIsMmgxNGMxLjEsMCwyLTAuOSwyLTJ2LTdoLTJWNDA0eiBNLTI3OSwzODh2MmgzLjZsLTkuOCw5LjhsMS40LDEuNGw5LjgtOS44djMuNmgydi03SC0yNzl6Ii8+PC9zdmc+) no-repeat center center;
-    background-size:20px auto;
+
 }
