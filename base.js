@@ -1032,11 +1032,11 @@ $('body').on('click','.grid-switch', function(){
 // CLICKING THE LIST VIEW SWITCHER
 
 $('body').on('click','.list-switch', function(){
+		currentSettings.list.columns = "one";
 
 	if(  window.location.href.indexOf("/r/") == -1 && window.location.href.indexOf("/m/") == -1  ){
 
 		currentSettings.global.layout = "list";
-		currentSettings.list.columns = "one";
 
 	}else if( $('.pagename a').attr("href").indexOf("/r/") != -1 ) {
 
@@ -1124,11 +1124,11 @@ $('body').on('click','.list-switch', function(){
 
 
 $('body').on('click','.list-side-switch', function(){
+		currentSettings.list.columns = "two";
 
 	if(  window.location.href.indexOf("/r/") == -1 && window.location.href.indexOf("/m/") == -1  ){
 
 		currentSettings.global.layout = "list";
-		currentSettings.list.columns = "two";
 
 	}else if( $('.pagename a').attr("href").indexOf("/r/") != -1 ) {
 
