@@ -120,3 +120,7 @@ html.SHINE.shine-list-classic #header .layout-switch svg.list-side-switch {
 html.SHINE.shine-list-classic #header .layout-switch svg.list-switch {
     opacity:0.25;
 }
+
+html.SHINE.shine-list-classic #header .layout-switch {
+    left: calc(50% - 30px);
+}
