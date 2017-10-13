@@ -108,8 +108,8 @@ html.SHINE a#sr-more-link:hover{
 
 html.SHINE #header .layout-switch {
     position: absolute;
-    width: 60px;
-    left: calc(50% - 20px);
+    width: 90px;
+    left: calc(50% - 45px);
     bottom: 10px;
     height: 25px;
     display:none;
@@ -131,10 +131,15 @@ html.SHINE #header .layout-switch svg{
 
 html.SHINE #header .layout-switch svg.grid-switch {
     left: 0px;
-    width: 30px;
+    width: 24px;
 }
 
 html.SHINE #header .layout-switch svg.list-switch {
+    left: 33px;
+    width: 24px;
+}
+
+html.SHINE #header .layout-switch svg.list-side-switch {
     right: 0px;
     width: 24px;
 }
@@ -1830,6 +1835,7 @@ html.SHINE.shine-grid.res-nightmode .shine-expand .toggle-child-comments{
 }
 
 html.SHINE.res-nightmode #header .layout-switch svg.grid-switch,
+html.SHINE.res-nightmode #header .layout-switch svg.list-side-switch,
 html.SHINE.res-nightmode #header .layout-switch svg.list-switch{
     fill:#fff;
 }

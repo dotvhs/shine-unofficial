@@ -131,8 +131,9 @@ function SHINE(){
 	$('#header').append(''+
 
 		'<div class="layout-switch">'+
-			'<svg class="grid-switch" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z"/></svg>'+
-			'<svg class="list-switch" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z"/></svg>'+
+			'<svg class="grid-switch" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M3,11H11V3H3M3,21H11V13H3M13,21H21V13H13M13,3V11H21V3" /></svg>'+
+			'<svg class="list-switch" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M3,4H21V8H3V4M3,10H21V14H3V10M3,16H21V20H3V16Z" /></svg>'+
+			'<svg class="list-side-switch" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M3,16h8v4H3V16z M3,14h8v-4H3V14z M3,8h8V4H3V8z M13,4v16h8V4H13z"/></svg>'+
 		'</div>'
 
 	);
@@ -1035,6 +1036,99 @@ $('body').on('click','.list-switch', function(){
 	if(  window.location.href.indexOf("/r/") == -1 && window.location.href.indexOf("/m/") == -1  ){
 
 		currentSettings.global.layout = "list";
+		currentSettings.list.columns = "one";
+
+	}else if( $('.pagename a').attr("href").indexOf("/r/") != -1 ) {
+
+		// we're in a subreddit
+		if( currentSettings.subreddits.length > 0 ){
+
+			foundIt = false;
+
+			for(i = 0; i < currentSettings.subreddits.length; i++){
+
+				urlToCheck = currentSettings.subreddits[i].url;
+
+				if( $('.pagename a').attr("href").indexOf( urlToCheck ) != -1 ){
+
+					currentSettings.subreddits[i].layout = "list";
+					foundIt = true;
+					break;
+
+				}
+
+			}
+
+			if( foundIt == false ){
+
+				defaultToAdd = {"url" : $('.pagename a').attr("href").replace("https://","").replace("http://","") , "layout" : "list"};
+
+				currentSettings.subreddits.push( defaultToAdd );
+
+			}
+
+		}else{
+
+			defaultToAdd = {"url" : $('.pagename a').attr("href").replace("https://","").replace("http://","") , "layout" : "list"};
+
+			currentSettings.subreddits.push( defaultToAdd );
+
+		}
+
+	}else if( $('.pagename a').attr("href").indexOf("/m/") != -1 ){
+
+		// we're in a multireddit
+		if( currentSettings.multireddits.length > 0 ){
+
+			foundIt = false;
+
+			for(i = 0; i < currentSettings.multireddits.length; i++){
+
+				urlToCheck = currentSettings.multireddits[i].url;
+
+				if( $('.pagename a').attr("href").indexOf( urlToCheck ) != -1 ){
+
+					currentSettings.multireddits[i].layout = "list";
+					foundIt = true;
+					break;
+
+				}
+
+			}
+
+			if( foundIt == false ){
+
+				defaultToAdd = {"url" : $('.pagename a').attr("href").replace("https://","").replace("http://","") , "layout" : "list"};
+
+				currentSettings.multireddits.push( defaultToAdd );
+
+			}
+
+		}else{
+
+			defaultToAdd = {"url" : $('.pagename a').attr("href").replace("https://","").replace("http://","") , "layout" : "list"};
+
+			currentSettings.multireddits.push( defaultToAdd );
+
+		}
+
+	}
+
+	chrome.storage.local.set({"shine": currentSettings}, function(){
+
+		location.reload();
+
+	});
+
+});
+
+
+$('body').on('click','.list-side-switch', function(){
+
+	if(  window.location.href.indexOf("/r/") == -1 && window.location.href.indexOf("/m/") == -1  ){
+
+		currentSettings.global.layout = "list";
+		currentSettings.list.columns = "two";
 
 	}else if( $('.pagename a').attr("href").indexOf("/r/") != -1 ) {
 

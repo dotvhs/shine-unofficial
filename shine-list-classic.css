@@ -112,3 +112,11 @@ html.SHINE.shine-list-classic .shine-menu-button label {
 }
 
 */
+
+html.SHINE.shine-list-classic #header .layout-switch svg.list-side-switch {
+    opacity: 1;
+}
+
+html.SHINE.shine-list-classic #header .layout-switch svg.list-switch {
+    opacity:0.25;
+}
