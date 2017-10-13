@@ -27,6 +27,8 @@ html.SHINE.color-greenlight.res-nightmode #header-bottom-left #header-img-a::aft
   background-color: transparent !important; }
 html.SHINE.color-greenlight .shine-expand .side-comments button.save {
   background: #8bc34a !important; }
+html.SHINE.color-greenlight .shine-expand .side-comments button:hover {
+  background: #558B2F !important; }
 html.SHINE.color-greenlight div#sr-header-area a#sr-more-link:hover {
   background: #8bc34a !important; }
 html.SHINE.color-greenlight div#sr-header-area li.selected a {
@@ -45,5 +47,9 @@ html.SHINE.color-greenlight .colorful #header-bottom-left #header-img-a::after, 
   background-color: #558B2F; }
 html.SHINE.color-greenlight .colorful .thumbnail.spoiler::before, html.SHINE.color-greenlight .colorful .thumbnail.nsfw::before, html.SHINE.color-greenlight .colorful .thumbnail.default::before, html.SHINE.color-greenlight .colorful .thumbnail.image::before, html.SHINE.color-greenlight .colorful .thumbnail.self::before {
   background-color: #558B2F; }
+html.SHINE.color-greenlight button {
+  background-color: #8bc34a; }
+html.SHINE.color-greenlight button:hover {
+  background-color: #558B2F !important; }
 html.SHINE #colorselect label.greenlight .button span {
   background-color: #8bc34a; }

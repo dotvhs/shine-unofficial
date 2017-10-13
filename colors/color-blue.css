@@ -27,6 +27,8 @@ html.SHINE.color-blue.res-nightmode #header-bottom-left #header-img-a::after, ht
   background-color: transparent !important; }
 html.SHINE.color-blue .shine-expand .side-comments button.save {
   background: #42A5F5 !important; }
+html.SHINE.color-blue .shine-expand .side-comments button:hover {
+  background: #2196F3 !important; }
 html.SHINE.color-blue div#sr-header-area a#sr-more-link:hover {
   background: #42A5F5 !important; }
 html.SHINE.color-blue div#sr-header-area li.selected a {
@@ -45,5 +47,9 @@ html.SHINE.color-blue .colorful #header-bottom-left #header-img-a::after, html.S
   background-color: #2196F3; }
 html.SHINE.color-blue .colorful .thumbnail.spoiler::before, html.SHINE.color-blue .colorful .thumbnail.nsfw::before, html.SHINE.color-blue .colorful .thumbnail.default::before, html.SHINE.color-blue .colorful .thumbnail.image::before, html.SHINE.color-blue .colorful .thumbnail.self::before {
   background-color: #2196F3; }
+html.SHINE.color-blue button {
+  background-color: #42A5F5; }
+html.SHINE.color-blue button:hover {
+  background-color: #2196F3 !important; }
 html.SHINE #colorselect label.blue .button span {
   background-color: #42A5F5; }

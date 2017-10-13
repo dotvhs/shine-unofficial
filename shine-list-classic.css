@@ -89,7 +89,7 @@ html.SHINE.shine-list.shine-list-classic .side-comments .shine-comment::after{
 html.SHINE.shine-list.shine-list-classic div#progressIndicator {
     width: 30% !important;
     float: left !important;
-    clear: both !important;
+    clear: left !important;
     margin-left: 30px !important;
     margin-top: 30px !important;
 }

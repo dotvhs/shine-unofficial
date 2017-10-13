@@ -69,6 +69,9 @@ html.SHINE {
 			.side-comments button.save {
 				background: $color_main_accent !important;
 			}
+			.side-comments button:hover {
+				background: $color_fab_color !important;
+			}
 		}
 
 
@@ -113,7 +116,14 @@ html.SHINE {
 			    background-color: $color_fab_color;
 			}	
 		}
-		
+
+		button {
+			background-color: $color_main_accent;
+		}
+
+		button:hover {
+			background-color: $color_fab_color !important;
+		}		
 	}
 
 	#colorselect label.#{$colorname} .button {

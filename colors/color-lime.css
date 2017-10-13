@@ -27,6 +27,8 @@ html.SHINE.color-lime.res-nightmode #header-bottom-left #header-img-a::after, ht
   background-color: transparent !important; }
 html.SHINE.color-lime .shine-expand .side-comments button.save {
   background: #cddc39 !important; }
+html.SHINE.color-lime .shine-expand .side-comments button:hover {
+  background: #AFB42B !important; }
 html.SHINE.color-lime div#sr-header-area a#sr-more-link:hover {
   background: #cddc39 !important; }
 html.SHINE.color-lime div#sr-header-area li.selected a {
@@ -45,5 +47,9 @@ html.SHINE.color-lime .colorful #header-bottom-left #header-img-a::after, html.S
   background-color: #AFB42B; }
 html.SHINE.color-lime .colorful .thumbnail.spoiler::before, html.SHINE.color-lime .colorful .thumbnail.nsfw::before, html.SHINE.color-lime .colorful .thumbnail.default::before, html.SHINE.color-lime .colorful .thumbnail.image::before, html.SHINE.color-lime .colorful .thumbnail.self::before {
   background-color: #AFB42B; }
+html.SHINE.color-lime button {
+  background-color: #cddc39; }
+html.SHINE.color-lime button:hover {
+  background-color: #AFB42B !important; }
 html.SHINE #colorselect label.lime .button span {
   background-color: #cddc39; }

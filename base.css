@@ -2074,3 +2074,23 @@ html.SHINE #themeselect label.legacy-night .foreground span {
 .thumbnail.self::before {
     content: "\F188";
 }
+
+html.SHINE.res-nightmode button, html.SHINE button {
+    -webkit-appearance: none;
+    color: rgb(255, 255, 255);
+    text-transform: lowercase;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    padding: 5px 15px;
+    margin: 5px 5px 10px 0px;
+    border-radius: 2px;
+    outline: none;
+    transition: background 200ms ease;
+}

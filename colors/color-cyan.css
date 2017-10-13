@@ -27,6 +27,8 @@ html.SHINE.color-cyan.res-nightmode #header-bottom-left #header-img-a::after, ht
   background-color: transparent !important; }
 html.SHINE.color-cyan .shine-expand .side-comments button.save {
   background: #00bcd4 !important; }
+html.SHINE.color-cyan .shine-expand .side-comments button:hover {
+  background: #0097A7 !important; }
 html.SHINE.color-cyan div#sr-header-area a#sr-more-link:hover {
   background: #00bcd4 !important; }
 html.SHINE.color-cyan div#sr-header-area li.selected a {
@@ -45,5 +47,9 @@ html.SHINE.color-cyan .colorful #header-bottom-left #header-img-a::after, html.S
   background-color: #0097A7; }
 html.SHINE.color-cyan .colorful .thumbnail.spoiler::before, html.SHINE.color-cyan .colorful .thumbnail.nsfw::before, html.SHINE.color-cyan .colorful .thumbnail.default::before, html.SHINE.color-cyan .colorful .thumbnail.image::before, html.SHINE.color-cyan .colorful .thumbnail.self::before {
   background-color: #0097A7; }
+html.SHINE.color-cyan button {
+  background-color: #00bcd4; }
+html.SHINE.color-cyan button:hover {
+  background-color: #0097A7 !important; }
 html.SHINE #colorselect label.cyan .button span {
   background-color: #00bcd4; }

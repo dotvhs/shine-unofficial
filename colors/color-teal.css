@@ -27,6 +27,8 @@ html.SHINE.color-teal.res-nightmode #header-bottom-left #header-img-a::after, ht
   background-color: transparent !important; }
 html.SHINE.color-teal .shine-expand .side-comments button.save {
   background: #1DE9B6 !important; }
+html.SHINE.color-teal .shine-expand .side-comments button:hover {
+  background: #00BFA5 !important; }
 html.SHINE.color-teal div#sr-header-area a#sr-more-link:hover {
   background: #1DE9B6 !important; }
 html.SHINE.color-teal div#sr-header-area li.selected a {
@@ -45,5 +47,9 @@ html.SHINE.color-teal .colorful #header-bottom-left #header-img-a::after, html.S
   background-color: #00BFA5; }
 html.SHINE.color-teal .colorful .thumbnail.spoiler::before, html.SHINE.color-teal .colorful .thumbnail.nsfw::before, html.SHINE.color-teal .colorful .thumbnail.default::before, html.SHINE.color-teal .colorful .thumbnail.image::before, html.SHINE.color-teal .colorful .thumbnail.self::before {
   background-color: #00BFA5; }
+html.SHINE.color-teal button {
+  background-color: #1DE9B6; }
+html.SHINE.color-teal button:hover {
+  background-color: #00BFA5 !important; }
 html.SHINE #colorselect label.teal .button span {
   background-color: #1DE9B6; }
