@@ -363,17 +363,31 @@ html.SHINE form.logout a {
 html.SHINE #header-bottom-right #mail, 
 html.SHINE #header-bottom-right #modmail {
     display: inline-block;
-    height: 25px;
-    background-image: url();
-    width: 17px !important;
+    height: 24px;
+    width: 24px !important;
     vertical-align: top;
     top: auto;
     min-width: none !important;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItMjkxIDM4OSAyMCAxNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtMjkxIDM4OSAyMCAxNjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0tMjczLDM4OWgtMTZjLTEuMSwwLTIsMC45LTIsMmwwLDEyYzAsMS4xLDAuOSwyLDIsMmgxNmMxLjEsMCwyLTAuOSwyLTJ2LTEyQy0yNzEsMzg5LjktMjcxLjksMzg5LTI3MywzODl6IE0tMjczLDM5M2wtOCw1bC04LTV2LTJsOCw1bDgtNVYzOTN6Ii8+PC9zdmc+);
+    background-image: none !important;
     background-repeat:no-repeat;
     background-position: center center;
     background-size:contain;
     margin:0 7px;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    background-image: none !important;
+    color: #000;
+    position: relative;
+}
+
+html.SHINE #header-bottom-right #mail::after, 
+html.SHINE #header-bottom-right #modmail::after {
+    content: "\F1EE";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 24px !important;
+    width: 24px !important;
+    text-indent: 0 !important;
 }
 
 html.SHINE #header-bottom-right #mail.havemail, 
@@ -399,15 +413,22 @@ html.SHINE #header-bottom-right a.message-count {
 }
 
 html.SHINE #header-bottom-right #RESAccountSwitcherIcon {
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItMjkyIDM4OSAyMiAxNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtMjkyIDM4OSAyMiAxNjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0tMjc4LDM5N2MyLjIsMCw0LTEuOCw0LTRzLTEuOC00LTQtNHMtNCwxLjgtNCw0Uy0yODAuMiwzOTctMjc4LDM5N3ogTS0yODcsMzk1di0zaC0ydjNoLTN2MmgzdjNoMnYtM2gzdi0ySC0yODd6IE0tMjc4LDM5OWMtMi43LDAtOCwxLjMtOCw0djJoMTZ2LTJDLTI3MCw0MDAuMy0yNzUuMywzOTktMjc4LDM5OXoiLz48L3N2Zz4=);
 	margin: 0 5px 0 10px;
     display: inline-block;
-    width: 20px;
+    width: 24px;
     background-size: contain;
     background-position: center center;
-    height: 25px;
-    vertical-align: top;
+    height: 24px;
+    vertical-align: top;    
+    font: normal normal normal 24px/1 "Material Design Icons";
+    background-image: none !important;
+    color: #000;
 }
+
+html.SHINE #header-bottom-right #RESAccountSwitcherIcon::after {
+    content: "\F014";
+}
+
 
 html.SHINE #header-bottom-right .login-required {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItMjg5IDM4NiAxNiAyMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtMjg5IDM4NiAxNiAyMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0tMjc1LDM5M2gtMWgtMS45aC0wLjhoLTUuNHYtMmMwLTEuNywxLjQtMy4xLDMuMS0zLjFjMS43LDAsMy4xLDEuNCwzLjEsMy4xaDEuOWMwLTIuNy0yLjMtNS01LTVjLTIuOCwwLTUsMi4yLTUsNXYyaC0xYy0xLjEsMC0yLDAuOS0yLDJ2MTBjMCwxLjEsMC45LDIsMiwyaDEyYzEuMSwwLDItMC45LDItMnYtMTBDLTI3MywzOTMuOS0yNzMuOSwzOTMtMjc1LDM5M3ogTS0yODEsNDAyYy0xLjEsMC0yLTAuOS0yLTJzMC45LTIsMi0yczIsMC45LDIsMlMtMjc5LjksNDAyLTI4MSw0MDJ6Ii8+PC9zdmc+);
@@ -1781,11 +1802,11 @@ html.SHINE.res-nightmode .menuarea .drop-choices a {
 html.SHINE.res-nightmode #header-bottom-right a {
     color: #fff;
 }
-
+/*
 html.SHINE.res-nightmode #header-bottom-right #RESAccountSwitcherIcon{
     background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItNTg2IDc3OCAyMiAxNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtNTg2IDc3OCAyMiAxNjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTS01NzIsNzg2YzIuMiwwLDQtMS44LDQtNHMtMS44LTQtNC00cy00LDEuOC00LDRTLTU3NC4yLDc4Ni01NzIsNzg2eiBNLTU4MSw3ODR2LTNoLTJ2M2gtM3YyaDN2M2gydi0zaDN2LTJILTU4MXogTS01NzIsNzg4Yy0yLjcsMC04LDEuMy04LDR2MmgxNnYtMkMtNTY0LDc4OS4zLTU2OS4zLDc4OC01NzIsNzg4eiIvPjwvc3ZnPg==);
 }
-
+*/
 html.SHINE.res-nightmode ul#RESAccountSwitcherDropdown {
     background: #000;
 }
@@ -1796,7 +1817,6 @@ html.SHINE.res-nightmode ul#RESAccountSwitcherDropdown li {
 
 html.SHINE.res-nightmode #header-bottom-right #mail, 
 html.SHINE.res-nightmode #header-bottom-right #modmail{
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItNTg2IDc3OCAyMCAxNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtNTg2IDc3OCAyMCAxNjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTS01NjgsNzc4aC0xNmMtMS4xLDAtMiwwLjktMiwydjEyYzAsMS4xLDAuOSwyLDIsMmgxNmMxLjEsMCwyLTAuOSwyLTJ2LTEyQy01NjYsNzc4LjktNTY2LjksNzc4LTU2OCw3Nzh6IE0tNTY4LDc4MmwtOCw1bC04LTV2LTJsOCw1bDgtNVY3ODJ6Ii8+PC9zdmc+);
 }
 
 html.SHINE.res-nightmode #header-bottom-right #RESSettingsButton{

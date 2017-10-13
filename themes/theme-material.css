@@ -162,6 +162,8 @@ html.SHINE.res-nightmode.theme-material .tagline a.admin {
   color: white !important; }
 html.SHINE.res-nightmode.theme-material .usertext.grayed .usertext-body div p {
   color: #93999c; }
+html.SHINE.res-nightmode.theme-material #header-bottom-right #mail, html.SHINE.res-nightmode.theme-material #header-bottom-right #modmail, html.SHINE.res-nightmode.theme-material #header-bottom-right #RESAccountSwitcherIcon {
+  color: white; }
 html.SHINE.shine-grid body > .content #siteTable .thing {
   transition: all 200ms ease; }
 html.SHINE #themeselect label.material .foreground span {
