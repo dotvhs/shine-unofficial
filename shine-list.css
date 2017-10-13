@@ -308,7 +308,7 @@ html.SHINE.shine-list .side-comments {
     width: 30%;
     height: 100%;
     box-sizing:border-box;
-    padding:15px 15px 100px 15px;
+    padding:15px;
     overflow-y:auto;
     background:#fff;
 }
@@ -501,6 +501,6 @@ html.SHINE.shine-list.res-nightmode body > div.content .side-comments div#siteTa
     border-left:0px;
 }
 
-html.SHINE.shine-list.res-nightmode body > .content #siteTable .thing.link > .child {
-
+html.SHINE.shine-list .shine-expand .side-comments .content {
+    margin-bottom: 100px;
 }

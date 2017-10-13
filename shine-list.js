@@ -578,10 +578,10 @@ $('body').on('click','div.content div#siteTable.linklisting > .thing:not(.shine-
 		// add expand div
 		$(this).after(''+
 
-			'<div class="shine-expand" id="expand-' + $(this).data("fullname") + '">'+
+			'<div class="shine-expand" id="expand-' + $(this).data("fullname") + '"><div class="shine-expand-wrapper">'+
 				'<div class="large-area"></div>'+
+				'<div class="side-comments"></div></div>'+
 				'<div class="toggle-child-comments">Child Comments</div>'+
-				'<div class="side-comments"></div>'+
 			'</div>'
 
 		);
