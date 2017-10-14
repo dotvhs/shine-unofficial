@@ -164,6 +164,8 @@ html.SHINE.res-nightmode.theme-material .usertext.grayed .usertext-body div p {
   color: #93999c; }
 html.SHINE.res-nightmode.theme-material #header-bottom-right #mail, html.SHINE.res-nightmode.theme-material #header-bottom-right #modmail, html.SHINE.res-nightmode.theme-material #header-bottom-right #RESAccountSwitcherIcon {
   color: white; }
+html.SHINE.res-nightmode.theme-material .menuarea .dropdown.lightdrop .selected {
+  color: white; }
 html.SHINE.shine-grid body > .content #siteTable .thing {
   transition: all 200ms ease; }
 html.SHINE #themeselect label.material .foreground span {
@@ -193,6 +195,12 @@ html.SHINE.res-nightmode.theme-material.shine-list body {
       border-left: 5px solid #2e3c43 !important; }
     html.SHINE.res-nightmode.theme-material.shine-list body > div.content div#siteTable > .thing.link > .child {
       color: #fff; }
+  html.SHINE.res-nightmode.theme-material.shine-list body > div.content .side-comments div#siteTable > .thing {
+    background: transparent !important;
+    border: 0 !important; }
+    html.SHINE.res-nightmode.theme-material.shine-list body > div.content .side-comments div#siteTable > .thing:hover {
+      background: transparent !important;
+      border: 0 !important; }
 html.SHINE.res-nightmode.theme-material.shine-list .shine-expand {
   background: #263238 !important;
   border-bottom: 1px solid #2e3c43; }

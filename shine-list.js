@@ -520,10 +520,10 @@ $('body').on('click','div.content div#siteTable.linklisting > .thing a.comments'
 		// add expand div
 		$(this).parents('.thing').after(''+
 
-			'<div class="shine-expand" id="expand-' + $(this).parents('.thing').data("fullname") + '">'+
+			'<div class="shine-expand" id="expand-' + $(this).parents('.thing').data("fullname") + '"><div class="shine-expand-wrapper">'+
 				'<div class="large-area"></div>'+
+				'<div class="side-comments"></div></div>'+
 				'<div class="toggle-child-comments">Child Comments</div>'+
-				'<div class="side-comments"></div>'+
 			'</div>'
 
 		);
