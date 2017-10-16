@@ -88,17 +88,21 @@ function SHINE(){
 	currentSettings.account.status = "shinebright";
 	
 
-    console.log(currentSettings);
+	//console.log(currentSettings);
 
-	if(currentSettings.version.updateinfo == undefined || currentSettings.version.updateinfo == ""){
-		$('#settings-update-info').val("show");
-		currentSettings.version.updateinfo = "show";
-		chrome.storage.local.set({"shine": currentSettings});
-	}
+	if(!currentSettings.version){
 
-	if(currentSettings.version.dismissed == undefined || currentSettings.version.dismissed == ""){
-		currentSettings.version.dismissed = "no";
+		var changelogSettings = {
+			"version" : {
+		    	"current" : "",
+		    	"updateinfo" : "show",
+		    	"dismissed" : "no"
+		    }
+		};
+
+		currentSettings = $.extend(currentSettings, changelogSettings);
 		chrome.storage.local.set({"shine": currentSettings});
+
 	}
 
 	// adding our menu interface
