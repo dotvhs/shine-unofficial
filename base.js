@@ -1,6 +1,8 @@
 // GLOBAL RESETS AND FIXES 
 $('body').removeClass("listing-chooser-collapsed");
 
+$('head').append('<link href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet" />');
+
 // FUNCTIONS SECTION
 
 // this function returns our query string variable
@@ -26,6 +28,7 @@ function IsJsonString(str) {
 
 // creating the settings variable to use when we update and save settings
 var currentSettings = {};
+
 
 // creating the default settings variable if they havn't saved any settings yet
 var defaultSettings = {
@@ -53,9 +56,17 @@ var defaultSettings = {
     	{"url" : "www.reddit.com/user/Abbigale221/m/moviesandtv", "layout" : "list"}
     ],
 
-    "account" : {"status" : "shinebright"},
+    "account" : {
+    	"status" : "shinebright"
+    },
 
-    "message" : ""
+    "message" : "",
+
+    "version" : {
+    	"current" : "",
+    	"updateinfo" : "show",
+    	"dismissed" : "no"
+    }
 
 };
 
@@ -69,12 +80,15 @@ todayIs = curr_month.toString() + curr_date.toString();
 
 
 
+
+
 // this is the main SHINE base function that runs after we've retrieved or created thier settings
 // this sets up the basic global interface
 function SHINE(){
 	currentSettings.account.status = "shinebright";
+	
 
-    //console.log(currentSettings);
+    console.log(currentSettings);
 
 	// adding our menu interface
 
@@ -125,8 +139,6 @@ function SHINE(){
     	'</form>';
 
 	$('body').append(htmlToAdd);
-
-	$('head').append('<link href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet" />');
 
 	$('#header').append(''+
 
@@ -181,6 +193,16 @@ function SHINE(){
 						'</select>'+
 					'</div>'+
 				'</div>'+
+				'<div class="settings-halves">'+
+					'<div class="settings-column-half">'+
+						'<label for="settings-update-info">Show Update Info</label>'+
+						'<span class="settings-small-print">Display information about the SHINE updates.</span>'+
+						'<select name="settings-update-info" id="settings-update-info">'+
+							'<option value="show">Show</option>'+
+							'<option value="hide">Hide</option>'+
+						'</select>'+
+					'</div>'+
+				'</div>'+
 				'<p>To add or edit subreddit or multireddit defaults, please go to that subreddit or multireddit and click the grid view or list view icon in the top bar. To remove a default from the lists below, click the delete icon.</p>'+
 				'<div class="settings-halves">'+
 					'<div class="settings-column-half">'+
@@ -215,14 +237,6 @@ function SHINE(){
 								'</div>'+
 								'<div class="theme-name">Legacy Night</div>'+
 							'</label>'+
-							'<label class="gray">'+
-								'<input type="radio" name="settings-main-theme" value="gray">'+
-								'<div class="foreground"><span>Aa</span>'+
-									'<div class="background"></div>'+
-									'<div class="secondary"></div>'+
-								'</div>'+
-								'<div class="theme-name">Pale Gray</div>'+
-							'</label>'+
 							'<label class="violet">'+
 								'<input type="radio" name="settings-main-theme" value="violet">'+
 								'<div class="foreground"><span>Aa</span>'+
@@ -247,14 +261,6 @@ function SHINE(){
 								'</div>'+
 								'<div class="theme-name">Night Time</div>'+
 							'</label>'+
-							'<label class="dark">'+
-								'<input type="radio" name="settings-main-theme" value="dark">'+
-								'<div class="foreground"><span>Aa</span>'+
-									'<div class="background"></div>'+
-									'<div class="secondary"></div>'+
-								'</div>'+
-								'<div class="theme-name">Mono Dark</div>'+
-							'</label>'+
 							'<label class="brown">'+
 								'<input type="radio" name="settings-main-theme" value="brown">'+
 								'<div class="foreground"><span>Aa</span>'+
@@ -262,6 +268,22 @@ function SHINE(){
 									'<div class="secondary"></div>'+
 								'</div>'+
 								'<div class="theme-name">Milk Chocolate</div>'+
+							'</label>'+
+							'<label class="gray">'+
+								'<input type="radio" name="settings-main-theme" value="gray">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Pale Gray</div>'+
+							'</label>'+
+							'<label class="dark">'+
+								'<input type="radio" name="settings-main-theme" value="dark">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Mono Dark</div>'+
 							'</label>'+
 							'<label class="black">'+
 								'<input type="radio" name="settings-main-theme" value="black">'+
@@ -383,6 +405,50 @@ function SHINE(){
 	);
 
 
+	$('body').append(''+
+		'<div class="changelog-panel">'+
+			'<div class="update">'+
+				'<h2>SHINE for Reddit (unofficial) by vhs (u/voythas)</h2>'+
+				'<h3>Version 1.5.0</h3>'+
+				'<ul class="updates">'+
+					'<li class="new">Theme and color selector</li>'+
+					'<li class="new">Support for clips.twitch.tv (both grid and list)</li>'+
+					'<li class="new">Support for few NSFW sources: pornhub.com, xhamster.com and xvideos.com (list view only for now)</li>'+
+					'<li class="new">This neat little window and updates notifications (you can disable them in options if you find this annoying)</li>'+
+					'<li class="enh">Third view type is now accessible without going to the options</li>'+
+					'<li class="enh">"Hide Child Comments" should be more accessible in side comments view</li>'+
+					'<li class="enh">Many icons were changed and should be more crips now</li>'+
+					'<li class="enh">Replaced post icons to a themeable versions</li>'+
+					'<li class="enh">v.redd.it support for Grid</li>'+
+					'<li class="enh">It\'s now possible to select more columns in grid mode</li>'+
+					'<li class="enh">Changed lines icon to Reddit Snu</li>'+
+					'<li class="enh">Replaced SHINE text with Reddit Snu</li>'+
+					'<li class="enh">Small animation on hover</li>'+
+					'<li class="enh">A bit more color integration with RES</li>'+
+					'<li class="fix">Vimeo in grid mode is now fixed</li>'+
+					'<li class="fix">Facebook image fixes</li>'+
+					'<li class="fix">Small margin fixes for Firefox</li>'+
+					'<li class="fix">Premium features unlocked for everyone</li>'+
+					'<li class="fix">A lot of other fixes I can\'t really remember now</li>'+
+					'<li class="rem">Removed Clean Dark Theme</li>'+
+					'<li class="rem">All SVG files got removed</li>'+
+					'<li class="rem">All unnecessary files were removed (jpg pictures and stuff)</li>'+
+					'<li class="bug">Known bugs: Due to many changes, old nightmode (Legacy Night) is not looking as it should, I\'m really sorry, it will be fixed in next version. Please, use any other black themes for now.</li>'+
+				'</ul>'+
+				'<h3>Version 1.4.5.5</h3>'+
+				'<ul class="updates">'+
+					'<li class="new">Support for streamable.com (thanks to u/itzblitz94)</li>'+
+					'<li class="new">Support for v.redd.it (list view only)</li>'+
+					'<li class="new">Clean Dark theme added</li>'+
+					'<li class="new">Premium features unlocked</li>'+
+					'<li class="fix">Fixed Imgur loading</li>'+
+					'<li class="rem">Removed Google Analytics</li>'+
+				'</ul>'+
+			'</div>'+
+		'</div>'
+	);
+
+
 
 
 	/* SETTINGS BAR */
@@ -395,6 +461,18 @@ function SHINE(){
 
 		$('html').addClass("show-shortcuts");
 
+	}
+
+	/* UPDATE INFO */
+
+	if( currentSettings.version.updateinfo == "hide" ){
+
+		$('#settings-update-info').val("hide");
+
+	}else if(currentSettings.version.updateinfo == undefined){
+		$('#settings-update-info').val("show");
+		currentSettings.version.updateinfo = "show";
+		chrome.storage.local.set({"shine": currentSettings});
 	}
 
 	/* DEFAULT VIEW */
@@ -657,6 +735,30 @@ function SHINE(){
 
 	$('html').addClass("SHINE");
 
+	var manifest = chrome.runtime.getManifest();
+	var shineVersion = manifest.version;
+
+	$('body').append(''+
+		'<div class="update-info">'+
+			'<div class="update-info-content">'+
+				'SHINE got updated to version '+ shineVersion +
+				'<span class="open-changelog">CHANGELOG</span>'+
+				'<span class="dismiss-changelog"></span>'+
+			'</div>'+
+		'</div>'
+		);
+
+	if (currentSettings.version.current != shineVersion && currentSettings.version.updateinfo != "hide") {
+		console.info('JUST UPDATED! Old version:' + currentSettings.version.current);
+		console.info('JUST UPDATED! New version:' + shineVersion);
+		currentSettings.version.dismissed = "no";
+		currentSettings.version.current = shineVersion;
+		chrome.storage.local.set({"shine": currentSettings});
+	    $('.update-info').fadeIn('fast');
+	} else if (currentSettings.version.current == shineVersion && currentSettings.version.updateinfo != "hide" && currentSettings.version.dismissed != "yes"){
+		$('.update-info').show();
+	}
+
 
 } // end SHINE function
 
@@ -713,6 +815,7 @@ function resetInterfaces(){
 	$('.shine-grid .shine-expand .album-thumbnails').html("");
 	$('.shine-grid .shine-expand .side-comments').html("");
 	$('html').removeClass("show-settings");
+	$('html').removeClass("show-changelog");
 	$('html').removeClass("shine-hide-children");
 
 }
@@ -792,20 +895,6 @@ $('body').on('click','.shine-multi', function(){
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ALL THE SETTINGS STUFF
 
 function saveSettingsMessage(){
@@ -814,6 +903,29 @@ function saveSettingsMessage(){
 	setTimeout("jQuery('html').removeClass('settings-are-saved')", 2000);		
 
 }
+
+$('body').on('click','.open-changelog', function(){
+
+	resetInterfaces();
+	$('html').toggleClass("show-changelog");
+	$('.update-info').fadeOut('fast');
+
+	currentSettings.version.dismissed = "yes";
+
+	chrome.storage.local.set({"shine": currentSettings});
+
+
+});
+
+$('body').on('click','.dismiss-changelog', function(){
+
+	$('.update-info').fadeOut('fast');
+
+	currentSettings.version.dismissed = "yes";
+
+	chrome.storage.local.set({"shine": currentSettings});
+
+});
 
 $('body').on('click','.shine-settings', function(){
 
@@ -861,6 +973,19 @@ $('body').on('change','#settings-shortcuts-bar', function(){
 			$('html').removeClass("show-shortcuts");
 
 		}
+
+		saveSettingsMessage();
+
+	});
+
+});
+
+
+$('body').on('change','#settings-update-info', function(){
+
+	currentSettings.version.updateinfo = $(this).val();
+
+	chrome.storage.local.set({"shine": currentSettings}, function(){
 
 		saveSettingsMessage();
 
@@ -1477,3 +1602,4 @@ $('body').keyup(function(e) {
      	resetInterfaces();
     }
 });
+

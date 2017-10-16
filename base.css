@@ -579,6 +579,7 @@ html.SHINE .dark-background{
     display:none;
 }
 
+html.SHINE.show-changelog .dark-background,
 html.SHINE.expanding .dark-background,
 html.SHINE.show-settings .dark-background,
 html.SHINE.show-shine-bright .dark-background{
@@ -806,7 +807,7 @@ html.SHINE .shine-nav:hover .shine-multi::after {
 }
 
 html.SHINE .shine-nav:hover .shine-settings::after {
-  content: "\F493";
+  content: "\F62E";
 }
 
 html.SHINE .shine-nav:hover .shine-search::after {
@@ -820,10 +821,6 @@ html.SHINE .shine-nav:hover .add.shine-subscribe::after {
 html.SHINE .shine-nav:hover .remove.shine-subscribe::after {
     content: "\F413";
 }
-
-
-
-
 
 
 
@@ -1476,12 +1473,17 @@ html.SHINE.shinebright .shine-settings-prompt{
 .settings-panel .settings-saved {
     position: absolute;
     top: calc(100% + 30px);
+    left: 50%;
     color: #fff;
     font-size: 14px;
     text-align: center;
-    width: 100%;
+    width: auto;
     opacity:0;
     transition:opacity 500ms ease;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,.7);
 }
 
 html.settings-are-saved .settings-panel .settings-saved{
@@ -2119,4 +2121,127 @@ html.SHINE.res-nightmode button, html.SHINE button {
     border-radius: 2px;
     outline: none;
     transition: background 200ms ease;
+}
+
+
+
+
+html.SHINE .update-info {
+    position: fixed;
+    color: #ccc;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    background-color: #111;
+    padding: 12px;
+    font-size: 12px;
+    line-height: 18px;
+    height: 18px;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+    z-index: 99999;
+}
+html.SHINE .update-info .open-changelog {
+    cursor: pointer;
+    position: absolute;
+    right: 32px;
+}
+html.SHINE .update-info .dismiss-changelog {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    line-height: 18px;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    opacity: .3;
+    transition: opacity 200ms ease;
+}
+html.SHINE .update-info .dismiss-changelog:hover {
+    opacity: .7;
+}
+html.SHINE .update-info .dismiss-changelog:before {
+    font: normal normal normal 18px/1 "Material Design Icons";
+    content: "\F5AD";
+}
+html.SHINE .update-info-content {
+    position: relative;
+}
+html.SHINE .changelog-panel {
+    background-color: #fff;
+    padding: 30px;
+    position: fixed;
+    width: 50%;
+    height: 60%;
+    top: 15%;
+    left: 25%;
+    z-index: 9999;
+    overflow: auto;
+    color: #000;
+    display: none;
+}
+html.SHINE.show-changelog .changelog-panel {
+    display: block;
+}
+html.SHINE ul.updates {
+    padding: 0;
+}
+html.SHINE ul.updates li {
+    line-height: 28px;
+    font-size: 14px;
+}
+html.SHINE .update h2 {
+    font-size: 24px;
+    padding: 18px 0 10px;
+}
+html.SHINE .update h3 {
+    font-size: 21px;
+    padding: 18px 0 10px;
+}
+html.SHINE .update h3, .update ul.updates {
+    opacity: .4;
+    list-style-type: none;
+}
+html.SHINE .update h3:first-of-type, .update ul.updates:first-of-type {
+    opacity: 1;
+}
+html.SHINE ul.updates li:before {
+    line-height: 16px;
+    font-size: 10px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #fff;
+    margin-right: 8px;
+    font-weight: 700;
+    width: 26px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+html.SHINE ul.updates li.new:before {
+    content: "NEW";
+    background-color: #2c53e4;
+}
+
+html.SHINE ul.updates li.enh:before {
+    content: "ENH";
+    background-color: #8341e6;
+}
+
+html.SHINE ul.updates li.fix:before {
+    content: "FIX";
+    background-color: #78cc5b;
+}
+
+html.SHINE ul.updates li.rem:before {
+    content: "REM";
+    background-color: #d62727;
+}
+
+html.SHINE ul.updates li.bug:before {
+    content: "BUG";
+    background-color: #111;
 }

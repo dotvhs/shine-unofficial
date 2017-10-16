@@ -51,5 +51,7 @@ html.SHINE.color-lime button {
   background-color: #cddc39; }
 html.SHINE.color-lime button:hover {
   background-color: #AFB42B !important; }
+html.SHINE.color-lime .update-info .open-changelog {
+  color: #AFB42B; }
 html.SHINE #colorselect label.lime .button span {
   background-color: #cddc39; }

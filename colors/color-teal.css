@@ -51,5 +51,7 @@ html.SHINE.color-teal button {
   background-color: #1DE9B6; }
 html.SHINE.color-teal button:hover {
   background-color: #00BFA5 !important; }
+html.SHINE.color-teal .update-info .open-changelog {
+  color: #00BFA5; }
 html.SHINE #colorselect label.teal .button span {
   background-color: #1DE9B6; }

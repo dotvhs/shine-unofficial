@@ -23,6 +23,7 @@
 
 html.SHINE {
 	&.res-nightmode.theme-#{$themename} {
+		background-color: $color_bg_darkest !important;
 		&.shine-list {
 			body {
 				background: $color_bg_darkest !important;

@@ -51,5 +51,7 @@ html.SHINE.color-orange button {
   background-color: #FF9800; }
 html.SHINE.color-orange button:hover {
   background-color: #E65100 !important; }
+html.SHINE.color-orange .update-info .open-changelog {
+  color: #E65100; }
 html.SHINE #colorselect label.orange .button span {
   background-color: #FF9800; }

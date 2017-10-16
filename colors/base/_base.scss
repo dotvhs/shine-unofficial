@@ -123,7 +123,11 @@ html.SHINE {
 
 		button:hover {
 			background-color: $color_fab_color !important;
-		}		
+		}
+
+		.update-info .open-changelog {
+			color: $color_fab_color;
+		}
 	}
 
 	#colorselect label.#{$colorname} .button {

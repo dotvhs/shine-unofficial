@@ -51,5 +51,7 @@ html.SHINE.color-cyan button {
   background-color: #00bcd4; }
 html.SHINE.color-cyan button:hover {
   background-color: #0097A7 !important; }
+html.SHINE.color-cyan .update-info .open-changelog {
+  color: #0097A7; }
 html.SHINE #colorselect label.cyan .button span {
   background-color: #00bcd4; }

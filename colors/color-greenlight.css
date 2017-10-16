@@ -51,5 +51,7 @@ html.SHINE.color-greenlight button {
   background-color: #8bc34a; }
 html.SHINE.color-greenlight button:hover {
   background-color: #558B2F !important; }
+html.SHINE.color-greenlight .update-info .open-changelog {
+  color: #558B2F; }
 html.SHINE #colorselect label.greenlight .button span {
   background-color: #8bc34a; }

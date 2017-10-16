@@ -51,5 +51,7 @@ html.SHINE.color-indigo button {
   background-color: #536DFE; }
 html.SHINE.color-indigo button:hover {
   background-color: #304FFE !important; }
+html.SHINE.color-indigo .update-info .open-changelog {
+  color: #304FFE; }
 html.SHINE #colorselect label.indigo .button span {
   background-color: #536DFE; }

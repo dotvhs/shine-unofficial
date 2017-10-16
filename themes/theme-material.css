@@ -180,109 +180,111 @@ html.SHINE.res-nightmode.theme-material input[type="text"], html.SHINE.res-night
 html.SHINE.res-nightmode.theme-material .sidebox, html.SHINE.res-nightmode.theme-material .subredditbox, html.SHINE.res-nightmode.theme-material .subreddit-info, html.SHINE.res-nightmode.theme-material .raisedbox, html.SHINE.res-nightmode.theme-material .login-form-side, html.SHINE.res-nightmode.theme-material .morelink {
   background: #2e3c43 !important; }
 
-html.SHINE.res-nightmode.theme-material.shine-list body {
-  background: #1e282d !important; }
-  html.SHINE.res-nightmode.theme-material.shine-list body > div.content div#siteTable > .thing {
-    background: #263238 !important;
-    border-bottom: 1px solid #1e282d !important;
-    border-left: 5px solid #263238 !important;
-    border-top: 0 !important;
-    border-right: 0 !important; }
-    html.SHINE.res-nightmode.theme-material.shine-list body > div.content div#siteTable > .thing:hover {
-      background: #2e3c43 !important;
-      border-left: 5px solid #2e3c43 !important; }
-    html.SHINE.res-nightmode.theme-material.shine-list body > div.content div#siteTable > .thing.link > .child {
-      color: #fff; }
-html.SHINE.res-nightmode.theme-material.shine-list .shine-expand {
-  background: #263238 !important;
-  border-bottom: 1px solid #2e3c43; }
-  html.SHINE.res-nightmode.theme-material.shine-list .shine-expand .toggle-child-comments {
-    background: #2e3c43 !important; }
-html.SHINE.res-nightmode.theme-material.shine-list .side-comments {
-  background: #263238 !important; }
-html.SHINE.res-nightmode.theme-material.shine-list.shine-list-classic .side-comments .shine-comment::after {
-  color: #adaeb3 !important;
-  border: 1px solid #85868b; }
-html.SHINE.res-nightmode.theme-material body {
-  background: #1e282d !important; }
-  html.SHINE.res-nightmode.theme-material body > .content {
+html.SHINE.res-nightmode.theme-material {
+  background-color: #1e282d !important; }
+  html.SHINE.res-nightmode.theme-material.shine-list body {
     background: #1e282d !important; }
-  html.SHINE.res-nightmode.theme-material body .roundfield {
-    background-color: #2e3c43; }
-  html.SHINE.res-nightmode.theme-material body.submit .roundfield {
-    background-color: #2e3c43; }
-  html.SHINE.res-nightmode.theme-material body.with-listing-chooser .listing-chooser {
-    background-color: #1e282d; }
-    html.SHINE.res-nightmode.theme-material body.with-listing-chooser .listing-chooser li a {
-      border-color: #2e3c43; }
-    html.SHINE.res-nightmode.theme-material body.with-listing-chooser .listing-chooser .intro {
-      background-color: #263238;
-      padding: 8px; }
-html.SHINE.res-nightmode.theme-material #header {
-  background: #263238 !important; }
-  html.SHINE.res-nightmode.theme-material #header ul.tabmenu {
+    html.SHINE.res-nightmode.theme-material.shine-list body > div.content div#siteTable > .thing {
+      background: #263238 !important;
+      border-bottom: 1px solid #1e282d !important;
+      border-left: 5px solid #263238 !important;
+      border-top: 0 !important;
+      border-right: 0 !important; }
+      html.SHINE.res-nightmode.theme-material.shine-list body > div.content div#siteTable > .thing:hover {
+        background: #2e3c43 !important;
+        border-left: 5px solid #2e3c43 !important; }
+      html.SHINE.res-nightmode.theme-material.shine-list body > div.content div#siteTable > .thing.link > .child {
+        color: #fff; }
+  html.SHINE.res-nightmode.theme-material.shine-list .shine-expand {
+    background: #263238 !important;
+    border-bottom: 1px solid #2e3c43; }
+    html.SHINE.res-nightmode.theme-material.shine-list .shine-expand .toggle-child-comments {
+      background: #2e3c43 !important; }
+  html.SHINE.res-nightmode.theme-material.shine-list .side-comments {
     background: #263238 !important; }
-html.SHINE.res-nightmode.theme-material div#header-bottom-left {
-  background: #263238 !important; }
-html.SHINE.res-nightmode.theme-material div#sr-header-area {
-  background: #263238 !important;
-  background: #263238 !important; }
-html.SHINE.res-nightmode.theme-material .md blockquote {
-  background: #2e3c43 !important; }
-html.SHINE.res-nightmode.theme-material a#sr-more-link {
-  background: #1e282d;
-  border-left: 1px solid #263238; }
-html.SHINE.res-nightmode.theme-material .comment .child {
-  border-left: 1px solid rgba(255, 255, 255, 0.1); }
-html.SHINE.res-nightmode.theme-material .comment .showreplies {
-  border-left: 1px solid rgba(255, 255, 255, 0.1); }
-html.SHINE.res-nightmode.theme-material textarea {
-  background-color: #1e282d !important;
-  border-color: rgba(255, 255, 255, 0.1) !important; }
-html.SHINE.res-nightmode.theme-material .sidebox .spacer {
-  background: rgba(30, 40, 45, 0.3) !important; }
-html.SHINE.res-nightmode.theme-material .side .linkinfo {
-  background: rgba(30, 40, 45, 0.3) !important; }
-html.SHINE.res-nightmode.theme-material .RESCloseButton {
-  background-color: #263238 !important; }
-html.SHINE.res-nightmode.theme-material .read-next {
-  background-color: #263238 !important; }
-html.SHINE.res-nightmode.theme-material .drop-choices {
-  background-color: #263238 !important; }
-html.SHINE.res-nightmode.theme-material.show-sidebar .side {
-  background: #263238; }
-html.SHINE.res-nightmode.theme-material.shine-default .panestack-title {
-  border-bottom: 1px solid #263238; }
-html.SHINE.res-nightmode.theme-material .message.new > .entry {
-  background-color: #263238 !important; }
-html.SHINE.res-nightmode.theme-material.shine-grid body > .content #siteTable .thing {
-  background: #263238 !important; }
-  html.SHINE.res-nightmode.theme-material.shine-grid body > .content #siteTable .thing:hover {
+  html.SHINE.res-nightmode.theme-material.shine-list.shine-list-classic .side-comments .shine-comment::after {
+    color: #adaeb3 !important;
+    border: 1px solid #85868b; }
+  html.SHINE.res-nightmode.theme-material body {
+    background: #1e282d !important; }
+    html.SHINE.res-nightmode.theme-material body > .content {
+      background: #1e282d !important; }
+    html.SHINE.res-nightmode.theme-material body .roundfield {
+      background-color: #2e3c43; }
+    html.SHINE.res-nightmode.theme-material body.submit .roundfield {
+      background-color: #2e3c43; }
+    html.SHINE.res-nightmode.theme-material body.with-listing-chooser .listing-chooser {
+      background-color: #1e282d; }
+      html.SHINE.res-nightmode.theme-material body.with-listing-chooser .listing-chooser li a {
+        border-color: #2e3c43; }
+      html.SHINE.res-nightmode.theme-material body.with-listing-chooser .listing-chooser .intro {
+        background-color: #263238;
+        padding: 8px; }
+  html.SHINE.res-nightmode.theme-material #header {
+    background: #263238 !important; }
+    html.SHINE.res-nightmode.theme-material #header ul.tabmenu {
+      background: #263238 !important; }
+  html.SHINE.res-nightmode.theme-material div#header-bottom-left {
+    background: #263238 !important; }
+  html.SHINE.res-nightmode.theme-material div#sr-header-area {
+    background: #263238 !important;
+    background: #263238 !important; }
+  html.SHINE.res-nightmode.theme-material .md blockquote {
     background: #2e3c43 !important; }
-  html.SHINE.res-nightmode.theme-material.shine-grid body > .content #siteTable .thing .entry ul.flat-list {
-    border-top: 1px solid #1e282d; }
-html.SHINE.res-nightmode.theme-material.shine-grid .shine-expand .side-comments {
-  background: #263238 !important; }
-html.SHINE.res-nightmode.theme-material.shine-grid .shine-expand .toggle-child-comments {
-  background: #2e3c43 !important; }
-html.SHINE.res-nightmode.theme-material .infobar:not(.newsletterbar) {
-  background-color: #2e3c43;
-  color: rgba(255, 255, 255, 0.7);
-  border-color: rgba(133, 134, 139, 0.5); }
-html.SHINE.res-nightmode.theme-material #progressIndicator {
-  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
-  color: rgba(255, 255, 255, 0.4);
-  background-color: rgba(38, 50, 56, 0.7);
-  border-color: rgba(38, 50, 56, 0.4); }
-html.SHINE.res-nightmode.theme-material .usertext.grayed .usertext-body {
-  background-color: #1e282d; }
-html.SHINE.res-nightmode.theme-material .usertext.border .usertext-body {
-  background-color: #2e3c43; }
-html.SHINE.res-nightmode.theme-material .thumbnail.spoiler::before, html.SHINE.res-nightmode.theme-material .thumbnail.nsfw::before, html.SHINE.res-nightmode.theme-material .thumbnail.default::before, html.SHINE.res-nightmode.theme-material .thumbnail.image::before, html.SHINE.res-nightmode.theme-material .thumbnail.self::before {
-  color: rgba(255, 255, 255, 0.7) !important;
-  background-color: rgba(255, 255, 255, 0.1) !important; }
-html.SHINE.res-nightmode.theme-material #header-bottom-left #header-img-a, html.SHINE.res-nightmode.theme-material #header-bottom-left #header-img.default-header {
-  color: white !important; }
+  html.SHINE.res-nightmode.theme-material a#sr-more-link {
+    background: #1e282d;
+    border-left: 1px solid #263238; }
+  html.SHINE.res-nightmode.theme-material .comment .child {
+    border-left: 1px solid rgba(255, 255, 255, 0.1); }
+  html.SHINE.res-nightmode.theme-material .comment .showreplies {
+    border-left: 1px solid rgba(255, 255, 255, 0.1); }
+  html.SHINE.res-nightmode.theme-material textarea {
+    background-color: #1e282d !important;
+    border-color: rgba(255, 255, 255, 0.1) !important; }
+  html.SHINE.res-nightmode.theme-material .sidebox .spacer {
+    background: rgba(30, 40, 45, 0.3) !important; }
+  html.SHINE.res-nightmode.theme-material .side .linkinfo {
+    background: rgba(30, 40, 45, 0.3) !important; }
+  html.SHINE.res-nightmode.theme-material .RESCloseButton {
+    background-color: #263238 !important; }
+  html.SHINE.res-nightmode.theme-material .read-next {
+    background-color: #263238 !important; }
+  html.SHINE.res-nightmode.theme-material .drop-choices {
+    background-color: #263238 !important; }
+  html.SHINE.res-nightmode.theme-material.show-sidebar .side {
+    background: #263238; }
+  html.SHINE.res-nightmode.theme-material.shine-default .panestack-title {
+    border-bottom: 1px solid #263238; }
+  html.SHINE.res-nightmode.theme-material .message.new > .entry {
+    background-color: #263238 !important; }
+  html.SHINE.res-nightmode.theme-material.shine-grid body > .content #siteTable .thing {
+    background: #263238 !important; }
+    html.SHINE.res-nightmode.theme-material.shine-grid body > .content #siteTable .thing:hover {
+      background: #2e3c43 !important; }
+    html.SHINE.res-nightmode.theme-material.shine-grid body > .content #siteTable .thing .entry ul.flat-list {
+      border-top: 1px solid #1e282d; }
+  html.SHINE.res-nightmode.theme-material.shine-grid .shine-expand .side-comments {
+    background: #263238 !important; }
+  html.SHINE.res-nightmode.theme-material.shine-grid .shine-expand .toggle-child-comments {
+    background: #2e3c43 !important; }
+  html.SHINE.res-nightmode.theme-material .infobar:not(.newsletterbar) {
+    background-color: #2e3c43;
+    color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(133, 134, 139, 0.5); }
+  html.SHINE.res-nightmode.theme-material #progressIndicator {
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
+    color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(38, 50, 56, 0.7);
+    border-color: rgba(38, 50, 56, 0.4); }
+  html.SHINE.res-nightmode.theme-material .usertext.grayed .usertext-body {
+    background-color: #1e282d; }
+  html.SHINE.res-nightmode.theme-material .usertext.border .usertext-body {
+    background-color: #2e3c43; }
+  html.SHINE.res-nightmode.theme-material .thumbnail.spoiler::before, html.SHINE.res-nightmode.theme-material .thumbnail.nsfw::before, html.SHINE.res-nightmode.theme-material .thumbnail.default::before, html.SHINE.res-nightmode.theme-material .thumbnail.image::before, html.SHINE.res-nightmode.theme-material .thumbnail.self::before {
+    color: rgba(255, 255, 255, 0.7) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important; }
+  html.SHINE.res-nightmode.theme-material #header-bottom-left #header-img-a, html.SHINE.res-nightmode.theme-material #header-bottom-left #header-img.default-header {
+    color: white !important; }
 html.SHINE #themeselect label.material .foreground {
   background-color: #263238; }
   html.SHINE #themeselect label.material .foreground .background {

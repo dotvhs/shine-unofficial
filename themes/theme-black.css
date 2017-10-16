@@ -180,109 +180,111 @@ html.SHINE.res-nightmode.theme-black input[type="text"], html.SHINE.res-nightmod
 html.SHINE.res-nightmode.theme-black .sidebox, html.SHINE.res-nightmode.theme-black .subredditbox, html.SHINE.res-nightmode.theme-black .subreddit-info, html.SHINE.res-nightmode.theme-black .raisedbox, html.SHINE.res-nightmode.theme-black .login-form-side, html.SHINE.res-nightmode.theme-black .morelink {
   background: #0c0c0c !important; }
 
-html.SHINE.res-nightmode.theme-black.shine-list body {
-  background: black !important; }
-  html.SHINE.res-nightmode.theme-black.shine-list body > div.content div#siteTable > .thing {
+html.SHINE.res-nightmode.theme-black {
+  background-color: black !important; }
+  html.SHINE.res-nightmode.theme-black.shine-list body {
+    background: black !important; }
+    html.SHINE.res-nightmode.theme-black.shine-list body > div.content div#siteTable > .thing {
+      background: black !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+      border-left: 5px solid black !important;
+      border-top: 0 !important;
+      border-right: 0 !important; }
+      html.SHINE.res-nightmode.theme-black.shine-list body > div.content div#siteTable > .thing:hover {
+        background: #0c0c0c !important;
+        border-left: 5px solid #0c0c0c !important; }
+      html.SHINE.res-nightmode.theme-black.shine-list body > div.content div#siteTable > .thing.link > .child {
+        color: #fff; }
+  html.SHINE.res-nightmode.theme-black.shine-list .shine-expand {
     background: black !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-    border-left: 5px solid black !important;
-    border-top: 0 !important;
-    border-right: 0 !important; }
-    html.SHINE.res-nightmode.theme-black.shine-list body > div.content div#siteTable > .thing:hover {
-      background: #0c0c0c !important;
-      border-left: 5px solid #0c0c0c !important; }
-    html.SHINE.res-nightmode.theme-black.shine-list body > div.content div#siteTable > .thing.link > .child {
-      color: #fff; }
-html.SHINE.res-nightmode.theme-black.shine-list .shine-expand {
-  background: black !important;
-  border-bottom: 1px solid #0c0c0c; }
-  html.SHINE.res-nightmode.theme-black.shine-list .shine-expand .toggle-child-comments {
-    background: #0c0c0c !important; }
-html.SHINE.res-nightmode.theme-black.shine-list .side-comments {
-  background: black !important; }
-html.SHINE.res-nightmode.theme-black.shine-list.shine-list-classic .side-comments .shine-comment::after {
-  color: #939393 !important;
-  border: 1px solid #616161; }
-html.SHINE.res-nightmode.theme-black body {
-  background: black !important; }
-  html.SHINE.res-nightmode.theme-black body > .content {
+    border-bottom: 1px solid #0c0c0c; }
+    html.SHINE.res-nightmode.theme-black.shine-list .shine-expand .toggle-child-comments {
+      background: #0c0c0c !important; }
+  html.SHINE.res-nightmode.theme-black.shine-list .side-comments {
     background: black !important; }
-  html.SHINE.res-nightmode.theme-black body .roundfield {
-    background-color: #0c0c0c; }
-  html.SHINE.res-nightmode.theme-black body.submit .roundfield {
-    background-color: #0c0c0c; }
-  html.SHINE.res-nightmode.theme-black body.with-listing-chooser .listing-chooser {
+  html.SHINE.res-nightmode.theme-black.shine-list.shine-list-classic .side-comments .shine-comment::after {
+    color: #939393 !important;
+    border: 1px solid #616161; }
+  html.SHINE.res-nightmode.theme-black body {
+    background: black !important; }
+    html.SHINE.res-nightmode.theme-black body > .content {
+      background: black !important; }
+    html.SHINE.res-nightmode.theme-black body .roundfield {
+      background-color: #0c0c0c; }
+    html.SHINE.res-nightmode.theme-black body.submit .roundfield {
+      background-color: #0c0c0c; }
+    html.SHINE.res-nightmode.theme-black body.with-listing-chooser .listing-chooser {
+      background-color: black; }
+      html.SHINE.res-nightmode.theme-black body.with-listing-chooser .listing-chooser li a {
+        border-color: #0c0c0c; }
+      html.SHINE.res-nightmode.theme-black body.with-listing-chooser .listing-chooser .intro {
+        background-color: black;
+        padding: 8px; }
+  html.SHINE.res-nightmode.theme-black #header {
+    background: black !important; }
+    html.SHINE.res-nightmode.theme-black #header ul.tabmenu {
+      background: black !important; }
+  html.SHINE.res-nightmode.theme-black div#header-bottom-left {
+    background: black !important; }
+  html.SHINE.res-nightmode.theme-black div#sr-header-area {
+    background: black !important;
+    background: black !important; }
+  html.SHINE.res-nightmode.theme-black .md blockquote {
+    background: #0c0c0c !important; }
+  html.SHINE.res-nightmode.theme-black a#sr-more-link {
+    background: black;
+    border-left: 1px solid black; }
+  html.SHINE.res-nightmode.theme-black .comment .child {
+    border-left: 1px solid rgba(255, 255, 255, 0.1); }
+  html.SHINE.res-nightmode.theme-black .comment .showreplies {
+    border-left: 1px solid rgba(255, 255, 255, 0.1); }
+  html.SHINE.res-nightmode.theme-black textarea {
+    background-color: black !important;
+    border-color: rgba(255, 255, 255, 0.1) !important; }
+  html.SHINE.res-nightmode.theme-black .sidebox .spacer {
+    background: rgba(0, 0, 0, 0.3) !important; }
+  html.SHINE.res-nightmode.theme-black .side .linkinfo {
+    background: rgba(0, 0, 0, 0.3) !important; }
+  html.SHINE.res-nightmode.theme-black .RESCloseButton {
+    background-color: black !important; }
+  html.SHINE.res-nightmode.theme-black .read-next {
+    background-color: black !important; }
+  html.SHINE.res-nightmode.theme-black .drop-choices {
+    background-color: black !important; }
+  html.SHINE.res-nightmode.theme-black.show-sidebar .side {
+    background: black; }
+  html.SHINE.res-nightmode.theme-black.shine-default .panestack-title {
+    border-bottom: 1px solid black; }
+  html.SHINE.res-nightmode.theme-black .message.new > .entry {
+    background-color: black !important; }
+  html.SHINE.res-nightmode.theme-black.shine-grid body > .content #siteTable .thing {
+    background: black !important; }
+    html.SHINE.res-nightmode.theme-black.shine-grid body > .content #siteTable .thing:hover {
+      background: #0c0c0c !important; }
+    html.SHINE.res-nightmode.theme-black.shine-grid body > .content #siteTable .thing .entry ul.flat-list {
+      border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  html.SHINE.res-nightmode.theme-black.shine-grid .shine-expand .side-comments {
+    background: black !important; }
+  html.SHINE.res-nightmode.theme-black.shine-grid .shine-expand .toggle-child-comments {
+    background: #0c0c0c !important; }
+  html.SHINE.res-nightmode.theme-black .infobar:not(.newsletterbar) {
+    background-color: #0c0c0c;
+    color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(97, 97, 97, 0.5); }
+  html.SHINE.res-nightmode.theme-black #progressIndicator {
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
+    color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: rgba(0, 0, 0, 0.4); }
+  html.SHINE.res-nightmode.theme-black .usertext.grayed .usertext-body {
     background-color: black; }
-    html.SHINE.res-nightmode.theme-black body.with-listing-chooser .listing-chooser li a {
-      border-color: #0c0c0c; }
-    html.SHINE.res-nightmode.theme-black body.with-listing-chooser .listing-chooser .intro {
-      background-color: black;
-      padding: 8px; }
-html.SHINE.res-nightmode.theme-black #header {
-  background: black !important; }
-  html.SHINE.res-nightmode.theme-black #header ul.tabmenu {
-    background: black !important; }
-html.SHINE.res-nightmode.theme-black div#header-bottom-left {
-  background: black !important; }
-html.SHINE.res-nightmode.theme-black div#sr-header-area {
-  background: black !important;
-  background: black !important; }
-html.SHINE.res-nightmode.theme-black .md blockquote {
-  background: #0c0c0c !important; }
-html.SHINE.res-nightmode.theme-black a#sr-more-link {
-  background: black;
-  border-left: 1px solid black; }
-html.SHINE.res-nightmode.theme-black .comment .child {
-  border-left: 1px solid rgba(255, 255, 255, 0.1); }
-html.SHINE.res-nightmode.theme-black .comment .showreplies {
-  border-left: 1px solid rgba(255, 255, 255, 0.1); }
-html.SHINE.res-nightmode.theme-black textarea {
-  background-color: black !important;
-  border-color: rgba(255, 255, 255, 0.1) !important; }
-html.SHINE.res-nightmode.theme-black .sidebox .spacer {
-  background: rgba(0, 0, 0, 0.3) !important; }
-html.SHINE.res-nightmode.theme-black .side .linkinfo {
-  background: rgba(0, 0, 0, 0.3) !important; }
-html.SHINE.res-nightmode.theme-black .RESCloseButton {
-  background-color: black !important; }
-html.SHINE.res-nightmode.theme-black .read-next {
-  background-color: black !important; }
-html.SHINE.res-nightmode.theme-black .drop-choices {
-  background-color: black !important; }
-html.SHINE.res-nightmode.theme-black.show-sidebar .side {
-  background: black; }
-html.SHINE.res-nightmode.theme-black.shine-default .panestack-title {
-  border-bottom: 1px solid black; }
-html.SHINE.res-nightmode.theme-black .message.new > .entry {
-  background-color: black !important; }
-html.SHINE.res-nightmode.theme-black.shine-grid body > .content #siteTable .thing {
-  background: black !important; }
-  html.SHINE.res-nightmode.theme-black.shine-grid body > .content #siteTable .thing:hover {
-    background: #0c0c0c !important; }
-  html.SHINE.res-nightmode.theme-black.shine-grid body > .content #siteTable .thing .entry ul.flat-list {
-    border-top: 1px solid rgba(255, 255, 255, 0.1); }
-html.SHINE.res-nightmode.theme-black.shine-grid .shine-expand .side-comments {
-  background: black !important; }
-html.SHINE.res-nightmode.theme-black.shine-grid .shine-expand .toggle-child-comments {
-  background: #0c0c0c !important; }
-html.SHINE.res-nightmode.theme-black .infobar:not(.newsletterbar) {
-  background-color: #0c0c0c;
-  color: rgba(255, 255, 255, 0.7);
-  border-color: rgba(97, 97, 97, 0.5); }
-html.SHINE.res-nightmode.theme-black #progressIndicator {
-  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
-  color: rgba(255, 255, 255, 0.4);
-  background-color: rgba(0, 0, 0, 0.7);
-  border-color: rgba(0, 0, 0, 0.4); }
-html.SHINE.res-nightmode.theme-black .usertext.grayed .usertext-body {
-  background-color: black; }
-html.SHINE.res-nightmode.theme-black .usertext.border .usertext-body {
-  background-color: #0c0c0c; }
-html.SHINE.res-nightmode.theme-black .thumbnail.spoiler::before, html.SHINE.res-nightmode.theme-black .thumbnail.nsfw::before, html.SHINE.res-nightmode.theme-black .thumbnail.default::before, html.SHINE.res-nightmode.theme-black .thumbnail.image::before, html.SHINE.res-nightmode.theme-black .thumbnail.self::before {
-  color: rgba(255, 255, 255, 0.8) !important;
-  background-color: #0c0c0c !important; }
-html.SHINE.res-nightmode.theme-black #header-bottom-left #header-img-a, html.SHINE.res-nightmode.theme-black #header-bottom-left #header-img.default-header {
-  color: white !important; }
+  html.SHINE.res-nightmode.theme-black .usertext.border .usertext-body {
+    background-color: #0c0c0c; }
+  html.SHINE.res-nightmode.theme-black .thumbnail.spoiler::before, html.SHINE.res-nightmode.theme-black .thumbnail.nsfw::before, html.SHINE.res-nightmode.theme-black .thumbnail.default::before, html.SHINE.res-nightmode.theme-black .thumbnail.image::before, html.SHINE.res-nightmode.theme-black .thumbnail.self::before {
+    color: rgba(255, 255, 255, 0.8) !important;
+    background-color: #0c0c0c !important; }
+  html.SHINE.res-nightmode.theme-black #header-bottom-left #header-img-a, html.SHINE.res-nightmode.theme-black #header-bottom-left #header-img.default-header {
+    color: white !important; }
 html.SHINE #themeselect label.black .foreground {
   background-color: black; }
   html.SHINE #themeselect label.black .foreground .background {
