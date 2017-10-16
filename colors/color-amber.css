@@ -1,0 +1,57 @@
+html.SHINE.color-amber.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
+  border-left: 5px solid #FFC107 !important; }
+  html.SHINE.color-amber.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
+    border-left: 5px solid #FFC107 !important; }
+html.SHINE.color-amber.res-nightmode.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
+  color: #FFC107 !important; }
+html.SHINE.color-amber.res-nightmode.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
+  border: 1px solid #FFC107;
+  color: #FFC107 !important; }
+html.SHINE.color-amber.res-nightmode .md a {
+  color: #FFC107; }
+html.SHINE.color-amber.res-nightmode .tagline a {
+  color: #FFC107 !important; }
+html.SHINE.color-amber.res-nightmode a {
+  color: #FFC107; }
+html.SHINE.color-amber.res-nightmode .search-result-meta a {
+  color: #FFC107 !important; }
+html.SHINE.color-amber.res-nightmode .menuarea .dropdown.lightdrop .selected {
+  color: #FFC107; }
+html.SHINE.color-amber.res-nightmode .res-nightmode #progressIndicator h2 {
+  color: #FFC107; }
+html.SHINE.color-amber.res-nightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
+  color: #FFC107; }
+html.SHINE.color-amber.res-nightmode div#sr-header-area li.selected a {
+  color: #FFC107 !important; }
+html.SHINE.color-amber.res-nightmode #header-bottom-left #header-img-a::after, html.SHINE.color-amber.res-nightmode #header-bottom-left #header-img.default-header::after {
+  background-color: transparent !important; }
+html.SHINE.color-amber .shine-expand .side-comments button.save {
+  background: #FFC107 !important; }
+html.SHINE.color-amber .shine-expand .side-comments button:hover {
+  background: #FFB300 !important; }
+html.SHINE.color-amber div#sr-header-area a#sr-more-link:hover {
+  background: #FFC107 !important; }
+html.SHINE.color-amber div#sr-header-area li.selected a {
+  color: #FFB300 !important; }
+html.SHINE.color-amber #themeselect input:checked ~ .foreground {
+  border: 3px solid #FFC107; }
+html.SHINE.color-amber #themeselect input:checked ~ .theme-name {
+  color: #FFC107; }
+html.SHINE.color-amber .shine-nav .shine-navicon {
+  background-color: #FFB300;
+  transition: background-color 200ms; }
+html.SHINE.color-amber #header-bottom-right a.message-count {
+  color: white !important;
+  background: #FFC107; }
+html.SHINE.color-amber .colorful #header-bottom-left #header-img-a::after, html.SHINE.color-amber .colorful #header-bottom-left #header-img.default-header::after {
+  background-color: #FFB300; }
+html.SHINE.color-amber .colorful .thumbnail.spoiler::before, html.SHINE.color-amber .colorful .thumbnail.nsfw::before, html.SHINE.color-amber .colorful .thumbnail.default::before, html.SHINE.color-amber .colorful .thumbnail.image::before, html.SHINE.color-amber .colorful .thumbnail.self::before {
+  background-color: #FFB300; }
+html.SHINE.color-amber button {
+  background-color: #FFC107; }
+html.SHINE.color-amber button:hover {
+  background-color: #FFB300 !important; }
+html.SHINE.color-amber .update-info .open-changelog {
+  color: #FFB300; }
+html.SHINE #colorselect label.amber .button span {
+  background-color: #FFC107; }

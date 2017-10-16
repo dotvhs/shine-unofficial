@@ -1,6 +1,8 @@
 // GLOBAL RESETS AND FIXES 
 $('body').removeClass("listing-chooser-collapsed");
 
+$('head').append('<link href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet" />');
+
 // FUNCTIONS SECTION
 
 // this function returns our query string variable
@@ -27,10 +29,19 @@ function IsJsonString(str) {
 // creating the settings variable to use when we update and save settings
 var currentSettings = {};
 
-// creating the default settings variable if they havn't saved any settings yet
-var defaultSettings = {"global" : {"layout" : "list", "shortcuts" : "show", "night" : "off", "sidebar" : "", "multis" : ""},
 
-    "list" :  {"split" : "6040", "columns" : "one"},
+// creating the default settings variable if they havn't saved any settings yet
+var defaultSettings = {
+	"global" : {
+		"layout" : "list", 
+		"shortcuts" : "show", 
+		"theme" : "legacy-white", 
+		"sidebar" : "", 
+		"multis" : "",
+		"color" : "orange"
+	},
+
+    "list" :  {"split" : "6040", "columns" : "two"},
 
     "grid" :  {"columns" : "5", "nsfw" : "no", "split" : "6040"},
 
@@ -45,9 +56,17 @@ var defaultSettings = {"global" : {"layout" : "list", "shortcuts" : "show", "nig
     	{"url" : "www.reddit.com/user/Abbigale221/m/moviesandtv", "layout" : "list"}
     ],
 
-    "account" : {"status" : "shinebright"},
+    "account" : {
+    	"status" : "shinebright"
+    },
 
-    "message" : ""
+    "message" : "",
+
+    "version" : {
+    	"current" : "",
+    	"updateinfo" : "show",
+    	"dismissed" : "no"
+    }
 
 };
 
@@ -61,12 +80,26 @@ todayIs = curr_month.toString() + curr_date.toString();
 
 
 
+
+
 // this is the main SHINE base function that runs after we've retrieved or created thier settings
 // this sets up the basic global interface
 function SHINE(){
 	currentSettings.account.status = "shinebright";
+	
 
-    //console.log(currentSettings);
+    console.log(currentSettings);
+
+	if(currentSettings.version.updateinfo == undefined || currentSettings.version.updateinfo == ""){
+		$('#settings-update-info').val("show");
+		currentSettings.version.updateinfo = "show";
+		chrome.storage.local.set({"shine": currentSettings});
+	}
+
+	if(currentSettings.version.dismissed == undefined || currentSettings.version.dismissed == ""){
+		currentSettings.version.dismissed = "no";
+		chrome.storage.local.set({"shine": currentSettings});
+	}
 
 	// adding our menu interface
 
@@ -121,8 +154,9 @@ function SHINE(){
 	$('#header').append(''+
 
 		'<div class="layout-switch">'+
-			'<svg class="grid-switch" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z"/></svg>'+
-			'<svg class="list-switch" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z"/></svg>'+
+			'<svg class="grid-switch" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M3,11H11V3H3M3,21H11V13H3M13,21H21V13H13M13,3V11H21V3" /></svg>'+
+			'<svg class="list-switch" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M3,4H21V8H3V4M3,10H21V14H3V10M3,16H21V20H3V16Z" /></svg>'+
+			'<svg class="list-side-switch" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M3,16h8v4H3V16z M3,14h8v-4H3V14z M3,8h8V4H3V8z M13,4v16h8V4H13z"/></svg>'+
 		'</div>'
 
 	);
@@ -147,6 +181,7 @@ function SHINE(){
 		'<div class="settings-panel">'+
 			'<div class="settings-tabs">'+
 				'<div data-settings-panel=".panel-default" class="tab tab-default tab-active">Default Settings</div>'+
+				'<div data-settings-panel=".panel-theme" class="tab tab-theme">Theme Settings</div>'+
 				'<div data-settings-panel=".panel-grid" class="tab tab-grid">Grid Settings</div>'+
 				'<div data-settings-panel=".panel-list" class="tab tab-list">List Settings</div>'+
 			'</div>'+
@@ -160,21 +195,20 @@ function SHINE(){
 							'<option value="grid">Grid View</option>'+
 						'</select>'+
 					'</div>'+
-					'<div class="settings-column-half">'+
-						'<label for="settings-night-mode">Theme Selector</label>'+
-						'<span class="settings-small-print">If you have RES, turn it on Night Mode for dark themes too.</span>'+
-						'<select name="settings-night-mode" id="settings-night-mode">'+
-							'<option value="off">White</option>'+
-							'<option value="on">Night</option>'+
-							'<option value="dark">Clean Dark</option>'+
-						'</select>'+
-					'</div>'+
-				'</div>'+
-				'<div class="settings-halves">'+
 					'<div class="settings-column-half">'+					
 						'<label for="settings-shortcuts-bar">Shortcuts Bar</label>'+
 						'<span class="settings-small-print">Hide or show the shortcuts bar at the top.</span>'+
 						'<select name="settings-shortcuts-bar" id="settings-shortcuts-bar">'+
+							'<option value="show">Show</option>'+
+							'<option value="hide">Hide</option>'+
+						'</select>'+
+					'</div>'+
+				'</div>'+
+				'<div class="settings-halves">'+
+					'<div class="settings-column-half">'+
+						'<label for="settings-update-info">Show Update Info</label>'+
+						'<span class="settings-small-print">Display information about the SHINE updates.</span>'+
+						'<select name="settings-update-info" id="settings-update-info">'+
 							'<option value="show">Show</option>'+
 							'<option value="hide">Hide</option>'+
 						'</select>'+
@@ -192,6 +226,130 @@ function SHINE(){
 					'</div>'+
 				'</div>'+
 			'</div>'+
+			'<div class="panel panel-theme">'+
+				'<div class="settings-halves">'+
+					'<div class="settings-column-half">'+
+						'<label for="settings-main-theme">Main Theme</label>'+
+						'<span class="settings-small-print">If you have RES, turn it on Night Mode for dark themes too.</span>'+
+						'<div id="themeselect">'+
+							'<label class="legacy-white">'+
+								'<input type="radio" name="settings-main-theme" value="legacy-white">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Legacy White</div>'+
+							'</label>'+
+							'<label class="legacy-night">'+
+								'<input type="radio" name="settings-main-theme" value="legacy-night">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Legacy Night</div>'+
+							'</label>'+
+							'<label class="violet">'+
+								'<input type="radio" name="settings-main-theme" value="violet">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Violet Dark</div>'+
+							'</label>'+
+							'<label class="material">'+
+								'<input type="radio" name="settings-main-theme" value="material">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Material Dark</div>'+
+							'</label>'+
+							'<label class="blue">'+
+								'<input type="radio" name="settings-main-theme" value="blue">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Night Time</div>'+
+							'</label>'+
+							'<label class="brown">'+
+								'<input type="radio" name="settings-main-theme" value="brown">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Milk Chocolate</div>'+
+							'</label>'+
+							'<label class="gray">'+
+								'<input type="radio" name="settings-main-theme" value="gray">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Pale Gray</div>'+
+							'</label>'+
+							'<label class="dark">'+
+								'<input type="radio" name="settings-main-theme" value="dark">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Mono Dark</div>'+
+							'</label>'+
+							'<label class="black">'+
+								'<input type="radio" name="settings-main-theme" value="black">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Pure Black</div>'+
+							'</label>'+
+						'</div>'+
+					'</div>'+
+					'<div class="settings-column-half">'+
+						'<label for="settings-color-theme">Color Selector</label>'+
+						'<span class="settings-small-print">Pick your color accent.</span>'+
+						'<div id="colorselect">'+
+							'<label class="color red">'+
+							  '<input type="radio" name="settings-color-theme" value="red">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+							'<label class="color orange">'+
+							  '<input type="radio" name="settings-color-theme" value="orange">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+							'<label class="color amber">'+
+							  '<input type="radio" name="settings-color-theme" value="amber">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+							'<label class="color lime">'+
+							  '<input type="radio" name="settings-color-theme" value="lime">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+							'<label class="color greenlight">'+
+							  '<input type="radio" name="settings-color-theme" value="greenlight">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+							'<label class="color teal">'+
+							  '<input type="radio" name="settings-color-theme" value="teal">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+							'<label class="color cyan">'+
+							  '<input type="radio" name="settings-color-theme" value="cyan">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+							'<label class="color blue">'+
+							  '<input type="radio" name="settings-color-theme" value="blue">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+							'<label class="color indigo">'+
+							  '<input type="radio" name="settings-color-theme" value="indigo">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+						'</div>'+
+					'</div>'+
+				'</div>'+
+			'</div>'+
 			'<div class="panel panel-grid">'+
 				'<p>The settings below are applied to all Grid View pages.</p>'+
 				'<div class="settings-halves">'+
@@ -203,6 +361,10 @@ function SHINE(){
 							'<option value="3">Three</option>'+
 							'<option value="4">Four</option>'+
 							'<option value="5">Five</option>'+
+							'<option value="6">Six</option>'+
+							'<option value="7">Seven</option>'+
+							'<option value="8">Eight</option>'+
+							'<option value="9">Nine</option>'+
 						'</select>'+
 					'</div>'+
 					'<div class="settings-column-half">'+
@@ -254,6 +416,50 @@ function SHINE(){
 	);
 
 
+	$('body').append(''+
+		'<div class="changelog-panel">'+
+			'<div class="update">'+
+				'<h2>SHINE for Reddit (unofficial) by vhs (u/voythas)</h2>'+
+				'<h3>Version 1.5.0</h3>'+
+				'<ul class="updates">'+
+					'<li class="new">Theme and color selector</li>'+
+					'<li class="new">Support for clips.twitch.tv (both grid and list)</li>'+
+					'<li class="new">Support for few NSFW sources: pornhub.com, xhamster.com and xvideos.com (list view only for now)</li>'+
+					'<li class="new">This neat little window and updates notifications (you can disable them in options if you find this annoying)</li>'+
+					'<li class="enh">Third view type is now accessible without going to the options</li>'+
+					'<li class="enh">"Hide Child Comments" should be more accessible in side comments view</li>'+
+					'<li class="enh">Many icons were changed and should be more crips now</li>'+
+					'<li class="enh">Replaced post icons to a themeable versions</li>'+
+					'<li class="enh">v.redd.it support for Grid</li>'+
+					'<li class="enh">It\'s now possible to select more columns in grid mode</li>'+
+					'<li class="enh">Changed lines icon to Reddit Snu</li>'+
+					'<li class="enh">Replaced SHINE text with Reddit Snu</li>'+
+					'<li class="enh">Small animation on hover</li>'+
+					'<li class="enh">A bit more color integration with RES</li>'+
+					'<li class="fix">Vimeo in grid mode is now fixed</li>'+
+					'<li class="fix">Facebook image fixes</li>'+
+					'<li class="fix">Small margin fixes for Firefox</li>'+
+					'<li class="fix">Premium features unlocked for everyone</li>'+
+					'<li class="fix">A lot of other fixes I can\'t really remember now</li>'+
+					'<li class="rem">Removed Clean Dark Theme</li>'+
+					'<li class="rem">All SVG files got removed</li>'+
+					'<li class="rem">All unnecessary files were removed (jpg pictures and stuff)</li>'+
+					'<li class="bug">Known bugs: Due to many changes, old nightmode (Legacy Night) is not looking as it should, I\'m really sorry, it will be fixed in next version. Please, use any other black themes for now.</li>'+
+				'</ul>'+
+				'<h3>Version 1.4.5.5</h3>'+
+				'<ul class="updates">'+
+					'<li class="new">Support for streamable.com (thanks to u/itzblitz94)</li>'+
+					'<li class="new">Support for v.redd.it (list view only)</li>'+
+					'<li class="new">Clean Dark theme added</li>'+
+					'<li class="new">Premium features unlocked</li>'+
+					'<li class="fix">Fixed Imgur loading</li>'+
+					'<li class="rem">Removed Google Analytics</li>'+
+				'</ul>'+
+			'</div>'+
+		'</div>'
+	);
+
+
 
 
 	/* SETTINGS BAR */
@@ -265,6 +471,14 @@ function SHINE(){
 	}else{
 
 		$('html').addClass("show-shortcuts");
+
+	}
+
+	/* UPDATE INFO */
+
+	if( currentSettings.version.updateinfo == "hide" ){
+
+		$('#settings-update-info').val("hide");
 
 	}
 
@@ -286,7 +500,14 @@ function SHINE(){
 
 	/* NIGHT MODE */
 
-	$('#settings-night-mode').val( currentSettings.global.night );
+	//$('#settings-main-theme').val( currentSettings.global.night );
+
+	$('input[type="radio"][name="settings-main-theme"][value="'+currentSettings.global.theme+'"]').attr('checked', true);
+
+	/* COLOR THEME */
+
+	//$('input[type=radio][name=settings-color-theme]:checked').val( currentSettings.global.color );
+	$('input[type="radio"][name="settings-color-theme"][value="'+currentSettings.global.color+'"]').attr('checked', true);
 
 	/* NSFW */
 
@@ -308,31 +529,37 @@ function SHINE(){
 		$('#settings-list-split').val( currentSettings.list.split );
 	}
 
-	/* DISABLE STUFF IF SHINE LIGHT */
 
-	if( currentSettings.account.status == "shinelight" ){
-
-		$('#settings-default-view').attr("disabled","disabled");
-		$('#settings-night-mode').attr("disabled","disabled");
-		$('#settings-shortcuts-bar').attr("disabled","disabled");
-		$('#settings-number-columns').attr("disabled","disabled");
-		$('#settings-show-nsfw').attr("disabled","disabled");
-		$('#settings-list-layout').attr("disabled","disabled");
-		$('#settings-grid-split').attr("disabled","disabled");
-		$('#settings-list-split').attr("disabled","disabled");
-
+	if( currentSettings.global.theme == undefined || currentSettings.global.theme == "" ){
+		if (currentSettings.global.night == "on") {
+			currentSettings.global.theme = "legacy-night";
+		} else {
+			currentSettings.global.theme = "legacy-white";
+		}
 	}
 
 
 	// this adds the nightmode class
-	if( currentSettings.global.night == "on" ){
+	if( currentSettings.global.theme == "legacy-night" ){
 		$('html').addClass("res-nightmode");
 		$('body').addClass("res-nightmode");
+	}else if( currentSettings.global.theme == "legacy-white" ){
+		$('html').removeClass("res-nightmode");
+		$('body').removeClass("res-nightmode");
+	}else{
+		$('html').addClass("res-nightmode theme-"+currentSettings.global.theme);
+		$('body').addClass("res-nightmode theme-"+currentSettings.global.theme);
 	}
 
-	if( currentSettings.global.night == "dark" ){
-		$('html').addClass("res-nightmode cleandark");
-		$('body').addClass("res-nightmode cleandark");
+
+	// this adds the nightmode class
+	if( currentSettings.global.color == undefined || currentSettings.global.color == "" ){
+		$('html').addClass("color-orange");
+		$('body').addClass("color-orange");
+		currentSettings.global.color = "orange";
+	}else{
+		$('html').addClass("color-"+currentSettings.global.color);
+		$('body').addClass("color-"+currentSettings.global.color);	
 	}
 
 
@@ -346,16 +573,8 @@ function SHINE(){
 	}
 
 
-
 	// this adds a class to the html that says if we've paid or not
 	$('html').addClass( currentSettings.account.status );
-
-	if( currentSettings.account.status == "shinelight" ){
-
-		$('#header-bottom-left').prepend('<div class="header-shine-bright shine-prompt">Get Shine Bright Now</div>');
-
-	}
-
 
 
 
@@ -367,10 +586,6 @@ function SHINE(){
 	}
 
 
-
-
-
-
 	// this cleans up the top right section
 	if( !$('body').hasClass("loggedin") ){
 		$('#header-bottom-right .user').contents().first().remove();
@@ -378,26 +593,8 @@ function SHINE(){
 	}
 
 
-
-
-
-
-
-
-
-
-
-
 	// this makes sure we're on the home page, a subreddit, or a multireddit
 	if( $('body').hasClass("listing-page") && !$('body').hasClass("profile-page") && $('#header-bottom-left .pagename').html() != "preferences" && !$('body').hasClass("subreddits-page") ){
-
-
-
-
-
-
-
-
 
 
 		//time to decide if we're going to load the list view or the grid view
@@ -485,7 +682,7 @@ function SHINE(){
 			
 			if( currentSettings.grid.split == "7030" || currentSettings.grid.split == "6040" || currentSettings.grid.split == "5050" || currentSettings.grid.split == "4060" || currentSettings.grid.split == "3070"){
 				
-				$('html').addClass("shine-split-" + currentSettings.grid.split);
+				$('html').addClass("shine-splitheme-" + currentSettings.grid.split);
 				
 			}
 			
@@ -527,16 +724,6 @@ function SHINE(){
 	}
 
 
-
-
-
-
-
-
-
-
-
-
 	// remove subreddit styling
 
 	headLinks = $('head link');
@@ -553,159 +740,39 @@ function SHINE(){
 
 	}
 
-	
-	
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    // LISTENING FOR MESSAGE FROM IFRAME
-    
-    function listener(event){
-        
-        if ( event.origin == "https://madewithgusto.com" && event.data == "shinebright" ){
-            
-            //time to shine bright
-            $('#settings-default-view').removeAttr("disabled");
-            $('#settings-night-mode').removeAttr("disabled");
-            $('#settings-shortcuts-bar').removeAttr("disabled");
-            $('#settings-number-columns').removeAttr("disabled");
-            $('#settings-show-nsfw').removeAttr("disabled");
-            $('#settings-list-layout').removeAttr("disabled");
-            $('#settings-grid-split').removeAttr("disabled");
-            $('#settings-list-split').removeAttr("disabled");
-
-            $('.header-shine-bright').remove();
-            
-            $('html').removeClass('shinelight');
-            $('html').addClass('shinebright');
-            
-            currentSettings.account.status = "shinebright";
-            
-            chrome.storage.local.set({"shine": currentSettings}, function(){
-                
-                replacePanel = ''+
-                '<div class="shining-bright">'+
-                    '<div id="sunburst"><img src="' + chrome.extension.getURL("sunburst.png") + '" /></div>'+
-                    '<h1>You did it!</h1>'+
-                    "<p>You've just unlocked the best way to experience all the delicious content reddit has to offer. You'll also have first access to all the sweet new features we'll be adding over the months and years to come. We are now massively in your debt and appreciate you supporting the hard work we've put into building SHINE. If you have any feedback or questions for us, please feel free to post in <a target='_blank' href='/r/shine'>/r/shine</a> or email us at <a target='_blank' href='mailto:shine@madewithgusto.com'>shine@madewithgusto.com</a></p><p><i>May the force be with you.</i></p><p>-The SHINE team at Gusto Creative House</p>"+
-                    '<div id="shine-bright-logout">Logout of Shine Bright <img src="' + chrome.extension.getURL("logout.svg") + '" /></div>'+
-                '</div>';
-                
-                $('.shine-bright-panel').html(replacePanel);
-
-            });
-            
-        }
-            
-    }
-
-    
-    if (window.addEventListener){
-        
-        addEventListener("message", listener, false);
-        
-    } else {
-        
-        attachEvent("onmessage", listener);
-        
-    }
-	
-
-	//SHINE BRIGHT FORM
-    
-    if( currentSettings.account.status == "shinebright" ){
-        
-        $('body').append(''+
-             '<div class="shine-bright-panel">'+
-                '<div class="shining-bright">'+
-                    '<div id="sunburst"><img src="' + chrome.extension.getURL("sunburst.png") + '" /></div>'+
-                    '<h1>You did it!</h1>'+
-                    "<p>You've just unlocked the best way to experience all the delicious content reddit has to offer. You'll also have first access to all the sweet new features we'll be adding over the months and years to come. We are now massively in your debt and appreciate you supporting the hard work we've put into building SHINE. If you have any feedback or questions for us, please feel free to post in <a target='_blank' href='/r/shine'>/r/shine</a> or email us at <a target='_blank' href='mailto:shine@madewithgusto.com'>shine@madewithgusto.com</a></p><p><i>May the force be with you.</i></p><p>-The SHINE team at Gusto Creative House</p>"+
-                    '<div id="shine-bright-logout">Logout of Shine Bright <img src="' + chrome.extension.getURL("logout.svg") + '" /></div>'+
-                '</div>'+
-             '</div>'
-        );
-        
-    }else{
-        
-        $('body').append('<div class="shine-bright-panel"></div>');
-        
-    }
-
-	$('body').on('click','.shine-prompt', function(e){
-        
-        if( currentSettings.account.status == "shinelight" ){
-            $('.shine-bright-panel').html('<iframe id="shine-bright-iframe" frameborder="0" height="100%" width="100%" src="https://madewithgusto.com/SHINE-IFRAME-CREATEACCOUNT.php" />');
-        }
-
-		$('html').addClass("show-shine-bright");
-
-		e.preventDefault();
-		e.stopPropagation();
-		return false;
-
-	});
-    
-    $('body').on('click','#shine-bright-logout', function(){
-       
-        currentSettings.account.status = "shinelight";
-        
-        chrome.storage.local.set({"shine": currentSettings}, function(){
-
-			location.reload();
-
-		});
-        
-    });
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	$('html').addClass("SHINE");
 
 
+	if (currentSettings.version.current == undefined) {
+		currentSettings.version.current = "1.4.5.5";
+		chrome.storage.local.set({"shine": currentSettings});
+	}
+
+	var manifest = chrome.runtime.getManifest();
+	var shineVersion = manifest.version;
+
+	$('body').append(''+
+		'<div class="update-info">'+
+			'<div class="update-info-content">'+
+				'SHINE got updated to version '+ shineVersion +
+				'<span class="open-changelog">CHANGELOG</span>'+
+				'<span class="dismiss-changelog"></span>'+
+			'</div>'+
+		'</div>'
+		);
+	if (currentSettings.version.current != shineVersion && currentSettings.version.updateinfo != "hide") {
+		console.info('JUST UPDATED! Old version:' + currentSettings.version.current);
+		console.info('JUST UPDATED! New version:' + shineVersion);
+		currentSettings.version.dismissed = "no";
+		currentSettings.version.current = shineVersion;
+		chrome.storage.local.set({"shine": currentSettings});
+	    $('.update-info').fadeIn('fast');
+	} else if (currentSettings.version.current == shineVersion && currentSettings.version.updateinfo != "hide" && currentSettings.version.dismissed != "yes"){
+		$('.update-info').show();
+	}
+
+
 } // end SHINE function
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // this is the function that gets our settings
@@ -739,28 +806,6 @@ function getSettings(){
 getSettings();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* INTERFACE ACTIONS */
 
 function resetInterfaces(){
@@ -782,6 +827,7 @@ function resetInterfaces(){
 	$('.shine-grid .shine-expand .album-thumbnails').html("");
 	$('.shine-grid .shine-expand .side-comments').html("");
 	$('html').removeClass("show-settings");
+	$('html').removeClass("show-changelog");
 	$('html').removeClass("shine-hide-children");
 
 }
@@ -861,20 +907,6 @@ $('body').on('click','.shine-multi', function(){
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ALL THE SETTINGS STUFF
 
 function saveSettingsMessage(){
@@ -883,6 +915,29 @@ function saveSettingsMessage(){
 	setTimeout("jQuery('html').removeClass('settings-are-saved')", 2000);		
 
 }
+
+$('body').on('click','.open-changelog', function(){
+
+	resetInterfaces();
+	$('html').toggleClass("show-changelog");
+	$('.update-info').fadeOut('fast');
+
+	currentSettings.version.dismissed = "yes";
+
+	chrome.storage.local.set({"shine": currentSettings});
+
+
+});
+
+$('body').on('click','.dismiss-changelog', function(){
+
+	$('.update-info').fadeOut('fast');
+
+	currentSettings.version.dismissed = "yes";
+
+	chrome.storage.local.set({"shine": currentSettings});
+
+});
 
 $('body').on('click','.shine-settings', function(){
 
@@ -930,6 +985,19 @@ $('body').on('change','#settings-shortcuts-bar', function(){
 			$('html').removeClass("show-shortcuts");
 
 		}
+
+		saveSettingsMessage();
+
+	});
+
+});
+
+
+$('body').on('change','#settings-update-info', function(){
+
+	currentSettings.version.updateinfo = $(this).val();
+
+	chrome.storage.local.set({"shine": currentSettings}, function(){
 
 		saveSettingsMessage();
 
@@ -1101,6 +1169,99 @@ $('body').on('click','.grid-switch', function(){
 // CLICKING THE LIST VIEW SWITCHER
 
 $('body').on('click','.list-switch', function(){
+		currentSettings.list.columns = "one";
+
+	if(  window.location.href.indexOf("/r/") == -1 && window.location.href.indexOf("/m/") == -1  ){
+
+		currentSettings.global.layout = "list";
+
+	}else if( $('.pagename a').attr("href").indexOf("/r/") != -1 ) {
+
+		// we're in a subreddit
+		if( currentSettings.subreddits.length > 0 ){
+
+			foundIt = false;
+
+			for(i = 0; i < currentSettings.subreddits.length; i++){
+
+				urlToCheck = currentSettings.subreddits[i].url;
+
+				if( $('.pagename a').attr("href").indexOf( urlToCheck ) != -1 ){
+
+					currentSettings.subreddits[i].layout = "list";
+					foundIt = true;
+					break;
+
+				}
+
+			}
+
+			if( foundIt == false ){
+
+				defaultToAdd = {"url" : $('.pagename a').attr("href").replace("https://","").replace("http://","") , "layout" : "list"};
+
+				currentSettings.subreddits.push( defaultToAdd );
+
+			}
+
+		}else{
+
+			defaultToAdd = {"url" : $('.pagename a').attr("href").replace("https://","").replace("http://","") , "layout" : "list"};
+
+			currentSettings.subreddits.push( defaultToAdd );
+
+		}
+
+	}else if( $('.pagename a').attr("href").indexOf("/m/") != -1 ){
+
+		// we're in a multireddit
+		if( currentSettings.multireddits.length > 0 ){
+
+			foundIt = false;
+
+			for(i = 0; i < currentSettings.multireddits.length; i++){
+
+				urlToCheck = currentSettings.multireddits[i].url;
+
+				if( $('.pagename a').attr("href").indexOf( urlToCheck ) != -1 ){
+
+					currentSettings.multireddits[i].layout = "list";
+					foundIt = true;
+					break;
+
+				}
+
+			}
+
+			if( foundIt == false ){
+
+				defaultToAdd = {"url" : $('.pagename a').attr("href").replace("https://","").replace("http://","") , "layout" : "list"};
+
+				currentSettings.multireddits.push( defaultToAdd );
+
+			}
+
+		}else{
+
+			defaultToAdd = {"url" : $('.pagename a').attr("href").replace("https://","").replace("http://","") , "layout" : "list"};
+
+			currentSettings.multireddits.push( defaultToAdd );
+
+		}
+
+	}
+
+	chrome.storage.local.set({"shine": currentSettings}, function(){
+
+		location.reload();
+
+	});
+
+});
+
+
+$('body').on('click','.list-side-switch', function(){
+		currentSettings.list.columns = "two";
 
 	if(  window.location.href.indexOf("/r/") == -1 && window.location.href.indexOf("/m/") == -1  ){
 
@@ -1268,11 +1429,11 @@ $('body').on('change','#settings-number-columns',function(){
 
 });
 
-$('body').on('change','#settings-night-mode',function(){
+$('body').on('change','input[type=radio][name=settings-main-theme]',function(){
 
-	if( $(this).val() == "on" ){
+	if( $(this).val() == "legacy-dark" ){
 
-		currentSettings.global.night = "on";
+		currentSettings.global.theme = "legacy-dark";
 
 		chrome.storage.local.set({"shine": currentSettings}, function(){
 
@@ -1285,38 +1446,27 @@ $('body').on('change','#settings-night-mode',function(){
 			$('html').addClass("res-nightmode");
 			$('body').addClass("res-nightmode");
 			
-			$('html').removeClass("cleandark");
-			$('body').removeClass("cleandark");
+			$('html').removeClass (function (index, className) {
+			    return (className.match (/\btheme-\S+/g) || []).join(' ');
+			});
+			$('body').removeClass (function (index, className) {
+			    return (className.match (/\btheme-\S+/g) || []).join(' ');
+			});
+			
+			$('html').removeClass (function (index, className) {
+			    return (className.match (/\bcolor-\S+/g) || []).join(' ');
+			});
+			$('body').removeClass (function (index, className) {
+			    return (className.match (/\bcolor-\S+/g) || []).join(' ');
+			});
 
 			saveSettingsMessage();
 
 		});
 
-	}else if( $(this).val() == "dark" ){
+	}else if( $(this).val() == "legacy-white" ){
 
-		currentSettings.global.night = "dark";
-
-		chrome.storage.local.set({"shine": currentSettings}, function(){
-
-			if( !$('#nightSwitchToggleContainer').hasClass("enabled") ){
-
-				$('#nightSwitchToggleContainer').click();
-
-			}
-
-			$('html').addClass("res-nightmode");
-			$('body').addClass("res-nightmode");
-
-			$('html').addClass("cleandark");
-			$('body').addClass("cleandark");
-
-			saveSettingsMessage();
-
-		});
-
-	}else{
-
-		currentSettings.global.night = "off";
+		currentSettings.global.theme = "legacy-white";
 
 		chrome.storage.local.set({"shine": currentSettings}, function(){
 
@@ -1329,14 +1479,69 @@ $('body').on('change','#settings-night-mode',function(){
 			$('html').removeClass("res-nightmode");
 			$('body').removeClass("res-nightmode");
 			
-			$('html').removeClass("cleandark");
-			$('body').removeClass("cleandark");
+			$('html').removeClass (function (index, className) {
+			    return (className.match (/\btheme-\S+/g) || []).join(' ');
+			});
+			$('body').removeClass (function (index, className) {
+			    return (className.match (/\btheme-\S+/g) || []).join(' ');
+			});
+
+			saveSettingsMessage();
+
+		});
+
+	}else{
+
+		currentSettings.global.theme = $(this).val();
+
+		chrome.storage.local.set({"shine": currentSettings}, function(){
+
+			if( !$('#nightSwitchToggleContainer').hasClass("enabled") ){
+
+				$('#nightSwitchToggleContainer').click();
+
+			}
+
+			$('html').addClass("res-nightmode");
+			$('body').addClass("res-nightmode");
+			
+			$('html').removeClass (function (index, className) {
+			    return (className.match (/\btheme-\S+/g) || []).join(' ');
+			});
+			$('body').removeClass (function (index, className) {
+			    return (className.match (/\btheme-\S+/g) || []).join(' ');
+			});
+
+			$('html').addClass("theme-"+currentSettings.global.theme);
+			$('body').addClass("theme-"+currentSettings.global.theme);
 
 			saveSettingsMessage();
 
 		});
 
 	}
+
+});
+
+$('body').on('change','input[type=radio][name=settings-color-theme]',function(){
+
+	currentSettings.global.color = $(this).val();
+
+	chrome.storage.local.set({"shine": currentSettings}, function(){
+		
+		$('html').removeClass (function (index, className) {
+		    return (className.match (/\bcolor-\S+/g) || []).join(' ');
+		});
+		$('body').removeClass (function (index, className) {
+		    return (className.match (/\bcolor-\S+/g) || []).join(' ');
+		});
+
+		$('html').addClass("color-"+currentSettings.global.color);
+		$('body').addClass("color-"+currentSettings.global.color);
+
+		saveSettingsMessage();
+
+	});
 
 });
 
@@ -1371,33 +1576,7 @@ $('body').on('change','#settings-show-nsfw', function(){
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
 $('*[data-res-css]').attr("style","");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* SHINE LIGHT STUFF */
@@ -1410,3 +1589,29 @@ $(window).scroll(function() {
         $('html').removeClass("shine-scrolling");
     }
 });
+
+
+
+$('body').on('mouseover','#themeselect',function(){
+	$('.dark-background').addClass("hide-bg");
+});
+
+$('body').on('mouseout','#themeselect',function(){
+	$('.dark-background').removeClass("hide-bg");
+});
+
+
+$('body').on('mouseover','#colorselect',function(){
+	$('.dark-background').addClass("hide-bg");
+});
+
+$('body').on('mouseout','#colorselect',function(){
+	$('.dark-background').removeClass("hide-bg");
+});
+
+$('body').keyup(function(e) {
+     if (e.keyCode == 27) {
+     	resetInterfaces();
+    }
+});
+

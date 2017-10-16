@@ -6,9 +6,47 @@
       "default_icon": "icon-128.png"
    },
    "content_scripts": [ {
-      "css": [ "fonts.css", "base.css", "shine-grid.css", "shine-list.css", "shine-list-classic.css", "shine-default.css", "themes/nightmode.css", "themes/cleandark.css" ],
-      "js": [ "jquery.js", "base.js" ],
-      "matches": [ "*://*.reddit.com/*" ]
+      "css": [ 
+         "fonts.css", 
+         "base.css", 
+         "shine-grid.css", 
+         "shine-list.css", 
+         "shine-list-classic.css", 
+         "shine-default.css"
+      ],
+      "matches": [ "*://*.reddit.com/*" ],
+      "run_at":"document_start"
+   }, {
+      "css": [ 
+         "themes/nightmode.css", 
+         "themes/theme-violet.css", 
+         "themes/theme-gray.css", 
+         "themes/theme-black.css", 
+         "themes/theme-dark.css", 
+         "themes/theme-blue.css", 
+         "themes/theme-brown.css", 
+         "themes/theme-material.css"
+      ],
+      "matches": [ "*://*.reddit.com/*" ],
+      "run_at":"document_start"
+   }, {
+      "css": [ 
+         "colors/color-red.css",
+         "colors/color-orange.css",
+         "colors/color-amber.css",
+         "colors/color-lime.css", 
+         "colors/color-greenlight.css", 
+         "colors/color-teal.css",
+         "colors/color-cyan.css",
+         "colors/color-blue.css",
+         "colors/color-indigo.css"
+      ],
+      "matches": [ "*://*.reddit.com/*" ],
+      "run_at":"document_start"
+   }, {
+      "js": [ "jquery.js", "base.js" ],  
+      "matches": [ "*://*.reddit.com/*" ],
+      "run_at":"document_end"
    } ],
    "content_security_policy": "script-src 'self'; object-src 'self'",
    "description": "Experience reddit with new modern list and grid view interfaces that focus on bringing the content to you.",
@@ -23,6 +61,10 @@
    "permissions": [ "storage" ],
    "short_name": "SHINE",
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.4.5.5",
-   "web_accessible_resources": [ "jquery.zoom.min.js", "shine-grid.js", "shine-list.js", "account-switcher.svg", "nomail.svg", "yesmail.svg", "res.svg", "comments.svg", "save.svg", "unsave.svg", "hide.svg", "upvote.svg", "downvote.svg", "login.svg", "youtube.svg", "gif.svg", "album.svg", "submit.svg", "sidebar.svg", "multis.svg", "settings.svg", "search.svg", "logo.svg", "shine.svg", "dropdown.svg", "subscribe.svg", "unsubscribe.svg", "shinebright.svg", "whiteshinebright.svg", "sunburst.png", "logout.svg", "newtab.svg", "account-logout.svg", "night-account-logout.svg", "night-shine.svg", "night-account-switcher.svg", "night-nomail.svg", "night-res.svg", "night-comments.svg", "night-save.svg", "night-hide.svg", "night-newtab.svg", "night-login.svg", "shine01.jpg", "shine02.jpg", "shine03.jpg", "shine04.jpg", "shine05.jpg", "shine06.jpg" ]
+   "version": "1.5.0",
+   "web_accessible_resources": [ 
+      "jquery.zoom.min.js", 
+      "shine-grid.js", 
+      "shine-list.js" 
+      ]
 }

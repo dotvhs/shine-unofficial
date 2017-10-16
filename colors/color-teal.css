@@ -1,0 +1,57 @@
+html.SHINE.color-teal.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
+  border-left: 5px solid #1DE9B6 !important; }
+  html.SHINE.color-teal.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
+    border-left: 5px solid #1DE9B6 !important; }
+html.SHINE.color-teal.res-nightmode.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
+  color: #1DE9B6 !important; }
+html.SHINE.color-teal.res-nightmode.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
+  border: 1px solid #1DE9B6;
+  color: #1DE9B6 !important; }
+html.SHINE.color-teal.res-nightmode .md a {
+  color: #1DE9B6; }
+html.SHINE.color-teal.res-nightmode .tagline a {
+  color: #1DE9B6 !important; }
+html.SHINE.color-teal.res-nightmode a {
+  color: #1DE9B6; }
+html.SHINE.color-teal.res-nightmode .search-result-meta a {
+  color: #1DE9B6 !important; }
+html.SHINE.color-teal.res-nightmode .menuarea .dropdown.lightdrop .selected {
+  color: #1DE9B6; }
+html.SHINE.color-teal.res-nightmode .res-nightmode #progressIndicator h2 {
+  color: #1DE9B6; }
+html.SHINE.color-teal.res-nightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
+  color: #1DE9B6; }
+html.SHINE.color-teal.res-nightmode div#sr-header-area li.selected a {
+  color: #1DE9B6 !important; }
+html.SHINE.color-teal.res-nightmode #header-bottom-left #header-img-a::after, html.SHINE.color-teal.res-nightmode #header-bottom-left #header-img.default-header::after {
+  background-color: transparent !important; }
+html.SHINE.color-teal .shine-expand .side-comments button.save {
+  background: #1DE9B6 !important; }
+html.SHINE.color-teal .shine-expand .side-comments button:hover {
+  background: #00BFA5 !important; }
+html.SHINE.color-teal div#sr-header-area a#sr-more-link:hover {
+  background: #1DE9B6 !important; }
+html.SHINE.color-teal div#sr-header-area li.selected a {
+  color: #00BFA5 !important; }
+html.SHINE.color-teal #themeselect input:checked ~ .foreground {
+  border: 3px solid #1DE9B6; }
+html.SHINE.color-teal #themeselect input:checked ~ .theme-name {
+  color: #1DE9B6; }
+html.SHINE.color-teal .shine-nav .shine-navicon {
+  background-color: #00BFA5;
+  transition: background-color 200ms; }
+html.SHINE.color-teal #header-bottom-right a.message-count {
+  color: white !important;
+  background: #1DE9B6; }
+html.SHINE.color-teal .colorful #header-bottom-left #header-img-a::after, html.SHINE.color-teal .colorful #header-bottom-left #header-img.default-header::after {
+  background-color: #00BFA5; }
+html.SHINE.color-teal .colorful .thumbnail.spoiler::before, html.SHINE.color-teal .colorful .thumbnail.nsfw::before, html.SHINE.color-teal .colorful .thumbnail.default::before, html.SHINE.color-teal .colorful .thumbnail.image::before, html.SHINE.color-teal .colorful .thumbnail.self::before {
+  background-color: #00BFA5; }
+html.SHINE.color-teal button {
+  background-color: #1DE9B6; }
+html.SHINE.color-teal button:hover {
+  background-color: #00BFA5 !important; }
+html.SHINE.color-teal .update-info .open-changelog {
+  color: #00BFA5; }
+html.SHINE #colorselect label.teal .button span {
+  background-color: #1DE9B6; }

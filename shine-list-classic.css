@@ -74,12 +74,12 @@ html.SHINE.shine-list.shine-list-classic .side-comments {
     height:auto !important;
 }
 
-html.SHINE.shine-list.shine-list-classic .shine-expand .toggle-child-comments {
+/*html.SHINE.shine-list.shine-list-classic .shine-expand .toggle-child-comments {
     position: relative !important;
     bottom: auto !important;
     width: 100% !important;
     left: auto !important;
-}
+}*/
 
 
 html.SHINE.shine-list.shine-list-classic .side-comments .shine-comment::after{
@@ -89,7 +89,7 @@ html.SHINE.shine-list.shine-list-classic .side-comments .shine-comment::after{
 html.SHINE.shine-list.shine-list-classic div#progressIndicator {
     width: 30% !important;
     float: left !important;
-    clear: both !important;
+    clear: left !important;
     margin-left: 30px !important;
     margin-top: 30px !important;
 }
@@ -112,3 +112,31 @@ html.SHINE.shine-list-classic .shine-menu-button label {
 }
 
 */
+
+html.SHINE.shine-list-classic #header .layout-switch svg.list-side-switch {
+    opacity: 1;
+}
+
+html.SHINE.shine-list-classic #header .layout-switch svg.list-switch {
+    opacity:0.25;
+}
+
+html.SHINE.shine-list-classic #header .layout-switch {
+    left: calc(50% - 30px);
+}
+
+html.SHINE.shine-list-classic .shine-expand .shine-expand-wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+html.SHINE.shine-list-classic .shine-expand .toggle-child-comments {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

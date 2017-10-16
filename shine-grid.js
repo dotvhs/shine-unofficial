@@ -142,7 +142,7 @@ function getVimeoThumbnail(vidID, target){
 
         var vimeoThumb = data[0].thumbnail_large;
 
-		    $(target).find('.preview-replace').replaceWith("<div class='preview preview-vimeo' data-url='//player.vimeo.com/video/" + vidID + "?autoplay=1' style='background-image:url(" + vimeoThumb + ")' ></div>");
+		    $(target).find('.preview-replace').replaceWith("<div class='preview preview-vimeo' data-video='//player.vimeo.com/video/" + vidID + "?autoplay=1' style='background-image:url(" + vimeoThumb + ")' ></div>");
 
       },
       error: function(request, status, message) {
@@ -154,12 +154,29 @@ function getVimeoThumbnail(vidID, target){
 }
 
 
+// this gets our clips.twitch.tv thumbnail
+function getTwitchThumbnail(vidID, target){
 
+  $.ajax({
+      url: '//api.twitch.tv/kraken/clips/' + vidID,
+      type: 'GET',
+      headers: {
+       'Client-ID': 'wtf8dir4p97yu2eopunfrukdhs7myx',
+       'Accept': 'application/vnd.twitchtv.v5+json'
+      },
+      success: function(data) {
 
+        var twitchThumb = data.thumbnails.medium;
 
+        $(target).find('.preview-replace').replaceWith("<div class='preview preview-youtube' data-video='//clips.twitch.tv/embed?clip=" + vidID +"&autoplay=true' style='background-image:url(" + twitchThumb + ")'></div>");
 
+      },
+      error: function(request, status, message) {
+        console.log(message);
+      }
+    });
 
-
+}
 
 
 
@@ -373,6 +390,30 @@ function getRedditText(url, content, target){
 
 }
 
+function getvreddit(url, target){
+
+  $.ajax({
+    url:url,
+    type:'GET',
+    success: function(data){
+
+      if( $(data).filter('meta[property="og:image"]') != undefined  ){
+
+        $(target).find('.preview-replace').replaceWith("<div style='background-image:url(" + $(data).filter('meta[property="og:image"]').attr("content") + ")' class='preview preview-vreddit' data-video='" + $(data).find('a.thumbnail').attr('href') +"' />");
+
+        //$(target).find('.preview-text a').attr("target","_blank");
+
+      }else{
+
+        $(target).find('.preview-replace').remove();
+        $(target).addClass("nopreview");
+
+      }
+
+    }
+  });
+
+}
 
 
 
@@ -871,16 +912,37 @@ function createPreviews(theThings){
 
     //STREAMABLE INTEGRATION BY u/itzblitz94
     else if(url.toLowerCase().indexOf("streamable.com") != -1){
-
       url = url.split(/[?#]/)[0]; // REMOVES QUERY STRING AND HASH
       url = decodeURIComponent(url);
       shortcode = url.substr(url.toLowerCase().indexOf("streamable.com/") + 15);
+
       $(theThings[i]).find(whereToPlace).append("<div style='background-image:url(//cdn-e2.streamable.com/image/"+ shortcode +".jpg)' class='preview preview-youtube' data-video='https://streamable.com/s/" + shortcode + "'></div>");
-
-
     }
 
 
+    //CLIPS.TWITCH.TV INTEGRATION
+    else if( url.toLowerCase().indexOf("clips.twitch.tv") != -1 ){
+          vidID = url.substr(url.toLowerCase().indexOf("clips.twitch.tv/") + 16);
+
+          $(theThings[i]).find(whereToPlace).append("<div class='preview preview-replace'></div>");
+
+          getTwitchThumbnail(vidID,  ".id-" + $(theThings[i]).attr("data-fullname"));
+
+          //$(theThings[i]).find(whereToPlace).append('<div class="preview preview-youtube" data-video="https://clips.twitch.tv/embed?clip=' + vidID + '&autoplay=true"></div>');
+    }
+
+
+    //v.redd.it
+    else if( $(theThings[i]).find('span.domain a').html() == "v.redd.it" ){
+      url = $(theThings[i]).find('a.comments').attr("href");
+      url = url.split(/[?#]/)[0]; // REMOVES QUERY STRING AND HASH
+
+      $(theThings[i]).find(whereToPlace).append("<div class='preview preview-replace'></div>");
+
+      getvreddit(url, ".id-" + $(theThings[i]).attr("data-fullname") );
+
+      //$(theThings[i]).find(whereToPlace).append("<div style='background-image:url("+ thumbVReddit +")' class='preview preview-youtube' data-video=''></div>");
+    }
 
 
 
@@ -1420,6 +1482,50 @@ $('body').on('click','.preview-youtube', function(){
 
   $('.shine-expand').attr("data-original-type", "youtube");
   $('.shine-expand').attr("data-original-data", $(this).data("video"));
+
+});
+
+$('body').on('click','.preview-vreddit', function(){
+
+  resetInterfaces();
+
+  var posturl = $(this).parents('.thing').find('a.comments').attr("href");
+
+  $.ajax({
+    url:posturl,
+    type:'GET',
+    success: function(data){
+
+      theContent = $(data).find(".media-preview-content");
+
+      $('.shine-expand').find('.large-youtube').html( theContent );
+      $('.no-constraints-when-pinned').removeAttr('style');
+      $('.reddit-video-player-root').css({
+        'position' : 'absolute',
+        'height' : '100%'
+      });
+    
+    }
+  });
+  
+  // theContent = $.get("//www.reddit.com" + url, function(data) {
+  //   $(data).find(".media-preview-content");
+  // });
+
+  // $('.shine-expand').find('.large-youtube').html(theContent);
+
+  // $('.no-constraints-when-pinned').removeAttr('style');
+  // $('.reddit-video-player-root').css({
+  //   'position' : 'absolute',
+  //   'height' : '100%'
+  // });
+
+  loadSideComments( $('.shine-expand .side-comments'), $(this).parents('.thing').find('a.comments').attr("href") );
+
+  $('html').addClass("expanding expand-youtubes");
+
+      $('.shine-expand').attr("data-original-type", "comments");
+      $('.shine-expand').attr("data-original-data", "comments");
 
 });
 
