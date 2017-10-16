@@ -1,6 +1,7 @@
 
 $('html').addClass("shine-ready");
 
+
 // imgur authorization
 function setHeader(xhr) {
     xhr.setRequestHeader('Authorization', 'Client-ID 4120f4b7ddae1ea');
@@ -459,9 +460,7 @@ function checkSideComments(){
 
 	// stuff to do to all anchor tags
 	$('.side-comments a').each(function(){
-
-		$(this).attr("target","_blank");
-
+		$(this).not('.expand').attr("target","_blank");
 	});
 
 }
