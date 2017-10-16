@@ -90,6 +90,17 @@ function SHINE(){
 
     console.log(currentSettings);
 
+	if(currentSettings.version.updateinfo == undefined || currentSettings.version.updateinfo == ""){
+		$('#settings-update-info').val("show");
+		currentSettings.version.updateinfo = "show";
+		chrome.storage.local.set({"shine": currentSettings});
+	}
+
+	if(currentSettings.version.dismissed == undefined || currentSettings.version.dismissed == ""){
+		currentSettings.version.dismissed = "no";
+		chrome.storage.local.set({"shine": currentSettings});
+	}
+
 	// adding our menu interface
 
 	htmlToAdd = ""+
@@ -469,10 +480,6 @@ function SHINE(){
 
 		$('#settings-update-info').val("hide");
 
-	}else if(currentSettings.version.updateinfo == undefined){
-		$('#settings-update-info').val("show");
-		currentSettings.version.updateinfo = "show";
-		chrome.storage.local.set({"shine": currentSettings});
 	}
 
 	/* DEFAULT VIEW */
@@ -735,6 +742,12 @@ function SHINE(){
 
 	$('html').addClass("SHINE");
 
+
+	if (currentSettings.version.current == undefined) {
+		currentSettings.version.current = "1.4.5.5";
+		chrome.storage.local.set({"shine": currentSettings});
+	}
+
 	var manifest = chrome.runtime.getManifest();
 	var shineVersion = manifest.version;
 
@@ -747,7 +760,6 @@ function SHINE(){
 			'</div>'+
 		'</div>'
 		);
-
 	if (currentSettings.version.current != shineVersion && currentSettings.version.updateinfo != "hide") {
 		console.info('JUST UPDATED! Old version:' + currentSettings.version.current);
 		console.info('JUST UPDATED! New version:' + shineVersion);
