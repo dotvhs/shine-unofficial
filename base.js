@@ -1613,9 +1613,13 @@ $('body').on('mouseout','#colorselect',function(){
 	$('.dark-background').removeClass("hide-bg");
 });
 
-$('body').keyup(function(e) {
-     if (e.keyCode == 27) {
+
+// KEY SHORTCUTS
+$('body').keyup(function (e) {
+	switch( e.keyCode ) {
+	case 27:
      	resetInterfaces();
-    }
+     	break;
+	}
 });
 

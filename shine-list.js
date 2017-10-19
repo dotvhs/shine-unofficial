@@ -266,10 +266,10 @@ function resetInterfaces(){
 
 // VAriABLE DELCARATION
 var startCheckingComments;
+var commentNumber;
 
 
 function checkSideComments(){
-
 	theSideCommentLinks = $('.side-comments .thing .usertext-body a').not('.shine-comment');
 
 	for( i = 0; i < theSideCommentLinks.length; i++ ){
@@ -445,7 +445,8 @@ function checkSideComments(){
 
 	for( i = 0; i < topLevelComments.length; i++ ){
 
-		$(topLevelComments[i]).addClass("been-shined");
+		commentNumber = -1;
+		$(topLevelComments[i]).addClass("been-shined comment-"+i);
 
 		theChildren = $(topLevelComments[i]).find('.child .sitetable');
 
@@ -1747,3 +1748,33 @@ if( $('body').hasClass('res') ){
 
 
 }
+
+
+$(document).ready(function(){
+	$('body').keyup(function (e) {
+		switch( e.keyCode ) {
+		case 39:
+		    if($('.been-shined.comment-'+ (commentNumber+1)).length){
+				var nextNumber = commentNumber+1;
+				if($('.been-shined.comment-'+ nextNumber).length){
+		    		commentNumber++;
+				}
+				$('.side-comments').animate({
+					scrollTop:  $(this).scrollTop() + $('.large-area').height() + ($('.been-shined.comment-'+commentNumber).position().top - $(this).position().top) - 10
+				}, 200);
+		    }
+			break;
+		case 37:
+		    if($('.been-shined.comment-'+ (commentNumber)).length){
+				var prevNumber = commentNumber-1;
+				if($('.been-shined.comment-'+ prevNumber).length){
+		    		commentNumber--;
+				}
+				$('.side-comments').animate({
+					scrollTop:  $(this).scrollTop() + $('.large-area').height() + ($('.been-shined.comment-'+commentNumber).position().top - $(this).position().top) - 10
+				}, 200);
+		    }
+			break;
+		}
+	});
+});
