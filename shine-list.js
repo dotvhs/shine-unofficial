@@ -1759,7 +1759,7 @@ $(document).ready(function(){
 				if($('.been-shined.comment-'+ nextNumber).length){
 		    		commentNumber++;
 				}
-				$('.side-comments').animate({
+				$('.shine-expand-wrapper').animate({
 					scrollTop:  $(this).scrollTop() + $('.large-area').height() + ($('.been-shined.comment-'+commentNumber).position().top - $(this).position().top) - 10
 				}, 200);
 		    }
@@ -1770,7 +1770,7 @@ $(document).ready(function(){
 				if($('.been-shined.comment-'+ prevNumber).length){
 		    		commentNumber--;
 				}
-				$('.side-comments').animate({
+				$('.shine-expand-wrapper').animate({
 					scrollTop:  $(this).scrollTop() + $('.large-area').height() + ($('.been-shined.comment-'+commentNumber).position().top - $(this).position().top) - 10
 				}, 200);
 		    }
