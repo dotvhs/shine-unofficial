@@ -12,7 +12,8 @@
          "shine-grid.css", 
          "shine-list.css", 
          "shine-list-classic.css", 
-         "shine-default.css"
+         "shine-default.css",
+         "materialdesignicons.min.css"
       ],
       "matches": [ "*://*.reddit.com/*" ],
       "run_at":"document_start"
@@ -45,7 +46,7 @@
       "run_at":"document_start"
    }, {
       "js": [ 
-         "jquery.js", 
+         "jquery-2.1.4.min.js", 
          "base.js"
       ],  
       "matches": [ "*://*.reddit.com/*" ],
@@ -69,6 +70,7 @@
       "jquery.zoom.min.js", 
       "shine-grid.js", 
       "shine-list.js", 
-      "shine-shortcuts.js" 
+      "shine-shortcuts.js",
+      "materialdesignicons-webfont.woff2"
    ]
 }

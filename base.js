@@ -1,8 +1,6 @@
 // GLOBAL RESETS AND FIXES 
 $('body').removeClass("listing-chooser-collapsed");
 
-$('head').append('<link href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet" />');
-
 // FUNCTIONS SECTION
 
 // this function returns our query string variable
@@ -667,7 +665,6 @@ function SHINE(){
 
 			$.getScript( chrome.extension.getURL("jquery.zoom.min.js") );
 			$.getScript( chrome.extension.getURL("shine-grid.js") );
-			$.getScript( chrome.extension.getURL("shine-shortcuts.js") );
 
 			thingWidth = screen.width / ( parseInt(currentSettings.grid.columns) + 1);
 
@@ -703,7 +700,6 @@ function SHINE(){
 
 			$.getScript( chrome.extension.getURL("jquery.zoom.min.js") );
 			$.getScript( chrome.extension.getURL("shine-list.js") );
-			$.getScript( chrome.extension.getURL("shine-shortcuts.js") );
 			
 			if(currentSettings.list.split == "7030" || currentSettings.list.split == "6040" || currentSettings.list.split == "5050" || currentSettings.list.split == "4060" || currentSettings.list.split == "3070"){
 				
@@ -1616,3 +1612,5 @@ $('body').on('mouseover','.menuarea',function(){
 $("body").on('mouseout','.menuarea',function(){
 	$('.menuarea').find('.drop-choices.lightdrop').removeClass("inuse");
 });
+
+$.getScript( chrome.extension.getURL("shine-shortcuts.js") );
