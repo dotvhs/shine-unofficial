@@ -164,6 +164,8 @@ html.SHINE.res-nightmode.theme-brown .usertext.grayed .usertext-body div p {
   color: #999897; }
 html.SHINE.res-nightmode.theme-brown #header-bottom-right #mail, html.SHINE.res-nightmode.theme-brown #header-bottom-right #modmail, html.SHINE.res-nightmode.theme-brown #header-bottom-right #RESAccountSwitcherIcon {
   color: white; }
+html.SHINE.res-nightmode.theme-brown .menuarea .dropdown.lightdrop .selected {
+  color: white; }
 html.SHINE.shine-grid body > .content #siteTable .thing {
   transition: all 200ms ease; }
 html.SHINE #themeselect label.brown .foreground span {
@@ -197,6 +199,7 @@ html.SHINE.res-nightmode.theme-brown {
         color: #fff; }
   html.SHINE.res-nightmode.theme-brown.shine-list .shine-expand {
     background: #33302e !important;
+<<<<<<< HEAD
     border-bottom: 1px solid #4d4845; }
     html.SHINE.res-nightmode.theme-brown.shine-list .shine-expand .toggle-child-comments {
       background: #4d4845 !important; }
@@ -206,6 +209,36 @@ html.SHINE.res-nightmode.theme-brown {
     color: #a6a4a2 !important;
     border: 1px solid #827f7d; }
   html.SHINE.res-nightmode.theme-brown body {
+=======
+    border-bottom: 1px solid #232120 !important;
+    border-left: 5px solid #33302e !important;
+    border-top: 0 !important;
+    border-right: 0 !important; }
+    html.SHINE.res-nightmode.theme-brown.shine-list body > div.content div#siteTable > .thing:hover {
+      background: #4d4845 !important;
+      border-left: 5px solid #4d4845 !important; }
+    html.SHINE.res-nightmode.theme-brown.shine-list body > div.content div#siteTable > .thing.link > .child {
+      color: #fff; }
+  html.SHINE.res-nightmode.theme-brown.shine-list body > div.content .side-comments div#siteTable > .thing {
+    background: transparent !important;
+    border: 0 !important; }
+    html.SHINE.res-nightmode.theme-brown.shine-list body > div.content .side-comments div#siteTable > .thing:hover {
+      background: transparent !important;
+      border: 0 !important; }
+html.SHINE.res-nightmode.theme-brown.shine-list .shine-expand {
+  background: #33302e !important;
+  border-bottom: 1px solid #4d4845; }
+  html.SHINE.res-nightmode.theme-brown.shine-list .shine-expand .toggle-child-comments {
+    background: #4d4845 !important; }
+html.SHINE.res-nightmode.theme-brown.shine-list .side-comments {
+  background: #33302e !important; }
+html.SHINE.res-nightmode.theme-brown.shine-list.shine-list-classic .side-comments .shine-comment::after {
+  color: #a6a4a2 !important;
+  border: 1px solid #827f7d; }
+html.SHINE.res-nightmode.theme-brown body {
+  background: #232120 !important; }
+  html.SHINE.res-nightmode.theme-brown body > .content {
+>>>>>>> experimental
     background: #232120 !important; }
     html.SHINE.res-nightmode.theme-brown body > .content {
       background: #232120 !important; }

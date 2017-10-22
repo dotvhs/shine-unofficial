@@ -1587,19 +1587,6 @@ $('body').on('change','#settings-show-nsfw', function(){
 $('*[data-res-css]').attr("style","");
 
 
-/* SHINE LIGHT STUFF */
-
-$(window).scroll(function() {
-    if ($(document).scrollTop() > 100) {
-        $('html').addClass("shine-scrolling");
-    }
-    else {
-        $('html').removeClass("shine-scrolling");
-    }
-});
-
-
-
 $('body').on('mouseover','#themeselect',function(){
 	$('.dark-background').addClass("hide-bg");
 });
@@ -1615,4 +1602,17 @@ $('body').on('mouseover','#colorselect',function(){
 
 $('body').on('mouseout','#colorselect',function(){
 	$('.dark-background').removeClass("hide-bg");
+});
+
+
+
+
+$(".menuarea").detach().appendTo('#header-bottom-left')
+
+$('body').on('mouseover','.menuarea',function(){
+	$('.menuarea').find('.drop-choices.lightdrop').addClass("inuse");
+});
+
+$("body").on('mouseout','.menuarea',function(){
+	$('.menuarea').find('.drop-choices.lightdrop').removeClass("inuse");
 });

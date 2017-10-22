@@ -265,20 +265,26 @@ html.SHINE #header ul.tabmenu li {
     margin-left:0px !important;
     font-weight: 100;
     font-size:16px;
-    display:flex;
+    /*display:flex;*/
     order:2;
 	height:30px;
 	opacity:0;
 }
 
+html.SHINE #header ul.tabmenu li:not(.selected) {
+    display: none;
+}
+
 html.SHINE #header ul.tabmenu:hover li{
 	opacity:1;
+    display: block;
 }
 
 html.SHINE #header ul.tabmenu li.selected{
 	order:1;
 	opacity:1;
 }
+
 
 html.SHINE #header ul.tabmenu li a,
 html.SHINE #header ul.tabmenu li.selected a{
@@ -292,18 +298,20 @@ html.SHINE #header ul.tabmenu li.selected a{
 	box-sizing:border-box;
 	line-height:25px;
 	border:0px;
-	padding:0px 45px 0px 15px;
+	padding:0px 25px 0px 15px;
 	width:100%;
 }
 
 html.SHINE #header ul.tabmenu li.selected a{
 	font-weight:400;
+    padding: 0 0 0 15px !important;
 }
 
 html.SHINE #header ul.tabmenu li a:before{
 	content:'/';
 	display:inline-block;
 	margin-right:10px;
+    color: rgb(170, 170, 170);
 }
 
 html.SHINE #header-bottom-right{
@@ -1547,7 +1555,7 @@ html.SHINE .shine-message a.message-button {
 
 
 
-/* SORTING CONTENT */
+/* SORTING CONTENT */ 
 
 html.SHINE .menuarea {
     position: relative;
@@ -1558,6 +1566,9 @@ html.SHINE .menuarea {
     font-size: 16px;
     font-weight: 100;
     overflow:visible;
+    display: inline-block;
+    top: 6px;
+    padding: 5px 15px;
 }
 
 html.SHINE.shine-grid .menuarea{
@@ -1565,7 +1576,6 @@ html.SHINE.shine-grid .menuarea{
 }
 
 html.SHINE.shine-list .menuarea{
-    margin-top:30px;
     margin-bottom:-20px;
 }
 
@@ -1573,16 +1583,24 @@ html.SHINE .menuarea .spacer {
     margin: 0px;
     display: block;
     float: none;
+    text-align: left;
 }
 
-html.SHINE .menuarea .dropdown.lightdrop .selected{
+html.SHINE .menuarea .dropdown.lightdrop .selected {
     background:none !important;
-    margin:0px !important;
+    margin: 0px !important;
     cursor: pointer;
-    color:rgb(255,105,0);
     font-weight:400;
     padding-right:0px !important;
     text-decoration: none;
+    color: rgb(51,51,51);
+}
+
+html.SHINE .menuarea .spacer .selected::before {
+    content: "/";
+    display: inline-block;
+    color: rgb(170, 170, 170);
+    margin: 0px 10px 0 0;
 }
 
 html.SHINE .menuarea .drop-choices {
@@ -1590,16 +1608,20 @@ html.SHINE .menuarea .drop-choices {
     left: 0px !important;
     width: 100% !important;
     border: 0px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,.3);
-    padding: 50px 15px 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px;
+    padding: 37px 15px 15px;
     box-sizing: border-box;
-    top: -15px !important;
+    top: -8px !important;
 }
 
 html.SHINE .menuarea span.dropdown-title.lightdrop,
 html.SHINE .menuarea .dropdown.lightdrop{
     position: relative;
     z-index:200;
+}
+
+html.SHINE .menuarea span.dropdown-title.lightdrop{
+    display: none;
 }
 
 html.SHINE .menuarea .drop-choices a {
@@ -1617,7 +1639,7 @@ html.SHINE .menuarea .drop-choices a:hover{
 html.SHINE .menuarea .drop-choices a::before {
     content:'/';
     display:inline-block;
-    margin:0px 5px;
+    margin:0px 10px 0 0;
     color:#AAA;
 }
 
