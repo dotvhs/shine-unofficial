@@ -197,9 +197,14 @@ html.SHINE.res-nightmode.theme-gray {
         border-left: 5px solid #272727 !important; }
       html.SHINE.res-nightmode.theme-gray.shine-list body > div.content div#siteTable > .thing.link > .child {
         color: #fff; }
+    html.SHINE.res-nightmode.theme-gray.shine-list body > div.content .side-comments div#siteTable > .thing {
+      background: transparent !important;
+      border: 0 !important; }
+      html.SHINE.res-nightmode.theme-gray.shine-list body > div.content .side-comments div#siteTable > .thing:hover {
+        background: transparent !important;
+        border: 0 !important; }
   html.SHINE.res-nightmode.theme-gray.shine-list .shine-expand {
     background: #212121 !important;
-<<<<<<< HEAD
     border-bottom: 1px solid #272727; }
     html.SHINE.res-nightmode.theme-gray.shine-list .shine-expand .toggle-child-comments {
       background: #272727 !important; }
@@ -209,36 +214,6 @@ html.SHINE.res-nightmode.theme-gray {
     color: #939393 !important;
     border: 1px solid #616161; }
   html.SHINE.res-nightmode.theme-gray body {
-=======
-    border-bottom: 1px solid #191919 !important;
-    border-left: 5px solid #212121 !important;
-    border-top: 0 !important;
-    border-right: 0 !important; }
-    html.SHINE.res-nightmode.theme-gray.shine-list body > div.content div#siteTable > .thing:hover {
-      background: #272727 !important;
-      border-left: 5px solid #272727 !important; }
-    html.SHINE.res-nightmode.theme-gray.shine-list body > div.content div#siteTable > .thing.link > .child {
-      color: #fff; }
-  html.SHINE.res-nightmode.theme-gray.shine-list body > div.content .side-comments div#siteTable > .thing {
-    background: transparent !important;
-    border: 0 !important; }
-    html.SHINE.res-nightmode.theme-gray.shine-list body > div.content .side-comments div#siteTable > .thing:hover {
-      background: transparent !important;
-      border: 0 !important; }
-html.SHINE.res-nightmode.theme-gray.shine-list .shine-expand {
-  background: #212121 !important;
-  border-bottom: 1px solid #272727; }
-  html.SHINE.res-nightmode.theme-gray.shine-list .shine-expand .toggle-child-comments {
-    background: #272727 !important; }
-html.SHINE.res-nightmode.theme-gray.shine-list .side-comments {
-  background: #212121 !important; }
-html.SHINE.res-nightmode.theme-gray.shine-list.shine-list-classic .side-comments .shine-comment::after {
-  color: #939393 !important;
-  border: 1px solid #616161; }
-html.SHINE.res-nightmode.theme-gray body {
-  background: #191919 !important; }
-  html.SHINE.res-nightmode.theme-gray body > .content {
->>>>>>> experimental
     background: #191919 !important; }
     html.SHINE.res-nightmode.theme-gray body > .content {
       background: #191919 !important; }

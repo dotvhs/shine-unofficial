@@ -197,9 +197,14 @@ html.SHINE.res-nightmode.theme-material {
         border-left: 5px solid #2e3c43 !important; }
       html.SHINE.res-nightmode.theme-material.shine-list body > div.content div#siteTable > .thing.link > .child {
         color: #fff; }
+    html.SHINE.res-nightmode.theme-material.shine-list body > div.content .side-comments div#siteTable > .thing {
+      background: transparent !important;
+      border: 0 !important; }
+      html.SHINE.res-nightmode.theme-material.shine-list body > div.content .side-comments div#siteTable > .thing:hover {
+        background: transparent !important;
+        border: 0 !important; }
   html.SHINE.res-nightmode.theme-material.shine-list .shine-expand {
     background: #263238 !important;
-<<<<<<< HEAD
     border-bottom: 1px solid #2e3c43; }
     html.SHINE.res-nightmode.theme-material.shine-list .shine-expand .toggle-child-comments {
       background: #2e3c43 !important; }
@@ -209,36 +214,6 @@ html.SHINE.res-nightmode.theme-material {
     color: #adaeb3 !important;
     border: 1px solid #85868b; }
   html.SHINE.res-nightmode.theme-material body {
-=======
-    border-bottom: 1px solid #1e282d !important;
-    border-left: 5px solid #263238 !important;
-    border-top: 0 !important;
-    border-right: 0 !important; }
-    html.SHINE.res-nightmode.theme-material.shine-list body > div.content div#siteTable > .thing:hover {
-      background: #2e3c43 !important;
-      border-left: 5px solid #2e3c43 !important; }
-    html.SHINE.res-nightmode.theme-material.shine-list body > div.content div#siteTable > .thing.link > .child {
-      color: #fff; }
-  html.SHINE.res-nightmode.theme-material.shine-list body > div.content .side-comments div#siteTable > .thing {
-    background: transparent !important;
-    border: 0 !important; }
-    html.SHINE.res-nightmode.theme-material.shine-list body > div.content .side-comments div#siteTable > .thing:hover {
-      background: transparent !important;
-      border: 0 !important; }
-html.SHINE.res-nightmode.theme-material.shine-list .shine-expand {
-  background: #263238 !important;
-  border-bottom: 1px solid #2e3c43; }
-  html.SHINE.res-nightmode.theme-material.shine-list .shine-expand .toggle-child-comments {
-    background: #2e3c43 !important; }
-html.SHINE.res-nightmode.theme-material.shine-list .side-comments {
-  background: #263238 !important; }
-html.SHINE.res-nightmode.theme-material.shine-list.shine-list-classic .side-comments .shine-comment::after {
-  color: #adaeb3 !important;
-  border: 1px solid #85868b; }
-html.SHINE.res-nightmode.theme-material body {
-  background: #1e282d !important; }
-  html.SHINE.res-nightmode.theme-material body > .content {
->>>>>>> experimental
     background: #1e282d !important; }
     html.SHINE.res-nightmode.theme-material body > .content {
       background: #1e282d !important; }

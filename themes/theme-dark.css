@@ -197,9 +197,14 @@ html.SHINE.res-nightmode.theme-dark {
         border-left: 5px solid #151515 !important; }
       html.SHINE.res-nightmode.theme-dark.shine-list body > div.content div#siteTable > .thing.link > .child {
         color: #fff; }
+    html.SHINE.res-nightmode.theme-dark.shine-list body > div.content .side-comments div#siteTable > .thing {
+      background: transparent !important;
+      border: 0 !important; }
+      html.SHINE.res-nightmode.theme-dark.shine-list body > div.content .side-comments div#siteTable > .thing:hover {
+        background: transparent !important;
+        border: 0 !important; }
   html.SHINE.res-nightmode.theme-dark.shine-list .shine-expand {
     background: #0d0d0d !important;
-<<<<<<< HEAD
     border-bottom: 1px solid #151515; }
     html.SHINE.res-nightmode.theme-dark.shine-list .shine-expand .toggle-child-comments {
       background: #151515 !important; }
@@ -209,36 +214,6 @@ html.SHINE.res-nightmode.theme-dark {
     color: #8a8a8a !important;
     border: 1px solid #5b5b5b; }
   html.SHINE.res-nightmode.theme-dark body {
-=======
-    border-bottom: 1px solid #080808 !important;
-    border-left: 5px solid #0d0d0d !important;
-    border-top: 0 !important;
-    border-right: 0 !important; }
-    html.SHINE.res-nightmode.theme-dark.shine-list body > div.content div#siteTable > .thing:hover {
-      background: #151515 !important;
-      border-left: 5px solid #151515 !important; }
-    html.SHINE.res-nightmode.theme-dark.shine-list body > div.content div#siteTable > .thing.link > .child {
-      color: #fff; }
-  html.SHINE.res-nightmode.theme-dark.shine-list body > div.content .side-comments div#siteTable > .thing {
-    background: transparent !important;
-    border: 0 !important; }
-    html.SHINE.res-nightmode.theme-dark.shine-list body > div.content .side-comments div#siteTable > .thing:hover {
-      background: transparent !important;
-      border: 0 !important; }
-html.SHINE.res-nightmode.theme-dark.shine-list .shine-expand {
-  background: #0d0d0d !important;
-  border-bottom: 1px solid #151515; }
-  html.SHINE.res-nightmode.theme-dark.shine-list .shine-expand .toggle-child-comments {
-    background: #151515 !important; }
-html.SHINE.res-nightmode.theme-dark.shine-list .side-comments {
-  background: #0d0d0d !important; }
-html.SHINE.res-nightmode.theme-dark.shine-list.shine-list-classic .side-comments .shine-comment::after {
-  color: #8a8a8a !important;
-  border: 1px solid #5b5b5b; }
-html.SHINE.res-nightmode.theme-dark body {
-  background: #080808 !important; }
-  html.SHINE.res-nightmode.theme-dark body > .content {
->>>>>>> experimental
     background: #080808 !important; }
     html.SHINE.res-nightmode.theme-dark body > .content {
       background: #080808 !important; }
