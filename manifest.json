@@ -44,7 +44,10 @@
       "matches": [ "*://*.reddit.com/*" ],
       "run_at":"document_start"
    }, {
-      "js": [ "jquery.js", "base.js" ],  
+      "js": [ 
+         "jquery.js", 
+         "base.js"
+      ],  
       "matches": [ "*://*.reddit.com/*" ],
       "run_at":"document_end"
    } ],
@@ -65,6 +68,7 @@
    "web_accessible_resources": [ 
       "jquery.zoom.min.js", 
       "shine-grid.js", 
-      "shine-list.js" 
-      ]
+      "shine-list.js", 
+      "shine-shortcuts.js" 
+   ]
 }

@@ -266,7 +266,6 @@ function resetInterfaces(){
 
 // VAriABLE DELCARATION
 var startCheckingComments;
-var commentNumber;
 
 
 function checkSideComments(){
@@ -1749,32 +1748,7 @@ if( $('body').hasClass('res') ){
 
 }
 
-
+/*
 $(document).ready(function(){
-	$('body').keyup(function (e) {
-		switch( e.keyCode ) {
-		case 39:
-		    if($('.been-shined.comment-'+ (commentNumber+1)).length){
-				var nextNumber = commentNumber+1;
-				if($('.been-shined.comment-'+ nextNumber).length){
-		    		commentNumber++;
-				}
-				$('.shine-expand-wrapper').animate({
-					scrollTop:  $(this).scrollTop() + $('.large-area').height() + ($('.been-shined.comment-'+commentNumber).position().top - $(this).position().top) - 10
-				}, 200);
-		    }
-			break;
-		case 37:
-		    if($('.been-shined.comment-'+ (commentNumber)).length){
-				var prevNumber = commentNumber-1;
-				if($('.been-shined.comment-'+ prevNumber).length){
-		    		commentNumber--;
-				}
-				$('.shine-expand-wrapper').animate({
-					scrollTop:  $(this).scrollTop() + $('.large-area').height() + ($('.been-shined.comment-'+commentNumber).position().top - $(this).position().top) - 10
-				}, 200);
-		    }
-			break;
-		}
-	});
 });
+*/

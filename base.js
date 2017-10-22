@@ -29,6 +29,8 @@ function IsJsonString(str) {
 // creating the settings variable to use when we update and save settings
 var currentSettings = {};
 
+var commentNumber; // For numbering comments
+
 
 // creating the default settings variable if they havn't saved any settings yet
 var defaultSettings = {
@@ -665,6 +667,7 @@ function SHINE(){
 
 			$.getScript( chrome.extension.getURL("jquery.zoom.min.js") );
 			$.getScript( chrome.extension.getURL("shine-grid.js") );
+			$.getScript( chrome.extension.getURL("shine-shortcuts.js") );
 
 			thingWidth = screen.width / ( parseInt(currentSettings.grid.columns) + 1);
 
@@ -700,6 +703,7 @@ function SHINE(){
 
 			$.getScript( chrome.extension.getURL("jquery.zoom.min.js") );
 			$.getScript( chrome.extension.getURL("shine-list.js") );
+			$.getScript( chrome.extension.getURL("shine-shortcuts.js") );
 			
 			if(currentSettings.list.split == "7030" || currentSettings.list.split == "6040" || currentSettings.list.split == "5050" || currentSettings.list.split == "4060" || currentSettings.list.split == "3070"){
 				
@@ -1612,14 +1616,3 @@ $('body').on('mouseover','#colorselect',function(){
 $('body').on('mouseout','#colorselect',function(){
 	$('.dark-background').removeClass("hide-bg");
 });
-
-
-// KEY SHORTCUTS
-$('body').keyup(function (e) {
-	switch( e.keyCode ) {
-	case 27:
-     	resetInterfaces();
-     	break;
-	}
-});
-
