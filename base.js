@@ -1613,4 +1613,5 @@ $("body").on('mouseout','.menuarea',function(){
 	$('.menuarea').find('.drop-choices.lightdrop').removeClass("inuse");
 });
 
+
 $.getScript( chrome.extension.getURL("shine-shortcuts.js") );

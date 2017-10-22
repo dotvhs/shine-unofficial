@@ -1,3 +1,14 @@
+if($("body").hasClass("comments-page")) {
+
+	if (commentNumber == undefined) {
+		var commentNumber = -1;
+	}
+	
+	$("body").find('.comment').each(function(i) {
+	    $(this).addClass('comment-' + i);
+	});
+}
+
 $.fn.scrollParent = function() {
   var position = this.css( "position" ),
   excludeStaticParent = position === "absolute",
