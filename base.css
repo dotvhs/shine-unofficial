@@ -594,7 +594,8 @@ html.SHINE.show-shine-bright .dark-background{
     display:block;
 }
 
-html.SHINE .shine-nav{
+html.SHINE .shine-nav,
+html.SHINE .shine-nav-comment {
     position: fixed;
     bottom:0px;
     right:0px;
@@ -603,7 +604,7 @@ html.SHINE .shine-nav{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;    
+    align-items: center;
 }
 
 html.SHINE.expanding .shine-nav{
@@ -786,11 +787,12 @@ html.SHINE .shine-nav:hover .shine-settings,
 html.SHINE .shine-nav:hover .shine-search,
 html.SHINE .shine-nav:hover .shine-bright-nav,
 html.SHINE .shine-nav:hover .shine-subscribe.active{
-    display:block !important;
+    display: block !important;
     position: relative;
 }
 
-html.SHINE .shine-nav:hover *:not(.lines):not(label)::after {
+html.SHINE .shine-nav:hover *:not(.lines):not(label)::after,
+html.SHINE .shine-nav-comment *:not(label)::after {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -828,6 +830,44 @@ html.SHINE .shine-nav:hover .add.shine-subscribe::after {
 
 html.SHINE .shine-nav:hover .remove.shine-subscribe::after {
     content: "\F413";
+}
+
+
+
+/* NEXT/PREV COMMENT */
+html.SHINE .shine-nav-comment {
+    display: none;
+    padding: 15px 131px 65px 15px;
+    flex-direction: row;
+    z-index: 12000;
+}
+
+html.SHINE.show-comment-navigation .shine-nav-comment {
+    display: flex !important;
+}
+
+html.SHINE.shine-list-classic .shine-nav-comment {
+    padding: 15px 86px 20px 15px;    
+}
+
+
+html.SHINE .shine-nav-comment .shine-menu-button {
+    margin-top: 0 !important;
+    margin-left: 15px !important;
+}
+
+html.SHINE .shine-nav-comment.visible .shine-menu-button {
+    display: block !important;
+    position: relative;
+}
+
+html.SHINE .shine-nav-comment .shine-comment-next::after {
+    content: "\F140";
+}
+
+
+html.SHINE .shine-nav-comment .shine-comment-prev::after {
+    content: "\F143";
 }
 
 

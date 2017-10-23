@@ -38,7 +38,8 @@ var defaultSettings = {
 		"theme" : "legacy-white", 
 		"sidebar" : "", 
 		"multis" : "",
-		"color" : "orange"
+		"color" : "orange",
+		"navigate" : "hide"
 	},
 
     "list" :  {"split" : "6040", "columns" : "two"},
@@ -105,6 +106,18 @@ function SHINE(){
 
 	}
 
+	if(!currentSettings.global.navigate){
+
+		var navigateSettings = {
+			"global" : {
+		    	"navigate" : "hide"
+		    }
+		};
+
+		currentSettings = $.extend(true, currentSettings, navigateSettings);
+		chrome.storage.local.set({"shine": currentSettings});
+
+	}
 	// adding our menu interface
 
 	htmlToAdd = ""+
@@ -143,6 +156,16 @@ function SHINE(){
 
 			'<div class="shine-menu-button shine-navicon">'+
 				'<span class="lines"></span>'+
+			'</div>'+
+
+		'</div>'+
+
+		'<div class="shine-nav-comment">'+
+			
+			'<div class="shine-menu-button shine-comment-prev">'+
+			'</div>'+
+			
+			'<div class="shine-menu-button shine-comment-next">'+
 			'</div>'+
 
 		'</div>'+
@@ -215,6 +238,14 @@ function SHINE(){
 						'<select name="settings-update-info" id="settings-update-info">'+
 							'<option value="show">Show</option>'+
 							'<option value="hide">Hide</option>'+
+						'</select>'+
+					'</div>'+
+					'<div class="settings-column-half">'+					
+						'<label for="settings-comment-navigation">Next/Previous Comment Navigation</label>'+
+						'<span class="settings-small-print">Buttons for navigating comments. You can also use left/right arrow keys.</span>'+
+						'<select name="settings-comment-navigation" id="settings-comment-navigation">'+
+							'<option value="hide">Hide</option>'+
+							'<option value="show">Show</option>'+
 						'</select>'+
 					'</div>'+
 				'</div>'+
@@ -465,6 +496,12 @@ function SHINE(){
 
 
 
+	/* COMMENT NAVIGATION */
+
+	if( currentSettings.global.navigate == "show" ){
+		$('html').addClass("show-comment-navigation");
+		$('#settings-comment-navigation').val("show");
+	}
 
 	/* SETTINGS BAR */
 
@@ -990,6 +1027,25 @@ $('body').on('change','#settings-shortcuts-bar', function(){
 
 		}
 
+		saveSettingsMessage();
+
+	});
+
+});
+
+
+$('body').on('change','#settings-comment-navigation', function(){
+
+	currentSettings.global.navigate = $(this).val();
+
+	chrome.storage.local.set({"shine": currentSettings}, function(){
+
+		if( currentSettings.global.navigate == "show" ){
+			$('html').addClass("show-comment-navigation");
+
+		}else{
+			$('html').removeClass("show-comment-navigation");
+		}
 		saveSettingsMessage();
 
 	});
