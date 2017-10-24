@@ -120,6 +120,9 @@ function SHINE(){
 	}
 	// adding our menu interface
 
+	var currentSubreddit = $('head').find('link[rel="canonical"]').attr('href');
+	currentSubreddit = currentSubreddit.match(/reddit.com\/r\/\w*\//) ? currentSubreddit.match(/r\/\w*\//)[0] : '';
+
 	htmlToAdd = ""+
 
 		'<div class="dark-background"></div>'+
@@ -170,10 +173,18 @@ function SHINE(){
 
 		'</div>'+
 
-		'<form action="https://www.reddit.com/search" id="shine-search" name="search">'+
-        	'<input name="q" placeholder="type here and hit enter" tabindex="20" type="text" id="shine-search-box">'+
-        	'<input tabindex="22" type="submit" value="">'+
-        	'<a href="https://www.reddit.com/wiki/search">advanced search: by author, subreddit...</a>'+
+		'<form action="//www.reddit.com/' + currentSubreddit + 'search" id="shine-search" name="search">'+
+        	'<div class="shine-search-wrapper"><input name="q" placeholder="type here and hit enter" tabindex="20" type="text" id="shine-search-box">'+
+        	'<a href="https://www.reddit.com/wiki/search" title="advanced search: by author, subreddit..."></a>'+
+        	'</div>'+
+        	'<input tabindex="22" type="submit" value="">';
+
+        if (currentSubreddit.length) {
+			htmlToAdd = htmlToAdd +
+        	'<label class="currentSubreddit"><input type="checkbox" name="restrict_sr" tabindex="21"> limit to ' + currentSubreddit + '</label>';
+        }
+
+		htmlToAdd = htmlToAdd +
     	'</form>';
 
 	$('body').append(htmlToAdd);

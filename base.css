@@ -587,6 +587,7 @@ html.SHINE .dark-background{
     display:none;
 }
 
+html.SHINE.show-search .dark-background,
 html.SHINE.show-changelog .dark-background,
 html.SHINE.expanding .dark-background,
 html.SHINE.show-settings .dark-background,
@@ -892,12 +893,13 @@ html.SHINE.shine-grid.show-sidebar body > .content {
 /* SEARCH */
 
 html.SHINE #shine-search{
-    background: rgba(0,0,0,.8);
+    /*background: rgba(0,0,0,.8);*/
     box-sizing: border-box;
     width: 100%;
     left: 0;
-    height: 100%;
-    top: 0;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 9000;
     padding: 0px;
     display: none;
@@ -923,9 +925,30 @@ html.SHINE.show-search #shine-search{
     font-weight: 100;
     color: #fff;
     outline:none;
-    margin-bottom:30px;
     box-sizing:border-box;
     text-align: center;
+}
+
+#shine-search .shine-search-wrapper {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+#shine-search label.currentSubreddit {
+    display: block;
+    width: 100%;
+    -webkit-appearance: none;
+    border: 0px;
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: #fff;
+    outline:none;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 15px;
 }
 
 #shine-search input[type="submit"] {
@@ -935,6 +958,18 @@ html.SHINE.show-search #shine-search{
 #shine-search a {
     color: #fff;
     font-size: 12px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 20000;
+    height: 24px;
+    width: 24px;
+}
+
+#shine-search a::before {
+    content: "\F2D7";
+    font: normal normal normal 24px/1 "Material Design Icons";
 }
 
 html.SHINE body div.listing-chooser{
