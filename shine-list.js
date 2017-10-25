@@ -1734,6 +1734,14 @@ if( $('body').hasClass('res') ){
 			     loading = false;
 
 				 shineHREF();
+
+				var loadingLimit = $('body').attr('data-list-limit');
+				//console.log(loadingLimit);
+				if(loadingLimit != 0) {
+					if ($('#siteTable').find('.thing').length >= loadingLimit) {
+						$('#siteTable').find('.thing:lt(25)').remove();
+					}
+				}
 			      
 			  },
 		      error: function(request, status, message) { 

@@ -43,9 +43,18 @@ var defaultSettings = {
 		"colorswitch" : "gray"
 	},
 
-    "list" :  {"split" : "6040", "columns" : "two"},
+    "list" :  {
+    	"split" : "6040", 
+    	"columns" : "two",
+    	"limit" : "0"
+    },
 
-    "grid" :  {"columns" : "5", "nsfw" : "no", "split" : "6040"},
+    "grid" :  {
+    	"columns" : "5", 
+    	"nsfw" : "no", 
+    	"split" : "6040",
+    	"limit" : "0"
+    },
 
     "subreddits" : [
     	{"url" : "www.reddit.com/r/shine/", "layout" : "list"},
@@ -132,6 +141,23 @@ function SHINE(){
 		chrome.storage.local.set({"shine": currentSettings});
 
 	}
+
+	if(!currentSettings.list.limit || !currentSettings.grid.limit){
+
+		var limitSettings = {
+			"list" : {
+		    	"limit" : "0"
+		    },
+		    "grid" : {
+		    	"limit" : "0"
+		    }
+		};
+
+		currentSettings = $.extend(true, currentSettings, limitSettings);
+		chrome.storage.local.set({"shine": currentSettings});
+
+	}
+
 	// adding our menu interface
 
 	var currentSubreddit = $('head').find('link[rel="canonical"]').attr('href');
@@ -474,6 +500,18 @@ function SHINE(){
 						'</select>'+
 					'</div>'+
 				'</div>'+
+				'<div class="settings-halves">'+
+					'<div class="settings-column-half">'+
+						'<label for="settings-list-limit">Limit Infinite Loading</label>'+
+						'<select name="settings-list-limit" id="settings-list-limit">'+
+							'<option value="0">No limits</option>'+
+							'<option value="100">Limit over 100</option>'+
+							'<option value="250">Limit over 250</option>'+
+							'<option value="500">Limit over 500</option>'+
+							'<option value="1000">Limit over 1000</option>'+
+						'</select>'+
+					'</div>'+
+				'</div>'+
 			'</div>'+
 			'<div class="settings-saved">Your settings have been saved.</div>'+
 		'</div>'
@@ -560,6 +598,9 @@ function SHINE(){
 		$('html').addClass("show-shortcuts");
 
 	}
+
+	$('#settings-list-limit').val(currentSettings.list.limit);
+	$('body').attr('data-list-limit', currentSettings.list.limit);
 
 	/* UPDATE INFO */
 
@@ -1079,6 +1120,21 @@ $('body').on('change','#settings-color-switch', function(){
 			$('html').removeClass("colorful");
 
 		}
+
+		saveSettingsMessage();
+
+	});
+
+});
+
+
+$('body').on('change','#settings-list-limit', function(){
+
+	currentSettings.list.limit = $(this).val();
+
+	chrome.storage.local.set({"shine": currentSettings}, function(){
+
+		$('body').attr('data-list-limit', currentSettings.list.limit);
 
 		saveSettingsMessage();
 

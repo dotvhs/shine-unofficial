@@ -1179,6 +1179,10 @@ if( $('body').hasClass('res') ){
 			     createPreviews( $('body > .content #siteTable .thing').not(".shined") );
 
 			     loading = false;
+                     
+          if ($('#siteTable').find('.thing').length >= 150) {
+            $('#siteTable').find('.thing:lt(25)').remove();
+          }
 
 			  },
 		      error: function(request, status, message) {
