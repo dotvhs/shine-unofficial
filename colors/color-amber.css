@@ -41,15 +41,21 @@ html.SHINE.color-amber .shine-nav .shine-navicon {
 html.SHINE.color-amber #header-bottom-right a.message-count {
   color: white !important;
   background: #FFC107; }
-html.SHINE.color-amber .colorful #header-bottom-left #header-img-a::after, html.SHINE.color-amber .colorful #header-bottom-left #header-img.default-header::after {
-  background-color: #FFB300; }
-html.SHINE.color-amber .colorful .thumbnail.spoiler::before, html.SHINE.color-amber .colorful .thumbnail.nsfw::before, html.SHINE.color-amber .colorful .thumbnail.default::before, html.SHINE.color-amber .colorful .thumbnail.image::before, html.SHINE.color-amber .colorful .thumbnail.self::before {
-  background-color: #FFB300; }
 html.SHINE.color-amber button {
   background-color: #FFC107; }
 html.SHINE.color-amber button:hover {
   background-color: #FFB300 !important; }
 html.SHINE.color-amber .update-info .open-changelog {
   color: #FFC107; }
+html.SHINE.color-amber.colorful #header-bottom-left #header-img-a::after, html.SHINE.color-amber.colorful #header-bottom-left #header-img.default-header::after {
+  background-color: #FFB300 !important;
+  color: #fff; }
+html.SHINE.color-amber.colorful .thumbnail.spoiler::before, html.SHINE.color-amber.colorful .thumbnail.nsfw::before, html.SHINE.color-amber.colorful .thumbnail.default::before, html.SHINE.color-amber.colorful .thumbnail.image::before, html.SHINE.color-amber.colorful .thumbnail.self::before {
+  background-color: #FFB300 !important; }
+html.SHINE.color-amber.colorlines .thumbnail.spoiler::before, html.SHINE.color-amber.colorlines .thumbnail.nsfw::before, html.SHINE.color-amber.colorlines .thumbnail.default::before, html.SHINE.color-amber.colorlines .thumbnail.image::before, html.SHINE.color-amber.colorlines .thumbnail.self::before {
+  background-color: transparent !important;
+  border: 2px #FFC107 solid !important;
+  color: #FFC107 !important;
+  line-height: 46px; }
 html.SHINE #colorselect label.amber .button span {
   background-color: #FFC107; }

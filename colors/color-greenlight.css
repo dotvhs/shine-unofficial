@@ -41,15 +41,21 @@ html.SHINE.color-greenlight .shine-nav .shine-navicon {
 html.SHINE.color-greenlight #header-bottom-right a.message-count {
   color: white !important;
   background: #8bc34a; }
-html.SHINE.color-greenlight .colorful #header-bottom-left #header-img-a::after, html.SHINE.color-greenlight .colorful #header-bottom-left #header-img.default-header::after {
-  background-color: #558B2F; }
-html.SHINE.color-greenlight .colorful .thumbnail.spoiler::before, html.SHINE.color-greenlight .colorful .thumbnail.nsfw::before, html.SHINE.color-greenlight .colorful .thumbnail.default::before, html.SHINE.color-greenlight .colorful .thumbnail.image::before, html.SHINE.color-greenlight .colorful .thumbnail.self::before {
-  background-color: #558B2F; }
 html.SHINE.color-greenlight button {
   background-color: #8bc34a; }
 html.SHINE.color-greenlight button:hover {
   background-color: #558B2F !important; }
 html.SHINE.color-greenlight .update-info .open-changelog {
   color: #8bc34a; }
+html.SHINE.color-greenlight.colorful #header-bottom-left #header-img-a::after, html.SHINE.color-greenlight.colorful #header-bottom-left #header-img.default-header::after {
+  background-color: #558B2F !important;
+  color: #fff; }
+html.SHINE.color-greenlight.colorful .thumbnail.spoiler::before, html.SHINE.color-greenlight.colorful .thumbnail.nsfw::before, html.SHINE.color-greenlight.colorful .thumbnail.default::before, html.SHINE.color-greenlight.colorful .thumbnail.image::before, html.SHINE.color-greenlight.colorful .thumbnail.self::before {
+  background-color: #558B2F !important; }
+html.SHINE.color-greenlight.colorlines .thumbnail.spoiler::before, html.SHINE.color-greenlight.colorlines .thumbnail.nsfw::before, html.SHINE.color-greenlight.colorlines .thumbnail.default::before, html.SHINE.color-greenlight.colorlines .thumbnail.image::before, html.SHINE.color-greenlight.colorlines .thumbnail.self::before {
+  background-color: transparent !important;
+  border: 2px #8bc34a solid !important;
+  color: #8bc34a !important;
+  line-height: 46px; }
 html.SHINE #colorselect label.greenlight .button span {
   background-color: #8bc34a; }

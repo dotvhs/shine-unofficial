@@ -41,15 +41,21 @@ html.SHINE.color-blue .shine-nav .shine-navicon {
 html.SHINE.color-blue #header-bottom-right a.message-count {
   color: white !important;
   background: #42A5F5; }
-html.SHINE.color-blue .colorful #header-bottom-left #header-img-a::after, html.SHINE.color-blue .colorful #header-bottom-left #header-img.default-header::after {
-  background-color: #2196F3; }
-html.SHINE.color-blue .colorful .thumbnail.spoiler::before, html.SHINE.color-blue .colorful .thumbnail.nsfw::before, html.SHINE.color-blue .colorful .thumbnail.default::before, html.SHINE.color-blue .colorful .thumbnail.image::before, html.SHINE.color-blue .colorful .thumbnail.self::before {
-  background-color: #2196F3; }
 html.SHINE.color-blue button {
   background-color: #42A5F5; }
 html.SHINE.color-blue button:hover {
   background-color: #2196F3 !important; }
 html.SHINE.color-blue .update-info .open-changelog {
   color: #42A5F5; }
+html.SHINE.color-blue.colorful #header-bottom-left #header-img-a::after, html.SHINE.color-blue.colorful #header-bottom-left #header-img.default-header::after {
+  background-color: #2196F3 !important;
+  color: #fff; }
+html.SHINE.color-blue.colorful .thumbnail.spoiler::before, html.SHINE.color-blue.colorful .thumbnail.nsfw::before, html.SHINE.color-blue.colorful .thumbnail.default::before, html.SHINE.color-blue.colorful .thumbnail.image::before, html.SHINE.color-blue.colorful .thumbnail.self::before {
+  background-color: #2196F3 !important; }
+html.SHINE.color-blue.colorlines .thumbnail.spoiler::before, html.SHINE.color-blue.colorlines .thumbnail.nsfw::before, html.SHINE.color-blue.colorlines .thumbnail.default::before, html.SHINE.color-blue.colorlines .thumbnail.image::before, html.SHINE.color-blue.colorlines .thumbnail.self::before {
+  background-color: transparent !important;
+  border: 2px #42A5F5 solid !important;
+  color: #42A5F5 !important;
+  line-height: 46px; }
 html.SHINE #colorselect label.blue .button span {
   background-color: #42A5F5; }

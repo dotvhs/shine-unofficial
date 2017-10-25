@@ -41,15 +41,21 @@ html.SHINE.color-indigo .shine-nav .shine-navicon {
 html.SHINE.color-indigo #header-bottom-right a.message-count {
   color: white !important;
   background: #536DFE; }
-html.SHINE.color-indigo .colorful #header-bottom-left #header-img-a::after, html.SHINE.color-indigo .colorful #header-bottom-left #header-img.default-header::after {
-  background-color: #304FFE; }
-html.SHINE.color-indigo .colorful .thumbnail.spoiler::before, html.SHINE.color-indigo .colorful .thumbnail.nsfw::before, html.SHINE.color-indigo .colorful .thumbnail.default::before, html.SHINE.color-indigo .colorful .thumbnail.image::before, html.SHINE.color-indigo .colorful .thumbnail.self::before {
-  background-color: #304FFE; }
 html.SHINE.color-indigo button {
   background-color: #536DFE; }
 html.SHINE.color-indigo button:hover {
   background-color: #304FFE !important; }
 html.SHINE.color-indigo .update-info .open-changelog {
   color: #536DFE; }
+html.SHINE.color-indigo.colorful #header-bottom-left #header-img-a::after, html.SHINE.color-indigo.colorful #header-bottom-left #header-img.default-header::after {
+  background-color: #304FFE !important;
+  color: #fff; }
+html.SHINE.color-indigo.colorful .thumbnail.spoiler::before, html.SHINE.color-indigo.colorful .thumbnail.nsfw::before, html.SHINE.color-indigo.colorful .thumbnail.default::before, html.SHINE.color-indigo.colorful .thumbnail.image::before, html.SHINE.color-indigo.colorful .thumbnail.self::before {
+  background-color: #304FFE !important; }
+html.SHINE.color-indigo.colorlines .thumbnail.spoiler::before, html.SHINE.color-indigo.colorlines .thumbnail.nsfw::before, html.SHINE.color-indigo.colorlines .thumbnail.default::before, html.SHINE.color-indigo.colorlines .thumbnail.image::before, html.SHINE.color-indigo.colorlines .thumbnail.self::before {
+  background-color: transparent !important;
+  border: 2px #536DFE solid !important;
+  color: #536DFE !important;
+  line-height: 46px; }
 html.SHINE #colorselect label.indigo .button span {
   background-color: #536DFE; }

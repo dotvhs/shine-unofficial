@@ -41,15 +41,21 @@ html.SHINE.color-orange .shine-nav .shine-navicon {
 html.SHINE.color-orange #header-bottom-right a.message-count {
   color: white !important;
   background: #FF9800; }
-html.SHINE.color-orange .colorful #header-bottom-left #header-img-a::after, html.SHINE.color-orange .colorful #header-bottom-left #header-img.default-header::after {
-  background-color: #E65100; }
-html.SHINE.color-orange .colorful .thumbnail.spoiler::before, html.SHINE.color-orange .colorful .thumbnail.nsfw::before, html.SHINE.color-orange .colorful .thumbnail.default::before, html.SHINE.color-orange .colorful .thumbnail.image::before, html.SHINE.color-orange .colorful .thumbnail.self::before {
-  background-color: #E65100; }
 html.SHINE.color-orange button {
   background-color: #FF9800; }
 html.SHINE.color-orange button:hover {
   background-color: #E65100 !important; }
 html.SHINE.color-orange .update-info .open-changelog {
   color: #FF9800; }
+html.SHINE.color-orange.colorful #header-bottom-left #header-img-a::after, html.SHINE.color-orange.colorful #header-bottom-left #header-img.default-header::after {
+  background-color: #E65100 !important;
+  color: #fff; }
+html.SHINE.color-orange.colorful .thumbnail.spoiler::before, html.SHINE.color-orange.colorful .thumbnail.nsfw::before, html.SHINE.color-orange.colorful .thumbnail.default::before, html.SHINE.color-orange.colorful .thumbnail.image::before, html.SHINE.color-orange.colorful .thumbnail.self::before {
+  background-color: #E65100 !important; }
+html.SHINE.color-orange.colorlines .thumbnail.spoiler::before, html.SHINE.color-orange.colorlines .thumbnail.nsfw::before, html.SHINE.color-orange.colorlines .thumbnail.default::before, html.SHINE.color-orange.colorlines .thumbnail.image::before, html.SHINE.color-orange.colorlines .thumbnail.self::before {
+  background-color: transparent !important;
+  border: 2px #FF9800 solid !important;
+  color: #FF9800 !important;
+  line-height: 46px; }
 html.SHINE #colorselect label.orange .button span {
   background-color: #FF9800; }

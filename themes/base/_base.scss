@@ -239,8 +239,8 @@ html.SHINE {
 		}
 
 		.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
-		    color: $color_posttype !important;
-		    background-color: $color_posttype_bg !important;
+		    color: $color_posttype;
+		    background-color: $color_posttype_bg;
 		}
 
 		#header-bottom-left {

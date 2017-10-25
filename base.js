@@ -39,7 +39,8 @@ var defaultSettings = {
 		"sidebar" : "", 
 		"multis" : "",
 		"color" : "orange",
-		"navigate" : "hide"
+		"navigate" : "hide",
+		"colorswitch" : "gray"
 	},
 
     "list" :  {"split" : "6040", "columns" : "two"},
@@ -115,6 +116,19 @@ function SHINE(){
 		};
 
 		currentSettings = $.extend(true, currentSettings, navigateSettings);
+		chrome.storage.local.set({"shine": currentSettings});
+
+	}
+
+	if(!currentSettings.global.colorswitch){
+
+		var colorfulSettings = {
+			"global" : {
+		    	"colorswitch" : "gray"
+		    }
+		};
+
+		currentSettings = $.extend(true, currentSettings, colorfulSettings);
 		chrome.storage.local.set({"shine": currentSettings});
 
 	}
@@ -393,6 +407,13 @@ function SHINE(){
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
 						'</div>'+
+						'<label for="settings-color-switch">Icon type for posts</label>'+
+						'<span class="settings-small-print">This little setting will add more color to your theme.</span>'+
+						'<select name="settings-color-switch" id="settings-color-switch">'+
+							'<option value="gray">Grayscale</option>'+
+							'<option value="color">Colorful</option>'+
+							'<option value="lines">Linear</option>'+
+						'</select>'+
 					'</div>'+
 				'</div>'+
 			'</div>'+
@@ -424,7 +445,6 @@ function SHINE(){
 						'</select>'+
 					'</div>'+
 				'</div>'+
-				'<div class="settings-halves">'+
 					'<div class="settings-column-half">'+
 						'<label for="settings-show-nsfw">Show NSFW Automatically</label>'+
 						'<select name="settings-show-nsfw" id="settings-show-nsfw">'+
@@ -432,7 +452,6 @@ function SHINE(){
 							'<option value="yes">Yes</option>'+
 						'</select>'+
 					'</div>'+
-				'</div>'+
 			'</div>'+
 			'<div class="panel panel-list">'+
 				'<p>The settings below are applied to all List View pages.</p>'+
@@ -512,6 +531,22 @@ function SHINE(){
 	if( currentSettings.global.navigate == "show" ){
 		$('html').addClass("show-comment-navigation");
 		$('#settings-comment-navigation').val("show");
+	}
+
+	/* MOAR COLOR */
+
+	if( currentSettings.global.colorswitch == "color" ){
+
+		$('html').addClass("colorful");
+		$('#settings-color-switch').val("color");
+
+	}else if( currentSettings.global.colorswitch == "lines" ){
+
+		$('html').addClass("colorlines");
+		$('#settings-color-switch').val("lines");
+
+	} else {
+		$('#settings-color-switch').val("gray");
 	}
 
 	/* SETTINGS BAR */
@@ -1014,6 +1049,36 @@ $('body').on('change','#settings-default-view', function(){
 	currentSettings.global.layout = $(this).val();
 
 	chrome.storage.local.set({"shine": currentSettings}, function(){
+
+		saveSettingsMessage();
+
+	});
+
+});
+
+
+$('body').on('change','#settings-color-switch', function(){
+
+	currentSettings.global.colorswitch = $(this).val();
+
+	chrome.storage.local.set({"shine": currentSettings}, function(){
+
+		if( currentSettings.global.colorswitch == "color" ){
+
+			$('html').removeClass("colorlines");
+			$('html').addClass("colorful");
+
+		}else if( currentSettings.global.colorswitch == "lines" ){
+
+			$('html').removeClass("colorful");
+			$('html').addClass("colorlines");
+
+		}else {
+
+			$('html').removeClass("colorlines");
+			$('html').removeClass("colorful");
+
+		}
 
 		saveSettingsMessage();
 

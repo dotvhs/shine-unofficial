@@ -102,18 +102,6 @@ html.SHINE {
 		    background: $color_main_accent;
 		}
 
-		.colorful {
-			#header-bottom-left {
-				#header-img-a::after, #header-img.default-header::after {
-					background-color: $color_fab_color;
-				}
-			}
-
-			.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
-			    background-color: $color_fab_color;
-			}	
-		}
-
 		button {
 			background-color: $color_main_accent;
 		}
@@ -124,6 +112,32 @@ html.SHINE {
 
 		.update-info .open-changelog {
 			color: $color_main_accent;
+		}
+
+
+
+		&.colorful {
+			#header-bottom-left {
+				#header-img-a::after, #header-img.default-header::after {
+					background-color: $color_fab_color !important;
+			    	color: #fff;
+				}
+			}
+
+			.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
+			    background-color: $color_fab_color !important;
+			}
+		}
+
+
+
+		&.colorlines {
+			.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
+				background-color: transparent !important;
+			    border: 2px $color_main_accent solid !important;
+			    color: $color_main_accent !important;
+    			line-height: 46px;
+			}
 		}
 	}
 
