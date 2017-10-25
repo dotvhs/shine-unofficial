@@ -471,6 +471,17 @@ function SHINE(){
 						'</select>'+
 					'</div>'+
 				'</div>'+
+				'<div class="settings-halves">'+
+					'<div class="settings-column-half">'+
+						'<label for="settings-grid-limit">Limit Infinite Loading</label>'+
+						'<select name="settings-grid-limit" id="settings-grid-limit">'+
+							'<option value="0">No limits</option>'+
+							'<option value="100">Limit over 100</option>'+
+							'<option value="250">Limit over 250</option>'+
+							'<option value="500">Limit over 500</option>'+
+							'<option value="1000">Limit over 1000</option>'+
+						'</select>'+
+					'</div>'+
 					'<div class="settings-column-half">'+
 						'<label for="settings-show-nsfw">Show NSFW Automatically</label>'+
 						'<select name="settings-show-nsfw" id="settings-show-nsfw">'+
@@ -478,6 +489,7 @@ function SHINE(){
 							'<option value="yes">Yes</option>'+
 						'</select>'+
 					'</div>'+
+				'</div>'+
 			'</div>'+
 			'<div class="panel panel-list">'+
 				'<p>The settings below are applied to all List View pages.</p>'+
@@ -601,6 +613,9 @@ function SHINE(){
 
 	$('#settings-list-limit').val(currentSettings.list.limit);
 	$('body').attr('data-list-limit', currentSettings.list.limit);
+
+	$('#settings-grid-limit').val(currentSettings.grid.limit);
+	$('body').attr('data-grid-limit', currentSettings.grid.limit);
 
 	/* UPDATE INFO */
 
@@ -1135,6 +1150,21 @@ $('body').on('change','#settings-list-limit', function(){
 	chrome.storage.local.set({"shine": currentSettings}, function(){
 
 		$('body').attr('data-list-limit', currentSettings.list.limit);
+
+		saveSettingsMessage();
+
+	});
+
+});
+
+
+$('body').on('change','#settings-grid-limit', function(){
+
+	currentSettings.grid.limit = $(this).val();
+
+	chrome.storage.local.set({"shine": currentSettings}, function(){
+
+		$('body').attr('data-grid-limit', currentSettings.grid.limit);
 
 		saveSettingsMessage();
 

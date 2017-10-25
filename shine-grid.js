@@ -1179,9 +1179,13 @@ if( $('body').hasClass('res') ){
 			     createPreviews( $('body > .content #siteTable .thing').not(".shined") );
 
 			     loading = false;
-                     
-          if ($('#siteTable').find('.thing').length >= 150) {
-            $('#siteTable').find('.thing:lt(25)').remove();
+
+          var loadingLimit = $('body').attr('data-grid-limit');
+          //console.log(loadingLimit);
+          if(loadingLimit != 0) {
+            if ($('#siteTable').find('.thing').length >= loadingLimit) {
+              $('#siteTable').find('.thing:lt(25)').remove();
+            }
           }
 
 			  },
