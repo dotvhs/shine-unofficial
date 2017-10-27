@@ -764,6 +764,10 @@ html.SHINE .shine-nav:hover .shine-navicon .lines::after {
     transform: rotate(720deg);
 }
 
+html.SHINE .shine-nav:hover + .shine-nav-comment {
+    opacity: 0 !important;
+}
+
 /*
 
 html.SHINE .shine-nav:hover .shine-navicon .lines{
@@ -841,6 +845,7 @@ html.SHINE .shine-nav-comment {
     padding: 15px 131px 65px 15px;
     flex-direction: row;
     z-index: 12000;
+    transition: opacity 200ms ease;
 }
 
 html.SHINE.show-comment-navigation .shine-nav-comment {
