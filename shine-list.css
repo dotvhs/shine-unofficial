@@ -642,5 +642,5 @@ html.SHINE.shine-list .shine-expand .side-comments .content {
 }
 
 .side-comments .rank {
-    display: none;
+    display: none !important;
 }
