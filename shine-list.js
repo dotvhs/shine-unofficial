@@ -1677,7 +1677,7 @@ $(document).on('keyup keydown', function(e){
 
 
 
-function shineHREF(){
+function shineHREF(n){
 
 	theShinedThings = $('body > .content #siteTable > .thing').not(".shined-thing");
 
@@ -1686,6 +1686,8 @@ function shineHREF(){
 		$(theShinedThings[i]).find('a.title').attr("data-shine-url", $(theShinedThings[i]).find('a.title').attr("href"));
 
 		$(theShinedThings[i]).addClass("shined-thing");
+		var b = ((!n) ? 1 + +i : 1 + +i + +n);
+		$(theShinedThings[i]).find('.rank').html(b);
 
 	}
 
@@ -1721,6 +1723,7 @@ if( $('body').hasClass('res') ){
             loading = true;
 
             lastThing = $('body > .content #siteTable > .thing').last().attr('data-fullname');
+            lastNumber = $('body > .content #siteTable > .thing').last().find('.rank').text();
 
             subReddit = window.location.href.split(/[?#]/)[0];
 
@@ -1735,7 +1738,7 @@ if( $('body').hasClass('res') ){
 
 			     loading = false;
 
-				 shineHREF();
+				 shineHREF(lastNumber);
 
 				var loadingLimit = $('body').attr('data-list-limit');
 				//console.log(loadingLimit);
