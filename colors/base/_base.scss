@@ -140,6 +140,10 @@ html.SHINE {
     			line-height: 46px;
 			}
 		}
+
+		.archived-infobar::before {
+		    background-color: $color_fab_color;
+		}
 	}
 
 	#colorselect label.#{$colorname} .button {

@@ -2349,3 +2349,7 @@ html.SHINE ul.updates li.bug:before {
     content: "BUG";
     background-color: #111;
 }
+
+html.SHINE .reddit-infobar {
+    margin-bottom: 30px;
+}

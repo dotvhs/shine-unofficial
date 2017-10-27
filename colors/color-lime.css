@@ -57,5 +57,7 @@ html.SHINE.color-lime.colorlines .thumbnail.spoiler::before, html.SHINE.color-li
   border: 2px #cddc39 solid !important;
   color: #cddc39 !important;
   line-height: 46px; }
+html.SHINE.color-lime .archived-infobar::before {
+  background-color: #AFB42B; }
 html.SHINE #colorselect label.lime .button span {
   background-color: #cddc39; }

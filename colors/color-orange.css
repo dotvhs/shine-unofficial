@@ -57,5 +57,7 @@ html.SHINE.color-orange.colorlines .thumbnail.spoiler::before, html.SHINE.color-
   border: 2px #FF9800 solid !important;
   color: #FF9800 !important;
   line-height: 46px; }
+html.SHINE.color-orange .archived-infobar::before {
+  background-color: #E65100; }
 html.SHINE #colorselect label.orange .button span {
   background-color: #FF9800; }

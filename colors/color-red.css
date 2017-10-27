@@ -57,5 +57,7 @@ html.SHINE.color-red.colorlines .thumbnail.spoiler::before, html.SHINE.color-red
   border: 2px #F44336 solid !important;
   color: #F44336 !important;
   line-height: 46px; }
+html.SHINE.color-red .archived-infobar::before {
+  background-color: #D32F2F; }
 html.SHINE #colorselect label.red .button span {
   background-color: #F44336; }

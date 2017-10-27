@@ -57,5 +57,7 @@ html.SHINE.color-cyan.colorlines .thumbnail.spoiler::before, html.SHINE.color-cy
   border: 2px #00bcd4 solid !important;
   color: #00bcd4 !important;
   line-height: 46px; }
+html.SHINE.color-cyan .archived-infobar::before {
+  background-color: #0097A7; }
 html.SHINE #colorselect label.cyan .button span {
   background-color: #00bcd4; }

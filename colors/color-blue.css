@@ -57,5 +57,7 @@ html.SHINE.color-blue.colorlines .thumbnail.spoiler::before, html.SHINE.color-bl
   border: 2px #42A5F5 solid !important;
   color: #42A5F5 !important;
   line-height: 46px; }
+html.SHINE.color-blue .archived-infobar::before {
+  background-color: #2196F3; }
 html.SHINE #colorselect label.blue .button span {
   background-color: #42A5F5; }

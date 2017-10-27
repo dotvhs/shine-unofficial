@@ -307,6 +307,9 @@ html.SHINE.res-nightmode.theme-material {
     background-color: rgba(255, 255, 255, 0.1); }
   html.SHINE.res-nightmode.theme-material #header-bottom-left #header-img-a, html.SHINE.res-nightmode.theme-material #header-bottom-left #header-img.default-header {
     color: white !important; }
+  html.SHINE.res-nightmode.theme-material .archived-infobar {
+    background-color: #263238;
+    border-color: #2e3c43; }
 html.SHINE #themeselect label.material .foreground {
   background-color: #263238; }
   html.SHINE #themeselect label.material .foreground .background {

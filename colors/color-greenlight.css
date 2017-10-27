@@ -57,5 +57,7 @@ html.SHINE.color-greenlight.colorlines .thumbnail.spoiler::before, html.SHINE.co
   border: 2px #8bc34a solid !important;
   color: #8bc34a !important;
   line-height: 46px; }
+html.SHINE.color-greenlight .archived-infobar::before {
+  background-color: #558B2F; }
 html.SHINE #colorselect label.greenlight .button span {
   background-color: #8bc34a; }

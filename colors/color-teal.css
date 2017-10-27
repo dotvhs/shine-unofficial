@@ -57,5 +57,7 @@ html.SHINE.color-teal.colorlines .thumbnail.spoiler::before, html.SHINE.color-te
   border: 2px #1DE9B6 solid !important;
   color: #1DE9B6 !important;
   line-height: 46px; }
+html.SHINE.color-teal .archived-infobar::before {
+  background-color: #00BFA5; }
 html.SHINE #colorselect label.teal .button span {
   background-color: #1DE9B6; }

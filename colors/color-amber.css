@@ -57,5 +57,7 @@ html.SHINE.color-amber.colorlines .thumbnail.spoiler::before, html.SHINE.color-a
   border: 2px #FFC107 solid !important;
   color: #FFC107 !important;
   line-height: 46px; }
+html.SHINE.color-amber .archived-infobar::before {
+  background-color: #FFB300; }
 html.SHINE #colorselect label.amber .button span {
   background-color: #FFC107; }

@@ -248,6 +248,11 @@ html.SHINE {
 				color: $white !important;
 			}
 		}
+	
+		.archived-infobar {
+		    background-color: $color_bg_darker;
+		    border-color: $color_bg_dark;
+		}
 	}
 	#themeselect label.#{$themename} .foreground {
     	background-color: $color_bg_darker;
