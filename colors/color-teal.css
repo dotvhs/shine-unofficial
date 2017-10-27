@@ -41,10 +41,10 @@ html.SHINE.color-teal .shine-nav .shine-navicon {
 html.SHINE.color-teal #header-bottom-right a.message-count {
   color: white !important;
   background: #1DE9B6; }
-html.SHINE.color-teal button {
+html.SHINE.color-teal button.btn, html.SHINE.color-teal button.save {
   background-color: #1DE9B6; }
-html.SHINE.color-teal button:hover {
-  background-color: #00BFA5 !important; }
+  html.SHINE.color-teal button.btn:hover, html.SHINE.color-teal button.save:hover {
+    background-color: #00BFA5 !important; }
 html.SHINE.color-teal .update-info .open-changelog {
   color: #1DE9B6; }
 html.SHINE.color-teal.colorful #header-bottom-left #header-img-a::after, html.SHINE.color-teal.colorful #header-bottom-left #header-img.default-header::after {

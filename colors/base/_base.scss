@@ -103,11 +103,12 @@ html.SHINE {
 		}
 
 		button {
-			background-color: $color_main_accent;
-		}
-
-		button:hover {
-			background-color: $color_fab_color !important;
+			&.btn, &.save{
+				background-color: $color_main_accent;
+				&:hover {
+					background-color: $color_fab_color !important;
+				}
+			}
 		}
 
 		.update-info .open-changelog {

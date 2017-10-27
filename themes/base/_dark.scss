@@ -51,6 +51,16 @@ html.SHINE {
 						> .thing {
 							//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
 							transition: all 200ms ease;
+
+							.arrow.up::before,
+							.arrow.upmod::before,
+							.arrow.down::before,
+							.arrow.downmod::before {
+								color: $color_mountain_mist_approx;
+							}
+							.score.unvoted {
+								color: rgba($color_mountain_mist_approx,.5);
+							}
 						}
 					}
 					.domain a {
@@ -257,12 +267,22 @@ html.SHINE {
 				background-color: transparent;
 				border: 0;
 			}
-			.thing .title {
-				color: $color_gallery_approx;
-				&:visited {
-					color: $color_mountain_mist_approx !important;
+			.thing {
+				&.comment {
+					.arrow.up::before,
+					.arrow.upmod::before,
+					.arrow.down::before,
+					.arrow.downmod::before {
+						color: $color_mountain_mist_approx;
+					}
 				}
-			}
+				.title {
+					color: $color_gallery_approx;
+					&:visited {
+						color: $color_mountain_mist_approx !important;
+					}
+				}
+			} 
 			&.show-sidebar .side {
 				color: $color_nobel_approx;
 				.md {

@@ -15,6 +15,13 @@ html.SHINE.theme-dark.res-nightmode.shine-list .shine-expand .side-comments butt
 
 html.SHINE.theme-dark.res-nightmode.shine-list body > div.content div#siteTable > .thing {
   transition: all 200ms ease; }
+  html.SHINE.theme-dark.res-nightmode.shine-list body > div.content div#siteTable > .thing .arrow.up::before,
+  html.SHINE.theme-dark.res-nightmode.shine-list body > div.content div#siteTable > .thing .arrow.upmod::before,
+  html.SHINE.theme-dark.res-nightmode.shine-list body > div.content div#siteTable > .thing .arrow.down::before,
+  html.SHINE.theme-dark.res-nightmode.shine-list body > div.content div#siteTable > .thing .arrow.downmod::before {
+    color: #868686; }
+  html.SHINE.theme-dark.res-nightmode.shine-list body > div.content div#siteTable > .thing .score.unvoted {
+    color: rgba(134, 134, 134, 0.5); }
 html.SHINE.theme-dark.res-nightmode.shine-list body .domain a {
   color: rgba(255, 255, 255, 0.5); }
 html.SHINE.theme-dark.res-nightmode.shine-list .shine-expand .toggle-child-comments {
@@ -117,6 +124,11 @@ html.SHINE.theme-dark.res-nightmode .drop-choices {
 html.SHINE.theme-dark.res-nightmode .modal-body {
   background-color: transparent;
   border: 0; }
+html.SHINE.theme-dark.res-nightmode .thing.comment .arrow.up::before,
+html.SHINE.theme-dark.res-nightmode .thing.comment .arrow.upmod::before,
+html.SHINE.theme-dark.res-nightmode .thing.comment .arrow.down::before,
+html.SHINE.theme-dark.res-nightmode .thing.comment .arrow.downmod::before {
+  color: #868686; }
 html.SHINE.theme-dark.res-nightmode .thing .title {
   color: #e7e7e7; }
   html.SHINE.theme-dark.res-nightmode .thing .title:visited {

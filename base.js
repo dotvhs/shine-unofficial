@@ -161,7 +161,9 @@ function SHINE(){
 	// adding our menu interface
 
 	var currentSubreddit = $('head').find('link[rel="canonical"]').attr('href');
-	currentSubreddit = currentSubreddit.match(/reddit.com\/r\/\w*\//) ? currentSubreddit.match(/r\/\w*\//)[0] : '';
+	if (currentSubreddit != undefined) {
+		currentSubreddit = currentSubreddit.match(/reddit.com\/r\/\w*\//) ? currentSubreddit.match(/r\/\w*\//)[0] : '';
+	}
 
 	htmlToAdd = ""+
 
@@ -219,7 +221,7 @@ function SHINE(){
         	'</div>'+
         	'<input tabindex="22" type="submit" value="">';
 
-        if (currentSubreddit.length) {
+        if (currentSubreddit && currentSubreddit.length) {
 			htmlToAdd = htmlToAdd +
         	'<label class="currentSubreddit"><input type="checkbox" name="restrict_sr" tabindex="21"> limit to ' + currentSubreddit + '</label>';
         }
@@ -316,7 +318,7 @@ function SHINE(){
 				'<div class="settings-halves">'+
 					'<div class="settings-column-half">'+
 						'<label for="settings-main-theme">Main Theme</label>'+
-						'<span class="settings-small-print">If you have RES, turn it on Night Mode for dark themes too.</span>'+
+						'<span class="settings-small-print">If you are using RES, turn on the Night Mode for dark themes.</span>'+
 						'<div id="themeselect">'+
 							'<label class="legacy-white">'+
 								'<input type="radio" name="settings-main-theme" value="legacy-white">'+
