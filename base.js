@@ -410,6 +410,10 @@ function SHINE(){
 							  '<input type="radio" name="settings-color-theme" value="amber">'+
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
+							'<label class="color yellow">'+
+							  '<input type="radio" name="settings-color-theme" value="yellow">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
 							'<label class="color lime">'+
 							  '<input type="radio" name="settings-color-theme" value="lime">'+
 							  '<div class="button"><span></span></div>'+
@@ -432,6 +436,14 @@ function SHINE(){
 							'</label>'+
 							'<label class="color indigo">'+
 							  '<input type="radio" name="settings-color-theme" value="indigo">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+							'<label class="color purple">'+
+							  '<input type="radio" name="settings-color-theme" value="purple">'+
+							  '<div class="button"><span></span></div>'+
+							'</label>'+
+							'<label class="color pink">'+
+							  '<input type="radio" name="settings-color-theme" value="pink">'+
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
 						'</div>'+

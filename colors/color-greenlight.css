@@ -1,63 +1,63 @@
 html.SHINE.color-greenlight.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
-  border-left: 5px solid #8bc34a !important; }
+  border-left: 5px solid #A6ED54 !important; }
   html.SHINE.color-greenlight.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
-    border-left: 5px solid #8bc34a !important; }
+    border-left: 5px solid #A6ED54 !important; }
 html.SHINE.color-greenlight.res-nightmode.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
-  color: #8bc34a !important; }
+  color: #A6ED54 !important; }
 html.SHINE.color-greenlight.res-nightmode.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
-  border: 1px solid #8bc34a;
-  color: #8bc34a !important; }
+  border: 1px solid #A6ED54;
+  color: #A6ED54 !important; }
 html.SHINE.color-greenlight.res-nightmode .md a {
-  color: #8bc34a; }
+  color: #A6ED54; }
 html.SHINE.color-greenlight.res-nightmode .tagline a {
-  color: #8bc34a !important; }
+  color: #A6ED54 !important; }
 html.SHINE.color-greenlight.res-nightmode a {
-  color: #8bc34a; }
+  color: #A6ED54; }
 html.SHINE.color-greenlight.res-nightmode .search-result-meta a {
-  color: #8bc34a !important; }
+  color: #A6ED54 !important; }
 html.SHINE.color-greenlight.res-nightmode .res-nightmode #progressIndicator h2 {
-  color: #8bc34a; }
+  color: #A6ED54; }
 html.SHINE.color-greenlight.res-nightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
-  color: #8bc34a; }
+  color: #A6ED54; }
 html.SHINE.color-greenlight.res-nightmode div#sr-header-area li.selected a {
-  color: #8bc34a !important; }
+  color: #A6ED54 !important; }
 html.SHINE.color-greenlight.res-nightmode #header-bottom-left #header-img-a::after, html.SHINE.color-greenlight.res-nightmode #header-bottom-left #header-img.default-header::after {
   background-color: transparent !important; }
 html.SHINE.color-greenlight .shine-expand .side-comments button.save {
-  background: #8bc34a !important; }
+  background: #A6ED54 !important; }
 html.SHINE.color-greenlight .shine-expand .side-comments button:hover {
-  background: #558B2F !important; }
+  background: #8BC34A !important; }
 html.SHINE.color-greenlight div#sr-header-area a#sr-more-link:hover {
-  background: #8bc34a !important; }
+  background: #A6ED54 !important; }
 html.SHINE.color-greenlight div#sr-header-area li.selected a {
-  color: #558B2F !important; }
+  color: #8BC34A !important; }
 html.SHINE.color-greenlight #themeselect input:checked ~ .foreground {
-  border: 3px solid #8bc34a; }
+  border: 3px solid #A6ED54; }
 html.SHINE.color-greenlight #themeselect input:checked ~ .theme-name {
-  color: #8bc34a; }
+  color: #A6ED54; }
 html.SHINE.color-greenlight .shine-nav .shine-navicon {
-  background-color: #558B2F;
+  background-color: #8BC34A;
   transition: background-color 200ms; }
 html.SHINE.color-greenlight #header-bottom-right a.message-count {
   color: white !important;
-  background: #8bc34a; }
+  background: #A6ED54; }
 html.SHINE.color-greenlight button.btn, html.SHINE.color-greenlight button.save {
-  background-color: #8bc34a; }
+  background-color: #A6ED54; }
   html.SHINE.color-greenlight button.btn:hover, html.SHINE.color-greenlight button.save:hover {
-    background-color: #558B2F !important; }
+    background-color: #8BC34A !important; }
 html.SHINE.color-greenlight .update-info .open-changelog {
-  color: #8bc34a; }
+  color: #A6ED54; }
 html.SHINE.color-greenlight.colorful #header-bottom-left #header-img-a::after, html.SHINE.color-greenlight.colorful #header-bottom-left #header-img.default-header::after {
-  background-color: #558B2F !important;
+  background-color: #8BC34A !important;
   color: #fff; }
 html.SHINE.color-greenlight.colorful .thumbnail.spoiler::before, html.SHINE.color-greenlight.colorful .thumbnail.nsfw::before, html.SHINE.color-greenlight.colorful .thumbnail.default::before, html.SHINE.color-greenlight.colorful .thumbnail.image::before, html.SHINE.color-greenlight.colorful .thumbnail.self::before {
-  background-color: #558B2F !important; }
+  background-color: #8BC34A !important; }
 html.SHINE.color-greenlight.colorlines .thumbnail.spoiler::before, html.SHINE.color-greenlight.colorlines .thumbnail.nsfw::before, html.SHINE.color-greenlight.colorlines .thumbnail.default::before, html.SHINE.color-greenlight.colorlines .thumbnail.image::before, html.SHINE.color-greenlight.colorlines .thumbnail.self::before {
   background-color: transparent !important;
-  border: 2px #8bc34a solid !important;
-  color: #8bc34a !important;
+  border: 2px #A6ED54 solid !important;
+  color: #A6ED54 !important;
   line-height: 46px; }
 html.SHINE.color-greenlight .archived-infobar::before {
-  background-color: #558B2F; }
+  background-color: #8BC34A; }
 html.SHINE #colorselect label.greenlight .button span {
-  background-color: #8bc34a; }
+  background-color: #8BC34A; }

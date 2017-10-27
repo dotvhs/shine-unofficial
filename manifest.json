@@ -40,7 +40,10 @@
          "colors/color-teal.css",
          "colors/color-cyan.css",
          "colors/color-blue.css",
-         "colors/color-indigo.css"
+         "colors/color-indigo.css",
+         "colors/color-pink.css",
+         "colors/color-yellow.css",
+         "colors/color-purple.css"
       ],
       "matches": [ "*://*.reddit.com/*" ],
       "run_at":"document_start"

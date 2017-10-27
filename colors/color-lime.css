@@ -1,63 +1,63 @@
 html.SHINE.color-lime.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
-  border-left: 5px solid #cddc39 !important; }
+  border-left: 5px solid #EEFF41 !important; }
   html.SHINE.color-lime.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
-    border-left: 5px solid #cddc39 !important; }
+    border-left: 5px solid #EEFF41 !important; }
 html.SHINE.color-lime.res-nightmode.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
-  color: #cddc39 !important; }
+  color: #EEFF41 !important; }
 html.SHINE.color-lime.res-nightmode.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
-  border: 1px solid #cddc39;
-  color: #cddc39 !important; }
+  border: 1px solid #EEFF41;
+  color: #EEFF41 !important; }
 html.SHINE.color-lime.res-nightmode .md a {
-  color: #cddc39; }
+  color: #EEFF41; }
 html.SHINE.color-lime.res-nightmode .tagline a {
-  color: #cddc39 !important; }
+  color: #EEFF41 !important; }
 html.SHINE.color-lime.res-nightmode a {
-  color: #cddc39; }
+  color: #EEFF41; }
 html.SHINE.color-lime.res-nightmode .search-result-meta a {
-  color: #cddc39 !important; }
+  color: #EEFF41 !important; }
 html.SHINE.color-lime.res-nightmode .res-nightmode #progressIndicator h2 {
-  color: #cddc39; }
+  color: #EEFF41; }
 html.SHINE.color-lime.res-nightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
-  color: #cddc39; }
+  color: #EEFF41; }
 html.SHINE.color-lime.res-nightmode div#sr-header-area li.selected a {
-  color: #cddc39 !important; }
+  color: #EEFF41 !important; }
 html.SHINE.color-lime.res-nightmode #header-bottom-left #header-img-a::after, html.SHINE.color-lime.res-nightmode #header-bottom-left #header-img.default-header::after {
   background-color: transparent !important; }
 html.SHINE.color-lime .shine-expand .side-comments button.save {
-  background: #cddc39 !important; }
+  background: #EEFF41 !important; }
 html.SHINE.color-lime .shine-expand .side-comments button:hover {
-  background: #AFB42B !important; }
+  background: #CDDC39 !important; }
 html.SHINE.color-lime div#sr-header-area a#sr-more-link:hover {
-  background: #cddc39 !important; }
+  background: #EEFF41 !important; }
 html.SHINE.color-lime div#sr-header-area li.selected a {
-  color: #AFB42B !important; }
+  color: #CDDC39 !important; }
 html.SHINE.color-lime #themeselect input:checked ~ .foreground {
-  border: 3px solid #cddc39; }
+  border: 3px solid #EEFF41; }
 html.SHINE.color-lime #themeselect input:checked ~ .theme-name {
-  color: #cddc39; }
+  color: #EEFF41; }
 html.SHINE.color-lime .shine-nav .shine-navicon {
-  background-color: #AFB42B;
+  background-color: #CDDC39;
   transition: background-color 200ms; }
 html.SHINE.color-lime #header-bottom-right a.message-count {
   color: white !important;
-  background: #cddc39; }
+  background: #EEFF41; }
 html.SHINE.color-lime button.btn, html.SHINE.color-lime button.save {
-  background-color: #cddc39; }
+  background-color: #EEFF41; }
   html.SHINE.color-lime button.btn:hover, html.SHINE.color-lime button.save:hover {
-    background-color: #AFB42B !important; }
+    background-color: #CDDC39 !important; }
 html.SHINE.color-lime .update-info .open-changelog {
-  color: #cddc39; }
+  color: #EEFF41; }
 html.SHINE.color-lime.colorful #header-bottom-left #header-img-a::after, html.SHINE.color-lime.colorful #header-bottom-left #header-img.default-header::after {
-  background-color: #AFB42B !important;
+  background-color: #CDDC39 !important;
   color: #fff; }
 html.SHINE.color-lime.colorful .thumbnail.spoiler::before, html.SHINE.color-lime.colorful .thumbnail.nsfw::before, html.SHINE.color-lime.colorful .thumbnail.default::before, html.SHINE.color-lime.colorful .thumbnail.image::before, html.SHINE.color-lime.colorful .thumbnail.self::before {
-  background-color: #AFB42B !important; }
+  background-color: #CDDC39 !important; }
 html.SHINE.color-lime.colorlines .thumbnail.spoiler::before, html.SHINE.color-lime.colorlines .thumbnail.nsfw::before, html.SHINE.color-lime.colorlines .thumbnail.default::before, html.SHINE.color-lime.colorlines .thumbnail.image::before, html.SHINE.color-lime.colorlines .thumbnail.self::before {
   background-color: transparent !important;
-  border: 2px #cddc39 solid !important;
-  color: #cddc39 !important;
+  border: 2px #EEFF41 solid !important;
+  color: #EEFF41 !important;
   line-height: 46px; }
 html.SHINE.color-lime .archived-infobar::before {
-  background-color: #AFB42B; }
+  background-color: #CDDC39; }
 html.SHINE #colorselect label.lime .button span {
-  background-color: #cddc39; }
+  background-color: #CDDC39; }

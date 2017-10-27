@@ -1,0 +1,63 @@
+html.SHINE.color-yellow.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
+  border-left: 5px solid #FFEB3B !important; }
+  html.SHINE.color-yellow.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
+    border-left: 5px solid #FFEB3B !important; }
+html.SHINE.color-yellow.res-nightmode.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
+  color: #FFEB3B !important; }
+html.SHINE.color-yellow.res-nightmode.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
+  border: 1px solid #FFEB3B;
+  color: #FFEB3B !important; }
+html.SHINE.color-yellow.res-nightmode .md a {
+  color: #FFEB3B; }
+html.SHINE.color-yellow.res-nightmode .tagline a {
+  color: #FFEB3B !important; }
+html.SHINE.color-yellow.res-nightmode a {
+  color: #FFEB3B; }
+html.SHINE.color-yellow.res-nightmode .search-result-meta a {
+  color: #FFEB3B !important; }
+html.SHINE.color-yellow.res-nightmode .res-nightmode #progressIndicator h2 {
+  color: #FFEB3B; }
+html.SHINE.color-yellow.res-nightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
+  color: #FFEB3B; }
+html.SHINE.color-yellow.res-nightmode div#sr-header-area li.selected a {
+  color: #FFEB3B !important; }
+html.SHINE.color-yellow.res-nightmode #header-bottom-left #header-img-a::after, html.SHINE.color-yellow.res-nightmode #header-bottom-left #header-img.default-header::after {
+  background-color: transparent !important; }
+html.SHINE.color-yellow .shine-expand .side-comments button.save {
+  background: #FFEB3B !important; }
+html.SHINE.color-yellow .shine-expand .side-comments button:hover {
+  background: #FDD835 !important; }
+html.SHINE.color-yellow div#sr-header-area a#sr-more-link:hover {
+  background: #FFEB3B !important; }
+html.SHINE.color-yellow div#sr-header-area li.selected a {
+  color: #FDD835 !important; }
+html.SHINE.color-yellow #themeselect input:checked ~ .foreground {
+  border: 3px solid #FFEB3B; }
+html.SHINE.color-yellow #themeselect input:checked ~ .theme-name {
+  color: #FFEB3B; }
+html.SHINE.color-yellow .shine-nav .shine-navicon {
+  background-color: #FDD835;
+  transition: background-color 200ms; }
+html.SHINE.color-yellow #header-bottom-right a.message-count {
+  color: white !important;
+  background: #FFEB3B; }
+html.SHINE.color-yellow button.btn, html.SHINE.color-yellow button.save {
+  background-color: #FFEB3B; }
+  html.SHINE.color-yellow button.btn:hover, html.SHINE.color-yellow button.save:hover {
+    background-color: #FDD835 !important; }
+html.SHINE.color-yellow .update-info .open-changelog {
+  color: #FFEB3B; }
+html.SHINE.color-yellow.colorful #header-bottom-left #header-img-a::after, html.SHINE.color-yellow.colorful #header-bottom-left #header-img.default-header::after {
+  background-color: #FDD835 !important;
+  color: #fff; }
+html.SHINE.color-yellow.colorful .thumbnail.spoiler::before, html.SHINE.color-yellow.colorful .thumbnail.nsfw::before, html.SHINE.color-yellow.colorful .thumbnail.default::before, html.SHINE.color-yellow.colorful .thumbnail.image::before, html.SHINE.color-yellow.colorful .thumbnail.self::before {
+  background-color: #FDD835 !important; }
+html.SHINE.color-yellow.colorlines .thumbnail.spoiler::before, html.SHINE.color-yellow.colorlines .thumbnail.nsfw::before, html.SHINE.color-yellow.colorlines .thumbnail.default::before, html.SHINE.color-yellow.colorlines .thumbnail.image::before, html.SHINE.color-yellow.colorlines .thumbnail.self::before {
+  background-color: transparent !important;
+  border: 2px #FFEB3B solid !important;
+  color: #FFEB3B !important;
+  line-height: 46px; }
+html.SHINE.color-yellow .archived-infobar::before {
+  background-color: #FDD835; }
+html.SHINE #colorselect label.yellow .button span {
+  background-color: #FDD835; }
