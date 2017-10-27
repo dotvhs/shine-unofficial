@@ -1686,9 +1686,19 @@ function shineHREF(n){
 		$(theShinedThings[i]).find('a.title').attr("data-shine-url", $(theShinedThings[i]).find('a.title').attr("href"));
 
 		$(theShinedThings[i]).addClass("shined-thing");
-		var b = ((!n) ? 1 + +i : 1 + +i + +n);
-		$(theShinedThings[i]).find('.rank').html(b);
+		if( !$('body').hasClass('res') ){
+			var b = ((!n) ? 1 + +i : 1 + +i + +n);
+			$(theShinedThings[i]).find('.rank').html(b);
+		}
 
+	}
+
+	var loadingLimit = $('body').attr('data-list-limit');
+	//console.log(loadingLimit);
+	if(loadingLimit != 0) {
+		if ($('#siteTable').find('.thing').length >= loadingLimit) {
+			$('#siteTable').find('.thing:lt(25)').remove();
+		}
 	}
 
 }
@@ -1739,14 +1749,6 @@ if( $('body').hasClass('res') ){
 			     loading = false;
 
 				 shineHREF(lastNumber);
-
-				var loadingLimit = $('body').attr('data-list-limit');
-				//console.log(loadingLimit);
-				if(loadingLimit != 0) {
-					if ($('#siteTable').find('.thing').length >= loadingLimit) {
-						$('#siteTable').find('.thing:lt(25)').remove();
-					}
-				}
 			      
 			  },
 		      error: function(request, status, message) { 
