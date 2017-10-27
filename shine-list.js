@@ -1714,6 +1714,8 @@ if( $('body').hasClass('res') ){
 	//SCROLLING FUNCTIONS
     $(window).scroll(function(){
 
+		$('body').find('.thing.recommended-link').remove();
+
         if( $(window).scrollTop() + $(window).height() >= $('body').height() - 1000 && loading == false ){
 
             loading = true;

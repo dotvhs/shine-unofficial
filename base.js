@@ -1819,8 +1819,6 @@ $('body').on('mouseout','#colorselect',function(){
 });
 
 
-
-
 $(".menuarea").detach().appendTo('#header-bottom-left')
 
 $('body').on('mouseover','.menuarea',function(){
