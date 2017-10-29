@@ -156,6 +156,11 @@ html.SHINE.shine-list body > div.content div#siteTable > .thing a.thumbnail img 
     height: 100%;
 }
 
+html.SHINE.lightmode.shine-list body > div.content div#siteTable > .thing a.thumbnail img {
+    width: auto !important;
+    height: 100% !important;
+}
+
 html.SHINE.shine-list body > div.content div#siteTable > .thing .RES-keyNav-activeElement{
 	background-color:transparent !important;
 }

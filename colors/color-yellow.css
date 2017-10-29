@@ -23,6 +23,31 @@ html.SHINE.color-yellow.res-nightmode div#sr-header-area li.selected a {
   color: #FFEB3B !important; }
 html.SHINE.color-yellow.res-nightmode #header-bottom-left #header-img-a::after, html.SHINE.color-yellow.res-nightmode #header-bottom-left #header-img.default-header::after {
   background-color: transparent !important; }
+html.SHINE.color-yellow.lightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
+  border-left: 5px solid #FDD835 !important; }
+  html.SHINE.color-yellow.lightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
+    border-left: 5px solid #FDD835 !important; }
+html.SHINE.color-yellow.lightmode.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
+  color: #FDD835 !important; }
+html.SHINE.color-yellow.lightmode.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
+  border: 1px solid #FDD835;
+  color: #FDD835 !important; }
+html.SHINE.color-yellow.lightmode .md a {
+  color: #FDD835; }
+html.SHINE.color-yellow.lightmode .tagline a {
+  color: #FDD835 !important; }
+html.SHINE.color-yellow.lightmode a {
+  color: #FDD835; }
+html.SHINE.color-yellow.lightmode .search-result-meta a {
+  color: #FDD835 !important; }
+html.SHINE.color-yellow.lightmode .res-nightmode #progressIndicator h2 {
+  color: #FDD835; }
+html.SHINE.color-yellow.lightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
+  color: #FDD835; }
+html.SHINE.color-yellow.lightmode div#sr-header-area li.selected a {
+  color: #FDD835 !important; }
+html.SHINE.color-yellow.lightmode #header-bottom-left #header-img-a::after, html.SHINE.color-yellow.lightmode #header-bottom-left #header-img.default-header::after {
+  background-color: transparent !important; }
 html.SHINE.color-yellow .shine-expand .side-comments button.save {
   background: #FFEB3B !important; }
 html.SHINE.color-yellow .shine-expand .side-comments button:hover {

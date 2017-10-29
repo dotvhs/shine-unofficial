@@ -1,0 +1,108 @@
+$themename: 'modernwhite';
+
+//backgrounds
+$color_bg_darkest: #fff;
+$color_bg_darker: #fff;
+$color_bg_dark: #f6f6f6;
+
+$color_bg_flair: mix($color_bg_dark, #000, 60%);
+$color_bg_flairborder: mix($color_bg_dark, #000, 70%);
+
+$color_bg_textfield_border: #eee;
+
+$color_posttype: rgba(0,0,0, .7);
+$color_posttype_bg: $color_bg_textfield_border;
+
+$color_row_bottom_border: $color_bg_darkest;
+
+$color_shadow_listing: transparent;
+//$color_shadow_listing: rgba(0,0,0,.3);
+
+
+@import "base/light";
+
+@import "base/base-light";
+
+.rank {
+	display: none !important;
+}
+
+html.SHINE {
+	&.theme-#{$themename} {
+		&.shine-list {
+			&.shine-list-classic {
+				body > div.content {
+					padding: 20px 0 0 0 !important;
+
+					div#siteTable.linklisting {
+						    width: 50% !important;
+						    margin-left: 0px !important;		
+					}
+				}
+				.shine-expand {
+					left: 50% !important;
+				    width: 50% !important;
+				    box-shadow: #f0f0f0 0px 1px 0px !important;
+				    top: 45px !important;
+				    height: calc(100% - 45px) !important;
+				}
+				#header .layout-switch {
+				    left: calc(50% - 45px);
+				}
+
+				&.show-shortcuts .shine-expand {
+				    top: 65px !important;
+				    height: calc(100% - 65px) !important;
+				}
+				&.show-sidebar .shine-expand {
+				    left: calc(50% - 180px) !important;
+				    width: calc(50% - 180px) !important;
+				}
+			}
+
+			body > div.content {
+				div#siteTable {
+					> .thing {
+						a.thumbnail {
+						    order: 2;
+						    width: 60px;
+						    min-width: 60px;
+						    height: 60px;
+						    margin: 0 15px 0 5px;
+						    overflow: hidden;
+						    border-radius: 2px;
+
+						    img {
+						    	object-fit: cover;
+							    width: 60px;
+							    height: 60px;
+						    }
+						}
+
+					    .midcol {
+						    order: 1;
+						}
+					}
+
+					.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
+					    margin-top: -30px;
+					    margin-left: -30px;
+					    width: 60px;
+					    height: 60px;
+					    color: #999;
+					    font: 24px/60px "Material Design Icons";
+					    border-radius: 4px;
+					}
+				}
+			}
+		}
+		.flair, .linkflairlabel {
+			color: #999;
+			background-color: #eee !important;
+			border: none !important;
+		}
+	}
+	#themeselect .#{$themename} .foreground span {
+		color: #000;
+	}
+}

@@ -61,6 +61,67 @@ html.SHINE {
 				}
 			}
 		}
+		&.lightmode {
+			&.shine-list {
+				body {
+					> div.content div#siteTable {
+						&.linklisting > .thing.active-thing {
+							border-left: 5px solid $color_fab_color !important;
+							&:hover {
+								border-left: 5px solid $color_fab_color !important;
+							}
+						}
+					}
+					> .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
+						color: $color_fab_color !important;
+					}
+				}
+				&.shine-list-classic .side-comments {
+					.shine-comment:hover::after {
+						border: 1px solid $color_fab_color;
+						color: $color_fab_color !important;
+					}
+				}
+			}
+			.md {
+				a {
+					color: $color_fab_color;
+				}
+			}
+			.tagline {
+				a {
+					color: $color_fab_color !important;
+				}
+			}
+			a {
+				color: $color_fab_color;
+			}
+			.search-result-meta a {
+				color: $color_fab_color !important;
+			}
+			.res-nightmode #progressIndicator {
+				h2 {
+					color: $color_fab_color;
+				}
+				.RESLoadingSpinner {
+					color: $color_fab_color;			
+				}
+			}
+
+			div {
+				&#sr-header-area {
+					li.selected a {
+					    color: $color_fab_color !important;
+					}
+				}
+			}
+		
+			#header-bottom-left {
+				#header-img-a::after, #header-img.default-header::after {
+					background-color: transparent !important;
+				}
+			}			
+		}
 		
 		.shine-expand {
 			.side-comments button.save {

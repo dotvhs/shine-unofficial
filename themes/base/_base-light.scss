@@ -20,28 +20,32 @@
 	background: $color_bg_dark !important;
 }
 
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    font-family: $font, sans-serif;
+}*/
+
 
 html.SHINE {
 	&.theme-#{$themename} {
-		&.res-nightmode {
+		&.lightmode {
 			background-color: $color_bg_darkest !important;
 			&.shine-list {
 				body {
 					background: $color_bg_darkest !important;
-					> div.content div#siteTable > .thing {
-						background: $color_bg_darker !important;
-						border-bottom: 1px solid $color_row_bottom_border !important;
-						border-left: 5px solid $color_bg_darker !important;
-						border-top: 0 !important;
-						border-right: 0 !important;
-						&:hover {
-							background: $color_bg_dark !important;
-							border-left: 5px solid $color_bg_dark !important;
-						}
-						&.link > .child {
-							color: #fff;
-						}
-					}				
+					> div.content div#siteTable {
+						box-shadow: $color_shadow_listing 1px 1px 5px;
+						> .thing {
+							background: $color_bg_darker !important;
+							border-bottom: 1px solid $color_row_bottom_border !important;
+							border-left: 5px solid $color_bg_darker !important;
+							border-top: 0 !important;
+							border-right: 0 !important;
+							&:hover {
+								background: $color_bg_dark !important;
+								border-left: 5px solid $color_bg_dark !important;
+							}
+						}	
+					}			
 					> div.content .side-comments div#siteTable > .thing {
 						background: transparent !important;
 						border: 0 !important;
@@ -112,6 +116,7 @@ html.SHINE {
 			div {
 				&#header-bottom-left {
 					background: $color_bg_darker !important;
+					box-shadow: #f0f0f0 0px 1px 0px !important;
 				}
 				&#sr-header-area {
 					background: $color_bg_darker !important;

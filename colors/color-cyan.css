@@ -23,6 +23,31 @@ html.SHINE.color-cyan.res-nightmode div#sr-header-area li.selected a {
   color: #00E5FF !important; }
 html.SHINE.color-cyan.res-nightmode #header-bottom-left #header-img-a::after, html.SHINE.color-cyan.res-nightmode #header-bottom-left #header-img.default-header::after {
   background-color: transparent !important; }
+html.SHINE.color-cyan.lightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
+  border-left: 5px solid #26C6DA !important; }
+  html.SHINE.color-cyan.lightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
+    border-left: 5px solid #26C6DA !important; }
+html.SHINE.color-cyan.lightmode.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
+  color: #26C6DA !important; }
+html.SHINE.color-cyan.lightmode.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
+  border: 1px solid #26C6DA;
+  color: #26C6DA !important; }
+html.SHINE.color-cyan.lightmode .md a {
+  color: #26C6DA; }
+html.SHINE.color-cyan.lightmode .tagline a {
+  color: #26C6DA !important; }
+html.SHINE.color-cyan.lightmode a {
+  color: #26C6DA; }
+html.SHINE.color-cyan.lightmode .search-result-meta a {
+  color: #26C6DA !important; }
+html.SHINE.color-cyan.lightmode .res-nightmode #progressIndicator h2 {
+  color: #26C6DA; }
+html.SHINE.color-cyan.lightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
+  color: #26C6DA; }
+html.SHINE.color-cyan.lightmode div#sr-header-area li.selected a {
+  color: #26C6DA !important; }
+html.SHINE.color-cyan.lightmode #header-bottom-left #header-img-a::after, html.SHINE.color-cyan.lightmode #header-bottom-left #header-img.default-header::after {
+  background-color: transparent !important; }
 html.SHINE.color-cyan .shine-expand .side-comments button.save {
   background: #00E5FF !important; }
 html.SHINE.color-cyan .shine-expand .side-comments button:hover {

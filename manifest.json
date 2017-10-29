@@ -26,7 +26,8 @@
          "themes/theme-dark.css", 
          "themes/theme-blue.css", 
          "themes/theme-brown.css", 
-         "themes/theme-material.css"
+         "themes/theme-material.css", 
+         "themes/theme-modernwhite.css"
       ],
       "matches": [ "*://*.reddit.com/*" ],
       "run_at":"document_start"

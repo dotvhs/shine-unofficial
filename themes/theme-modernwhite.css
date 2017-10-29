@@ -1,0 +1,375 @@
+html.SHINE.theme-modernwhite.lightmode .flair, html.SHINE.theme-modernwhite.lightmode .linkflairlabel {
+  background: transparent;
+  padding: 0 4px; }
+
+html.SHINE.theme-modernwhite.lightmode input[type="text"], html.SHINE.theme-modernwhite.lightmode input[type="password"], html.SHINE.theme-modernwhite.lightmode .c-form-control, html.SHINE.theme-modernwhite.lightmode .submit textarea, html.SHINE.theme-modernwhite.lightmode .submit #url, html.SHINE.theme-modernwhite.lightmode .submit #sr-autocomplete, html.SHINE.theme-modernwhite.lightmode .usertext-edit textarea, html.SHINE.theme-modernwhite.lightmode .RESDialogSmall, html.SHINE.theme-modernwhite.lightmode .c-close, html.SHINE.theme-modernwhite.lightmode #REScommentNavBox, html.SHINE.theme-modernwhite.lightmode #BigEditor #BigText, html.SHINE.theme-modernwhite.lightmode #liveupdate-statusbar, html.SHINE.theme-modernwhite.lightmode #liveupdate-statusbar.complete, html.SHINE.theme-modernwhite.lightmode #newlink-with-image-upload .image-upload-drop-target {
+  color: #1a1a1a !important; }
+
+html.SHINE.theme-modernwhite.lightmode .sidebox, html.SHINE.theme-modernwhite.lightmode .subredditbox, html.SHINE.theme-modernwhite.lightmode .subreddit-info, html.SHINE.theme-modernwhite.lightmode .raisedbox, html.SHINE.theme-modernwhite.lightmode .login-form-side, html.SHINE.theme-modernwhite.lightmode .morelink {
+  color: rgba(0, 0, 0, 0.75) !important;
+  border: 0; }
+
+html.SHINE.theme-modernwhite.lightmode.shine-list .shine-expand .side-comments button.save, html.SHINE.theme-modernwhite.lightmode.shine-grid .shine-expand .side-comments button.save {
+  color: white;
+  box-shadow: rgba(255, 255, 255, 0.2) 2px 2px 2px; }
+
+html.SHINE.theme-modernwhite.lightmode.shine-list body > div.content div#siteTable > .thing {
+  transition: all 200ms ease; }
+  html.SHINE.theme-modernwhite.lightmode.shine-list body > div.content div#siteTable > .thing .arrow.up::before,
+  html.SHINE.theme-modernwhite.lightmode.shine-list body > div.content div#siteTable > .thing .arrow.upmod::before,
+  html.SHINE.theme-modernwhite.lightmode.shine-list body > div.content div#siteTable > .thing .arrow.down::before,
+  html.SHINE.theme-modernwhite.lightmode.shine-list body > div.content div#siteTable > .thing .arrow.downmod::before {
+    color: #b3b3b3; }
+  html.SHINE.theme-modernwhite.lightmode.shine-list body > div.content div#siteTable > .thing .score.unvoted {
+    color: rgba(179, 179, 179, 0.5); }
+html.SHINE.theme-modernwhite.lightmode.shine-list body .domain a {
+  color: #a0a0a0; }
+html.SHINE.theme-modernwhite.lightmode.shine-list .shine-expand .toggle-child-comments {
+  color: rgba(0, 0, 0, 0.75) !important; }
+html.SHINE.theme-modernwhite.lightmode.shine-list.shine-list-classic .side-comments .shine-comment::after {
+  background-color: transparent !important;
+  transition: all 200ms ease;
+  margin: 0 5px 5px 10px; }
+html.SHINE.theme-modernwhite.lightmode body {
+  border: 0; }
+  html.SHINE.theme-modernwhite.lightmode body .content {
+    background-color: transparent;
+    border: 0; }
+html.SHINE.theme-modernwhite.lightmode #header {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 5px !important; }
+  html.SHINE.theme-modernwhite.lightmode #header ul.tabmenu:hover {
+    box-shadow: rgba(255, 255, 255, 0.5) 0 0 5px !important; }
+html.SHINE.theme-modernwhite.lightmode div#header-bottom-left {
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px !important; }
+html.SHINE.theme-modernwhite.lightmode div#sr-header-area {
+  border-bottom: 0 solid rgba(0, 0, 0, 0.85) !important; }
+  html.SHINE.theme-modernwhite.lightmode div#sr-header-area a {
+    color: #a0a0a0 !important; }
+    html.SHINE.theme-modernwhite.lightmode div#sr-header-area a#sr-more-link:hover {
+      color: black !important;
+      text-decoration: none !important; }
+html.SHINE.theme-modernwhite.lightmode .md {
+  color: #1a1a1a !important; }
+  html.SHINE.theme-modernwhite.lightmode .md del {
+    color: #1a1a1a !important; }
+  html.SHINE.theme-modernwhite.lightmode .md blockquote {
+    color: rgba(0, 0, 0, 0.75) !important;
+    padding: 6px 8px;
+    border-left: 0; }
+html.SHINE.theme-modernwhite.lightmode .tagline {
+  color: #a0a0a0 !important; }
+  html.SHINE.theme-modernwhite.lightmode .tagline a {
+    font-weight: 700; }
+html.SHINE.theme-modernwhite.lightmode #header-bottom-right a {
+  color: #b3b3b3; }
+html.SHINE.theme-modernwhite.lightmode #header-bottom-right .user .userkarma {
+  color: rgba(0, 0, 0, 0.75); }
+html.SHINE.theme-modernwhite.lightmode svg {
+  fill: #1a1a1a; }
+html.SHINE.theme-modernwhite.lightmode .arrow {
+  opacity: 0.3; }
+html.SHINE.theme-modernwhite.lightmode textarea {
+  color: #1a1a1a !important; }
+html.SHINE.theme-modernwhite.lightmode .sidebox .spacer {
+  margin-top: 0 !important; }
+html.SHINE.theme-modernwhite.lightmode .side {
+  background-color: transparent;
+  border: 0; }
+  html.SHINE.theme-modernwhite.lightmode .side .linkinfo {
+    margin-top: 0 !important; }
+  html.SHINE.theme-modernwhite.lightmode .side .leavemoderator {
+    background-color: transparent;
+    border: 0; }
+  html.SHINE.theme-modernwhite.lightmode .side .leavecontributor-button {
+    background-color: transparent;
+    border: 0; }
+  html.SHINE.theme-modernwhite.lightmode .side .titlebox {
+    background-color: transparent;
+    border: 0; }
+    html.SHINE.theme-modernwhite.lightmode .side .titlebox .flairtoggle {
+      background-color: transparent;
+      border: 0; }
+    html.SHINE.theme-modernwhite.lightmode .side .titlebox form.flairtoggle {
+      background: transparent; }
+  html.SHINE.theme-modernwhite.lightmode .side .spacer .title {
+    margin-top: 20px; }
+  html.SHINE.theme-modernwhite.lightmode .side .spacer .titlebox .redditname {
+    background-color: transparent;
+    border: 0; }
+  html.SHINE.theme-modernwhite.lightmode .side .md ol {
+    background: transparent; }
+  html.SHINE.theme-modernwhite.lightmode .side .md ul {
+    background: transparent; }
+  html.SHINE.theme-modernwhite.lightmode .side .usertext-body .md ol {
+    background-color: transparent;
+    border: 0; }
+    html.SHINE.theme-modernwhite.lightmode .side .usertext-body .md ol ol {
+      background-color: transparent;
+      border: 0; }
+      html.SHINE.theme-modernwhite.lightmode .side .usertext-body .md ol ol li {
+        background-color: transparent;
+        border: 0; }
+  html.SHINE.theme-modernwhite.lightmode .side .recommend-box .rec-item {
+    background-color: transparent;
+    border: 0; }
+html.SHINE.theme-modernwhite.lightmode .nsfw-stamp {
+  color: #bf4040; }
+  html.SHINE.theme-modernwhite.lightmode .nsfw-stamp acronym {
+    color: #bf4040; }
+html.SHINE.theme-modernwhite.lightmode .RESCloseButton {
+  border: 0; }
+html.SHINE.theme-modernwhite.lightmode .read-next {
+  border: 0; }
+html.SHINE.theme-modernwhite.lightmode .drop-choices {
+  border: 0; }
+html.SHINE.theme-modernwhite.lightmode .modal-body {
+  background-color: transparent;
+  border: 0; }
+html.SHINE.theme-modernwhite.lightmode .thing.comment .arrow.up::before,
+html.SHINE.theme-modernwhite.lightmode .thing.comment .arrow.upmod::before,
+html.SHINE.theme-modernwhite.lightmode .thing.comment .arrow.down::before,
+html.SHINE.theme-modernwhite.lightmode .thing.comment .arrow.downmod::before {
+  color: #b3b3b3; }
+html.SHINE.theme-modernwhite.lightmode .thing .title {
+  color: black;
+  font-weight: 600; }
+  html.SHINE.theme-modernwhite.lightmode .thing .title:visited {
+    color: #b3b3b3 !important; }
+html.SHINE.theme-modernwhite.lightmode.show-sidebar .side {
+  color: rgba(0, 0, 0, 0.75); }
+  html.SHINE.theme-modernwhite.lightmode.show-sidebar .side .md {
+    color: #b3b3b3; }
+  html.SHINE.theme-modernwhite.lightmode.show-sidebar .side a.reddit-link-title {
+    color: #b3b3b3; }
+html.SHINE.theme-modernwhite.lightmode .sidecontentbox .content {
+  border: 0 !important;
+  background: transparent !important; }
+html.SHINE.theme-modernwhite.lightmode .link .usertext-body .md {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.8);
+  border: 0 solid #336699;
+  border-radius: 0;
+  padding: 10px 0; }
+html.SHINE.theme-modernwhite.lightmode .entry .buttons li a {
+  color: #a0a0a0 !important; }
+html.SHINE.theme-modernwhite.lightmode .trending-subreddits strong {
+  color: #a0a0a0 !important; }
+html.SHINE.theme-modernwhite.lightmode .message.new > .entry {
+  border: 0; }
+html.SHINE.theme-modernwhite.lightmode .icon-menu a {
+  background-color: transparent;
+  border: 0; }
+html.SHINE.theme-modernwhite.lightmode .modactionlisting table * {
+  background-color: transparent;
+  border: 0; }
+html.SHINE.theme-modernwhite.lightmode .fancy-toggle-button a {
+  color: black !important; }
+html.SHINE.theme-modernwhite.lightmode .dropdown.srdrop .selected {
+  color: rgba(0, 0, 0, 0.75); }
+html.SHINE.theme-modernwhite.lightmode .trophy-area .content {
+  background: transparent; }
+html.SHINE.theme-modernwhite.lightmode .tagline a.moderator {
+  color: black !important; }
+html.SHINE.theme-modernwhite.lightmode .tagline a.submitter {
+  color: black !important; }
+html.SHINE.theme-modernwhite.lightmode .tagline a.admin {
+  color: black !important; }
+html.SHINE.theme-modernwhite.lightmode .usertext.grayed .usertext-body div p {
+  color: #b3b3b3; }
+html.SHINE.theme-modernwhite.lightmode #header-bottom-right #mail, html.SHINE.theme-modernwhite.lightmode #header-bottom-right #modmail, html.SHINE.theme-modernwhite.lightmode #header-bottom-right #RESAccountSwitcherIcon {
+  color: black; }
+html.SHINE.theme-modernwhite.lightmode .menuarea .dropdown.lightdrop .selected {
+  color: black; }
+html.SHINE.theme-modernwhite.shine-grid body > .content #siteTable .thing {
+  transition: all 200ms ease; }
+html.SHINE.theme-modernwhite #themeselect label.modernwhite .foreground span {
+  color: #1a1a1a; }
+html.SHINE.theme-modernwhite.colorful .thumbnail.spoiler::before, html.SHINE.theme-modernwhite.colorful .thumbnail.nsfw::before, html.SHINE.theme-modernwhite.colorful .thumbnail.default::before, html.SHINE.theme-modernwhite.colorful .thumbnail.image::before, html.SHINE.theme-modernwhite.colorful .thumbnail.self::before {
+  color: white !important; }
+
+html.SHINE.theme-modernwhite.lightmode .flair, html.SHINE.theme-modernwhite.lightmode .linkflairlabel {
+  color: #949494;
+  border: 1px solid #acacac; }
+
+html.SHINE.theme-modernwhite.lightmode input[type="text"], html.SHINE.theme-modernwhite.lightmode input[type="password"], html.SHINE.theme-modernwhite.lightmode .c-form-control, html.SHINE.theme-modernwhite.lightmode .submit textarea, html.SHINE.theme-modernwhite.lightmode .submit #url, html.SHINE.theme-modernwhite.lightmode .submit #sr-autocomplete, html.SHINE.theme-modernwhite.lightmode .usertext-edit textarea, html.SHINE.theme-modernwhite.lightmode .RESDialogSmall, html.SHINE.theme-modernwhite.lightmode .c-close, html.SHINE.theme-modernwhite.lightmode #REScommentNavBox, html.SHINE.theme-modernwhite.lightmode #BigEditor #BigText, html.SHINE.theme-modernwhite.lightmode #liveupdate-statusbar, html.SHINE.theme-modernwhite.lightmode #liveupdate-statusbar.complete, html.SHINE.theme-modernwhite.lightmode #newlink-with-image-upload .image-upload-drop-target {
+  background-color: #fff !important;
+  border-color: #eee !important; }
+
+html.SHINE.theme-modernwhite.lightmode .sidebox, html.SHINE.theme-modernwhite.lightmode .subredditbox, html.SHINE.theme-modernwhite.lightmode .subreddit-info, html.SHINE.theme-modernwhite.lightmode .raisedbox, html.SHINE.theme-modernwhite.lightmode .login-form-side, html.SHINE.theme-modernwhite.lightmode .morelink {
+  background: #f6f6f6 !important; }
+
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    font-family: $font, sans-serif;
+}*/
+html.SHINE.theme-modernwhite.lightmode {
+  background-color: #fff !important; }
+  html.SHINE.theme-modernwhite.lightmode.shine-list body {
+    background: #fff !important; }
+    html.SHINE.theme-modernwhite.lightmode.shine-list body > div.content div#siteTable {
+      box-shadow: transparent 1px 1px 5px; }
+      html.SHINE.theme-modernwhite.lightmode.shine-list body > div.content div#siteTable > .thing {
+        background: #fff !important;
+        border-bottom: 1px solid #fff !important;
+        border-left: 5px solid #fff !important;
+        border-top: 0 !important;
+        border-right: 0 !important; }
+        html.SHINE.theme-modernwhite.lightmode.shine-list body > div.content div#siteTable > .thing:hover {
+          background: #f6f6f6 !important;
+          border-left: 5px solid #f6f6f6 !important; }
+    html.SHINE.theme-modernwhite.lightmode.shine-list body > div.content .side-comments div#siteTable > .thing {
+      background: transparent !important;
+      border: 0 !important; }
+      html.SHINE.theme-modernwhite.lightmode.shine-list body > div.content .side-comments div#siteTable > .thing:hover {
+        background: transparent !important;
+        border: 0 !important; }
+  html.SHINE.theme-modernwhite.lightmode.shine-list .shine-expand {
+    background: #fff !important;
+    border-bottom: 1px solid #f6f6f6; }
+    html.SHINE.theme-modernwhite.lightmode.shine-list .shine-expand .toggle-child-comments {
+      background: #f6f6f6 !important; }
+  html.SHINE.theme-modernwhite.lightmode.shine-list .side-comments {
+    background: #fff !important; }
+  html.SHINE.theme-modernwhite.lightmode.shine-list.shine-list-classic .side-comments .shine-comment::after {
+    color: #949494 !important;
+    border: 1px solid #acacac; }
+  html.SHINE.theme-modernwhite.lightmode body {
+    background: #fff !important; }
+    html.SHINE.theme-modernwhite.lightmode body > .content {
+      background: #fff !important; }
+    html.SHINE.theme-modernwhite.lightmode body .roundfield {
+      background-color: #f6f6f6; }
+    html.SHINE.theme-modernwhite.lightmode body.submit .roundfield {
+      background-color: #f6f6f6; }
+    html.SHINE.theme-modernwhite.lightmode body.with-listing-chooser .listing-chooser {
+      background-color: #fff; }
+      html.SHINE.theme-modernwhite.lightmode body.with-listing-chooser .listing-chooser li a {
+        border-color: #f6f6f6; }
+      html.SHINE.theme-modernwhite.lightmode body.with-listing-chooser .listing-chooser .intro {
+        background-color: #fff;
+        padding: 8px; }
+  html.SHINE.theme-modernwhite.lightmode #header {
+    background: #fff !important; }
+    html.SHINE.theme-modernwhite.lightmode #header ul.tabmenu {
+      background: #fff !important; }
+  html.SHINE.theme-modernwhite.lightmode div#header-bottom-left {
+    background: #fff !important;
+    box-shadow: #f0f0f0 0px 1px 0px !important; }
+  html.SHINE.theme-modernwhite.lightmode div#sr-header-area {
+    background: #fff !important;
+    background: #fff !important; }
+  html.SHINE.theme-modernwhite.lightmode .md blockquote {
+    background: #f6f6f6 !important; }
+  html.SHINE.theme-modernwhite.lightmode a#sr-more-link {
+    background: #fff;
+    border-left: 1px solid #fff; }
+  html.SHINE.theme-modernwhite.lightmode .comment .child {
+    border-left: 1px solid #eee; }
+  html.SHINE.theme-modernwhite.lightmode .comment .showreplies {
+    border-left: 1px solid #eee; }
+  html.SHINE.theme-modernwhite.lightmode textarea {
+    background-color: #fff !important;
+    border-color: #eee !important; }
+  html.SHINE.theme-modernwhite.lightmode .sidebox .spacer {
+    background: rgba(255, 255, 255, 0.3) !important; }
+  html.SHINE.theme-modernwhite.lightmode .side .linkinfo {
+    background: rgba(255, 255, 255, 0.3) !important; }
+  html.SHINE.theme-modernwhite.lightmode .RESCloseButton {
+    background-color: #fff !important; }
+  html.SHINE.theme-modernwhite.lightmode .read-next {
+    background-color: #fff !important; }
+  html.SHINE.theme-modernwhite.lightmode .drop-choices {
+    background-color: #fff !important; }
+  html.SHINE.theme-modernwhite.lightmode.show-sidebar .side {
+    background: #fff; }
+  html.SHINE.theme-modernwhite.lightmode.shine-default .panestack-title {
+    border-bottom: 1px solid #fff; }
+  html.SHINE.theme-modernwhite.lightmode .message.new > .entry {
+    background-color: #fff !important; }
+  html.SHINE.theme-modernwhite.lightmode.shine-grid body > .content #siteTable .thing {
+    background: #fff !important; }
+    html.SHINE.theme-modernwhite.lightmode.shine-grid body > .content #siteTable .thing:hover {
+      background: #f6f6f6 !important; }
+    html.SHINE.theme-modernwhite.lightmode.shine-grid body > .content #siteTable .thing .entry ul.flat-list {
+      border-top: 1px solid #fff; }
+  html.SHINE.theme-modernwhite.lightmode.shine-grid .shine-expand .side-comments {
+    background: #fff !important; }
+  html.SHINE.theme-modernwhite.lightmode.shine-grid .shine-expand .toggle-child-comments {
+    background: #f6f6f6 !important; }
+  html.SHINE.theme-modernwhite.lightmode .infobar:not(.newsletterbar) {
+    background-color: #f6f6f6;
+    color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(172, 172, 172, 0.5); }
+  html.SHINE.theme-modernwhite.lightmode #progressIndicator {
+    box-shadow: rgba(255, 255, 255, 0.3) 1px 1px 5px;
+    color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.4); }
+  html.SHINE.theme-modernwhite.lightmode .usertext.grayed .usertext-body {
+    background-color: #fff; }
+  html.SHINE.theme-modernwhite.lightmode .usertext.border .usertext-body {
+    background-color: #f6f6f6; }
+  html.SHINE.theme-modernwhite.lightmode .thumbnail.spoiler::before, html.SHINE.theme-modernwhite.lightmode .thumbnail.nsfw::before, html.SHINE.theme-modernwhite.lightmode .thumbnail.default::before, html.SHINE.theme-modernwhite.lightmode .thumbnail.image::before, html.SHINE.theme-modernwhite.lightmode .thumbnail.self::before {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: #eee; }
+  html.SHINE.theme-modernwhite.lightmode #header-bottom-left #header-img-a, html.SHINE.theme-modernwhite.lightmode #header-bottom-left #header-img.default-header {
+    color: black !important; }
+  html.SHINE.theme-modernwhite.lightmode .archived-infobar {
+    background-color: #fff;
+    border-color: #f6f6f6; }
+html.SHINE #themeselect label.modernwhite .foreground {
+  background-color: #fff; }
+  html.SHINE #themeselect label.modernwhite .foreground .background {
+    background-color: #fff; }
+  html.SHINE #themeselect label.modernwhite .foreground .secondary {
+    background-color: #f6f6f6; }
+
+.rank {
+  display: none !important; }
+
+html.SHINE.theme-modernwhite.shine-list.shine-list-classic body > div.content {
+  padding: 20px 0 0 0 !important; }
+  html.SHINE.theme-modernwhite.shine-list.shine-list-classic body > div.content div#siteTable.linklisting {
+    width: 50% !important;
+    margin-left: 0px !important; }
+html.SHINE.theme-modernwhite.shine-list.shine-list-classic .shine-expand {
+  left: 50% !important;
+  width: 50% !important;
+  box-shadow: #f0f0f0 0px 1px 0px !important;
+  top: 45px !important;
+  height: calc(100% - 45px) !important; }
+html.SHINE.theme-modernwhite.shine-list.shine-list-classic #header .layout-switch {
+  left: calc(50% - 45px); }
+html.SHINE.theme-modernwhite.shine-list.shine-list-classic.show-shortcuts .shine-expand {
+  top: 65px !important;
+  height: calc(100% - 65px) !important; }
+html.SHINE.theme-modernwhite.shine-list.shine-list-classic.show-sidebar .shine-expand {
+  left: calc(50% - 180px) !important;
+  width: calc(50% - 180px) !important; }
+html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable > .thing a.thumbnail {
+  order: 2;
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  margin: 0 15px 0 5px;
+  overflow: hidden;
+  border-radius: 2px; }
+  html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable > .thing a.thumbnail img {
+    object-fit: cover;
+    width: 60px;
+    height: 60px; }
+html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable > .thing .midcol {
+  order: 1; }
+html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable .thumbnail.spoiler::before, html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable .thumbnail.nsfw::before, html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable .thumbnail.default::before, html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable .thumbnail.image::before, html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable .thumbnail.self::before {
+  margin-top: -30px;
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+  color: #999;
+  font: 24px/60px "Material Design Icons";
+  border-radius: 4px; }
+html.SHINE.theme-modernwhite .flair, html.SHINE.theme-modernwhite .linkflairlabel {
+  color: #999;
+  background-color: #eee !important;
+  border: none !important; }
+html.SHINE #themeselect .modernwhite .foreground span {
+  color: #000; }

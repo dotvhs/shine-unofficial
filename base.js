@@ -392,6 +392,14 @@ function SHINE(){
 								'</div>'+
 								'<div class="theme-name">Pure Black</div>'+
 							'</label>'+
+							'<label class="modernwhite">'+
+								'<input type="radio" name="settings-main-theme" value="modernwhite">'+
+								'<div class="foreground"><span>Aa</span>'+
+									'<div class="background"></div>'+
+									'<div class="secondary"></div>'+
+								'</div>'+
+								'<div class="theme-name">Modern White</div>'+
+							'</label>'+
 						'</div>'+
 					'</div>'+
 					'<div class="settings-column-half">'+
@@ -698,25 +706,25 @@ function SHINE(){
 
 	// this adds the nightmode class
 	if( currentSettings.global.theme == "legacy-night" ){
-		$('html').addClass("res-nightmode");
-		$('body').addClass("res-nightmode");
+		clearThemes();
+		$('html, body').addClass("res-nightmode");
 	}else if( currentSettings.global.theme == "legacy-white" ){
-		$('html').removeClass("res-nightmode");
-		$('body').removeClass("res-nightmode");
+		clearThemes();
+	}else if( currentSettings.global.theme == "modernwhite" ){
+		clearThemes();
+		$('html, body').addClass("lightmode theme-"+currentSettings.global.theme);
 	}else{
-		$('html').addClass("res-nightmode theme-"+currentSettings.global.theme);
-		$('body').addClass("res-nightmode theme-"+currentSettings.global.theme);
+		clearThemes();
+		$('html, body').addClass("res-nightmode theme-"+currentSettings.global.theme);
 	}
 
 
 	// this adds the nightmode class
 	if( currentSettings.global.color == undefined || currentSettings.global.color == "" ){
-		$('html').addClass("color-orange");
-		$('body').addClass("color-orange");
+		$('html, body').addClass("color-orange");
 		currentSettings.global.color = "orange";
 	}else{
-		$('html').addClass("color-"+currentSettings.global.color);
-		$('body').addClass("color-"+currentSettings.global.color);	
+		$('html, body').addClass("color-"+currentSettings.global.color);
 	}
 
 
@@ -986,6 +994,15 @@ function resetInterfaces(){
 	$('html').removeClass("show-settings");
 	$('html').removeClass("show-changelog");
 	$('html').removeClass("shine-hide-children");
+
+}
+
+function clearThemes(){
+
+	$('html, body').removeClass("res-nightmode lightmode");	
+	$('html, body').removeClass (function (index, className) {
+	    return (className.match (/\btheme-\S+/g) || []).join(' ');
+	});
 
 }
 
@@ -1679,22 +1696,7 @@ $('body').on('change','input[type=radio][name=settings-main-theme]',function(){
 
 			}
 
-			$('html').addClass("res-nightmode");
-			$('body').addClass("res-nightmode");
-			
-			$('html').removeClass (function (index, className) {
-			    return (className.match (/\btheme-\S+/g) || []).join(' ');
-			});
-			$('body').removeClass (function (index, className) {
-			    return (className.match (/\btheme-\S+/g) || []).join(' ');
-			});
-			
-			$('html').removeClass (function (index, className) {
-			    return (className.match (/\bcolor-\S+/g) || []).join(' ');
-			});
-			$('body').removeClass (function (index, className) {
-			    return (className.match (/\bcolor-\S+/g) || []).join(' ');
-			});
+			clearThemes();
 
 			saveSettingsMessage();
 
@@ -1712,15 +1714,29 @@ $('body').on('change','input[type=radio][name=settings-main-theme]',function(){
 
 			}
 
-			$('html').removeClass("res-nightmode");
-			$('body').removeClass("res-nightmode");
-			
-			$('html').removeClass (function (index, className) {
-			    return (className.match (/\btheme-\S+/g) || []).join(' ');
-			});
-			$('body').removeClass (function (index, className) {
-			    return (className.match (/\btheme-\S+/g) || []).join(' ');
-			});
+			clearThemes();
+
+			saveSettingsMessage();
+
+		});
+
+	}else if( $(this).val() == "modernwhite" ){
+
+		currentSettings.global.theme = "modernwhite";
+
+		chrome.storage.local.set({"shine": currentSettings}, function(){
+
+			if( $('#nightSwitchToggleContainer').hasClass("enabled") ){
+
+				$('#nightSwitchToggleContainer').click();
+
+			}
+
+			clearThemes();
+
+			$('html, body').addClass("lightmode");
+
+			$('html, body').addClass("theme-"+currentSettings.global.theme);
 
 			saveSettingsMessage();
 
@@ -1738,18 +1754,9 @@ $('body').on('change','input[type=radio][name=settings-main-theme]',function(){
 
 			}
 
-			$('html').addClass("res-nightmode");
-			$('body').addClass("res-nightmode");
-			
-			$('html').removeClass (function (index, className) {
-			    return (className.match (/\btheme-\S+/g) || []).join(' ');
-			});
-			$('body').removeClass (function (index, className) {
-			    return (className.match (/\btheme-\S+/g) || []).join(' ');
-			});
+			clearThemes();
 
-			$('html').addClass("theme-"+currentSettings.global.theme);
-			$('body').addClass("theme-"+currentSettings.global.theme);
+			$('html, body').addClass("res-nightmode theme-"+currentSettings.global.theme);
 
 			saveSettingsMessage();
 
@@ -1772,8 +1779,7 @@ $('body').on('change','input[type=radio][name=settings-color-theme]',function(){
 		    return (className.match (/\bcolor-\S+/g) || []).join(' ');
 		});
 
-		$('html').addClass("color-"+currentSettings.global.color);
-		$('body').addClass("color-"+currentSettings.global.color);
+		$('html, body').addClass("color-"+currentSettings.global.color);
 
 		saveSettingsMessage();
 

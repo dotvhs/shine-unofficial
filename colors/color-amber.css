@@ -23,6 +23,31 @@ html.SHINE.color-amber.res-nightmode div#sr-header-area li.selected a {
   color: #FFC107 !important; }
 html.SHINE.color-amber.res-nightmode #header-bottom-left #header-img-a::after, html.SHINE.color-amber.res-nightmode #header-bottom-left #header-img.default-header::after {
   background-color: transparent !important; }
+html.SHINE.color-amber.lightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
+  border-left: 5px solid #FFB300 !important; }
+  html.SHINE.color-amber.lightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
+    border-left: 5px solid #FFB300 !important; }
+html.SHINE.color-amber.lightmode.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
+  color: #FFB300 !important; }
+html.SHINE.color-amber.lightmode.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
+  border: 1px solid #FFB300;
+  color: #FFB300 !important; }
+html.SHINE.color-amber.lightmode .md a {
+  color: #FFB300; }
+html.SHINE.color-amber.lightmode .tagline a {
+  color: #FFB300 !important; }
+html.SHINE.color-amber.lightmode a {
+  color: #FFB300; }
+html.SHINE.color-amber.lightmode .search-result-meta a {
+  color: #FFB300 !important; }
+html.SHINE.color-amber.lightmode .res-nightmode #progressIndicator h2 {
+  color: #FFB300; }
+html.SHINE.color-amber.lightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
+  color: #FFB300; }
+html.SHINE.color-amber.lightmode div#sr-header-area li.selected a {
+  color: #FFB300 !important; }
+html.SHINE.color-amber.lightmode #header-bottom-left #header-img-a::after, html.SHINE.color-amber.lightmode #header-bottom-left #header-img.default-header::after {
+  background-color: transparent !important; }
 html.SHINE.color-amber .shine-expand .side-comments button.save {
   background: #FFC107 !important; }
 html.SHINE.color-amber .shine-expand .side-comments button:hover {

@@ -1,0 +1,382 @@
+$white: rgb(0, 0, 0);
+$black: rgb(255, 255, 255);
+
+$color_gray_approx: #a0a0a0; 
+$color_nobel_approx: rgba($white, .75);
+$color_quill_gray_approx: rgba($white, .8);
+$color_alto_approx: rgba($white, .85);
+$color_gallery_approx: mix($color_bg_darker, $white, 10%);
+$color_mountain_mist_approx: mix($color_bg_darker, $white, 70%);
+
+$color_azure_approx: rgb(51, 102, 153);
+
+$color_mojo_approx: rgb(191, 64, 64); // NSFW
+
+//@extend-elements
+//original selectors
+//html.SHINE.res-nightmode.theme-#{$themename} .flair, html.SHINE.res-nightmode.theme-#{$themename} .linkflairlabel
+%extend_1 {
+	background: transparent;
+	padding: 0 4px;
+}
+
+//original selectors
+//html.SHINE.res-nightmode.theme-#{$themename} input[type="text"], html.SHINE.res-nightmode.theme-#{$themename} input[type="password"], html.SHINE.res-nightmode.theme-#{$themename} .c-form-control
+%extend_2 {
+	color: $color_gallery_approx !important;
+}
+
+//original selectors
+//html.SHINE.res-nightmode.theme-#{$themename} .sidebox, html.SHINE.res-nightmode.theme-#{$themename} .subredditbox, html.SHINE.res-nightmode.theme-#{$themename} .subreddit-info, html.SHINE.res-nightmode.theme-#{$themename} .raisedbox, html.SHINE.res-nightmode.theme-#{$themename} .login-form-side, html.SHINE.res-nightmode.theme-#{$themename} .morelink
+%extend_3 {
+	color: $color_nobel_approx !important;
+	border: 0;
+}
+
+//original selectors
+//html.SHINE.res-nightmode.theme-#{$themename}.shine-list .shine-expand .side-comments button.save, html.SHINE.res-nightmode.theme-#{$themename}.shine-grid .shine-expand .side-comments button.save
+%extend_4 {
+	color: $black;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: rgba($black, 0.2) 2px 2px 2px;
+}
+
+
+html.SHINE {
+	&.theme-#{$themename} {
+		&.lightmode {
+			&.shine-list {
+				body {
+					> div.content div#siteTable {
+						> .thing {
+							//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+							transition: all 200ms ease;
+
+							.arrow.up::before,
+							.arrow.upmod::before,
+							.arrow.down::before,
+							.arrow.downmod::before {
+								color: $color_mountain_mist_approx;
+							}
+							.score.unvoted {
+								color: rgba($color_mountain_mist_approx,.5);
+							}
+						}
+					}
+					.domain a {
+						color: $color_gray_approx;
+					}
+				}
+				.shine-expand {
+					.toggle-child-comments {
+						color: $color_nobel_approx !important;
+					}
+					.side-comments button.save {
+						@extend %extend_4;
+					}
+				}
+				.side-comments {
+				}
+				&.shine-list-classic .side-comments {
+					.shine-comment::after {
+						background-color: transparent !important;
+						//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+						transition: all 200ms ease;
+						margin: 0 5px 5px 10px;
+					}
+				}
+			}
+			body {
+				border: 0;
+				.content {
+					background-color: transparent;
+					border: 0;
+				}
+				> .content {
+				}
+			}
+			#header {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: rgba($black, .3) 0 0 5px !important;
+				ul.tabmenu {
+					&:hover {
+						//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+						box-shadow: rgba($black, .5) 0 0 5px !important;
+					}
+				}
+			}
+			div {
+				&#header-bottom-left {
+					//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+					box-shadow: rgba($white, .3) 0 0 5px !important;
+				}
+				&#sr-header-area {
+					border-bottom: 0 solid $color_alto_approx !important;
+					a {
+						color: $color_gray_approx !important;
+						&#sr-more-link:hover {
+							color: $white !important;
+							text-decoration: none !important;
+						}
+					}
+				}
+			}
+			.md {
+				color: $color_gallery_approx !important;
+				del {
+					color: $color_gallery_approx !important;
+				}
+				blockquote {
+					color: $color_nobel_approx !important;
+					padding: 6px 8px;
+					border-left: 0;
+				}
+			}
+			.tagline {
+				color: $color_gray_approx !important;
+				a {
+					font-weight: 700;
+				}
+			}
+			#header-bottom-right {
+				a {
+					color: $color_mountain_mist_approx;
+				}
+				.user .userkarma {
+					color: $color_nobel_approx;
+				}
+			}
+			svg {
+				fill: $color_gallery_approx;
+			}
+			.arrow {
+				opacity: 0.3;
+			}
+			.flair {
+				@extend %extend_1;
+			}
+			.linkflairlabel {
+				@extend %extend_1;
+			}
+			textarea {
+				color: $color_gallery_approx !important;
+			}
+			input[type="text"] {
+				@extend %extend_2;
+			}
+			input[type="password"] {
+				@extend %extend_2;
+			}
+			.c-form-control {
+				@extend %extend_2;
+			}
+			.sidebox {
+				@extend %extend_3;
+				.spacer {
+					margin-top: 0 !important;
+				}
+			}
+			.subredditbox {
+				@extend %extend_3;
+			}
+			.subreddit-info {
+				@extend %extend_3;
+			}
+			.raisedbox {
+				@extend %extend_3;
+			}
+			.login-form-side {
+				@extend %extend_3;
+			}
+			.morelink {
+				@extend %extend_3;
+			}
+			.side {
+				background-color: transparent;
+				border: 0;
+				.linkinfo {
+					margin-top: 0 !important;
+				}
+				.leavemoderator {
+					background-color: transparent;
+					border: 0;
+				}
+				.leavecontributor-button {
+					background-color: transparent;
+					border: 0;
+				}
+				.titlebox {
+					background-color: transparent;
+					border: 0;
+					.flairtoggle {
+						background-color: transparent;
+						border: 0;
+					}
+					form.flairtoggle {
+						background: transparent;
+					}
+				}
+				.spacer {
+					.title {
+						margin-top: 20px;
+					}
+					.titlebox .redditname {
+						background-color: transparent;
+						border: 0;
+					}
+				}
+				.md {
+					ol {
+						background: transparent;
+					}
+					ul {
+						background: transparent;
+					}
+				}
+				.usertext-body .md ol {
+					background-color: transparent;
+					border: 0;
+					ol {
+						background-color: transparent;
+						border: 0;
+						li {
+							background-color: transparent;
+							border: 0;
+						}
+					}
+				}
+				.recommend-box .rec-item {
+					background-color: transparent;
+					border: 0;
+				}
+			}
+			.nsfw-stamp {
+				color: $color_mojo_approx;
+				acronym {
+					color: $color_mojo_approx;
+				}
+			}
+			.RESCloseButton {
+				border: 0;
+			}
+			.read-next {
+				border: 0;
+			}
+			.drop-choices {
+				border: 0;
+			}
+			.modal-body {
+				background-color: transparent;
+				border: 0;
+			}
+			.thing {
+				&.comment {
+					.arrow.up::before,
+					.arrow.upmod::before,
+					.arrow.down::before,
+					.arrow.downmod::before {
+						color: $color_mountain_mist_approx;
+					}
+				}
+				.title {
+					color: $white;
+					font-weight: 600;
+					&:visited {
+						color: $color_mountain_mist_approx !important;
+					}
+				}
+			} 
+			&.show-sidebar .side {
+				color: $color_nobel_approx;
+				.md {
+					color: $color_mountain_mist_approx;
+				}
+				a.reddit-link-title {
+					color: $color_mountain_mist_approx;
+				}
+			}
+			.sidecontentbox .content {
+				border: 0 !important;
+				background: transparent !important;
+			}
+			.link .usertext-body .md {
+				background-color: transparent;
+				color: $color_quill_gray_approx;
+				border: 0 solid $color_azure_approx;
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 0;
+				padding: 10px 0;
+			}
+			.entry .buttons li a {
+				color: $color_gray_approx !important;
+			}
+			.trending-subreddits strong {
+				color: $color_gray_approx !important;
+			}
+			&.shine-grid .shine-expand .side-comments button.save {
+				@extend %extend_4;
+			}
+			&.shine-default .panestack-title {
+			}
+			.message.new > .entry {
+				border: 0;
+			}
+			.icon-menu a {
+				background-color: transparent;
+				border: 0;
+			}
+			.modactionlisting table * {
+				background-color: transparent;
+				border: 0;
+			}
+			.fancy-toggle-button a {
+				color: $white !important;
+			}
+			.dropdown.srdrop .selected {
+				color: $color_nobel_approx;
+			}
+			.trophy-area .content {
+				background: transparent;
+			}
+			.tagline a {
+				&.moderator {
+					color: $white !important;
+				}
+				&.submitter {
+					color: $white !important;			
+				}
+				&.admin {
+					color: $white !important;	
+				}
+			}		
+			.usertext.grayed .usertext-body div p {
+				color: $color_mountain_mist_approx;
+			}
+
+			#header-bottom-right {
+				#mail, #modmail, #RESAccountSwitcherIcon {
+					color: $white;
+				}
+			}
+
+			.menuarea .dropdown.lightdrop .selected {
+				color: $white;
+			}
+		}
+		&.shine-grid body > .content #siteTable .thing {
+			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+			transition: all 200ms ease;
+		}
+		#themeselect label.#{$themename} .foreground {
+	    	span {
+	    		color: $color_gallery_approx;
+	    	}
+		}
+
+		&.colorful {
+			.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
+			    color: $black !important;
+			}
+		}
+	}
+}

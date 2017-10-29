@@ -2,7 +2,7 @@ html.SHINE.theme-gray.res-nightmode .flair, html.SHINE.theme-gray.res-nightmode 
   background: transparent;
   padding: 0 4px; }
 
-html.SHINE.theme-gray.res-nightmode input[type="text"], html.SHINE.theme-gray.res-nightmode input[type="password"], html.SHINE.theme-gray.res-nightmode .c-form-control, html.SHINE.res-nightmode.theme-gray .submit textarea, html.SHINE.res-nightmode.theme-gray .submit #url, html.SHINE.res-nightmode.theme-gray .submit #sr-autocomplete, html.SHINE.res-nightmode.theme-gray .usertext-edit textarea, html.SHINE.res-nightmode.theme-gray .RESDialogSmall, html.SHINE.res-nightmode.theme-gray .c-close, html.SHINE.res-nightmode.theme-gray #REScommentNavBox, html.SHINE.res-nightmode.theme-gray #BigEditor #BigText, html.SHINE.res-nightmode.theme-gray #liveupdate-statusbar, html.SHINE.res-nightmode.theme-gray #liveupdate-statusbar.complete, html.SHINE.res-nightmode.theme-gray #newlink-with-image-upload .image-upload-drop-target {
+html.SHINE.theme-gray.res-nightmode input[type="text"], html.SHINE.theme-gray.res-nightmode input[type="password"], html.SHINE.theme-gray.res-nightmode .c-form-control, html.SHINE.theme-gray.res-nightmode .submit textarea, html.SHINE.theme-gray.res-nightmode .submit #url, html.SHINE.theme-gray.res-nightmode .submit #sr-autocomplete, html.SHINE.theme-gray.res-nightmode .usertext-edit textarea, html.SHINE.theme-gray.res-nightmode .RESDialogSmall, html.SHINE.theme-gray.res-nightmode .c-close, html.SHINE.theme-gray.res-nightmode #REScommentNavBox, html.SHINE.theme-gray.res-nightmode #BigEditor #BigText, html.SHINE.theme-gray.res-nightmode #liveupdate-statusbar, html.SHINE.theme-gray.res-nightmode #liveupdate-statusbar.complete, html.SHINE.theme-gray.res-nightmode #newlink-with-image-upload .image-upload-drop-target {
   color: #e9e9e9 !important; }
 
 html.SHINE.theme-gray.res-nightmode .sidebox, html.SHINE.theme-gray.res-nightmode .subredditbox, html.SHINE.theme-gray.res-nightmode .subreddit-info, html.SHINE.theme-gray.res-nightmode .raisedbox, html.SHINE.theme-gray.res-nightmode .login-form-side, html.SHINE.theme-gray.res-nightmode .morelink {
@@ -189,125 +189,125 @@ html.SHINE.theme-gray.res-nightmode .flair, html.SHINE.theme-gray.res-nightmode 
   color: #939393;
   border: 1px solid #616161; }
 
-html.SHINE.theme-gray.res-nightmode input[type="text"], html.SHINE.theme-gray.res-nightmode input[type="password"], html.SHINE.theme-gray.res-nightmode .c-form-control, html.SHINE.res-nightmode.theme-gray .submit textarea, html.SHINE.res-nightmode.theme-gray .submit #url, html.SHINE.res-nightmode.theme-gray .submit #sr-autocomplete, html.SHINE.res-nightmode.theme-gray .usertext-edit textarea, html.SHINE.res-nightmode.theme-gray .RESDialogSmall, html.SHINE.res-nightmode.theme-gray .c-close, html.SHINE.res-nightmode.theme-gray #REScommentNavBox, html.SHINE.res-nightmode.theme-gray #BigEditor #BigText, html.SHINE.res-nightmode.theme-gray #liveupdate-statusbar, html.SHINE.res-nightmode.theme-gray #liveupdate-statusbar.complete, html.SHINE.res-nightmode.theme-gray #newlink-with-image-upload .image-upload-drop-target {
+html.SHINE.theme-gray.res-nightmode input[type="text"], html.SHINE.theme-gray.res-nightmode input[type="password"], html.SHINE.theme-gray.res-nightmode .c-form-control, html.SHINE.theme-gray.res-nightmode .submit textarea, html.SHINE.theme-gray.res-nightmode .submit #url, html.SHINE.theme-gray.res-nightmode .submit #sr-autocomplete, html.SHINE.theme-gray.res-nightmode .usertext-edit textarea, html.SHINE.theme-gray.res-nightmode .RESDialogSmall, html.SHINE.theme-gray.res-nightmode .c-close, html.SHINE.theme-gray.res-nightmode #REScommentNavBox, html.SHINE.theme-gray.res-nightmode #BigEditor #BigText, html.SHINE.theme-gray.res-nightmode #liveupdate-statusbar, html.SHINE.theme-gray.res-nightmode #liveupdate-statusbar.complete, html.SHINE.theme-gray.res-nightmode #newlink-with-image-upload .image-upload-drop-target {
   background-color: #191919 !important;
   border-color: rgba(255, 255, 255, 0.1) !important; }
 
 html.SHINE.theme-gray.res-nightmode .sidebox, html.SHINE.theme-gray.res-nightmode .subredditbox, html.SHINE.theme-gray.res-nightmode .subreddit-info, html.SHINE.theme-gray.res-nightmode .raisedbox, html.SHINE.theme-gray.res-nightmode .login-form-side, html.SHINE.theme-gray.res-nightmode .morelink {
   background: #272727 !important; }
 
-html.SHINE.res-nightmode.theme-gray {
+html.SHINE.theme-gray.res-nightmode {
   background-color: #191919 !important; }
-  html.SHINE.res-nightmode.theme-gray.shine-list body {
+  html.SHINE.theme-gray.res-nightmode.shine-list body {
     background: #191919 !important; }
-    html.SHINE.res-nightmode.theme-gray.shine-list body > div.content div#siteTable > .thing {
+    html.SHINE.theme-gray.res-nightmode.shine-list body > div.content div#siteTable > .thing {
       background: #212121 !important;
       border-bottom: 1px solid #191919 !important;
       border-left: 5px solid #212121 !important;
       border-top: 0 !important;
       border-right: 0 !important; }
-      html.SHINE.res-nightmode.theme-gray.shine-list body > div.content div#siteTable > .thing:hover {
+      html.SHINE.theme-gray.res-nightmode.shine-list body > div.content div#siteTable > .thing:hover {
         background: #272727 !important;
         border-left: 5px solid #272727 !important; }
-      html.SHINE.res-nightmode.theme-gray.shine-list body > div.content div#siteTable > .thing.link > .child {
+      html.SHINE.theme-gray.res-nightmode.shine-list body > div.content div#siteTable > .thing.link > .child {
         color: #fff; }
-    html.SHINE.res-nightmode.theme-gray.shine-list body > div.content .side-comments div#siteTable > .thing {
+    html.SHINE.theme-gray.res-nightmode.shine-list body > div.content .side-comments div#siteTable > .thing {
       background: transparent !important;
       border: 0 !important; }
-      html.SHINE.res-nightmode.theme-gray.shine-list body > div.content .side-comments div#siteTable > .thing:hover {
+      html.SHINE.theme-gray.res-nightmode.shine-list body > div.content .side-comments div#siteTable > .thing:hover {
         background: transparent !important;
         border: 0 !important; }
-  html.SHINE.res-nightmode.theme-gray.shine-list .shine-expand {
+  html.SHINE.theme-gray.res-nightmode.shine-list .shine-expand {
     background: #212121 !important;
     border-bottom: 1px solid #272727; }
-    html.SHINE.res-nightmode.theme-gray.shine-list .shine-expand .toggle-child-comments {
+    html.SHINE.theme-gray.res-nightmode.shine-list .shine-expand .toggle-child-comments {
       background: #272727 !important; }
-  html.SHINE.res-nightmode.theme-gray.shine-list .side-comments {
+  html.SHINE.theme-gray.res-nightmode.shine-list .side-comments {
     background: #212121 !important; }
-  html.SHINE.res-nightmode.theme-gray.shine-list.shine-list-classic .side-comments .shine-comment::after {
+  html.SHINE.theme-gray.res-nightmode.shine-list.shine-list-classic .side-comments .shine-comment::after {
     color: #939393 !important;
     border: 1px solid #616161; }
-  html.SHINE.res-nightmode.theme-gray body {
+  html.SHINE.theme-gray.res-nightmode body {
     background: #191919 !important; }
-    html.SHINE.res-nightmode.theme-gray body > .content {
+    html.SHINE.theme-gray.res-nightmode body > .content {
       background: #191919 !important; }
-    html.SHINE.res-nightmode.theme-gray body .roundfield {
+    html.SHINE.theme-gray.res-nightmode body .roundfield {
       background-color: #272727; }
-    html.SHINE.res-nightmode.theme-gray body.submit .roundfield {
+    html.SHINE.theme-gray.res-nightmode body.submit .roundfield {
       background-color: #272727; }
-    html.SHINE.res-nightmode.theme-gray body.with-listing-chooser .listing-chooser {
+    html.SHINE.theme-gray.res-nightmode body.with-listing-chooser .listing-chooser {
       background-color: #191919; }
-      html.SHINE.res-nightmode.theme-gray body.with-listing-chooser .listing-chooser li a {
+      html.SHINE.theme-gray.res-nightmode body.with-listing-chooser .listing-chooser li a {
         border-color: #272727; }
-      html.SHINE.res-nightmode.theme-gray body.with-listing-chooser .listing-chooser .intro {
+      html.SHINE.theme-gray.res-nightmode body.with-listing-chooser .listing-chooser .intro {
         background-color: #212121;
         padding: 8px; }
-  html.SHINE.res-nightmode.theme-gray #header {
+  html.SHINE.theme-gray.res-nightmode #header {
     background: #212121 !important; }
-    html.SHINE.res-nightmode.theme-gray #header ul.tabmenu {
+    html.SHINE.theme-gray.res-nightmode #header ul.tabmenu {
       background: #212121 !important; }
-  html.SHINE.res-nightmode.theme-gray div#header-bottom-left {
+  html.SHINE.theme-gray.res-nightmode div#header-bottom-left {
     background: #212121 !important; }
-  html.SHINE.res-nightmode.theme-gray div#sr-header-area {
+  html.SHINE.theme-gray.res-nightmode div#sr-header-area {
     background: #212121 !important;
     background: #212121 !important; }
-  html.SHINE.res-nightmode.theme-gray .md blockquote {
+  html.SHINE.theme-gray.res-nightmode .md blockquote {
     background: #272727 !important; }
-  html.SHINE.res-nightmode.theme-gray a#sr-more-link {
+  html.SHINE.theme-gray.res-nightmode a#sr-more-link {
     background: #191919;
     border-left: 1px solid #212121; }
-  html.SHINE.res-nightmode.theme-gray .comment .child {
+  html.SHINE.theme-gray.res-nightmode .comment .child {
     border-left: 1px solid rgba(255, 255, 255, 0.1); }
-  html.SHINE.res-nightmode.theme-gray .comment .showreplies {
+  html.SHINE.theme-gray.res-nightmode .comment .showreplies {
     border-left: 1px solid rgba(255, 255, 255, 0.1); }
-  html.SHINE.res-nightmode.theme-gray textarea {
+  html.SHINE.theme-gray.res-nightmode textarea {
     background-color: #191919 !important;
     border-color: rgba(255, 255, 255, 0.1) !important; }
-  html.SHINE.res-nightmode.theme-gray .sidebox .spacer {
+  html.SHINE.theme-gray.res-nightmode .sidebox .spacer {
     background: rgba(25, 25, 25, 0.3) !important; }
-  html.SHINE.res-nightmode.theme-gray .side .linkinfo {
+  html.SHINE.theme-gray.res-nightmode .side .linkinfo {
     background: rgba(25, 25, 25, 0.3) !important; }
-  html.SHINE.res-nightmode.theme-gray .RESCloseButton {
+  html.SHINE.theme-gray.res-nightmode .RESCloseButton {
     background-color: #212121 !important; }
-  html.SHINE.res-nightmode.theme-gray .read-next {
+  html.SHINE.theme-gray.res-nightmode .read-next {
     background-color: #212121 !important; }
-  html.SHINE.res-nightmode.theme-gray .drop-choices {
+  html.SHINE.theme-gray.res-nightmode .drop-choices {
     background-color: #212121 !important; }
-  html.SHINE.res-nightmode.theme-gray.show-sidebar .side {
+  html.SHINE.theme-gray.res-nightmode.show-sidebar .side {
     background: #212121; }
-  html.SHINE.res-nightmode.theme-gray.shine-default .panestack-title {
+  html.SHINE.theme-gray.res-nightmode.shine-default .panestack-title {
     border-bottom: 1px solid #212121; }
-  html.SHINE.res-nightmode.theme-gray .message.new > .entry {
+  html.SHINE.theme-gray.res-nightmode .message.new > .entry {
     background-color: #212121 !important; }
-  html.SHINE.res-nightmode.theme-gray.shine-grid body > .content #siteTable .thing {
+  html.SHINE.theme-gray.res-nightmode.shine-grid body > .content #siteTable .thing {
     background: #212121 !important; }
-    html.SHINE.res-nightmode.theme-gray.shine-grid body > .content #siteTable .thing:hover {
+    html.SHINE.theme-gray.res-nightmode.shine-grid body > .content #siteTable .thing:hover {
       background: #272727 !important; }
-    html.SHINE.res-nightmode.theme-gray.shine-grid body > .content #siteTable .thing .entry ul.flat-list {
+    html.SHINE.theme-gray.res-nightmode.shine-grid body > .content #siteTable .thing .entry ul.flat-list {
       border-top: 1px solid #191919; }
-  html.SHINE.res-nightmode.theme-gray.shine-grid .shine-expand .side-comments {
+  html.SHINE.theme-gray.res-nightmode.shine-grid .shine-expand .side-comments {
     background: #212121 !important; }
-  html.SHINE.res-nightmode.theme-gray.shine-grid .shine-expand .toggle-child-comments {
+  html.SHINE.theme-gray.res-nightmode.shine-grid .shine-expand .toggle-child-comments {
     background: #272727 !important; }
-  html.SHINE.res-nightmode.theme-gray .infobar:not(.newsletterbar) {
+  html.SHINE.theme-gray.res-nightmode .infobar:not(.newsletterbar) {
     background-color: #272727;
     color: rgba(255, 255, 255, 0.7);
     border-color: rgba(97, 97, 97, 0.5); }
-  html.SHINE.res-nightmode.theme-gray #progressIndicator {
+  html.SHINE.theme-gray.res-nightmode #progressIndicator {
     box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
     color: rgba(255, 255, 255, 0.4);
     background-color: rgba(33, 33, 33, 0.7);
     border-color: rgba(33, 33, 33, 0.4); }
-  html.SHINE.res-nightmode.theme-gray .usertext.grayed .usertext-body {
+  html.SHINE.theme-gray.res-nightmode .usertext.grayed .usertext-body {
     background-color: #191919; }
-  html.SHINE.res-nightmode.theme-gray .usertext.border .usertext-body {
+  html.SHINE.theme-gray.res-nightmode .usertext.border .usertext-body {
     background-color: #272727; }
-  html.SHINE.res-nightmode.theme-gray .thumbnail.spoiler::before, html.SHINE.res-nightmode.theme-gray .thumbnail.nsfw::before, html.SHINE.res-nightmode.theme-gray .thumbnail.default::before, html.SHINE.res-nightmode.theme-gray .thumbnail.image::before, html.SHINE.res-nightmode.theme-gray .thumbnail.self::before {
+  html.SHINE.theme-gray.res-nightmode .thumbnail.spoiler::before, html.SHINE.theme-gray.res-nightmode .thumbnail.nsfw::before, html.SHINE.theme-gray.res-nightmode .thumbnail.default::before, html.SHINE.theme-gray.res-nightmode .thumbnail.image::before, html.SHINE.theme-gray.res-nightmode .thumbnail.self::before {
     color: rgba(255, 255, 255, 0.7);
     background-color: rgba(255, 255, 255, 0.1); }
-  html.SHINE.res-nightmode.theme-gray #header-bottom-left #header-img-a, html.SHINE.res-nightmode.theme-gray #header-bottom-left #header-img.default-header {
+  html.SHINE.theme-gray.res-nightmode #header-bottom-left #header-img-a, html.SHINE.theme-gray.res-nightmode #header-bottom-left #header-img.default-header {
     color: white !important; }
-  html.SHINE.res-nightmode.theme-gray .archived-infobar {
+  html.SHINE.theme-gray.res-nightmode .archived-infobar {
     background-color: #212121;
     border-color: #272727; }
 html.SHINE #themeselect label.gray .foreground {
