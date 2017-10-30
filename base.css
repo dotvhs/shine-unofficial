@@ -144,16 +144,20 @@ html.SHINE #header .layout-switch svg.list-side-switch {
     width: 24px;
 }
 
-html.SHINE #header .layout-switch svg:hover{
-    opacity:.5;
-}
-
 html.SHINE.shine-grid #header .layout-switch svg.grid-switch{
     opacity:1;
 }
 
-html.SHINE.shine-list #header .layout-switch svg.list-switch{
+html.SHINE.shine-list:not(.shine-list-classic) #header .layout-switch svg.list-switch{
     opacity:1;
+}
+
+html.SHINE.shine-list-classic #header .layout-switch svg.list-side-switch {
+    opacity: 1;
+}
+
+html.SHINE #header .layout-switch svg:hover{
+    opacity:.5;
 }
 
 html.SHINE div#header-bottom-left {
@@ -924,7 +928,7 @@ html.SHINE.show-search #shine-search{
     width: 100%;
     -webkit-appearance: none;
     border: 0px;
-    background: transparent;
+    background: #222;
     font-family: 'Open Sans', sans-serif;
     font-size: 70px;
     font-weight: 100;
