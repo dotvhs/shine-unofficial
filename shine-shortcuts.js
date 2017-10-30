@@ -68,15 +68,17 @@ $('body').on('click','.shine-comment-prev', function(){
 
 // KEY SHORTCUTS
 $('body').keyup(function (e) {
-	switch( e.keyCode ) {
-	case 27:
-     	resetInterfaces();
-     	break;
-	case 39:
-		commentScroller('next');
-		break;
-	case 37:
-		commentScroller('prev');
-		break;
+    if (e.target.nodeName.toLowerCase() !== 'input' && e.target.nodeName.toLowerCase() !== 'textarea') {
+		switch( e.keyCode ) {
+		case 27:
+	     	resetInterfaces();
+	     	break;
+		case 39:
+			commentScroller('next');
+			break;
+		case 37:
+			commentScroller('prev');
+			break;
+		}
 	}
 });
