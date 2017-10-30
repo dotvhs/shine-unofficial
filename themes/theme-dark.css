@@ -372,7 +372,5 @@ html.SHINE.theme-dark.modern-layout .flair, html.SHINE.theme-dark.modern-layout 
   color: #8a8a8a;
   background-color: none !important;
   border-color: #5b5b5b !important; }
-html.SHINE.theme-dark.modern-layout.colorlines .thumbnail.spoiler::before, html.SHINE.theme-dark.modern-layout.colorlines .thumbnail.nsfw::before, html.SHINE.theme-dark.modern-layout.colorlines .thumbnail.default::before, html.SHINE.theme-dark.modern-layout.colorlines .thumbnail.image::before, html.SHINE.theme-dark.modern-layout.colorlines .thumbnail.self::before {
-  line-height: 56px !important; }
 html.SHINE .rank {
   display: none !important; }

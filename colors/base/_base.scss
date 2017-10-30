@@ -193,12 +193,27 @@ html.SHINE {
 
 
 
+		&.accent {
+			.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
+				color: $color_main_accent !important;
+			}
+		}
+
+
+
 		&.colorlines {
 			.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
 				background-color: transparent !important;
 			    border: 2px $color_main_accent solid !important;
 			    color: $color_main_accent !important;
     			line-height: 46px;
+			}
+			&.modern-layout {
+				.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
+				    border: 2px $color_fab_color solid !important;
+				    color: $color_fab_color !important;
+    				line-height: 56px !important;
+				}				
 			}
 		}
 

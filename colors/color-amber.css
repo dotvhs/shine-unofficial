@@ -77,11 +77,17 @@ html.SHINE.color-amber.colorful #header-bottom-left #header-img-a::after, html.S
   color: #fff; }
 html.SHINE.color-amber.colorful .thumbnail.spoiler::before, html.SHINE.color-amber.colorful .thumbnail.nsfw::before, html.SHINE.color-amber.colorful .thumbnail.default::before, html.SHINE.color-amber.colorful .thumbnail.image::before, html.SHINE.color-amber.colorful .thumbnail.self::before {
   background-color: #FFB300 !important; }
+html.SHINE.color-amber.accent .thumbnail.spoiler::before, html.SHINE.color-amber.accent .thumbnail.nsfw::before, html.SHINE.color-amber.accent .thumbnail.default::before, html.SHINE.color-amber.accent .thumbnail.image::before, html.SHINE.color-amber.accent .thumbnail.self::before {
+  color: #FFC107 !important; }
 html.SHINE.color-amber.colorlines .thumbnail.spoiler::before, html.SHINE.color-amber.colorlines .thumbnail.nsfw::before, html.SHINE.color-amber.colorlines .thumbnail.default::before, html.SHINE.color-amber.colorlines .thumbnail.image::before, html.SHINE.color-amber.colorlines .thumbnail.self::before {
   background-color: transparent !important;
   border: 2px #FFC107 solid !important;
   color: #FFC107 !important;
   line-height: 46px; }
+html.SHINE.color-amber.colorlines.modern-layout .thumbnail.spoiler::before, html.SHINE.color-amber.colorlines.modern-layout .thumbnail.nsfw::before, html.SHINE.color-amber.colorlines.modern-layout .thumbnail.default::before, html.SHINE.color-amber.colorlines.modern-layout .thumbnail.image::before, html.SHINE.color-amber.colorlines.modern-layout .thumbnail.self::before {
+  border: 2px #FFB300 solid !important;
+  color: #FFB300 !important;
+  line-height: 56px !important; }
 html.SHINE.color-amber .archived-infobar::before {
   background-color: #FFB300; }
 html.SHINE #colorselect label.amber .button span {

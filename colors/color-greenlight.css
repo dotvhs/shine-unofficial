@@ -77,11 +77,17 @@ html.SHINE.color-greenlight.colorful #header-bottom-left #header-img-a::after, h
   color: #fff; }
 html.SHINE.color-greenlight.colorful .thumbnail.spoiler::before, html.SHINE.color-greenlight.colorful .thumbnail.nsfw::before, html.SHINE.color-greenlight.colorful .thumbnail.default::before, html.SHINE.color-greenlight.colorful .thumbnail.image::before, html.SHINE.color-greenlight.colorful .thumbnail.self::before {
   background-color: #8BC34A !important; }
+html.SHINE.color-greenlight.accent .thumbnail.spoiler::before, html.SHINE.color-greenlight.accent .thumbnail.nsfw::before, html.SHINE.color-greenlight.accent .thumbnail.default::before, html.SHINE.color-greenlight.accent .thumbnail.image::before, html.SHINE.color-greenlight.accent .thumbnail.self::before {
+  color: #A6ED54 !important; }
 html.SHINE.color-greenlight.colorlines .thumbnail.spoiler::before, html.SHINE.color-greenlight.colorlines .thumbnail.nsfw::before, html.SHINE.color-greenlight.colorlines .thumbnail.default::before, html.SHINE.color-greenlight.colorlines .thumbnail.image::before, html.SHINE.color-greenlight.colorlines .thumbnail.self::before {
   background-color: transparent !important;
   border: 2px #A6ED54 solid !important;
   color: #A6ED54 !important;
   line-height: 46px; }
+html.SHINE.color-greenlight.colorlines.modern-layout .thumbnail.spoiler::before, html.SHINE.color-greenlight.colorlines.modern-layout .thumbnail.nsfw::before, html.SHINE.color-greenlight.colorlines.modern-layout .thumbnail.default::before, html.SHINE.color-greenlight.colorlines.modern-layout .thumbnail.image::before, html.SHINE.color-greenlight.colorlines.modern-layout .thumbnail.self::before {
+  border: 2px #8BC34A solid !important;
+  color: #8BC34A !important;
+  line-height: 56px !important; }
 html.SHINE.color-greenlight .archived-infobar::before {
   background-color: #8BC34A; }
 html.SHINE #colorselect label.greenlight .button span {

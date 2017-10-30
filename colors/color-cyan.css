@@ -77,11 +77,17 @@ html.SHINE.color-cyan.colorful #header-bottom-left #header-img-a::after, html.SH
   color: #fff; }
 html.SHINE.color-cyan.colorful .thumbnail.spoiler::before, html.SHINE.color-cyan.colorful .thumbnail.nsfw::before, html.SHINE.color-cyan.colorful .thumbnail.default::before, html.SHINE.color-cyan.colorful .thumbnail.image::before, html.SHINE.color-cyan.colorful .thumbnail.self::before {
   background-color: #26C6DA !important; }
+html.SHINE.color-cyan.accent .thumbnail.spoiler::before, html.SHINE.color-cyan.accent .thumbnail.nsfw::before, html.SHINE.color-cyan.accent .thumbnail.default::before, html.SHINE.color-cyan.accent .thumbnail.image::before, html.SHINE.color-cyan.accent .thumbnail.self::before {
+  color: #00E5FF !important; }
 html.SHINE.color-cyan.colorlines .thumbnail.spoiler::before, html.SHINE.color-cyan.colorlines .thumbnail.nsfw::before, html.SHINE.color-cyan.colorlines .thumbnail.default::before, html.SHINE.color-cyan.colorlines .thumbnail.image::before, html.SHINE.color-cyan.colorlines .thumbnail.self::before {
   background-color: transparent !important;
   border: 2px #00E5FF solid !important;
   color: #00E5FF !important;
   line-height: 46px; }
+html.SHINE.color-cyan.colorlines.modern-layout .thumbnail.spoiler::before, html.SHINE.color-cyan.colorlines.modern-layout .thumbnail.nsfw::before, html.SHINE.color-cyan.colorlines.modern-layout .thumbnail.default::before, html.SHINE.color-cyan.colorlines.modern-layout .thumbnail.image::before, html.SHINE.color-cyan.colorlines.modern-layout .thumbnail.self::before {
+  border: 2px #26C6DA solid !important;
+  color: #26C6DA !important;
+  line-height: 56px !important; }
 html.SHINE.color-cyan .archived-infobar::before {
   background-color: #26C6DA; }
 html.SHINE #colorselect label.cyan .button span {

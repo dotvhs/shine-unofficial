@@ -89,12 +89,6 @@ html.SHINE {
 			background-color: $color_bg_flairbackground !important;
 			border-color: $color_bg_flairborder !important;
 		}
-
-		&.colorlines {
-			.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
-				line-height: 56px !important;
-			}
-		}
 	}
 
 	.rank {

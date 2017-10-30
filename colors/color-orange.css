@@ -77,11 +77,17 @@ html.SHINE.color-orange.colorful #header-bottom-left #header-img-a::after, html.
   color: #fff; }
 html.SHINE.color-orange.colorful .thumbnail.spoiler::before, html.SHINE.color-orange.colorful .thumbnail.nsfw::before, html.SHINE.color-orange.colorful .thumbnail.default::before, html.SHINE.color-orange.colorful .thumbnail.image::before, html.SHINE.color-orange.colorful .thumbnail.self::before {
   background-color: #E65100 !important; }
+html.SHINE.color-orange.accent .thumbnail.spoiler::before, html.SHINE.color-orange.accent .thumbnail.nsfw::before, html.SHINE.color-orange.accent .thumbnail.default::before, html.SHINE.color-orange.accent .thumbnail.image::before, html.SHINE.color-orange.accent .thumbnail.self::before {
+  color: #FF9800 !important; }
 html.SHINE.color-orange.colorlines .thumbnail.spoiler::before, html.SHINE.color-orange.colorlines .thumbnail.nsfw::before, html.SHINE.color-orange.colorlines .thumbnail.default::before, html.SHINE.color-orange.colorlines .thumbnail.image::before, html.SHINE.color-orange.colorlines .thumbnail.self::before {
   background-color: transparent !important;
   border: 2px #FF9800 solid !important;
   color: #FF9800 !important;
   line-height: 46px; }
+html.SHINE.color-orange.colorlines.modern-layout .thumbnail.spoiler::before, html.SHINE.color-orange.colorlines.modern-layout .thumbnail.nsfw::before, html.SHINE.color-orange.colorlines.modern-layout .thumbnail.default::before, html.SHINE.color-orange.colorlines.modern-layout .thumbnail.image::before, html.SHINE.color-orange.colorlines.modern-layout .thumbnail.self::before {
+  border: 2px #E65100 solid !important;
+  color: #E65100 !important;
+  line-height: 56px !important; }
 html.SHINE.color-orange .archived-infobar::before {
   background-color: #E65100; }
 html.SHINE #colorselect label.orange .button span {

@@ -473,6 +473,7 @@ function SHINE(){
 						'<select name="settings-color-switch" id="settings-color-switch">'+
 							'<option value="gray">Grayscale</option>'+
 							'<option value="color">Colorful</option>'+
+							'<option value="accent">Color-accented</option>'+
 							'<option value="lines">Linear</option>'+
 						'</select>'+
 					'</div>'+
@@ -630,6 +631,11 @@ function SHINE(){
 		$('html').addClass("colorlines");
 		$('#settings-color-switch').val("lines");
 
+	}else if( currentSettings.customization.icons == "accent" ){
+
+		$('html').addClass("accent");
+		$('#settings-color-switch').val("accent");
+
 	} else {
 		$('#settings-color-switch').val("gray");
 	}
@@ -647,10 +653,8 @@ function SHINE(){
 	}
 
 	if( currentSettings.customization.layout == "modern" ){
-
 		$('html').addClass("modern-layout");
 		$('#settings-layout-switch').val("modern");
-
 	}
 
 	$('#settings-list-limit').val(currentSettings.list.limit);
@@ -1172,18 +1176,22 @@ $('body').on('change','#settings-color-switch', function(){
 
 		if( currentSettings.customization.icons == "color" ){
 
-			$('html').removeClass("colorlines");
+			$('html').removeClass("colorlines accent");
 			$('html').addClass("colorful");
 
 		}else if( currentSettings.customization.icons == "lines" ){
 
-			$('html').removeClass("colorful");
+			$('html').removeClass("colorful accent");
 			$('html').addClass("colorlines");
+
+		}else if( currentSettings.customization.icons == "accent" ){
+
+			$('html').removeClass("colorful colorlines");
+			$('html').addClass("accent");
 
 		}else {
 
-			$('html').removeClass("colorlines");
-			$('html').removeClass("colorful");
+			$('html').removeClass("colorlines accent colorful");
 
 		}
 

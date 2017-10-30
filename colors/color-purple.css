@@ -77,11 +77,17 @@ html.SHINE.color-purple.colorful #header-bottom-left #header-img-a::after, html.
   color: #fff; }
 html.SHINE.color-purple.colorful .thumbnail.spoiler::before, html.SHINE.color-purple.colorful .thumbnail.nsfw::before, html.SHINE.color-purple.colorful .thumbnail.default::before, html.SHINE.color-purple.colorful .thumbnail.image::before, html.SHINE.color-purple.colorful .thumbnail.self::before {
   background-color: #9C27B0 !important; }
+html.SHINE.color-purple.accent .thumbnail.spoiler::before, html.SHINE.color-purple.accent .thumbnail.nsfw::before, html.SHINE.color-purple.accent .thumbnail.default::before, html.SHINE.color-purple.accent .thumbnail.image::before, html.SHINE.color-purple.accent .thumbnail.self::before {
+  color: #C70AE7 !important; }
 html.SHINE.color-purple.colorlines .thumbnail.spoiler::before, html.SHINE.color-purple.colorlines .thumbnail.nsfw::before, html.SHINE.color-purple.colorlines .thumbnail.default::before, html.SHINE.color-purple.colorlines .thumbnail.image::before, html.SHINE.color-purple.colorlines .thumbnail.self::before {
   background-color: transparent !important;
   border: 2px #C70AE7 solid !important;
   color: #C70AE7 !important;
   line-height: 46px; }
+html.SHINE.color-purple.colorlines.modern-layout .thumbnail.spoiler::before, html.SHINE.color-purple.colorlines.modern-layout .thumbnail.nsfw::before, html.SHINE.color-purple.colorlines.modern-layout .thumbnail.default::before, html.SHINE.color-purple.colorlines.modern-layout .thumbnail.image::before, html.SHINE.color-purple.colorlines.modern-layout .thumbnail.self::before {
+  border: 2px #9C27B0 solid !important;
+  color: #9C27B0 !important;
+  line-height: 56px !important; }
 html.SHINE.color-purple .archived-infobar::before {
   background-color: #9C27B0; }
 html.SHINE #colorselect label.purple .button span {

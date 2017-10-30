@@ -77,11 +77,17 @@ html.SHINE.color-indigo.colorful #header-bottom-left #header-img-a::after, html.
   color: #fff; }
 html.SHINE.color-indigo.colorful .thumbnail.spoiler::before, html.SHINE.color-indigo.colorful .thumbnail.nsfw::before, html.SHINE.color-indigo.colorful .thumbnail.default::before, html.SHINE.color-indigo.colorful .thumbnail.image::before, html.SHINE.color-indigo.colorful .thumbnail.self::before {
   background-color: #3D5AFE !important; }
+html.SHINE.color-indigo.accent .thumbnail.spoiler::before, html.SHINE.color-indigo.accent .thumbnail.nsfw::before, html.SHINE.color-indigo.accent .thumbnail.default::before, html.SHINE.color-indigo.accent .thumbnail.image::before, html.SHINE.color-indigo.accent .thumbnail.self::before {
+  color: #536DFE !important; }
 html.SHINE.color-indigo.colorlines .thumbnail.spoiler::before, html.SHINE.color-indigo.colorlines .thumbnail.nsfw::before, html.SHINE.color-indigo.colorlines .thumbnail.default::before, html.SHINE.color-indigo.colorlines .thumbnail.image::before, html.SHINE.color-indigo.colorlines .thumbnail.self::before {
   background-color: transparent !important;
   border: 2px #536DFE solid !important;
   color: #536DFE !important;
   line-height: 46px; }
+html.SHINE.color-indigo.colorlines.modern-layout .thumbnail.spoiler::before, html.SHINE.color-indigo.colorlines.modern-layout .thumbnail.nsfw::before, html.SHINE.color-indigo.colorlines.modern-layout .thumbnail.default::before, html.SHINE.color-indigo.colorlines.modern-layout .thumbnail.image::before, html.SHINE.color-indigo.colorlines.modern-layout .thumbnail.self::before {
+  border: 2px #3D5AFE solid !important;
+  color: #3D5AFE !important;
+  line-height: 56px !important; }
 html.SHINE.color-indigo .archived-infobar::before {
   background-color: #3D5AFE; }
 html.SHINE #colorselect label.indigo .button span {
