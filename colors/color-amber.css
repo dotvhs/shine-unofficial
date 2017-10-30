@@ -77,8 +77,12 @@ html.SHINE.color-amber.colorful #header-bottom-left #header-img-a::after, html.S
   color: #fff; }
 html.SHINE.color-amber.colorful .thumbnail.spoiler::before, html.SHINE.color-amber.colorful .thumbnail.nsfw::before, html.SHINE.color-amber.colorful .thumbnail.default::before, html.SHINE.color-amber.colorful .thumbnail.image::before, html.SHINE.color-amber.colorful .thumbnail.self::before {
   background-color: #FFB300 !important; }
-html.SHINE.color-amber.accent .thumbnail.spoiler::before, html.SHINE.color-amber.accent .thumbnail.nsfw::before, html.SHINE.color-amber.accent .thumbnail.default::before, html.SHINE.color-amber.accent .thumbnail.image::before, html.SHINE.color-amber.accent .thumbnail.self::before {
+html.SHINE.color-amber.accent .thumbnail.default::before, html.SHINE.color-amber.accent .thumbnail.image::before, html.SHINE.color-amber.accent .thumbnail.self::before {
   color: #FFC107 !important; }
+html.SHINE.color-amber.accent .thumbnail.nsfw::before {
+  color: #e24343 !important; }
+html.SHINE.color-amber.accent .thumbnail.spoiler::before {
+  color: #faae42 !important; }
 html.SHINE.color-amber.colorlines .thumbnail.spoiler::before, html.SHINE.color-amber.colorlines .thumbnail.nsfw::before, html.SHINE.color-amber.colorlines .thumbnail.default::before, html.SHINE.color-amber.colorlines .thumbnail.image::before, html.SHINE.color-amber.colorlines .thumbnail.self::before {
   background-color: transparent !important;
   border: 2px #FFC107 solid !important;

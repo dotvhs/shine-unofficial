@@ -31,4 +31,18 @@ $color_border_shineexpand: #f0f0f0;
 	color: #000 !important;
 }
 
-//.theme-.#{$themename} {}
+html.SHINE {
+	&.theme-#{$themename}.modern-layout {
+		&.shine-list {
+			body {
+				> div.content div#siteTable {
+					&.linklisting > .thing {
+						&:hover {
+							background: $color_bg_dark !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

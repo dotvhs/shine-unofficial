@@ -77,8 +77,12 @@ html.SHINE.color-red.colorful #header-bottom-left #header-img-a::after, html.SHI
   color: #fff; }
 html.SHINE.color-red.colorful .thumbnail.spoiler::before, html.SHINE.color-red.colorful .thumbnail.nsfw::before, html.SHINE.color-red.colorful .thumbnail.default::before, html.SHINE.color-red.colorful .thumbnail.image::before, html.SHINE.color-red.colorful .thumbnail.self::before {
   background-color: #D32F2F !important; }
-html.SHINE.color-red.accent .thumbnail.spoiler::before, html.SHINE.color-red.accent .thumbnail.nsfw::before, html.SHINE.color-red.accent .thumbnail.default::before, html.SHINE.color-red.accent .thumbnail.image::before, html.SHINE.color-red.accent .thumbnail.self::before {
+html.SHINE.color-red.accent .thumbnail.default::before, html.SHINE.color-red.accent .thumbnail.image::before, html.SHINE.color-red.accent .thumbnail.self::before {
   color: #F44336 !important; }
+html.SHINE.color-red.accent .thumbnail.nsfw::before {
+  color: #e24343 !important; }
+html.SHINE.color-red.accent .thumbnail.spoiler::before {
+  color: #faae42 !important; }
 html.SHINE.color-red.colorlines .thumbnail.spoiler::before, html.SHINE.color-red.colorlines .thumbnail.nsfw::before, html.SHINE.color-red.colorlines .thumbnail.default::before, html.SHINE.color-red.colorlines .thumbnail.image::before, html.SHINE.color-red.colorlines .thumbnail.self::before {
   background-color: transparent !important;
   border: 2px #F44336 solid !important;

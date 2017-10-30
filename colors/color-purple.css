@@ -77,8 +77,12 @@ html.SHINE.color-purple.colorful #header-bottom-left #header-img-a::after, html.
   color: #fff; }
 html.SHINE.color-purple.colorful .thumbnail.spoiler::before, html.SHINE.color-purple.colorful .thumbnail.nsfw::before, html.SHINE.color-purple.colorful .thumbnail.default::before, html.SHINE.color-purple.colorful .thumbnail.image::before, html.SHINE.color-purple.colorful .thumbnail.self::before {
   background-color: #9C27B0 !important; }
-html.SHINE.color-purple.accent .thumbnail.spoiler::before, html.SHINE.color-purple.accent .thumbnail.nsfw::before, html.SHINE.color-purple.accent .thumbnail.default::before, html.SHINE.color-purple.accent .thumbnail.image::before, html.SHINE.color-purple.accent .thumbnail.self::before {
+html.SHINE.color-purple.accent .thumbnail.default::before, html.SHINE.color-purple.accent .thumbnail.image::before, html.SHINE.color-purple.accent .thumbnail.self::before {
   color: #C70AE7 !important; }
+html.SHINE.color-purple.accent .thumbnail.nsfw::before {
+  color: #e24343 !important; }
+html.SHINE.color-purple.accent .thumbnail.spoiler::before {
+  color: #faae42 !important; }
 html.SHINE.color-purple.colorlines .thumbnail.spoiler::before, html.SHINE.color-purple.colorlines .thumbnail.nsfw::before, html.SHINE.color-purple.colorlines .thumbnail.default::before, html.SHINE.color-purple.colorlines .thumbnail.image::before, html.SHINE.color-purple.colorlines .thumbnail.self::before {
   background-color: transparent !important;
   border: 2px #C70AE7 solid !important;

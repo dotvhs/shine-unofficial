@@ -255,6 +255,13 @@ html.SHINE {
 			    border-color: $color_bg_dark;
 			}
 		}
+
+
+		&.accent {
+			.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
+			    background-color: $color_posttype_bg;
+			}		
+		}
 	}
 	#themeselect label.#{$themename} .foreground {
     	background-color: $color_bg_darker;

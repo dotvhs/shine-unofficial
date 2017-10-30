@@ -60,6 +60,8 @@ html.SHINE.theme-modernwhite.lightmode .tagline {
   color: #a0a0a0 !important; }
   html.SHINE.theme-modernwhite.lightmode .tagline a {
     font-weight: 700; }
+html.SHINE.theme-modernwhite.lightmode #header-bottom-right .user a {
+  color: black !important; }
 html.SHINE.theme-modernwhite.lightmode #header-bottom-right a {
   color: #b3b3b3; }
 html.SHINE.theme-modernwhite.lightmode #header-bottom-right .user .userkarma {
@@ -116,6 +118,10 @@ html.SHINE.theme-modernwhite.lightmode .nsfw-stamp {
   color: #bf4040; }
   html.SHINE.theme-modernwhite.lightmode .nsfw-stamp acronym {
     color: #bf4040; }
+html.SHINE.theme-modernwhite.lightmode .spoiler-stamp {
+  color: #f75700; }
+  html.SHINE.theme-modernwhite.lightmode .spoiler-stamp acronym {
+    color: #f75700; }
 html.SHINE.theme-modernwhite.lightmode .RESCloseButton {
   border: 0; }
 html.SHINE.theme-modernwhite.lightmode .read-next {
@@ -351,6 +357,8 @@ html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#sit
   html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable > .thing:hover {
     background: #fff !important;
     border-left: 5px solid #fff !important; }
+  html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable > .thing.active-thing {
+    background-color: #fff !important; }
   html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail {
     order: 2;
     width: 60px;
@@ -385,3 +393,6 @@ html.SHINE .rank {
 
 #themeselect .modernwhite .foreground span {
   color: #000 !important; }
+
+html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable.linklisting > .thing:hover {
+  background: #f6f6f6 !important; }

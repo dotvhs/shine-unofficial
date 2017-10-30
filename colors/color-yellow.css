@@ -77,8 +77,12 @@ html.SHINE.color-yellow.colorful #header-bottom-left #header-img-a::after, html.
   color: #fff; }
 html.SHINE.color-yellow.colorful .thumbnail.spoiler::before, html.SHINE.color-yellow.colorful .thumbnail.nsfw::before, html.SHINE.color-yellow.colorful .thumbnail.default::before, html.SHINE.color-yellow.colorful .thumbnail.image::before, html.SHINE.color-yellow.colorful .thumbnail.self::before {
   background-color: #FDD835 !important; }
-html.SHINE.color-yellow.accent .thumbnail.spoiler::before, html.SHINE.color-yellow.accent .thumbnail.nsfw::before, html.SHINE.color-yellow.accent .thumbnail.default::before, html.SHINE.color-yellow.accent .thumbnail.image::before, html.SHINE.color-yellow.accent .thumbnail.self::before {
+html.SHINE.color-yellow.accent .thumbnail.default::before, html.SHINE.color-yellow.accent .thumbnail.image::before, html.SHINE.color-yellow.accent .thumbnail.self::before {
   color: #FFEB3B !important; }
+html.SHINE.color-yellow.accent .thumbnail.nsfw::before {
+  color: #e24343 !important; }
+html.SHINE.color-yellow.accent .thumbnail.spoiler::before {
+  color: #faae42 !important; }
 html.SHINE.color-yellow.colorlines .thumbnail.spoiler::before, html.SHINE.color-yellow.colorlines .thumbnail.nsfw::before, html.SHINE.color-yellow.colorlines .thumbnail.default::before, html.SHINE.color-yellow.colorlines .thumbnail.image::before, html.SHINE.color-yellow.colorlines .thumbnail.self::before {
   background-color: transparent !important;
   border: 2px #FFEB3B solid !important;

@@ -77,8 +77,12 @@ html.SHINE.color-blue.colorful #header-bottom-left #header-img-a::after, html.SH
   color: #fff; }
 html.SHINE.color-blue.colorful .thumbnail.spoiler::before, html.SHINE.color-blue.colorful .thumbnail.nsfw::before, html.SHINE.color-blue.colorful .thumbnail.default::before, html.SHINE.color-blue.colorful .thumbnail.image::before, html.SHINE.color-blue.colorful .thumbnail.self::before {
   background-color: #0091EA !important; }
-html.SHINE.color-blue.accent .thumbnail.spoiler::before, html.SHINE.color-blue.accent .thumbnail.nsfw::before, html.SHINE.color-blue.accent .thumbnail.default::before, html.SHINE.color-blue.accent .thumbnail.image::before, html.SHINE.color-blue.accent .thumbnail.self::before {
+html.SHINE.color-blue.accent .thumbnail.default::before, html.SHINE.color-blue.accent .thumbnail.image::before, html.SHINE.color-blue.accent .thumbnail.self::before {
   color: #00B0FF !important; }
+html.SHINE.color-blue.accent .thumbnail.nsfw::before {
+  color: #e24343 !important; }
+html.SHINE.color-blue.accent .thumbnail.spoiler::before {
+  color: #faae42 !important; }
 html.SHINE.color-blue.colorlines .thumbnail.spoiler::before, html.SHINE.color-blue.colorlines .thumbnail.nsfw::before, html.SHINE.color-blue.colorlines .thumbnail.default::before, html.SHINE.color-blue.colorlines .thumbnail.image::before, html.SHINE.color-blue.colorlines .thumbnail.self::before {
   background-color: transparent !important;
   border: 2px #00B0FF solid !important;

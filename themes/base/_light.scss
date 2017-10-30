@@ -112,6 +112,7 @@ html.SHINE {
 				}
 				&#sr-header-area {
 					border-bottom: 0 solid $color_alto_approx !important;
+
 					a {
 						color: $color_gray_approx !important;
 						&#sr-more-link:hover {
@@ -139,6 +140,9 @@ html.SHINE {
 				}
 			}
 			#header-bottom-right {
+				.user a {
+					color: $white !important;
+				}
 				a {
 					color: $color_mountain_mist_approx;
 				}
@@ -255,6 +259,12 @@ html.SHINE {
 				acronym {
 					color: $color_mojo_approx;
 				}
+			}			
+			.spoiler-stamp {
+			    color: #f75700;
+			    acronym {
+			        color: #f75700;
+			    }
 			}
 			.RESCloseButton {
 				border: 0;

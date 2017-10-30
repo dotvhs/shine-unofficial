@@ -194,8 +194,14 @@ html.SHINE {
 
 
 		&.accent {
-			.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
+			.thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
 				color: $color_main_accent !important;
+			}
+			.thumbnail.nsfw::before {
+				color: #e24343 !important;
+			}
+			.thumbnail.spoiler::before {
+				color: #faae42 !important;
 			}
 		}
 
@@ -213,7 +219,7 @@ html.SHINE {
 				    border: 2px $color_fab_color solid !important;
 				    color: $color_fab_color !important;
     				line-height: 56px !important;
-				}				
+				}		
 			}
 		}
 

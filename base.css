@@ -2357,3 +2357,11 @@ html.SHINE ul.updates li.bug:before {
 html.SHINE .reddit-infobar {
     margin-bottom: 30px;
 }
+
+
+html.SHINE .spoiler-stamp {
+    color: #ec7534;
+    acronym {
+        color: #ec7534;
+    }
+}

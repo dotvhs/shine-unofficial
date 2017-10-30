@@ -115,6 +115,10 @@ html.SHINE.theme-black.res-nightmode .nsfw-stamp {
   color: #bf4040; }
   html.SHINE.theme-black.res-nightmode .nsfw-stamp acronym {
     color: #bf4040; }
+html.SHINE.theme-black.res-nightmode .spoiler-stamp {
+  color: #ffa524; }
+  html.SHINE.theme-black.res-nightmode .spoiler-stamp acronym {
+    color: #ffa524; }
 html.SHINE.theme-black.res-nightmode .RESCloseButton {
   border: 0; }
 html.SHINE.theme-black.res-nightmode .read-next {
@@ -310,6 +314,8 @@ html.SHINE.theme-black.res-nightmode {
   html.SHINE.theme-black.res-nightmode .archived-infobar {
     background-color: black;
     border-color: #0c0c0c; }
+html.SHINE.theme-black.accent .thumbnail.spoiler::before, html.SHINE.theme-black.accent .thumbnail.nsfw::before, html.SHINE.theme-black.accent .thumbnail.default::before, html.SHINE.theme-black.accent .thumbnail.image::before, html.SHINE.theme-black.accent .thumbnail.self::before {
+  background-color: #0c0c0c; }
 html.SHINE #themeselect label.black .foreground {
   background-color: black; }
   html.SHINE #themeselect label.black .foreground .background {
@@ -343,6 +349,8 @@ html.SHINE.theme-black.modern-layout.shine-list body > div.content div#siteTable
   html.SHINE.theme-black.modern-layout.shine-list body > div.content div#siteTable > .thing:hover {
     background: black !important;
     border-left: 5px solid black !important; }
+  html.SHINE.theme-black.modern-layout.shine-list body > div.content div#siteTable > .thing.active-thing {
+    background-color: black !important; }
   html.SHINE.theme-black.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail {
     order: 2;
     width: 60px;
