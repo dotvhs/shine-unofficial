@@ -316,3 +316,54 @@ html.SHINE #themeselect label.violet .foreground {
     background-color: #212432; }
   html.SHINE #themeselect label.violet .foreground .secondary {
     background-color: #32374d; }
+
+html.SHINE.theme-violet.modern-layout.shine-list.shine-list-classic body > div.content {
+  padding: 20px 0 0 0 !important; }
+  html.SHINE.theme-violet.modern-layout.shine-list.shine-list-classic body > div.content div#siteTable.linklisting {
+    width: 50% !important;
+    margin-left: 0px !important; }
+html.SHINE.theme-violet.modern-layout.shine-list.shine-list-classic .shine-expand {
+  left: calc(50% - 1px) !important;
+  width: calc(50% - 1px) !important;
+  box-shadow: #f0f0f0 -1px 0px 0px !important;
+  top: 45px !important;
+  height: calc(100% - 45px) !important; }
+html.SHINE.theme-violet.modern-layout.shine-list.shine-list-classic #header .layout-switch {
+  left: calc(50% - 45px); }
+html.SHINE.theme-violet.modern-layout.shine-list.shine-list-classic.show-shortcuts .shine-expand {
+  top: 65px !important;
+  height: calc(100% - 65px) !important; }
+html.SHINE.theme-violet.modern-layout.shine-list.shine-list-classic.show-sidebar .shine-expand {
+  left: calc(50% - 180px) !important;
+  width: calc(50% - 180px) !important; }
+html.SHINE.theme-violet.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail {
+  order: 2;
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  margin: 0 15px 0 5px;
+  overflow: hidden;
+  border-radius: 2px; }
+  html.SHINE.theme-violet.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail img {
+    object-fit: cover;
+    width: 60px;
+    height: 60px; }
+html.SHINE.theme-violet.modern-layout.shine-list body > div.content div#siteTable > .thing .midcol {
+  order: 1; }
+html.SHINE.theme-violet.modern-layout.shine-list body > div.content div#siteTable .thumbnail.spoiler::before, html.SHINE.theme-violet.modern-layout.shine-list body > div.content div#siteTable .thumbnail.nsfw::before, html.SHINE.theme-violet.modern-layout.shine-list body > div.content div#siteTable .thumbnail.default::before, html.SHINE.theme-violet.modern-layout.shine-list body > div.content div#siteTable .thumbnail.image::before, html.SHINE.theme-violet.modern-layout.shine-list body > div.content div#siteTable .thumbnail.self::before {
+  margin-top: -30px;
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+  font: 24px/60px "Material Design Icons";
+  border-radius: 4px; }
+html.SHINE.theme-violet.modern-layout.shine-list body .thing.comment .likes .arrow.upmod, html.SHINE.theme-violet.modern-layout.shine-list body .thing.comment .likes .arrow.up {
+  opacity: 1; }
+html.SHINE.theme-violet.modern-layout.shine-list body .thing.comment .dislikes .arrow.downmod, html.SHINE.theme-violet.modern-layout.shine-list body .thing.comment .dislikes .arrow.down {
+  opacity: 1; }
+html.SHINE.theme-violet.modern-layout .flair, html.SHINE.theme-violet.modern-layout .linkflairlabel {
+  color: #999;
+  background-color: #eee !important;
+  border: none !important; }
+html.SHINE .rank {
+  display: none !important; }

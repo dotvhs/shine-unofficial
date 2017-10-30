@@ -4,7 +4,7 @@
 //html.SHINE.res-nightmode.theme-#{$themename} .flair, html.SHINE.res-nightmode.theme-#{$themename} .linkflairlabel
 %extend_1 {
 	color: $color_bg_flair;
-	border: 1px solid $color_bg_flairborder;
+	border: 1px solid transpare;
 }
 
 //original selectors
@@ -259,6 +259,9 @@ html.SHINE {
 			    background-color: $color_bg_darker;
 			    border-color: $color_bg_dark;
 			}
+			#shine-search input[type="text"] {
+				background: #222 !important;
+			}
 		}
 	}
 	#themeselect label.#{$themename} .foreground {
@@ -271,3 +274,5 @@ html.SHINE {
     	}
 	}
 }
+
+@import "modern";

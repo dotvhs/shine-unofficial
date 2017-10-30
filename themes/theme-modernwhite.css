@@ -189,7 +189,7 @@ html.SHINE.theme-modernwhite.colorful .thumbnail.spoiler::before, html.SHINE.the
 
 html.SHINE.theme-modernwhite.lightmode .flair, html.SHINE.theme-modernwhite.lightmode .linkflairlabel {
   color: #949494;
-  border: 1px solid #acacac; }
+  border: 1px solid transpare; }
 
 html.SHINE.theme-modernwhite.lightmode input[type="text"], html.SHINE.theme-modernwhite.lightmode input[type="password"], html.SHINE.theme-modernwhite.lightmode .c-form-control, html.SHINE.theme-modernwhite.lightmode .submit textarea, html.SHINE.theme-modernwhite.lightmode .submit #url, html.SHINE.theme-modernwhite.lightmode .submit #sr-autocomplete, html.SHINE.theme-modernwhite.lightmode .usertext-edit textarea, html.SHINE.theme-modernwhite.lightmode .RESDialogSmall, html.SHINE.theme-modernwhite.lightmode .c-close, html.SHINE.theme-modernwhite.lightmode #REScommentNavBox, html.SHINE.theme-modernwhite.lightmode #BigEditor #BigText, html.SHINE.theme-modernwhite.lightmode #liveupdate-statusbar, html.SHINE.theme-modernwhite.lightmode #liveupdate-statusbar.complete, html.SHINE.theme-modernwhite.lightmode #newlink-with-image-upload .image-upload-drop-target {
   background-color: #fff !important;
@@ -316,6 +316,8 @@ html.SHINE.theme-modernwhite.lightmode {
   html.SHINE.theme-modernwhite.lightmode .archived-infobar {
     background-color: #fff;
     border-color: #f6f6f6; }
+  html.SHINE.theme-modernwhite.lightmode #shine-search input[type="text"] {
+    background: #222 !important; }
 html.SHINE #themeselect label.modernwhite .foreground {
   background-color: #fff; }
   html.SHINE #themeselect label.modernwhite .foreground .background {
@@ -323,29 +325,26 @@ html.SHINE #themeselect label.modernwhite .foreground {
   html.SHINE #themeselect label.modernwhite .foreground .secondary {
     background-color: #f6f6f6; }
 
-.rank {
-  display: none !important; }
-
-html.SHINE.theme-modernwhite.shine-list.shine-list-classic body > div.content {
+html.SHINE.theme-modernwhite.modern-layout.shine-list.shine-list-classic body > div.content {
   padding: 20px 0 0 0 !important; }
-  html.SHINE.theme-modernwhite.shine-list.shine-list-classic body > div.content div#siteTable.linklisting {
+  html.SHINE.theme-modernwhite.modern-layout.shine-list.shine-list-classic body > div.content div#siteTable.linklisting {
     width: 50% !important;
     margin-left: 0px !important; }
-html.SHINE.theme-modernwhite.shine-list.shine-list-classic .shine-expand {
-  left: 50% !important;
-  width: 50% !important;
-  box-shadow: #f0f0f0 0px 1px 0px !important;
+html.SHINE.theme-modernwhite.modern-layout.shine-list.shine-list-classic .shine-expand {
+  left: calc(50% - 1px) !important;
+  width: calc(50% - 1px) !important;
+  box-shadow: #f0f0f0 -1px 0px 0px !important;
   top: 45px !important;
   height: calc(100% - 45px) !important; }
-html.SHINE.theme-modernwhite.shine-list.shine-list-classic #header .layout-switch {
+html.SHINE.theme-modernwhite.modern-layout.shine-list.shine-list-classic #header .layout-switch {
   left: calc(50% - 45px); }
-html.SHINE.theme-modernwhite.shine-list.shine-list-classic.show-shortcuts .shine-expand {
+html.SHINE.theme-modernwhite.modern-layout.shine-list.shine-list-classic.show-shortcuts .shine-expand {
   top: 65px !important;
   height: calc(100% - 65px) !important; }
-html.SHINE.theme-modernwhite.shine-list.shine-list-classic.show-sidebar .shine-expand {
+html.SHINE.theme-modernwhite.modern-layout.shine-list.shine-list-classic.show-sidebar .shine-expand {
   left: calc(50% - 180px) !important;
   width: calc(50% - 180px) !important; }
-html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable > .thing a.thumbnail {
+html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail {
   order: 2;
   width: 60px;
   min-width: 60px;
@@ -353,23 +352,32 @@ html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable > .thin
   margin: 0 15px 0 5px;
   overflow: hidden;
   border-radius: 2px; }
-  html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable > .thing a.thumbnail img {
+  html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail img {
     object-fit: cover;
     width: 60px;
     height: 60px; }
-html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable > .thing .midcol {
+html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable > .thing .midcol {
   order: 1; }
-html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable .thumbnail.spoiler::before, html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable .thumbnail.nsfw::before, html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable .thumbnail.default::before, html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable .thumbnail.image::before, html.SHINE.theme-modernwhite.shine-list body > div.content div#siteTable .thumbnail.self::before {
+html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable .thumbnail.spoiler::before, html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable .thumbnail.nsfw::before, html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable .thumbnail.default::before, html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable .thumbnail.image::before, html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable .thumbnail.self::before {
   margin-top: -30px;
   margin-left: -30px;
   width: 60px;
   height: 60px;
-  color: #999;
   font: 24px/60px "Material Design Icons";
   border-radius: 4px; }
-html.SHINE.theme-modernwhite .flair, html.SHINE.theme-modernwhite .linkflairlabel {
+html.SHINE.theme-modernwhite.modern-layout.shine-list body .thing.comment .likes .arrow.upmod, html.SHINE.theme-modernwhite.modern-layout.shine-list body .thing.comment .likes .arrow.up {
+  opacity: 1; }
+html.SHINE.theme-modernwhite.modern-layout.shine-list body .thing.comment .dislikes .arrow.downmod, html.SHINE.theme-modernwhite.modern-layout.shine-list body .thing.comment .dislikes .arrow.down {
+  opacity: 1; }
+html.SHINE.theme-modernwhite.modern-layout .flair, html.SHINE.theme-modernwhite.modern-layout .linkflairlabel {
   color: #999;
   background-color: #eee !important;
   border: none !important; }
-html.SHINE #themeselect .modernwhite .foreground span {
-  color: #000; }
+html.SHINE .rank {
+  display: none !important; }
+
+#themeselect .modernwhite .foreground span {
+  color: #000 !important; }
+
+.theme-.modernwhite .thumbnail.spoiler::before, .theme-.modernwhite .thumbnail.nsfw::before, .theme-.modernwhite .thumbnail.default::before, .theme-.modernwhite .thumbnail.image::before, .theme-.modernwhite .thumbnail.self::before {
+  color: #999 !important; }

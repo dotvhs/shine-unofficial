@@ -35,12 +35,16 @@ var defaultSettings = {
 	"global" : {
 		"layout" : "list", 
 		"shortcuts" : "show", 
-		"theme" : "legacy-white", 
 		"sidebar" : "", 
 		"multis" : "",
+		"navigate" : "hide"
+	},
+
+	"customization" : {
+		"layout" : "legacy",
+		"theme" : "legacy-white",
 		"color" : "orange",
-		"navigate" : "hide",
-		"colorswitch" : "gray"
+		"icons" : "gray"
 	},
 
     "list" :  {
@@ -116,6 +120,22 @@ function SHINE(){
 
 	}
 
+	if(!currentSettings.customization){
+
+		var customizationSettings = {
+			"customization" : {
+				"layout" : "legacy",
+				"theme" : "legacy-white",
+				"color" : "orange",
+				"icons" : "gray"
+			}
+		};
+
+		currentSettings = $.extend(currentSettings, customizationSettings);
+		chrome.storage.local.set({"shine": currentSettings});
+
+	}
+
 	if(!currentSettings.global.navigate){
 
 		var navigateSettings = {
@@ -125,19 +145,6 @@ function SHINE(){
 		};
 
 		currentSettings = $.extend(true, currentSettings, navigateSettings);
-		chrome.storage.local.set({"shine": currentSettings});
-
-	}
-
-	if(!currentSettings.global.colorswitch){
-
-		var colorfulSettings = {
-			"global" : {
-		    	"colorswitch" : "gray"
-		    }
-		};
-
-		currentSettings = $.extend(true, currentSettings, colorfulSettings);
 		chrome.storage.local.set({"shine": currentSettings});
 
 	}
@@ -403,6 +410,12 @@ function SHINE(){
 						'</div>'+
 					'</div>'+
 					'<div class="settings-column-half">'+
+						'<label for="settings-layout-switch">List view layout</label>'+
+						'<span class="settings-small-print">This little setting will add more color to your theme.</span>'+
+						'<select name="settings-layout-switch" id="settings-layout-switch">'+
+							'<option value="legacy">Legacy</option>'+
+							'<option value="modern">Modern</option>'+
+						'</select>'+
 						'<label for="settings-color-theme">Color Selector</label>'+
 						'<span class="settings-small-print">Pick your color accent.</span>'+
 						'<div id="colorselect">'+
@@ -607,12 +620,12 @@ function SHINE(){
 
 	/* MOAR COLOR */
 
-	if( currentSettings.global.colorswitch == "color" ){
+	if( currentSettings.customization.icons == "color" ){
 
 		$('html').addClass("colorful");
 		$('#settings-color-switch').val("color");
 
-	}else if( currentSettings.global.colorswitch == "lines" ){
+	}else if( currentSettings.customization.icons == "lines" ){
 
 		$('html').addClass("colorlines");
 		$('#settings-color-switch').val("lines");
@@ -630,6 +643,13 @@ function SHINE(){
 	}else{
 
 		$('html').addClass("show-shortcuts");
+
+	}
+
+	if( currentSettings.customization.layout == "modern" ){
+
+		$('html').addClass("modern-layout");
+		$('#settings-layout-switch').val("modern");
 
 	}
 
@@ -667,12 +687,12 @@ function SHINE(){
 
 	//$('#settings-main-theme').val( currentSettings.global.night );
 
-	$('input[type="radio"][name="settings-main-theme"][value="'+currentSettings.global.theme+'"]').attr('checked', true);
+	$('input[type="radio"][name="settings-main-theme"][value="'+currentSettings.customization.theme+'"]').attr('checked', true);
 
 	/* COLOR THEME */
 
-	//$('input[type=radio][name=settings-color-theme]:checked').val( currentSettings.global.color );
-	$('input[type="radio"][name="settings-color-theme"][value="'+currentSettings.global.color+'"]').attr('checked', true);
+	//$('input[type=radio][name=settings-color-theme]:checked').val( currentSettings.customization.color );
+	$('input[type="radio"][name="settings-color-theme"][value="'+currentSettings.customization.color+'"]').attr('checked', true);
 
 	/* NSFW */
 
@@ -695,36 +715,36 @@ function SHINE(){
 	}
 
 
-	if( currentSettings.global.theme == undefined || currentSettings.global.theme == "" ){
-		if (currentSettings.global.night == "on") {
-			currentSettings.global.theme = "legacy-night";
+	if( currentSettings.customization.theme == undefined || currentSettings.customization.theme == "" ){
+		if (currentSettings.customization.night == "on") {
+			currentSettings.customization.theme = "legacy-night";
 		} else {
-			currentSettings.global.theme = "legacy-white";
+			currentSettings.customization.theme = "legacy-white";
 		}
 	}
 
 
 	// this adds the nightmode class
-	if( currentSettings.global.theme == "legacy-night" ){
+	if( currentSettings.customization.theme == "legacy-night" ){
 		clearThemes();
 		$('html, body').addClass("res-nightmode");
-	}else if( currentSettings.global.theme == "legacy-white" ){
+	}else if( currentSettings.customization.theme == "legacy-white" ){
 		clearThemes();
-	}else if( currentSettings.global.theme == "modernwhite" ){
+	}else if( currentSettings.customization.theme == "modernwhite" ){
 		clearThemes();
-		$('html, body').addClass("lightmode theme-"+currentSettings.global.theme);
+		$('html, body').addClass("lightmode theme-"+currentSettings.customization.theme);
 	}else{
 		clearThemes();
-		$('html, body').addClass("res-nightmode theme-"+currentSettings.global.theme);
+		$('html, body').addClass("res-nightmode theme-"+currentSettings.customization.theme);
 	}
 
 
 	// this adds the nightmode class
-	if( currentSettings.global.color == undefined || currentSettings.global.color == "" ){
+	if( currentSettings.customization.color == undefined || currentSettings.customization.color == "" ){
 		$('html, body').addClass("color-orange");
-		currentSettings.global.color = "orange";
+		currentSettings.customization.color = "orange";
 	}else{
-		$('html, body').addClass("color-"+currentSettings.global.color);
+		$('html, body').addClass("color-"+currentSettings.customization.color);
 	}
 
 
@@ -1146,16 +1166,16 @@ $('body').on('change','#settings-default-view', function(){
 
 $('body').on('change','#settings-color-switch', function(){
 
-	currentSettings.global.colorswitch = $(this).val();
+	currentSettings.customization.icons = $(this).val();
 
 	chrome.storage.local.set({"shine": currentSettings}, function(){
 
-		if( currentSettings.global.colorswitch == "color" ){
+		if( currentSettings.customization.icons == "color" ){
 
 			$('html').removeClass("colorlines");
 			$('html').addClass("colorful");
 
-		}else if( currentSettings.global.colorswitch == "lines" ){
+		}else if( currentSettings.customization.icons == "lines" ){
 
 			$('html').removeClass("colorful");
 			$('html').addClass("colorlines");
@@ -1196,6 +1216,29 @@ $('body').on('change','#settings-grid-limit', function(){
 	chrome.storage.local.set({"shine": currentSettings}, function(){
 
 		$('body').attr('data-grid-limit', currentSettings.grid.limit);
+
+		saveSettingsMessage();
+
+	});
+
+});
+
+
+$('body').on('change','#settings-layout-switch', function(){
+
+	currentSettings.customization.layout = $(this).val();
+
+	chrome.storage.local.set({"shine": currentSettings}, function(){
+
+		if( currentSettings.customization.layout == "modern" ){
+
+			$('html').addClass("modern-layout");
+
+		}else{
+
+			$('html').removeClass("modern-layout");
+
+		}
 
 		saveSettingsMessage();
 
@@ -1686,7 +1729,7 @@ $('body').on('change','input[type=radio][name=settings-main-theme]',function(){
 
 	if( $(this).val() == "legacy-dark" ){
 
-		currentSettings.global.theme = "legacy-dark";
+		currentSettings.customization.theme = "legacy-dark";
 
 		chrome.storage.local.set({"shine": currentSettings}, function(){
 
@@ -1704,7 +1747,7 @@ $('body').on('change','input[type=radio][name=settings-main-theme]',function(){
 
 	}else if( $(this).val() == "legacy-white" ){
 
-		currentSettings.global.theme = "legacy-white";
+		currentSettings.customization.theme = "legacy-white";
 
 		chrome.storage.local.set({"shine": currentSettings}, function(){
 
@@ -1722,7 +1765,7 @@ $('body').on('change','input[type=radio][name=settings-main-theme]',function(){
 
 	}else if( $(this).val() == "modernwhite" ){
 
-		currentSettings.global.theme = "modernwhite";
+		currentSettings.customization.theme = "modernwhite";
 
 		chrome.storage.local.set({"shine": currentSettings}, function(){
 
@@ -1736,7 +1779,7 @@ $('body').on('change','input[type=radio][name=settings-main-theme]',function(){
 
 			$('html, body').addClass("lightmode");
 
-			$('html, body').addClass("theme-"+currentSettings.global.theme);
+			$('html, body').addClass("theme-"+currentSettings.customization.theme);
 
 			saveSettingsMessage();
 
@@ -1744,7 +1787,7 @@ $('body').on('change','input[type=radio][name=settings-main-theme]',function(){
 
 	}else{
 
-		currentSettings.global.theme = $(this).val();
+		currentSettings.customization.theme = $(this).val();
 
 		chrome.storage.local.set({"shine": currentSettings}, function(){
 
@@ -1756,7 +1799,7 @@ $('body').on('change','input[type=radio][name=settings-main-theme]',function(){
 
 			clearThemes();
 
-			$('html, body').addClass("res-nightmode theme-"+currentSettings.global.theme);
+			$('html, body').addClass("res-nightmode theme-"+currentSettings.customization.theme);
 
 			saveSettingsMessage();
 
@@ -1768,7 +1811,7 @@ $('body').on('change','input[type=radio][name=settings-main-theme]',function(){
 
 $('body').on('change','input[type=radio][name=settings-color-theme]',function(){
 
-	currentSettings.global.color = $(this).val();
+	currentSettings.customization.color = $(this).val();
 
 	chrome.storage.local.set({"shine": currentSettings}, function(){
 		
@@ -1779,7 +1822,7 @@ $('body').on('change','input[type=radio][name=settings-color-theme]',function(){
 		    return (className.match (/\bcolor-\S+/g) || []).join(' ');
 		});
 
-		$('html, body').addClass("color-"+currentSettings.global.color);
+		$('html, body').addClass("color-"+currentSettings.customization.color);
 
 		saveSettingsMessage();
 
