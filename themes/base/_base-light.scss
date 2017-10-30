@@ -116,7 +116,7 @@ html.SHINE {
 			div {
 				&#header-bottom-left {
 					background: $color_bg_darker !important;
-					box-shadow: #f0f0f0 0px 1px 0px !important;
+					box-shadow: $color_border_shineexpand 0px 1px 0px !important;
 				}
 				&#sr-header-area {
 					background: $color_bg_darker !important;
@@ -245,7 +245,7 @@ html.SHINE {
 			}
 
 			.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
-			    color: $color_posttype;
+			    color: $color_bg_flair;
 			    background-color: $color_posttype_bg;
 			}
 

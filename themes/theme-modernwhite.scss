@@ -5,8 +5,9 @@ $color_bg_darkest: #fff;
 $color_bg_darker: #fff;
 $color_bg_dark: #f6f6f6;
 
-$color_bg_flair: mix($color_bg_dark, #000, 60%);
-$color_bg_flairborder: mix($color_bg_dark, #000, 70%);
+$color_bg_flair: #999;
+$color_bg_flairborder: transparent;
+$color_bg_flairbackground: #eee;
 
 $color_bg_textfield_border: #eee;
 
@@ -18,6 +19,8 @@ $color_row_bottom_border: $color_bg_darkest;
 $color_shadow_listing: transparent;
 //$color_shadow_listing: rgba(0,0,0,.3);
 
+$color_border_shineexpand: #f0f0f0;
+
 
 @import "base/light";
 
@@ -28,8 +31,4 @@ $color_shadow_listing: transparent;
 	color: #000 !important;
 }
 
-.theme-.#{$themename} {
-	.thumbnail.spoiler::before, .thumbnail.nsfw::before, .thumbnail.default::before, .thumbnail.image::before, .thumbnail.self::before {
-	    color: #999 !important;
-	}	
-}
+//.theme-.#{$themename} {}

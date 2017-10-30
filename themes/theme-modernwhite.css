@@ -188,7 +188,7 @@ html.SHINE.theme-modernwhite.colorful .thumbnail.spoiler::before, html.SHINE.the
   color: white !important; }
 
 html.SHINE.theme-modernwhite.lightmode .flair, html.SHINE.theme-modernwhite.lightmode .linkflairlabel {
-  color: #949494;
+  color: #999;
   border: 1px solid transpare; }
 
 html.SHINE.theme-modernwhite.lightmode input[type="text"], html.SHINE.theme-modernwhite.lightmode input[type="password"], html.SHINE.theme-modernwhite.lightmode .c-form-control, html.SHINE.theme-modernwhite.lightmode .submit textarea, html.SHINE.theme-modernwhite.lightmode .submit #url, html.SHINE.theme-modernwhite.lightmode .submit #sr-autocomplete, html.SHINE.theme-modernwhite.lightmode .usertext-edit textarea, html.SHINE.theme-modernwhite.lightmode .RESDialogSmall, html.SHINE.theme-modernwhite.lightmode .c-close, html.SHINE.theme-modernwhite.lightmode #REScommentNavBox, html.SHINE.theme-modernwhite.lightmode #BigEditor #BigText, html.SHINE.theme-modernwhite.lightmode #liveupdate-statusbar, html.SHINE.theme-modernwhite.lightmode #liveupdate-statusbar.complete, html.SHINE.theme-modernwhite.lightmode #newlink-with-image-upload .image-upload-drop-target {
@@ -230,8 +230,8 @@ html.SHINE.theme-modernwhite.lightmode {
   html.SHINE.theme-modernwhite.lightmode.shine-list .side-comments {
     background: #fff !important; }
   html.SHINE.theme-modernwhite.lightmode.shine-list.shine-list-classic .side-comments .shine-comment::after {
-    color: #949494 !important;
-    border: 1px solid #acacac; }
+    color: #999 !important;
+    border: 1px solid transparent; }
   html.SHINE.theme-modernwhite.lightmode body {
     background: #fff !important; }
     html.SHINE.theme-modernwhite.lightmode body > .content {
@@ -298,7 +298,7 @@ html.SHINE.theme-modernwhite.lightmode {
   html.SHINE.theme-modernwhite.lightmode .infobar:not(.newsletterbar) {
     background-color: #f6f6f6;
     color: rgba(255, 255, 255, 0.7);
-    border-color: rgba(172, 172, 172, 0.5); }
+    border-color: rgba(0, 0, 0, 0.5); }
   html.SHINE.theme-modernwhite.lightmode #progressIndicator {
     box-shadow: rgba(255, 255, 255, 0.3) 1px 1px 5px;
     color: rgba(0, 0, 0, 0.4);
@@ -309,7 +309,7 @@ html.SHINE.theme-modernwhite.lightmode {
   html.SHINE.theme-modernwhite.lightmode .usertext.border .usertext-body {
     background-color: #f6f6f6; }
   html.SHINE.theme-modernwhite.lightmode .thumbnail.spoiler::before, html.SHINE.theme-modernwhite.lightmode .thumbnail.nsfw::before, html.SHINE.theme-modernwhite.lightmode .thumbnail.default::before, html.SHINE.theme-modernwhite.lightmode .thumbnail.image::before, html.SHINE.theme-modernwhite.lightmode .thumbnail.self::before {
-    color: rgba(0, 0, 0, 0.7);
+    color: #999;
     background-color: #eee; }
   html.SHINE.theme-modernwhite.lightmode #header-bottom-left #header-img-a, html.SHINE.theme-modernwhite.lightmode #header-bottom-left #header-img.default-header {
     color: black !important; }
@@ -329,10 +329,11 @@ html.SHINE.theme-modernwhite.modern-layout.shine-list.shine-list-classic body > 
   padding: 20px 0 0 0 !important; }
   html.SHINE.theme-modernwhite.modern-layout.shine-list.shine-list-classic body > div.content div#siteTable.linklisting {
     width: 50% !important;
-    margin-left: 0px !important; }
+    margin-left: 0px !important;
+    box-shadow: transparent 0 0 0; }
 html.SHINE.theme-modernwhite.modern-layout.shine-list.shine-list-classic .shine-expand {
-  left: calc(50% - 1px) !important;
-  width: calc(50% - 1px) !important;
+  left: calc(50% + 1px) !important;
+  width: calc(50% - 2px) !important;
   box-shadow: #f0f0f0 -1px 0px 0px !important;
   top: 45px !important;
   height: calc(100% - 45px) !important; }
@@ -344,26 +345,32 @@ html.SHINE.theme-modernwhite.modern-layout.shine-list.shine-list-classic.show-sh
 html.SHINE.theme-modernwhite.modern-layout.shine-list.shine-list-classic.show-sidebar .shine-expand {
   left: calc(50% - 180px) !important;
   width: calc(50% - 180px) !important; }
-html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail {
-  order: 2;
-  width: 60px;
-  min-width: 60px;
-  height: 60px;
-  margin: 0 15px 0 5px;
-  overflow: hidden;
-  border-radius: 2px; }
-  html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail img {
-    object-fit: cover;
+html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable > .thing {
+  background: #fff !important;
+  border-left: 5px solid #fff !important; }
+  html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable > .thing:hover {
+    background: #fff !important;
+    border-left: 5px solid #fff !important; }
+  html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail {
+    order: 2;
     width: 60px;
-    height: 60px; }
-html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable > .thing .midcol {
-  order: 1; }
+    min-width: 60px;
+    height: 60px;
+    margin: 0 15px 0 5px;
+    overflow: hidden;
+    border-radius: 2px; }
+    html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail img {
+      object-fit: cover;
+      width: 60px;
+      height: 60px; }
+  html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable > .thing .midcol {
+    order: 1; }
 html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable .thumbnail.spoiler::before, html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable .thumbnail.nsfw::before, html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable .thumbnail.default::before, html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable .thumbnail.image::before, html.SHINE.theme-modernwhite.modern-layout.shine-list body > div.content div#siteTable .thumbnail.self::before {
   margin-top: -30px;
   margin-left: -30px;
   width: 60px;
   height: 60px;
-  font: 24px/60px "Material Design Icons";
+  line-height: 60px;
   border-radius: 4px; }
 html.SHINE.theme-modernwhite.modern-layout.shine-list body .thing.comment .likes .arrow.upmod, html.SHINE.theme-modernwhite.modern-layout.shine-list body .thing.comment .likes .arrow.up {
   opacity: 1; }
@@ -372,12 +379,11 @@ html.SHINE.theme-modernwhite.modern-layout.shine-list body .thing.comment .disli
 html.SHINE.theme-modernwhite.modern-layout .flair, html.SHINE.theme-modernwhite.modern-layout .linkflairlabel {
   color: #999;
   background-color: #eee !important;
-  border: none !important; }
+  border-color: transparent !important; }
+html.SHINE.theme-modernwhite.modern-layout.colorlines .thumbnail.spoiler::before, html.SHINE.theme-modernwhite.modern-layout.colorlines .thumbnail.nsfw::before, html.SHINE.theme-modernwhite.modern-layout.colorlines .thumbnail.default::before, html.SHINE.theme-modernwhite.modern-layout.colorlines .thumbnail.image::before, html.SHINE.theme-modernwhite.modern-layout.colorlines .thumbnail.self::before {
+  line-height: 56px !important; }
 html.SHINE .rank {
   display: none !important; }
 
 #themeselect .modernwhite .foreground span {
   color: #000 !important; }
-
-.theme-.modernwhite .thumbnail.spoiler::before, .theme-.modernwhite .thumbnail.nsfw::before, .theme-.modernwhite .thumbnail.default::before, .theme-.modernwhite .thumbnail.image::before, .theme-.modernwhite .thumbnail.self::before {
-  color: #999 !important; }

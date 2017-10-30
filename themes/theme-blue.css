@@ -321,11 +321,12 @@ html.SHINE.theme-blue.modern-layout.shine-list.shine-list-classic body > div.con
   padding: 20px 0 0 0 !important; }
   html.SHINE.theme-blue.modern-layout.shine-list.shine-list-classic body > div.content div#siteTable.linklisting {
     width: 50% !important;
-    margin-left: 0px !important; }
+    margin-left: 0px !important;
+    box-shadow: transparent 0 0 0; }
 html.SHINE.theme-blue.modern-layout.shine-list.shine-list-classic .shine-expand {
-  left: calc(50% - 1px) !important;
-  width: calc(50% - 1px) !important;
-  box-shadow: #f0f0f0 -1px 0px 0px !important;
+  left: calc(50% + 1px) !important;
+  width: calc(50% - 2px) !important;
+  box-shadow: #071019 -1px 0px 0px !important;
   top: 45px !important;
   height: calc(100% - 45px) !important; }
 html.SHINE.theme-blue.modern-layout.shine-list.shine-list-classic #header .layout-switch {
@@ -336,34 +337,42 @@ html.SHINE.theme-blue.modern-layout.shine-list.shine-list-classic.show-shortcuts
 html.SHINE.theme-blue.modern-layout.shine-list.shine-list-classic.show-sidebar .shine-expand {
   left: calc(50% - 180px) !important;
   width: calc(50% - 180px) !important; }
-html.SHINE.theme-blue.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail {
-  order: 2;
-  width: 60px;
-  min-width: 60px;
-  height: 60px;
-  margin: 0 15px 0 5px;
-  overflow: hidden;
-  border-radius: 2px; }
-  html.SHINE.theme-blue.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail img {
-    object-fit: cover;
+html.SHINE.theme-blue.modern-layout.shine-list body > div.content div#siteTable > .thing {
+  background: #071019 !important;
+  border-left: 5px solid #071019 !important; }
+  html.SHINE.theme-blue.modern-layout.shine-list body > div.content div#siteTable > .thing:hover {
+    background: #0a1724 !important;
+    border-left: 5px solid #0a1724 !important; }
+  html.SHINE.theme-blue.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail {
+    order: 2;
     width: 60px;
-    height: 60px; }
-html.SHINE.theme-blue.modern-layout.shine-list body > div.content div#siteTable > .thing .midcol {
-  order: 1; }
+    min-width: 60px;
+    height: 60px;
+    margin: 0 15px 0 5px;
+    overflow: hidden;
+    border-radius: 2px; }
+    html.SHINE.theme-blue.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail img {
+      object-fit: cover;
+      width: 60px;
+      height: 60px; }
+  html.SHINE.theme-blue.modern-layout.shine-list body > div.content div#siteTable > .thing .midcol {
+    order: 1; }
 html.SHINE.theme-blue.modern-layout.shine-list body > div.content div#siteTable .thumbnail.spoiler::before, html.SHINE.theme-blue.modern-layout.shine-list body > div.content div#siteTable .thumbnail.nsfw::before, html.SHINE.theme-blue.modern-layout.shine-list body > div.content div#siteTable .thumbnail.default::before, html.SHINE.theme-blue.modern-layout.shine-list body > div.content div#siteTable .thumbnail.image::before, html.SHINE.theme-blue.modern-layout.shine-list body > div.content div#siteTable .thumbnail.self::before {
   margin-top: -30px;
   margin-left: -30px;
   width: 60px;
   height: 60px;
-  font: 24px/60px "Material Design Icons";
+  line-height: 60px;
   border-radius: 4px; }
 html.SHINE.theme-blue.modern-layout.shine-list body .thing.comment .likes .arrow.upmod, html.SHINE.theme-blue.modern-layout.shine-list body .thing.comment .likes .arrow.up {
   opacity: 1; }
 html.SHINE.theme-blue.modern-layout.shine-list body .thing.comment .dislikes .arrow.downmod, html.SHINE.theme-blue.modern-layout.shine-list body .thing.comment .dislikes .arrow.down {
   opacity: 1; }
 html.SHINE.theme-blue.modern-layout .flair, html.SHINE.theme-blue.modern-layout .linkflairlabel {
-  color: #999;
-  background-color: #eee !important;
-  border: none !important; }
+  color: #87919b;
+  background-color: none !important;
+  border-color: #576572 !important; }
+html.SHINE.theme-blue.modern-layout.colorlines .thumbnail.spoiler::before, html.SHINE.theme-blue.modern-layout.colorlines .thumbnail.nsfw::before, html.SHINE.theme-blue.modern-layout.colorlines .thumbnail.default::before, html.SHINE.theme-blue.modern-layout.colorlines .thumbnail.image::before, html.SHINE.theme-blue.modern-layout.colorlines .thumbnail.self::before {
+  line-height: 56px !important; }
 html.SHINE .rank {
   display: none !important; }
