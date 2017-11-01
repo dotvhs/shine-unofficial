@@ -463,7 +463,7 @@ function SHINE(){
 							'</label>'+
 						'</div>'+
 						'<label for="settings-layout-switch">List View Design</label>'+
-						'<span class="settings-small-print">Layout selector for list view.</span>'+
+						'<span class="settings-small-print">Select your desired design.</span>'+
 						'<select name="settings-layout-switch" id="settings-layout-switch">'+
 							'<option value="legacy">Cards (legacy)</option>'+
 							'<option value="modern">Flat (modern)</option>'+
@@ -571,6 +571,28 @@ function SHINE(){
 		'<div class="changelog-panel">'+
 			'<div class="update">'+
 				'<h2>SHINE for Reddit (unofficial) by vhs (u/voythas)</h2>'+
+				'<h3>Version 1.6.0</h3>'+
+				'<ul class="updates">'+
+					'<li class="new">New design for list view - flat (go to customization options)</li>'+
+					'<li class="new">Post icons style selector (4 styles to choose from)</li>'+
+					'<li class="new">Next/Previous comment navigation, you can turn it on in Shine Settings (turning it on for first time requires refreshing the page)</li>'+
+					'<li class="new">Use arrow left and right for next and previous comment navigation</li>'+
+					'<li class="new">Added possibility to limit loading of next items for each view (turn it on if Shine is eating too much RAM for you)</li>'+
+					'<li class="new">New white theme</li>'+
+					'<li class="new">Three new colors</li>'+
+					'<li class="enh">Search in Shine now allows to limit search to current subreddit</li>'+
+					'<li class="enh">Breadcrumbs are now moved to the top</li>'+
+					'<li class="enh">Colors are now redone, more vibrant and better looking in most cases</li>'+
+					'<li class="enh">Upvote/Downvote arrows should be more visible now in all themes</li>'+
+					'<li class="enh">Replaced old jQuery lib with proper one.</li>'+
+					'<li class="enh">Your username should be more visible now on top</li>'+
+					'<li class="fix">MaterialDesignIcons should load without delay (lib is now included)</li>'+
+					'<li class="fix">Fixed numbering of posts</li>'+
+					'<li class="fix">Fixed hover effect on view chooser</li>'+
+					'<li class="rem">Removed recommended subreddit ad</li>'+
+					'<li class="bug">Known bugs: Old Nightmode style is still unfinished, I\'m really sorry! I\'ll get to it as next task.</li>'+
+					'<li class="bug">Known bugs: Due to changes and cleanups in settings, your theme might reset to default one, sorry but this had to be done.</li>'+
+				'</ul>'+
 				'<h3>Version 1.5.0</h3>'+
 				'<ul class="updates">'+
 					'<li class="new">Theme and color selector</li>'+
