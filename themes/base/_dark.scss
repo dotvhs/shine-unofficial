@@ -137,6 +137,9 @@ html.SHINE {
 				color: $color_gray_approx !important;
 			}
 			#header-bottom-right {
+				.user a {
+					color: $white !important;
+				}
 				a {
 					color: $color_mountain_mist_approx;
 				}

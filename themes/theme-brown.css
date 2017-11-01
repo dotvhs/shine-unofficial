@@ -59,6 +59,8 @@ html.SHINE.theme-brown.res-nightmode .md {
     border-left: 0; }
 html.SHINE.theme-brown.res-nightmode .tagline {
   color: rgba(255, 255, 255, 0.5) !important; }
+html.SHINE.theme-brown.res-nightmode #header-bottom-right .user a {
+  color: white !important; }
 html.SHINE.theme-brown.res-nightmode #header-bottom-right a {
   color: #999897; }
 html.SHINE.theme-brown.res-nightmode #header-bottom-right .user .userkarma {
@@ -325,6 +327,8 @@ html.SHINE #themeselect label.brown .foreground {
 
 html.SHINE.theme-brown.modern-layout.shine-list.shine-list-classic body > div.content {
   padding: 20px 0 0 0 !important; }
+  html.SHINE.theme-brown.modern-layout.shine-list.shine-list-classic body > div.content .shine-expand div#siteTable.linklisting {
+    width: auto !important; }
   html.SHINE.theme-brown.modern-layout.shine-list.shine-list-classic body > div.content div#siteTable.linklisting {
     width: 50% !important;
     margin-left: 0px !important;

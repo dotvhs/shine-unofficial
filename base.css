@@ -261,6 +261,7 @@ html.SHINE #header ul.tabmenu:hover{
 	top:0px;
 	max-height:300px;
 	padding:10px 0;
+    z-index: 14999;
 }
 
 html.SHINE #header ul.tabmenu li {

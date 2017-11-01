@@ -7,6 +7,10 @@ html.SHINE {
 				body > div.content {
 					padding: 20px 0 0 0 !important;
 
+					.shine-expand div#siteTable.linklisting {
+						width: auto !important;
+					}
+
 					div#siteTable.linklisting {
 					    width: 50% !important;
 					    margin-left: 0px !important;

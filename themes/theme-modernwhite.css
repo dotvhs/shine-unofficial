@@ -333,6 +333,8 @@ html.SHINE #themeselect label.modernwhite .foreground {
 
 html.SHINE.theme-modernwhite.modern-layout.shine-list.shine-list-classic body > div.content {
   padding: 20px 0 0 0 !important; }
+  html.SHINE.theme-modernwhite.modern-layout.shine-list.shine-list-classic body > div.content .shine-expand div#siteTable.linklisting {
+    width: auto !important; }
   html.SHINE.theme-modernwhite.modern-layout.shine-list.shine-list-classic body > div.content div#siteTable.linklisting {
     width: 50% !important;
     margin-left: 0px !important;

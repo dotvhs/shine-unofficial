@@ -410,12 +410,6 @@ function SHINE(){
 						'</div>'+
 					'</div>'+
 					'<div class="settings-column-half">'+
-						'<label for="settings-layout-switch">List view layout</label>'+
-						'<span class="settings-small-print">This little setting will add more color to your theme.</span>'+
-						'<select name="settings-layout-switch" id="settings-layout-switch">'+
-							'<option value="legacy">Legacy</option>'+
-							'<option value="modern">Modern</option>'+
-						'</select>'+
 						'<label for="settings-color-theme">Color Selector</label>'+
 						'<span class="settings-small-print">Pick your color accent.</span>'+
 						'<div id="colorselect">'+
@@ -468,6 +462,12 @@ function SHINE(){
 							  '<div class="button"><span></span></div>'+
 							'</label>'+
 						'</div>'+
+						'<label for="settings-layout-switch">List View Design</label>'+
+						'<span class="settings-small-print">Layout selector for list view.</span>'+
+						'<select name="settings-layout-switch" id="settings-layout-switch">'+
+							'<option value="legacy">Cards (legacy)</option>'+
+							'<option value="modern">Flat (modern)</option>'+
+						'</select>'+
 						'<label for="settings-color-switch">Icon type for posts</label>'+
 						'<span class="settings-small-print">This little setting will add more color to your theme.</span>'+
 						'<select name="settings-color-switch" id="settings-color-switch">'+
@@ -1889,8 +1889,16 @@ $('body').on('mouseout','#colorselect',function(){
 	$('.dark-background').removeClass("hide-bg");
 });
 
+$(".menuarea").detach().appendTo('#header-bottom-left');
 
-$(".menuarea").detach().appendTo('#header-bottom-left')
+$(document).ready(function(){
+
+	$(".menuarea").css({
+		"position" : "absolute",
+		"left" : $(".menuarea").position().left + "px",
+	});
+
+});
 
 $('body').on('mouseover','.menuarea',function(){
 	$('.menuarea').find('.drop-choices.lightdrop').addClass("inuse");
