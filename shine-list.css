@@ -156,6 +156,11 @@ html.SHINE.shine-list body > div.content div#siteTable > .thing a.thumbnail img 
     height: 100%;
 }
 
+html.SHINE.lightmode.shine-list body > div.content div#siteTable > .thing a.thumbnail img {
+    width: auto !important;
+    height: 100% !important;
+}
+
 html.SHINE.shine-list body > div.content div#siteTable > .thing .RES-keyNav-activeElement{
 	background-color:transparent !important;
 }
@@ -178,18 +183,34 @@ html.SHINE.shine-list body > .content #siteTable > .thing .arrow.upmod{
     text-indent: 100% !important;
     white-space: nowrap !important;
     overflow: hidden !important;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjIgMjAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIyIDIwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGOEI2MDt9PC9zdHlsZT48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC0xMDM2LjQpIj48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTUuMiwxMDU2LjNINi43di05LjlIMWw5LjktOS45bDkuOSw5LjloLTUuN1YxMDU2LjN6Ii8+PC9nPjwvc3ZnPg==) !important;
+    /*background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjIgMjAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIyIDIwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGOEI2MDt9PC9zdHlsZT48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC0xMDM2LjQpIj48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTUuMiwxMDU2LjNINi43di05LjlIMWw5LjktOS45bDkuOSw5LjloLTUuN1YxMDU2LjN6Ii8+PC9nPjwvc3ZnPg==) !important;*/
+    background-image: none !important;
     background-repeat:no-repeat !important;
     background-position: center !important;
-    width: 15px !important;
+    width: 18px !important;
     background-size: contain !important;
     display: inline-block !important;
-    height: 15px !important;
+    height: 18px !important;
     vertical-align: top !important;
     margin:0px !important;
     padding:0px !important;
     -webkit-filter:grayscale(100%) !important;
     opacity:.5 !important;
+    position: relative;
+}
+
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.up::before,
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.upmod::before {
+    font: normal normal normal 18px/1 "Material Design Icons";
+    content: "\F736";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(51,51,51);
+    text-indent: 0 !important;
 }
 
 html.SHINE.shine-list body > .content #siteTable > .thing .arrow.upmod{
@@ -197,23 +218,143 @@ html.SHINE.shine-list body > .content #siteTable > .thing .arrow.upmod{
     -webkit-filter:grayscale(0%) !important;
 }
 
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow {
+    transition: opacity 200ms ease;
+}
+
 html.SHINE.shine-list body > .content #siteTable > .thing .arrow.down,
 html.SHINE.shine-list body > .content #siteTable > .thing .arrow.downmod{
     text-indent: 100% !important;
     white-space: nowrap !important;
     overflow: hidden !important;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjEuOSAxOS45IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMS45IDE5Ljk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojOTM5M0ZGO308L3N0eWxlPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTEwMzYuNCkiPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02LjcsMTAzNi40aDguNXY5LjloNS43bC05LjksOS45bC05LjktOS45aDUuN1YxMDM2LjR6Ii8+PC9nPjwvc3ZnPg==) !important;
+    /*background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjEuOSAxOS45IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMS45IDE5Ljk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojOTM5M0ZGO308L3N0eWxlPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTEwMzYuNCkiPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02LjcsMTAzNi40aDguNXY5LjloNS43bC05LjksOS45bC05LjktOS45aDUuN1YxMDM2LjR6Ii8+PC9nPjwvc3ZnPg==) !important;*/
+    background-image: none !important;
     background-repeat:no-repeat !important;
     background-position: center !important;
-    width: 15px !important;
+    width: 18px !important;
     background-size: contain !important;
     display: inline-block !important;
-    height: 15px !important;
+    height: 18px !important;
     vertical-align: top !important;
     margin:0px !important;
     padding:0px !important;
     -webkit-filter:grayscale(100%) !important;
     opacity:.5 !important;
+    position: relative;
+}
+
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow:hover {
+    opacity: 1 !important;
+}
+
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.up::before,
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.upmod::before,
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.down::before,
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.downmod::before {
+    font: normal normal normal 18px/1 "Material Design Icons";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(150,150,150);
+    text-indent: 0 !important;
+}
+
+html.SHINE.shine-list body .thing.comment .arrow {
+    position: relative;
+    background-image: none !important;
+    opacity: .3;
+    transition: opacity 200ms ease;
+}
+
+html.SHINE.shine-list body .thing.comment .arrow:hover,
+html.SHINE.shine-list body .thing.comment .likes .arrow.up,
+html.SHINE.shine-list body .thing.comment .likes .arrow.upmod,
+html.SHINE.shine-list body .thing.comment .dislikes .arrow.down,
+html.SHINE.shine-list body .thing.comment .dislikes .arrow.downmod {
+    opacity: .7;
+}
+
+html.SHINE.shine-list body .thing.comment .arrow::before {
+    font: normal normal normal 18px/1 "Material Design Icons";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(150,150,150);
+    text-indent: 0 !important;
+}
+
+
+html.SHINE.shine-list body .thing.comment .likes .arrow.up::before,
+html.SHINE.shine-list body .thing.comment .likes .arrow.upmod::before {
+    color: rgb(255, 69, 0) !important;
+}
+
+html.SHINE.shine-list body .thing.comment .likes .arrow.up::before,
+html.SHINE.shine-list body .thing.comment .likes .arrow.upmod::before {
+    color: #FF8B60 !important;
+}
+
+html.SHINE.shine-list.res-nightmode body .thing.comment .likes .arrow.up::before,
+html.SHINE.shine-list.res-nightmode body .thing.comment .likes .arrow.upmod::before {
+    color: rgb(255, 69, 0) !important;
+}
+
+html.SHINE.shine-list body .thing.comment .dislikes .arrow.down::before,
+html.SHINE.shine-list body .thing.comment .dislikes .arrow.downmod::before {
+    color: #9494FF !important;
+}
+
+html.SHINE.shine-list.res-nightmode body .thing.comment .dislikes .arrow.down::before,
+html.SHINE.shine-list.res-nightmode body .thing.comment .dislikes .arrow.downmod::before {
+    color: rgb(116, 166, 196) !important;
+}
+
+html.SHINE.shine-list body .thing.comment .arrow.up::before,
+html.SHINE.shine-list body .thing.comment .arrow.upmod::before {
+    content: "\F736";
+    bottom: -2px;
+}
+
+html.SHINE.shine-list body .thing.comment .arrow.down::before,
+html.SHINE.shine-list body .thing.comment .arrow.downmod::before {
+    content: "\F72D";
+    top: 0;
+}
+
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.up::before,
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.upmod::before {
+    content: "\F736";
+    bottom: -2px;
+}
+
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.down::before,
+html.SHINE.shine-list body > .content #siteTable > .thing .arrow.downmod::before {
+    content: "\F72D";
+    top: 0;
+}
+
+html.SHINE.shine-list.res-nightmode body > .content #siteTable > .thing .likes .arrow.up::before,
+html.SHINE.shine-list.res-nightmode body > .content #siteTable > .thing .likes .arrow.upmod::before {
+    color: rgb(255, 69, 0) !important;
+}
+
+html.SHINE.shine-list body > .content #siteTable > .thing .likes .arrow.up::before,
+html.SHINE.shine-list body > .content #siteTable > .thing .likes .arrow.upmod::before {
+    color: #FF8B60 !important;
+}
+
+html.SHINE.shine-list.res-nightmode body > .content #siteTable > .thing .dislikes .arrow.down::before,
+html.SHINE.shine-list.res-nightmode body > .content #siteTable > .thing .dislikes .arrow.downmod::before {
+    color: rgb(116, 166, 196) !important;
+}
+
+html.SHINE.shine-list body > .content #siteTable > .thing .dislikes .arrow.down::before,
+html.SHINE.shine-list body > .content #siteTable > .thing .dislikes .arrow.downmod::before {
+    color: #9494FF !important;
 }
 
 html.SHINE.shine-list body > .content #siteTable > .thing .arrow.downmod{
@@ -331,7 +472,7 @@ html.SHINE.shine-list.shine-split-3070 .side-comments{
 
 html.SHINE.shine-list .just-comments .side-comments {
     width: 100%;
-    padding:30px 30px 100px 30px;
+    padding:30px;
 }
 
 html.SHINE.shine-list .large-album{
@@ -503,4 +644,8 @@ html.SHINE.shine-list.res-nightmode body > div.content .side-comments div#siteTa
 
 html.SHINE.shine-list .shine-expand .side-comments .content {
     margin-bottom: 100px;
+}
+
+.side-comments .rank {
+    display: none !important;
 }

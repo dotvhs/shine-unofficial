@@ -269,7 +269,6 @@ var startCheckingComments;
 
 
 function checkSideComments(){
-
 	theSideCommentLinks = $('.side-comments .thing .usertext-body a').not('.shine-comment');
 
 	for( i = 0; i < theSideCommentLinks.length; i++ ){
@@ -445,7 +444,8 @@ function checkSideComments(){
 
 	for( i = 0; i < topLevelComments.length; i++ ){
 
-		$(topLevelComments[i]).addClass("been-shined");
+		commentNumber = -1;
+		$(topLevelComments[i]).addClass("been-shined comment-"+i);
 
 		theChildren = $(topLevelComments[i]).find('.child .sitetable');
 
@@ -1677,7 +1677,7 @@ $(document).on('keyup keydown', function(e){
 
 
 
-function shineHREF(){
+function shineHREF(n){
 
 	theShinedThings = $('body > .content #siteTable > .thing').not(".shined-thing");
 
@@ -1686,7 +1686,19 @@ function shineHREF(){
 		$(theShinedThings[i]).find('a.title').attr("data-shine-url", $(theShinedThings[i]).find('a.title').attr("href"));
 
 		$(theShinedThings[i]).addClass("shined-thing");
+		if( !$('body').hasClass('res') ){
+			var b = ((!n) ? 1 + +i : 1 + +i + +n);
+			$(theShinedThings[i]).find('.rank').html(b);
+		}
 
+	}
+
+	var loadingLimit = $('body').attr('data-list-limit');
+	//console.log(loadingLimit);
+	if(loadingLimit != 0) {
+		if ($('#siteTable').find('.thing').length >= loadingLimit) {
+			$('#siteTable').find('.thing:lt(25)').remove();
+		}
 	}
 
 }
@@ -1714,11 +1726,14 @@ if( $('body').hasClass('res') ){
 	//SCROLLING FUNCTIONS
     $(window).scroll(function(){
 
+		$('body').find('.thing.recommended-link').remove();
+
         if( $(window).scrollTop() + $(window).height() >= $('body').height() - 1000 && loading == false ){
 
             loading = true;
 
             lastThing = $('body > .content #siteTable > .thing').last().attr('data-fullname');
+            lastNumber = $('body > .content #siteTable > .thing').last().find('.rank').text();
 
             subReddit = window.location.href.split(/[?#]/)[0];
 
@@ -1733,7 +1748,7 @@ if( $('body').hasClass('res') ){
 
 			     loading = false;
 
-				 shineHREF();
+				 shineHREF(lastNumber);
 			      
 			  },
 		      error: function(request, status, message) { 
@@ -1747,3 +1762,8 @@ if( $('body').hasClass('res') ){
 
 
 }
+
+/*
+$(document).ready(function(){
+});
+*/

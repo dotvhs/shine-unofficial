@@ -15,8 +15,6 @@ html.SHINE.color-teal.res-nightmode a {
   color: #1DE9B6; }
 html.SHINE.color-teal.res-nightmode .search-result-meta a {
   color: #1DE9B6 !important; }
-html.SHINE.color-teal.res-nightmode .menuarea .dropdown.lightdrop .selected {
-  color: #1DE9B6; }
 html.SHINE.color-teal.res-nightmode .res-nightmode #progressIndicator h2 {
   color: #1DE9B6; }
 html.SHINE.color-teal.res-nightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
@@ -24,6 +22,31 @@ html.SHINE.color-teal.res-nightmode .res-nightmode #progressIndicator .RESLoadin
 html.SHINE.color-teal.res-nightmode div#sr-header-area li.selected a {
   color: #1DE9B6 !important; }
 html.SHINE.color-teal.res-nightmode #header-bottom-left #header-img-a::after, html.SHINE.color-teal.res-nightmode #header-bottom-left #header-img.default-header::after {
+  background-color: transparent !important; }
+html.SHINE.color-teal.lightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
+  border-left: 5px solid #00BFA5 !important; }
+  html.SHINE.color-teal.lightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
+    border-left: 5px solid #00BFA5 !important; }
+html.SHINE.color-teal.lightmode.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
+  color: #00BFA5 !important; }
+html.SHINE.color-teal.lightmode.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
+  border: 1px solid #00BFA5;
+  color: #00BFA5 !important; }
+html.SHINE.color-teal.lightmode .md a {
+  color: #00BFA5; }
+html.SHINE.color-teal.lightmode .tagline a {
+  color: #00BFA5 !important; }
+html.SHINE.color-teal.lightmode a {
+  color: #00BFA5; }
+html.SHINE.color-teal.lightmode .search-result-meta a {
+  color: #00BFA5 !important; }
+html.SHINE.color-teal.lightmode .res-nightmode #progressIndicator h2 {
+  color: #00BFA5; }
+html.SHINE.color-teal.lightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
+  color: #00BFA5; }
+html.SHINE.color-teal.lightmode div#sr-header-area li.selected a {
+  color: #00BFA5 !important; }
+html.SHINE.color-teal.lightmode #header-bottom-left #header-img-a::after, html.SHINE.color-teal.lightmode #header-bottom-left #header-img.default-header::after {
   background-color: transparent !important; }
 html.SHINE.color-teal .shine-expand .side-comments button.save {
   background: #1DE9B6 !important; }
@@ -43,15 +66,33 @@ html.SHINE.color-teal .shine-nav .shine-navicon {
 html.SHINE.color-teal #header-bottom-right a.message-count {
   color: white !important;
   background: #1DE9B6; }
-html.SHINE.color-teal .colorful #header-bottom-left #header-img-a::after, html.SHINE.color-teal .colorful #header-bottom-left #header-img.default-header::after {
-  background-color: #00BFA5; }
-html.SHINE.color-teal .colorful .thumbnail.spoiler::before, html.SHINE.color-teal .colorful .thumbnail.nsfw::before, html.SHINE.color-teal .colorful .thumbnail.default::before, html.SHINE.color-teal .colorful .thumbnail.image::before, html.SHINE.color-teal .colorful .thumbnail.self::before {
-  background-color: #00BFA5; }
-html.SHINE.color-teal button {
+html.SHINE.color-teal button.btn, html.SHINE.color-teal button.save {
   background-color: #1DE9B6; }
-html.SHINE.color-teal button:hover {
-  background-color: #00BFA5 !important; }
+  html.SHINE.color-teal button.btn:hover, html.SHINE.color-teal button.save:hover {
+    background-color: #00BFA5 !important; }
 html.SHINE.color-teal .update-info .open-changelog {
-  color: #00BFA5; }
+  color: #1DE9B6; }
+html.SHINE.color-teal.colorful #header-bottom-left #header-img-a::after, html.SHINE.color-teal.colorful #header-bottom-left #header-img.default-header::after {
+  background-color: #00BFA5 !important;
+  color: #fff; }
+html.SHINE.color-teal.colorful .thumbnail.spoiler::before, html.SHINE.color-teal.colorful .thumbnail.nsfw::before, html.SHINE.color-teal.colorful .thumbnail.default::before, html.SHINE.color-teal.colorful .thumbnail.image::before, html.SHINE.color-teal.colorful .thumbnail.self::before {
+  background-color: #00BFA5 !important; }
+html.SHINE.color-teal.accent .thumbnail.default::before, html.SHINE.color-teal.accent .thumbnail.image::before, html.SHINE.color-teal.accent .thumbnail.self::before {
+  color: #1DE9B6 !important; }
+html.SHINE.color-teal.accent .thumbnail.nsfw::before {
+  color: #e24343 !important; }
+html.SHINE.color-teal.accent .thumbnail.spoiler::before {
+  color: #faae42 !important; }
+html.SHINE.color-teal.colorlines .thumbnail.spoiler::before, html.SHINE.color-teal.colorlines .thumbnail.nsfw::before, html.SHINE.color-teal.colorlines .thumbnail.default::before, html.SHINE.color-teal.colorlines .thumbnail.image::before, html.SHINE.color-teal.colorlines .thumbnail.self::before {
+  background-color: transparent !important;
+  border: 2px #1DE9B6 solid !important;
+  color: #1DE9B6 !important;
+  line-height: 46px; }
+html.SHINE.color-teal.colorlines.modern-layout .thumbnail.spoiler::before, html.SHINE.color-teal.colorlines.modern-layout .thumbnail.nsfw::before, html.SHINE.color-teal.colorlines.modern-layout .thumbnail.default::before, html.SHINE.color-teal.colorlines.modern-layout .thumbnail.image::before, html.SHINE.color-teal.colorlines.modern-layout .thumbnail.self::before {
+  border: 2px #00BFA5 solid !important;
+  color: #00BFA5 !important;
+  line-height: 56px !important; }
+html.SHINE.color-teal .archived-infobar::before {
+  background-color: #00BFA5; }
 html.SHINE #colorselect label.teal .button span {
-  background-color: #1DE9B6; }
+  background-color: #00BFA5; }

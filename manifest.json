@@ -12,7 +12,8 @@
          "shine-grid.css", 
          "shine-list.css", 
          "shine-list-classic.css", 
-         "shine-default.css"
+         "shine-default.css",
+         "materialdesignicons.min.css"
       ],
       "matches": [ "*://*.reddit.com/*" ],
       "run_at":"document_start"
@@ -25,7 +26,8 @@
          "themes/theme-dark.css", 
          "themes/theme-blue.css", 
          "themes/theme-brown.css", 
-         "themes/theme-material.css"
+         "themes/theme-material.css", 
+         "themes/theme-modernwhite.css"
       ],
       "matches": [ "*://*.reddit.com/*" ],
       "run_at":"document_start"
@@ -39,12 +41,18 @@
          "colors/color-teal.css",
          "colors/color-cyan.css",
          "colors/color-blue.css",
-         "colors/color-indigo.css"
+         "colors/color-indigo.css",
+         "colors/color-pink.css",
+         "colors/color-yellow.css",
+         "colors/color-purple.css"
       ],
       "matches": [ "*://*.reddit.com/*" ],
       "run_at":"document_start"
    }, {
-      "js": [ "jquery.js", "base.js" ],  
+      "js": [ 
+         "jquery-2.1.4.min.js", 
+         "base.js"
+      ],  
       "matches": [ "*://*.reddit.com/*" ],
       "run_at":"document_end"
    } ],
@@ -61,10 +69,16 @@
    "permissions": [ "storage" ],
    "short_name": "SHINE",
    "update_url": "https://clients2.google.com/service/update2/crx",
+<<<<<<< HEAD
    "version": "1.5.0.3",
+=======
+   "version": "1.6.0",
+>>>>>>> develop
    "web_accessible_resources": [ 
       "jquery.zoom.min.js", 
       "shine-grid.js", 
-      "shine-list.js" 
-      ]
+      "shine-list.js", 
+      "shine-shortcuts.js",
+      "materialdesignicons-webfont.woff2"
+   ]
 }

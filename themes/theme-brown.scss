@@ -1,0 +1,23 @@
+$themename: 'brown';
+
+$color_bg_darkest: #232120; 	//main-background
+$color_bg_darker: #33302e;		//list-background
+$color_bg_dark: #4d4845;	//misc-background
+
+$color_bg_flair: mix($color_bg_dark, #fff, 50%);
+$color_bg_flairborder: mix($color_bg_dark, #fff, 70%);
+$color_bg_flairbackground: none;
+
+$color_bg_textfield_border: mix($color_bg_dark, #fff, 95%);
+
+$color_posttype: rgba(255,255,255, .7);
+$color_posttype_bg: $color_bg_textfield_border;
+
+$color_row_bottom_border: $color_bg_darkest;
+
+$color_border_shineexpand: $color_bg_darkest;
+
+
+@import "base/dark";
+
+@import "base/base";

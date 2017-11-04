@@ -1,0 +1,98 @@
+html.SHINE.color-purple.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
+  border-left: 5px solid #C70AE7 !important; }
+  html.SHINE.color-purple.res-nightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
+    border-left: 5px solid #C70AE7 !important; }
+html.SHINE.color-purple.res-nightmode.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
+  color: #C70AE7 !important; }
+html.SHINE.color-purple.res-nightmode.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
+  border: 1px solid #C70AE7;
+  color: #C70AE7 !important; }
+html.SHINE.color-purple.res-nightmode .md a {
+  color: #C70AE7; }
+html.SHINE.color-purple.res-nightmode .tagline a {
+  color: #C70AE7 !important; }
+html.SHINE.color-purple.res-nightmode a {
+  color: #C70AE7; }
+html.SHINE.color-purple.res-nightmode .search-result-meta a {
+  color: #C70AE7 !important; }
+html.SHINE.color-purple.res-nightmode .res-nightmode #progressIndicator h2 {
+  color: #C70AE7; }
+html.SHINE.color-purple.res-nightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
+  color: #C70AE7; }
+html.SHINE.color-purple.res-nightmode div#sr-header-area li.selected a {
+  color: #C70AE7 !important; }
+html.SHINE.color-purple.res-nightmode #header-bottom-left #header-img-a::after, html.SHINE.color-purple.res-nightmode #header-bottom-left #header-img.default-header::after {
+  background-color: transparent !important; }
+html.SHINE.color-purple.lightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing {
+  border-left: 5px solid #9C27B0 !important; }
+  html.SHINE.color-purple.lightmode.shine-list body > div.content div#siteTable.linklisting > .thing.active-thing:hover {
+    border-left: 5px solid #9C27B0 !important; }
+html.SHINE.color-purple.lightmode.shine-list body > .content div#siteTable > .thing .entry.RES-keyNav-activeElement a.title {
+  color: #9C27B0 !important; }
+html.SHINE.color-purple.lightmode.shine-list.shine-list-classic .side-comments .shine-comment:hover::after {
+  border: 1px solid #9C27B0;
+  color: #9C27B0 !important; }
+html.SHINE.color-purple.lightmode .md a {
+  color: #9C27B0; }
+html.SHINE.color-purple.lightmode .tagline a {
+  color: #9C27B0 !important; }
+html.SHINE.color-purple.lightmode a {
+  color: #9C27B0; }
+html.SHINE.color-purple.lightmode .search-result-meta a {
+  color: #9C27B0 !important; }
+html.SHINE.color-purple.lightmode .res-nightmode #progressIndicator h2 {
+  color: #9C27B0; }
+html.SHINE.color-purple.lightmode .res-nightmode #progressIndicator .RESLoadingSpinner {
+  color: #9C27B0; }
+html.SHINE.color-purple.lightmode div#sr-header-area li.selected a {
+  color: #9C27B0 !important; }
+html.SHINE.color-purple.lightmode #header-bottom-left #header-img-a::after, html.SHINE.color-purple.lightmode #header-bottom-left #header-img.default-header::after {
+  background-color: transparent !important; }
+html.SHINE.color-purple .shine-expand .side-comments button.save {
+  background: #C70AE7 !important; }
+html.SHINE.color-purple .shine-expand .side-comments button:hover {
+  background: #9C27B0 !important; }
+html.SHINE.color-purple div#sr-header-area a#sr-more-link:hover {
+  background: #C70AE7 !important; }
+html.SHINE.color-purple div#sr-header-area li.selected a {
+  color: #9C27B0 !important; }
+html.SHINE.color-purple #themeselect input:checked ~ .foreground {
+  border: 3px solid #C70AE7; }
+html.SHINE.color-purple #themeselect input:checked ~ .theme-name {
+  color: #C70AE7; }
+html.SHINE.color-purple .shine-nav .shine-navicon {
+  background-color: #9C27B0;
+  transition: background-color 200ms; }
+html.SHINE.color-purple #header-bottom-right a.message-count {
+  color: white !important;
+  background: #C70AE7; }
+html.SHINE.color-purple button.btn, html.SHINE.color-purple button.save {
+  background-color: #C70AE7; }
+  html.SHINE.color-purple button.btn:hover, html.SHINE.color-purple button.save:hover {
+    background-color: #9C27B0 !important; }
+html.SHINE.color-purple .update-info .open-changelog {
+  color: #C70AE7; }
+html.SHINE.color-purple.colorful #header-bottom-left #header-img-a::after, html.SHINE.color-purple.colorful #header-bottom-left #header-img.default-header::after {
+  background-color: #9C27B0 !important;
+  color: #fff; }
+html.SHINE.color-purple.colorful .thumbnail.spoiler::before, html.SHINE.color-purple.colorful .thumbnail.nsfw::before, html.SHINE.color-purple.colorful .thumbnail.default::before, html.SHINE.color-purple.colorful .thumbnail.image::before, html.SHINE.color-purple.colorful .thumbnail.self::before {
+  background-color: #9C27B0 !important; }
+html.SHINE.color-purple.accent .thumbnail.default::before, html.SHINE.color-purple.accent .thumbnail.image::before, html.SHINE.color-purple.accent .thumbnail.self::before {
+  color: #C70AE7 !important; }
+html.SHINE.color-purple.accent .thumbnail.nsfw::before {
+  color: #e24343 !important; }
+html.SHINE.color-purple.accent .thumbnail.spoiler::before {
+  color: #faae42 !important; }
+html.SHINE.color-purple.colorlines .thumbnail.spoiler::before, html.SHINE.color-purple.colorlines .thumbnail.nsfw::before, html.SHINE.color-purple.colorlines .thumbnail.default::before, html.SHINE.color-purple.colorlines .thumbnail.image::before, html.SHINE.color-purple.colorlines .thumbnail.self::before {
+  background-color: transparent !important;
+  border: 2px #C70AE7 solid !important;
+  color: #C70AE7 !important;
+  line-height: 46px; }
+html.SHINE.color-purple.colorlines.modern-layout .thumbnail.spoiler::before, html.SHINE.color-purple.colorlines.modern-layout .thumbnail.nsfw::before, html.SHINE.color-purple.colorlines.modern-layout .thumbnail.default::before, html.SHINE.color-purple.colorlines.modern-layout .thumbnail.image::before, html.SHINE.color-purple.colorlines.modern-layout .thumbnail.self::before {
+  border: 2px #9C27B0 solid !important;
+  color: #9C27B0 !important;
+  line-height: 56px !important; }
+html.SHINE.color-purple .archived-infobar::before {
+  background-color: #9C27B0; }
+html.SHINE #colorselect label.purple .button span {
+  background-color: #9C27B0; }

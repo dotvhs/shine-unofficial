@@ -1,293 +1,388 @@
-html.SHINE.res-nightmode.theme-brown .flair, html.SHINE.res-nightmode.theme-brown .linkflairlabel {
+html.SHINE.theme-brown.res-nightmode .flair, html.SHINE.theme-brown.res-nightmode .linkflairlabel {
   background: transparent;
   padding: 0 4px; }
 
-html.SHINE.res-nightmode.theme-brown input[type="text"], html.SHINE.res-nightmode.theme-brown input[type="password"], html.SHINE.res-nightmode.theme-brown .c-form-control, html.SHINE.res-nightmode.theme-brown .submit textarea, html.SHINE.res-nightmode.theme-brown .submit #url, html.SHINE.res-nightmode.theme-brown .submit #sr-autocomplete, html.SHINE.res-nightmode.theme-brown .usertext-edit textarea, html.SHINE.res-nightmode.theme-brown .RESDialogSmall, html.SHINE.res-nightmode.theme-brown .c-close, html.SHINE.res-nightmode.theme-brown #REScommentNavBox, html.SHINE.res-nightmode.theme-brown #BigEditor #BigText, html.SHINE.res-nightmode.theme-brown #liveupdate-statusbar, html.SHINE.res-nightmode.theme-brown #liveupdate-statusbar.complete, html.SHINE.res-nightmode.theme-brown #newlink-with-image-upload .image-upload-drop-target {
+html.SHINE.theme-brown.res-nightmode input[type="text"], html.SHINE.theme-brown.res-nightmode input[type="password"], html.SHINE.theme-brown.res-nightmode .c-form-control, html.SHINE.theme-brown.res-nightmode .submit textarea, html.SHINE.theme-brown.res-nightmode .submit #url, html.SHINE.theme-brown.res-nightmode .submit #sr-autocomplete, html.SHINE.theme-brown.res-nightmode .usertext-edit textarea, html.SHINE.theme-brown.res-nightmode .RESDialogSmall, html.SHINE.theme-brown.res-nightmode .c-close, html.SHINE.theme-brown.res-nightmode #REScommentNavBox, html.SHINE.theme-brown.res-nightmode #BigEditor #BigText, html.SHINE.theme-brown.res-nightmode #liveupdate-statusbar, html.SHINE.theme-brown.res-nightmode #liveupdate-statusbar.complete, html.SHINE.theme-brown.res-nightmode #newlink-with-image-upload .image-upload-drop-target {
   color: #ebeaea !important; }
 
-html.SHINE.res-nightmode.theme-brown .sidebox, html.SHINE.res-nightmode.theme-brown .subredditbox, html.SHINE.res-nightmode.theme-brown .subreddit-info, html.SHINE.res-nightmode.theme-brown .raisedbox, html.SHINE.res-nightmode.theme-brown .login-form-side, html.SHINE.res-nightmode.theme-brown .morelink {
+html.SHINE.theme-brown.res-nightmode .sidebox, html.SHINE.theme-brown.res-nightmode .subredditbox, html.SHINE.theme-brown.res-nightmode .subreddit-info, html.SHINE.theme-brown.res-nightmode .raisedbox, html.SHINE.theme-brown.res-nightmode .login-form-side, html.SHINE.theme-brown.res-nightmode .morelink {
   color: rgba(255, 255, 255, 0.75) !important;
   border: 0; }
 
-html.SHINE.res-nightmode.theme-brown.shine-list .shine-expand .side-comments button.save, html.SHINE.res-nightmode.theme-brown.shine-grid .shine-expand .side-comments button.save {
+html.SHINE.theme-brown.res-nightmode.shine-list .shine-expand .side-comments button.save, html.SHINE.theme-brown.res-nightmode.shine-grid .shine-expand .side-comments button.save {
   color: white;
   box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px; }
 
-html.SHINE.res-nightmode.theme-brown.shine-list body > div.content div#siteTable > .thing {
+html.SHINE.theme-brown.res-nightmode.shine-list body > div.content div#siteTable > .thing {
   transition: all 200ms ease; }
-html.SHINE.res-nightmode.theme-brown.shine-list body .domain a {
+  html.SHINE.theme-brown.res-nightmode.shine-list body > div.content div#siteTable > .thing .arrow.up::before,
+  html.SHINE.theme-brown.res-nightmode.shine-list body > div.content div#siteTable > .thing .arrow.upmod::before,
+  html.SHINE.theme-brown.res-nightmode.shine-list body > div.content div#siteTable > .thing .arrow.down::before,
+  html.SHINE.theme-brown.res-nightmode.shine-list body > div.content div#siteTable > .thing .arrow.downmod::before {
+    color: #999897; }
+  html.SHINE.theme-brown.res-nightmode.shine-list body > div.content div#siteTable > .thing .score.unvoted {
+    color: rgba(153, 152, 151, 0.5); }
+html.SHINE.theme-brown.res-nightmode.shine-list body .domain a {
   color: rgba(255, 255, 255, 0.5); }
-html.SHINE.res-nightmode.theme-brown.shine-list .shine-expand .toggle-child-comments {
+html.SHINE.theme-brown.res-nightmode.shine-list .shine-expand .toggle-child-comments {
   color: rgba(255, 255, 255, 0.75) !important; }
-html.SHINE.res-nightmode.theme-brown.shine-list.shine-list-classic .side-comments .shine-comment::after {
+html.SHINE.theme-brown.res-nightmode.shine-list.shine-list-classic .side-comments .shine-comment::after {
   background-color: transparent !important;
   transition: all 200ms ease;
   margin: 0 5px 5px 10px; }
-html.SHINE.res-nightmode.theme-brown body {
+html.SHINE.theme-brown.res-nightmode body {
   background-color: transparent;
   border: 0; }
-  html.SHINE.res-nightmode.theme-brown body .content {
+  html.SHINE.theme-brown.res-nightmode body .content {
     background-color: transparent;
     border: 0; }
-html.SHINE.res-nightmode.theme-brown #header {
+html.SHINE.theme-brown.res-nightmode #header {
   box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px !important; }
-  html.SHINE.res-nightmode.theme-brown #header ul.tabmenu:hover {
+  html.SHINE.theme-brown.res-nightmode #header ul.tabmenu:hover {
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px !important; }
-html.SHINE.res-nightmode.theme-brown div#header-bottom-left {
+html.SHINE.theme-brown.res-nightmode div#header-bottom-left {
   box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px !important; }
-html.SHINE.res-nightmode.theme-brown div#sr-header-area {
+html.SHINE.theme-brown.res-nightmode div#sr-header-area {
   border-bottom: 0 solid rgba(255, 255, 255, 0.85) !important; }
-  html.SHINE.res-nightmode.theme-brown div#sr-header-area a {
+  html.SHINE.theme-brown.res-nightmode div#sr-header-area a {
     color: rgba(255, 255, 255, 0.5) !important; }
-    html.SHINE.res-nightmode.theme-brown div#sr-header-area a#sr-more-link:hover {
+    html.SHINE.theme-brown.res-nightmode div#sr-header-area a#sr-more-link:hover {
       color: white !important;
       text-decoration: none !important; }
-html.SHINE.res-nightmode.theme-brown .md {
+html.SHINE.theme-brown.res-nightmode .md {
   color: #ebeaea !important; }
-  html.SHINE.res-nightmode.theme-brown .md del {
+  html.SHINE.theme-brown.res-nightmode .md del {
     color: #ebeaea !important; }
-  html.SHINE.res-nightmode.theme-brown .md blockquote {
+  html.SHINE.theme-brown.res-nightmode .md blockquote {
     color: rgba(255, 255, 255, 0.75) !important;
     padding: 6px 8px;
     border-left: 0; }
-html.SHINE.res-nightmode.theme-brown .tagline {
+html.SHINE.theme-brown.res-nightmode .tagline {
   color: rgba(255, 255, 255, 0.5) !important; }
-html.SHINE.res-nightmode.theme-brown #header-bottom-right a {
+html.SHINE.theme-brown.res-nightmode #header-bottom-right .user a {
+  color: white !important; }
+html.SHINE.theme-brown.res-nightmode #header-bottom-right a {
   color: #999897; }
-html.SHINE.res-nightmode.theme-brown #header-bottom-right .user .userkarma {
+html.SHINE.theme-brown.res-nightmode #header-bottom-right .user .userkarma {
   color: rgba(255, 255, 255, 0.75); }
-html.SHINE.res-nightmode.theme-brown svg {
+html.SHINE.theme-brown.res-nightmode svg {
   fill: #ebeaea; }
-html.SHINE.res-nightmode.theme-brown .arrow {
+html.SHINE.theme-brown.res-nightmode .arrow {
   opacity: 0.3; }
-html.SHINE.res-nightmode.theme-brown textarea {
+html.SHINE.theme-brown.res-nightmode textarea {
   color: #ebeaea !important; }
-html.SHINE.res-nightmode.theme-brown .sidebox .spacer {
+html.SHINE.theme-brown.res-nightmode .sidebox .spacer {
   margin-top: 0 !important; }
-html.SHINE.res-nightmode.theme-brown .side {
+html.SHINE.theme-brown.res-nightmode .side {
   background-color: transparent;
   border: 0; }
-  html.SHINE.res-nightmode.theme-brown .side .linkinfo {
+  html.SHINE.theme-brown.res-nightmode .side .linkinfo {
     margin-top: 0 !important; }
-  html.SHINE.res-nightmode.theme-brown .side .leavemoderator {
+  html.SHINE.theme-brown.res-nightmode .side .leavemoderator {
     background-color: transparent;
     border: 0; }
-  html.SHINE.res-nightmode.theme-brown .side .leavecontributor-button {
+  html.SHINE.theme-brown.res-nightmode .side .leavecontributor-button {
     background-color: transparent;
     border: 0; }
-  html.SHINE.res-nightmode.theme-brown .side .titlebox {
+  html.SHINE.theme-brown.res-nightmode .side .titlebox {
     background-color: transparent;
     border: 0; }
-    html.SHINE.res-nightmode.theme-brown .side .titlebox .flairtoggle {
+    html.SHINE.theme-brown.res-nightmode .side .titlebox .flairtoggle {
       background-color: transparent;
       border: 0; }
-    html.SHINE.res-nightmode.theme-brown .side .titlebox form.flairtoggle {
+    html.SHINE.theme-brown.res-nightmode .side .titlebox form.flairtoggle {
       background: transparent; }
-  html.SHINE.res-nightmode.theme-brown .side .spacer .title {
+  html.SHINE.theme-brown.res-nightmode .side .spacer .title {
     margin-top: 20px; }
-  html.SHINE.res-nightmode.theme-brown .side .spacer .titlebox .redditname {
+  html.SHINE.theme-brown.res-nightmode .side .spacer .titlebox .redditname {
     background-color: transparent;
     border: 0; }
-  html.SHINE.res-nightmode.theme-brown .side .md ol {
+  html.SHINE.theme-brown.res-nightmode .side .md ol {
     background: transparent; }
-  html.SHINE.res-nightmode.theme-brown .side .md ul {
+  html.SHINE.theme-brown.res-nightmode .side .md ul {
     background: transparent; }
-  html.SHINE.res-nightmode.theme-brown .side .usertext-body .md ol {
+  html.SHINE.theme-brown.res-nightmode .side .usertext-body .md ol {
     background-color: transparent;
     border: 0; }
-    html.SHINE.res-nightmode.theme-brown .side .usertext-body .md ol ol {
+    html.SHINE.theme-brown.res-nightmode .side .usertext-body .md ol ol {
       background-color: transparent;
       border: 0; }
-      html.SHINE.res-nightmode.theme-brown .side .usertext-body .md ol ol li {
+      html.SHINE.theme-brown.res-nightmode .side .usertext-body .md ol ol li {
         background-color: transparent;
         border: 0; }
-  html.SHINE.res-nightmode.theme-brown .side .recommend-box .rec-item {
+  html.SHINE.theme-brown.res-nightmode .side .recommend-box .rec-item {
     background-color: transparent;
     border: 0; }
-html.SHINE.res-nightmode.theme-brown .nsfw-stamp {
+html.SHINE.theme-brown.res-nightmode .nsfw-stamp {
   color: #bf4040; }
-  html.SHINE.res-nightmode.theme-brown .nsfw-stamp acronym {
+  html.SHINE.theme-brown.res-nightmode .nsfw-stamp acronym {
     color: #bf4040; }
-html.SHINE.res-nightmode.theme-brown .RESCloseButton {
+html.SHINE.theme-brown.res-nightmode .spoiler-stamp {
+  color: #ffa524; }
+  html.SHINE.theme-brown.res-nightmode .spoiler-stamp acronym {
+    color: #ffa524; }
+html.SHINE.theme-brown.res-nightmode .RESCloseButton {
   border: 0; }
-html.SHINE.res-nightmode.theme-brown .read-next {
+html.SHINE.theme-brown.res-nightmode .read-next {
   border: 0; }
-html.SHINE.res-nightmode.theme-brown .drop-choices {
+html.SHINE.theme-brown.res-nightmode .drop-choices {
   border: 0; }
-html.SHINE.res-nightmode.theme-brown .modal-body {
+html.SHINE.theme-brown.res-nightmode .modal-body {
   background-color: transparent;
   border: 0; }
-html.SHINE.res-nightmode.theme-brown .thing .title {
+html.SHINE.theme-brown.res-nightmode .thing.comment .arrow.up::before,
+html.SHINE.theme-brown.res-nightmode .thing.comment .arrow.upmod::before,
+html.SHINE.theme-brown.res-nightmode .thing.comment .arrow.down::before,
+html.SHINE.theme-brown.res-nightmode .thing.comment .arrow.downmod::before {
+  color: #999897; }
+html.SHINE.theme-brown.res-nightmode .thing .title {
   color: #ebeaea; }
-  html.SHINE.res-nightmode.theme-brown .thing .title:visited {
+  html.SHINE.theme-brown.res-nightmode .thing .title:visited {
     color: #999897 !important; }
-html.SHINE.res-nightmode.theme-brown.show-sidebar .side {
+html.SHINE.theme-brown.res-nightmode.show-sidebar .side {
   color: rgba(255, 255, 255, 0.75); }
-  html.SHINE.res-nightmode.theme-brown.show-sidebar .side .md {
+  html.SHINE.theme-brown.res-nightmode.show-sidebar .side .md {
     color: #999897; }
-  html.SHINE.res-nightmode.theme-brown.show-sidebar .side a.reddit-link-title {
+  html.SHINE.theme-brown.res-nightmode.show-sidebar .side a.reddit-link-title {
     color: #999897; }
-html.SHINE.res-nightmode.theme-brown .sidecontentbox .content {
+html.SHINE.theme-brown.res-nightmode .sidecontentbox .content {
   border: 0 !important;
   background: transparent !important; }
-html.SHINE.res-nightmode.theme-brown .link .usertext-body .md {
+html.SHINE.theme-brown.res-nightmode .link .usertext-body .md {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.8);
   border: 0 solid #336699;
   border-radius: 0;
   padding: 10px 0; }
-html.SHINE.res-nightmode.theme-brown .entry .buttons li a {
+html.SHINE.theme-brown.res-nightmode .entry .buttons li a {
   color: rgba(255, 255, 255, 0.5) !important; }
-html.SHINE.res-nightmode.theme-brown .trending-subreddits strong {
+html.SHINE.theme-brown.res-nightmode .trending-subreddits strong {
   color: rgba(255, 255, 255, 0.5) !important; }
-html.SHINE.res-nightmode.theme-brown .message.new > .entry {
+html.SHINE.theme-brown.res-nightmode .message.new > .entry {
   border: 0; }
-html.SHINE.res-nightmode.theme-brown .icon-menu a {
+html.SHINE.theme-brown.res-nightmode .icon-menu a {
   background-color: transparent;
   border: 0; }
-html.SHINE.res-nightmode.theme-brown .modactionlisting table * {
+html.SHINE.theme-brown.res-nightmode .modactionlisting table * {
   background-color: transparent;
   border: 0; }
-html.SHINE.res-nightmode.theme-brown .fancy-toggle-button a {
+html.SHINE.theme-brown.res-nightmode .fancy-toggle-button a {
   color: white !important; }
-html.SHINE.res-nightmode.theme-brown .dropdown.srdrop .selected {
+html.SHINE.theme-brown.res-nightmode .dropdown.srdrop .selected {
   color: rgba(255, 255, 255, 0.75); }
-html.SHINE.res-nightmode.theme-brown .trophy-area .content {
+html.SHINE.theme-brown.res-nightmode .trophy-area .content {
   background: transparent; }
-html.SHINE.res-nightmode.theme-brown .tagline a.moderator {
+html.SHINE.theme-brown.res-nightmode .tagline a.moderator {
   color: white !important; }
-html.SHINE.res-nightmode.theme-brown .tagline a.submitter {
+html.SHINE.theme-brown.res-nightmode .tagline a.submitter {
   color: white !important; }
-html.SHINE.res-nightmode.theme-brown .tagline a.admin {
+html.SHINE.theme-brown.res-nightmode .tagline a.admin {
   color: white !important; }
-html.SHINE.res-nightmode.theme-brown .usertext.grayed .usertext-body div p {
+html.SHINE.theme-brown.res-nightmode .usertext.grayed .usertext-body div p {
   color: #999897; }
-html.SHINE.res-nightmode.theme-brown #header-bottom-right #mail, html.SHINE.res-nightmode.theme-brown #header-bottom-right #modmail, html.SHINE.res-nightmode.theme-brown #header-bottom-right #RESAccountSwitcherIcon {
+html.SHINE.theme-brown.res-nightmode #header-bottom-right #mail, html.SHINE.theme-brown.res-nightmode #header-bottom-right #modmail, html.SHINE.theme-brown.res-nightmode #header-bottom-right #RESAccountSwitcherIcon {
   color: white; }
-html.SHINE.shine-grid body > .content #siteTable .thing {
+html.SHINE.theme-brown.res-nightmode .menuarea .dropdown.lightdrop .selected {
+  color: white; }
+html.SHINE.theme-brown.shine-grid body > .content #siteTable .thing {
   transition: all 200ms ease; }
-html.SHINE #themeselect label.brown .foreground span {
+html.SHINE.theme-brown #themeselect label.brown .foreground span {
   color: #ebeaea; }
+html.SHINE.theme-brown.colorful .thumbnail.spoiler::before, html.SHINE.theme-brown.colorful .thumbnail.nsfw::before, html.SHINE.theme-brown.colorful .thumbnail.default::before, html.SHINE.theme-brown.colorful .thumbnail.image::before, html.SHINE.theme-brown.colorful .thumbnail.self::before {
+  color: white !important; }
 
-html.SHINE.res-nightmode.theme-brown .flair, html.SHINE.res-nightmode.theme-brown .linkflairlabel {
+html.SHINE.theme-brown.res-nightmode .flair, html.SHINE.theme-brown.res-nightmode .linkflairlabel {
   color: #a6a4a2;
   border: 1px solid #827f7d; }
 
-html.SHINE.res-nightmode.theme-brown input[type="text"], html.SHINE.res-nightmode.theme-brown input[type="password"], html.SHINE.res-nightmode.theme-brown .c-form-control, html.SHINE.res-nightmode.theme-brown .submit textarea, html.SHINE.res-nightmode.theme-brown .submit #url, html.SHINE.res-nightmode.theme-brown .submit #sr-autocomplete, html.SHINE.res-nightmode.theme-brown .usertext-edit textarea, html.SHINE.res-nightmode.theme-brown .RESDialogSmall, html.SHINE.res-nightmode.theme-brown .c-close, html.SHINE.res-nightmode.theme-brown #REScommentNavBox, html.SHINE.res-nightmode.theme-brown #BigEditor #BigText, html.SHINE.res-nightmode.theme-brown #liveupdate-statusbar, html.SHINE.res-nightmode.theme-brown #liveupdate-statusbar.complete, html.SHINE.res-nightmode.theme-brown #newlink-with-image-upload .image-upload-drop-target {
+html.SHINE.theme-brown.res-nightmode input[type="text"], html.SHINE.theme-brown.res-nightmode input[type="password"], html.SHINE.theme-brown.res-nightmode .c-form-control, html.SHINE.theme-brown.res-nightmode .submit textarea, html.SHINE.theme-brown.res-nightmode .submit #url, html.SHINE.theme-brown.res-nightmode .submit #sr-autocomplete, html.SHINE.theme-brown.res-nightmode .usertext-edit textarea, html.SHINE.theme-brown.res-nightmode .RESDialogSmall, html.SHINE.theme-brown.res-nightmode .c-close, html.SHINE.theme-brown.res-nightmode #REScommentNavBox, html.SHINE.theme-brown.res-nightmode #BigEditor #BigText, html.SHINE.theme-brown.res-nightmode #liveupdate-statusbar, html.SHINE.theme-brown.res-nightmode #liveupdate-statusbar.complete, html.SHINE.theme-brown.res-nightmode #newlink-with-image-upload .image-upload-drop-target {
   background-color: #232120 !important;
   border-color: #56514e !important; }
 
-html.SHINE.res-nightmode.theme-brown .sidebox, html.SHINE.res-nightmode.theme-brown .subredditbox, html.SHINE.res-nightmode.theme-brown .subreddit-info, html.SHINE.res-nightmode.theme-brown .raisedbox, html.SHINE.res-nightmode.theme-brown .login-form-side, html.SHINE.res-nightmode.theme-brown .morelink {
+html.SHINE.theme-brown.res-nightmode .sidebox, html.SHINE.theme-brown.res-nightmode .subredditbox, html.SHINE.theme-brown.res-nightmode .subreddit-info, html.SHINE.theme-brown.res-nightmode .raisedbox, html.SHINE.theme-brown.res-nightmode .login-form-side, html.SHINE.theme-brown.res-nightmode .morelink {
   background: #4d4845 !important; }
 
-html.SHINE.res-nightmode.theme-brown {
+html.SHINE.theme-brown.res-nightmode {
   background-color: #232120 !important; }
-  html.SHINE.res-nightmode.theme-brown.shine-list body {
+  html.SHINE.theme-brown.res-nightmode.shine-list body {
     background: #232120 !important; }
-    html.SHINE.res-nightmode.theme-brown.shine-list body > div.content div#siteTable > .thing {
+    html.SHINE.theme-brown.res-nightmode.shine-list body > div.content div#siteTable > .thing {
       background: #33302e !important;
       border-bottom: 1px solid #232120 !important;
       border-left: 5px solid #33302e !important;
       border-top: 0 !important;
       border-right: 0 !important; }
-      html.SHINE.res-nightmode.theme-brown.shine-list body > div.content div#siteTable > .thing:hover {
+      html.SHINE.theme-brown.res-nightmode.shine-list body > div.content div#siteTable > .thing:hover {
         background: #4d4845 !important;
         border-left: 5px solid #4d4845 !important; }
-      html.SHINE.res-nightmode.theme-brown.shine-list body > div.content div#siteTable > .thing.link > .child {
+      html.SHINE.theme-brown.res-nightmode.shine-list body > div.content div#siteTable > .thing.link > .child {
         color: #fff; }
-  html.SHINE.res-nightmode.theme-brown.shine-list .shine-expand {
+    html.SHINE.theme-brown.res-nightmode.shine-list body > div.content .side-comments div#siteTable > .thing {
+      background: transparent !important;
+      border: 0 !important; }
+      html.SHINE.theme-brown.res-nightmode.shine-list body > div.content .side-comments div#siteTable > .thing:hover {
+        background: transparent !important;
+        border: 0 !important; }
+  html.SHINE.theme-brown.res-nightmode.shine-list .shine-expand {
     background: #33302e !important;
     border-bottom: 1px solid #4d4845; }
-    html.SHINE.res-nightmode.theme-brown.shine-list .shine-expand .toggle-child-comments {
+    html.SHINE.theme-brown.res-nightmode.shine-list .shine-expand .toggle-child-comments {
       background: #4d4845 !important; }
-  html.SHINE.res-nightmode.theme-brown.shine-list .side-comments {
+  html.SHINE.theme-brown.res-nightmode.shine-list .side-comments {
     background: #33302e !important; }
-  html.SHINE.res-nightmode.theme-brown.shine-list.shine-list-classic .side-comments .shine-comment::after {
+  html.SHINE.theme-brown.res-nightmode.shine-list.shine-list-classic .side-comments .shine-comment::after {
     color: #a6a4a2 !important;
     border: 1px solid #827f7d; }
-  html.SHINE.res-nightmode.theme-brown body {
+  html.SHINE.theme-brown.res-nightmode body {
     background: #232120 !important; }
-    html.SHINE.res-nightmode.theme-brown body > .content {
+    html.SHINE.theme-brown.res-nightmode body > .content {
       background: #232120 !important; }
-    html.SHINE.res-nightmode.theme-brown body .roundfield {
+    html.SHINE.theme-brown.res-nightmode body .roundfield {
       background-color: #4d4845; }
-    html.SHINE.res-nightmode.theme-brown body.submit .roundfield {
+    html.SHINE.theme-brown.res-nightmode body.submit .roundfield {
       background-color: #4d4845; }
-    html.SHINE.res-nightmode.theme-brown body.with-listing-chooser .listing-chooser {
+    html.SHINE.theme-brown.res-nightmode body.with-listing-chooser .listing-chooser {
       background-color: #232120; }
-      html.SHINE.res-nightmode.theme-brown body.with-listing-chooser .listing-chooser li a {
+      html.SHINE.theme-brown.res-nightmode body.with-listing-chooser .listing-chooser li a {
         border-color: #4d4845; }
-      html.SHINE.res-nightmode.theme-brown body.with-listing-chooser .listing-chooser .intro {
+      html.SHINE.theme-brown.res-nightmode body.with-listing-chooser .listing-chooser .intro {
         background-color: #33302e;
         padding: 8px; }
-  html.SHINE.res-nightmode.theme-brown #header {
+  html.SHINE.theme-brown.res-nightmode #header {
     background: #33302e !important; }
-    html.SHINE.res-nightmode.theme-brown #header ul.tabmenu {
+    html.SHINE.theme-brown.res-nightmode #header ul.tabmenu {
       background: #33302e !important; }
-  html.SHINE.res-nightmode.theme-brown div#header-bottom-left {
+  html.SHINE.theme-brown.res-nightmode div#header-bottom-left {
     background: #33302e !important; }
-  html.SHINE.res-nightmode.theme-brown div#sr-header-area {
+  html.SHINE.theme-brown.res-nightmode div#sr-header-area {
     background: #33302e !important;
     background: #33302e !important; }
-  html.SHINE.res-nightmode.theme-brown .md blockquote {
+  html.SHINE.theme-brown.res-nightmode .md blockquote {
     background: #4d4845 !important; }
-  html.SHINE.res-nightmode.theme-brown a#sr-more-link {
+  html.SHINE.theme-brown.res-nightmode a#sr-more-link {
     background: #232120;
     border-left: 1px solid #33302e; }
-  html.SHINE.res-nightmode.theme-brown .comment .child {
+  html.SHINE.theme-brown.res-nightmode .comment .child {
     border-left: 1px solid #56514e; }
-  html.SHINE.res-nightmode.theme-brown .comment .showreplies {
+  html.SHINE.theme-brown.res-nightmode .comment .showreplies {
     border-left: 1px solid #56514e; }
-  html.SHINE.res-nightmode.theme-brown textarea {
+  html.SHINE.theme-brown.res-nightmode textarea {
     background-color: #232120 !important;
     border-color: #56514e !important; }
-  html.SHINE.res-nightmode.theme-brown .sidebox .spacer {
+  html.SHINE.theme-brown.res-nightmode .sidebox .spacer {
     background: rgba(35, 33, 32, 0.3) !important; }
-  html.SHINE.res-nightmode.theme-brown .side .linkinfo {
+  html.SHINE.theme-brown.res-nightmode .side .linkinfo {
     background: rgba(35, 33, 32, 0.3) !important; }
-  html.SHINE.res-nightmode.theme-brown .RESCloseButton {
+  html.SHINE.theme-brown.res-nightmode .RESCloseButton {
     background-color: #33302e !important; }
-  html.SHINE.res-nightmode.theme-brown .read-next {
+  html.SHINE.theme-brown.res-nightmode .read-next {
     background-color: #33302e !important; }
-  html.SHINE.res-nightmode.theme-brown .drop-choices {
+  html.SHINE.theme-brown.res-nightmode .drop-choices {
     background-color: #33302e !important; }
-  html.SHINE.res-nightmode.theme-brown.show-sidebar .side {
+  html.SHINE.theme-brown.res-nightmode.show-sidebar .side {
     background: #33302e; }
-  html.SHINE.res-nightmode.theme-brown.shine-default .panestack-title {
+  html.SHINE.theme-brown.res-nightmode.shine-default .panestack-title {
     border-bottom: 1px solid #33302e; }
-  html.SHINE.res-nightmode.theme-brown .message.new > .entry {
+  html.SHINE.theme-brown.res-nightmode .message.new > .entry {
     background-color: #33302e !important; }
-  html.SHINE.res-nightmode.theme-brown.shine-grid body > .content #siteTable .thing {
+  html.SHINE.theme-brown.res-nightmode.shine-grid body > .content #siteTable .thing {
     background: #33302e !important; }
-    html.SHINE.res-nightmode.theme-brown.shine-grid body > .content #siteTable .thing:hover {
+    html.SHINE.theme-brown.res-nightmode.shine-grid body > .content #siteTable .thing:hover {
       background: #4d4845 !important; }
-    html.SHINE.res-nightmode.theme-brown.shine-grid body > .content #siteTable .thing .entry ul.flat-list {
+    html.SHINE.theme-brown.res-nightmode.shine-grid body > .content #siteTable .thing .entry ul.flat-list {
       border-top: 1px solid #232120; }
-  html.SHINE.res-nightmode.theme-brown.shine-grid .shine-expand .side-comments {
+  html.SHINE.theme-brown.res-nightmode.shine-grid .shine-expand .side-comments {
     background: #33302e !important; }
-  html.SHINE.res-nightmode.theme-brown.shine-grid .shine-expand .toggle-child-comments {
+  html.SHINE.theme-brown.res-nightmode.shine-grid .shine-expand .toggle-child-comments {
     background: #4d4845 !important; }
-  html.SHINE.res-nightmode.theme-brown .infobar:not(.newsletterbar) {
+  html.SHINE.theme-brown.res-nightmode .infobar:not(.newsletterbar) {
     background-color: #4d4845;
     color: rgba(255, 255, 255, 0.7);
     border-color: rgba(130, 127, 125, 0.5); }
-  html.SHINE.res-nightmode.theme-brown #progressIndicator {
+  html.SHINE.theme-brown.res-nightmode #progressIndicator {
     box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
     color: rgba(255, 255, 255, 0.4);
     background-color: rgba(51, 48, 46, 0.7);
     border-color: rgba(51, 48, 46, 0.4); }
-  html.SHINE.res-nightmode.theme-brown .usertext.grayed .usertext-body {
+  html.SHINE.theme-brown.res-nightmode .usertext.grayed .usertext-body {
     background-color: #232120; }
-  html.SHINE.res-nightmode.theme-brown .usertext.border .usertext-body {
+  html.SHINE.theme-brown.res-nightmode .usertext.border .usertext-body {
     background-color: #4d4845; }
-  html.SHINE.res-nightmode.theme-brown .thumbnail.spoiler::before, html.SHINE.res-nightmode.theme-brown .thumbnail.nsfw::before, html.SHINE.res-nightmode.theme-brown .thumbnail.default::before, html.SHINE.res-nightmode.theme-brown .thumbnail.image::before, html.SHINE.res-nightmode.theme-brown .thumbnail.self::before {
-    color: rgba(255, 255, 255, 0.7) !important;
-    background-color: #56514e !important; }
-  html.SHINE.res-nightmode.theme-brown #header-bottom-left #header-img-a, html.SHINE.res-nightmode.theme-brown #header-bottom-left #header-img.default-header {
+  html.SHINE.theme-brown.res-nightmode .thumbnail.spoiler::before, html.SHINE.theme-brown.res-nightmode .thumbnail.nsfw::before, html.SHINE.theme-brown.res-nightmode .thumbnail.default::before, html.SHINE.theme-brown.res-nightmode .thumbnail.image::before, html.SHINE.theme-brown.res-nightmode .thumbnail.self::before {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: #56514e; }
+  html.SHINE.theme-brown.res-nightmode #header-bottom-left #header-img-a, html.SHINE.theme-brown.res-nightmode #header-bottom-left #header-img.default-header {
     color: white !important; }
+  html.SHINE.theme-brown.res-nightmode .archived-infobar {
+    background-color: #33302e;
+    border-color: #4d4845; }
+html.SHINE.theme-brown.accent .thumbnail.spoiler::before, html.SHINE.theme-brown.accent .thumbnail.nsfw::before, html.SHINE.theme-brown.accent .thumbnail.default::before, html.SHINE.theme-brown.accent .thumbnail.image::before, html.SHINE.theme-brown.accent .thumbnail.self::before {
+  background-color: #56514e; }
 html.SHINE #themeselect label.brown .foreground {
   background-color: #33302e; }
   html.SHINE #themeselect label.brown .foreground .background {
     background-color: #232120; }
   html.SHINE #themeselect label.brown .foreground .secondary {
     background-color: #4d4845; }
+
+html.SHINE.theme-brown.modern-layout.shine-list.shine-list-classic body > div.content {
+  padding: 20px 0 0 0 !important; }
+  html.SHINE.theme-brown.modern-layout.shine-list.shine-list-classic body > div.content .shine-expand div#siteTable.linklisting {
+    width: auto !important; }
+  html.SHINE.theme-brown.modern-layout.shine-list.shine-list-classic body > div.content div#siteTable.linklisting {
+    width: 50% !important;
+    margin-left: 0px !important;
+    box-shadow: transparent 0 0 0; }
+html.SHINE.theme-brown.modern-layout.shine-list.shine-list-classic .shine-expand {
+  left: calc(50% + 1px) !important;
+  width: calc(50% - 2px) !important;
+  box-shadow: #232120 -1px 0px 0px !important;
+  top: 45px !important;
+  height: calc(100% - 45px) !important; }
+html.SHINE.theme-brown.modern-layout.shine-list.shine-list-classic #header .layout-switch {
+  left: calc(50% - 45px); }
+html.SHINE.theme-brown.modern-layout.shine-list.shine-list-classic.show-shortcuts .shine-expand {
+  top: 65px !important;
+  height: calc(100% - 65px) !important; }
+html.SHINE.theme-brown.modern-layout.shine-list.shine-list-classic.show-sidebar .shine-expand {
+  left: calc(50% - 180px) !important;
+  width: calc(50% - 180px) !important; }
+html.SHINE.theme-brown.modern-layout.shine-list body > div.content div#siteTable > .thing {
+  background: #232120 !important;
+  border-left: 5px solid #232120 !important; }
+  html.SHINE.theme-brown.modern-layout.shine-list body > div.content div#siteTable > .thing:hover {
+    background: #33302e !important;
+    border-left: 5px solid #33302e !important; }
+  html.SHINE.theme-brown.modern-layout.shine-list body > div.content div#siteTable > .thing.active-thing {
+    background-color: #33302e !important; }
+  html.SHINE.theme-brown.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail {
+    order: 2;
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    margin: 0 15px 0 5px;
+    overflow: hidden;
+    border-radius: 2px; }
+    html.SHINE.theme-brown.modern-layout.shine-list body > div.content div#siteTable > .thing a.thumbnail img {
+      object-fit: cover;
+      width: 60px;
+      height: 60px; }
+  html.SHINE.theme-brown.modern-layout.shine-list body > div.content div#siteTable > .thing .midcol {
+    order: 1; }
+html.SHINE.theme-brown.modern-layout.shine-list body > div.content div#siteTable .thumbnail.spoiler::before, html.SHINE.theme-brown.modern-layout.shine-list body > div.content div#siteTable .thumbnail.nsfw::before, html.SHINE.theme-brown.modern-layout.shine-list body > div.content div#siteTable .thumbnail.default::before, html.SHINE.theme-brown.modern-layout.shine-list body > div.content div#siteTable .thumbnail.image::before, html.SHINE.theme-brown.modern-layout.shine-list body > div.content div#siteTable .thumbnail.self::before {
+  margin-top: -30px;
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 4px; }
+html.SHINE.theme-brown.modern-layout.shine-list body .thing.comment .likes .arrow.upmod, html.SHINE.theme-brown.modern-layout.shine-list body .thing.comment .likes .arrow.up {
+  opacity: 1; }
+html.SHINE.theme-brown.modern-layout.shine-list body .thing.comment .dislikes .arrow.downmod, html.SHINE.theme-brown.modern-layout.shine-list body .thing.comment .dislikes .arrow.down {
+  opacity: 1; }
+html.SHINE.theme-brown.modern-layout .flair, html.SHINE.theme-brown.modern-layout .linkflairlabel {
+  color: #a6a4a2;
+  background-color: none !important;
+  border-color: #827f7d !important; }
+html.SHINE .rank {
+  display: none !important; }

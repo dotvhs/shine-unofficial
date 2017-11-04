@@ -1180,6 +1180,14 @@ if( $('body').hasClass('res') ){
 
 			     loading = false;
 
+          var loadingLimit = $('body').attr('data-grid-limit');
+          //console.log(loadingLimit);
+          if(loadingLimit != 0) {
+            if ($('#siteTable').find('.thing').length >= loadingLimit) {
+              $('#siteTable').find('.thing:lt(25)').remove();
+            }
+          }
+
 			  },
 		      error: function(request, status, message) {
 		      	console.log(message);
@@ -1415,7 +1423,8 @@ function checkSideComments(){
 
 	for( i = 0; i < topLevelComments.length; i++ ){
 
-		$(topLevelComments[i]).addClass("been-shined");
+    commentNumber = -1;
+		$(topLevelComments[i]).addClass("been-shined comment-"+i);
 
 		theChildren = $(topLevelComments[i]).find('.child .sitetable');
 
