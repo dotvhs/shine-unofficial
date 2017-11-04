@@ -2362,7 +2362,21 @@ html.SHINE .reddit-infobar {
 
 html.SHINE .spoiler-stamp {
     color: #ec7534;
-    acronym {
-        color: #ec7534;
-    }
+}
+
+html.SHINE .spoiler-stamp acronym {
+    color: #ec7534;
+}
+
+html.SHINE button.subreddit-subscribe {
+    margin: 0 !important;
+    padding: 0 5px !important;
+}
+
+html.SHINE button.subreddit-subscribe::before {
+    vertical-align: middle;
+}
+
+html.SHINE .hohoho-header {
+    margin-left: 20px;
 }
