@@ -1913,11 +1913,13 @@ $('body').on('mouseout','#colorselect',function(){
 
 $(".menuarea").detach().appendTo('#header-bottom-left');
 
+$(".hohoho-header").detach().prependTo('span.user');
+
 $(document).ready(function(){
 
 	$(".menuarea").css({
 		"position" : "absolute",
-		"left" : $(".menuarea").position().left + "px",
+		"left" : $(".menuarea").position().left + "px"
 	});
 
 });

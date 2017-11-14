@@ -1644,7 +1644,7 @@ html.SHINE .shine-message a.message-button {
 
 html.SHINE .menuarea {
     position: relative;
-    width: 200px;
+    width: auto;
     margin: 0 auto;
     text-align: center;
     border: 0px;
@@ -1654,6 +1654,10 @@ html.SHINE .menuarea {
     display: inline-block;
     top: 6px;
     padding: 5px 15px;
+}
+
+html.SHINE .menuarea:hover {
+    width: 200px;
 }
 
 html.SHINE.shine-grid .menuarea{
@@ -2378,5 +2382,7 @@ html.SHINE button.subreddit-subscribe::before {
 }
 
 html.SHINE .hohoho-header {
-    margin-left: 20px;
+    position: absolute;
+    left: -45px;
+    top: -10px;
 }
