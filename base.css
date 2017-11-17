@@ -2386,3 +2386,12 @@ html.SHINE .hohoho-header {
     left: -45px;
     top: -10px;
 }
+
+/* RES FIXES */
+html.SHINE #header ul.tabmenu li.res-toggle-filterline-visibility {
+    display: none;
+}
+
+html.SHINE #header ul.tabmenu:hover li.res-toggle-filterline-visibility {
+    display: inline-block;
+}
