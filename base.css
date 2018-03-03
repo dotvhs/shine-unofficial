@@ -25,7 +25,7 @@ body{
 }
 
 html.SHINE body{
-    padding-top:45px;    
+    padding-top:45px;
 }
 
 html.SHINE.shine-ready body{
@@ -373,7 +373,7 @@ html.SHINE form.logout a {
     cursor: pointer;
 }
 
-html.SHINE #header-bottom-right #mail, 
+html.SHINE #header-bottom-right #mail,
 html.SHINE #header-bottom-right #modmail {
     display: inline-block;
     height: 24px;
@@ -392,7 +392,7 @@ html.SHINE #header-bottom-right #modmail {
     position: relative;
 }
 
-html.SHINE #header-bottom-right #mail::after, 
+html.SHINE #header-bottom-right #mail::after,
 html.SHINE #header-bottom-right #modmail::after {
     content: "\F1EE";
     position: absolute;
@@ -403,7 +403,7 @@ html.SHINE #header-bottom-right #modmail::after {
     text-indent: 0 !important;
 }
 
-html.SHINE #header-bottom-right #mail.havemail, 
+html.SHINE #header-bottom-right #mail.havemail,
 html.SHINE #header-bottom-right #modmail.havemail {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItNTg1LjkgNzczIDIwIDE5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IC01ODUuOSA3NzMgMjAgMTk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojRkY2NzAwO308L3N0eWxlPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0tNTY2LDc4MGMwLTAuNy0wLjQtMS40LTAuOS0xLjdsLTktNS4zbC05LDUuM2MtMC42LDAuNC0xLDEtMSwxLjd2MTBjMCwxLjEsMC45LDIsMiwyaDE2YzEuMSwwLDItMC45LDItMkwtNTY2LDc4MHogTS01NzYsNzg1bC04LjMtNS4ybDguMy00LjhsOC4zLDQuOEwtNTc2LDc4NXoiLz48L3N2Zz4=);
     background-position:center 2px;
@@ -432,7 +432,7 @@ html.SHINE #header-bottom-right #RESAccountSwitcherIcon {
     background-size: contain;
     background-position: center center;
     height: 24px;
-    vertical-align: top;    
+    vertical-align: top;
     font: normal normal normal 24px/1 "Material Design Icons";
     background-image: none !important;
     color: #000;
@@ -471,7 +471,7 @@ html.SHINE #header-bottom-right #RESSettingsButton {
     margin:0 0 0 5px;
 }
 
-html.SHINE #header-bottom-right .gearIcon::before, 
+html.SHINE #header-bottom-right .gearIcon::before,
 html.SHINE #header-bottom-right .gearIcon::after{
 	display:none !important;
 }
@@ -516,7 +516,7 @@ html.SHINE ul#RESAccountSwitcherDropdown li {
     line-height:25px;
     padding: 3px 0px;
     font-size: 14px;
-    text-align: right;    
+    text-align: right;
 }
 
 html.SHINE ul#RESAccountSwitcherDropdown li.accountName{
@@ -858,7 +858,7 @@ html.SHINE.show-comment-navigation .shine-nav-comment {
 }
 
 html.SHINE.shine-list-classic .shine-nav-comment {
-    padding: 15px 86px 20px 15px;    
+    padding: 15px 86px 20px 15px;
 }
 
 
@@ -917,11 +917,11 @@ html.SHINE #shine-search{
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: fixed;      
+    position: fixed;
 }
 
 html.SHINE.show-search #shine-search{
-    display:flex; 
+    display:flex;
 }
 
 #shine-search input[type="text"] {
@@ -1001,7 +1001,7 @@ html.SHINE body div.listing-chooser{
 
 html.SHINE body div.listing-chooser form{
     float: left;
-    margin-bottom: 15px;    
+    margin-bottom: 15px;
     background-color:transparent;
 }
 
@@ -1126,7 +1126,7 @@ html.SHINE.shine-list .shine-expand .side-comments .linkflairlabel,
 html.SHINE.shine-grid .shine-expand .side-comments .expando-button,
 html.SHINE.shine-list .shine-expand .side-comments .expando-button,
 html.SHINE.shine-grid .shine-expand .side-comments .report-button,
-html.SHINE.shine-list .shine-expand .side-comments .report-button{    
+html.SHINE.shine-list .shine-expand .side-comments .report-button{
     display:none;
 }
 
@@ -1179,7 +1179,7 @@ html.SHINE.shine-grid .shine-expand .side-comments a.title{
     font-weight: 100;
     line-height: 28px;
     margin: 0 0 10px 0 !important;
-    display: block;    
+    display: block;
 }
 
 html.SHINE.shine-list .shine-expand .side-comments button.save,
@@ -1197,7 +1197,7 @@ html.SHINE.shine-grid .shine-expand .side-comments button.save{
     display: inline-block;
     margin-right:5px;
     border-radius: 2px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.2);    
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
     outline:none;
 }
 
@@ -1216,7 +1216,7 @@ html.SHINE.shine-grid .shine-expand .side-comments button.cancel{
     display: inline-block;
     margin-right:5px;
     border-radius: 2px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.2);    
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
     outline:none;
 }
 
@@ -1466,7 +1466,7 @@ span.settings-small-print {
     padding: 5px;
     color: #000;
     border: 1px solid #AAA;
-    border-radius: 3px;    
+    border-radius: 3px;
     outline:none;
     background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9InN2ZzExOTI3IiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgaW5rc2NhcGU6dmVyc2lvbj0iMC40OC40IHI5OTM5IiBzb2RpcG9kaTpkb2NuYW1lPSJOZXcgZG9jdW1lbnQgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9Ii0yMDQuOCAzMjAuNSAxOTEuNSAxMzQuMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtMjA0LjggMzIwLjUgMTkxLjUgMTM0LjI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojRkZGRkZGO308L3N0eWxlPjxzb2RpcG9kaTpuYW1lZHZpZXcgIGJvcmRlcmxheWVyPSJmYWxzZSIgaW5rc2NhcGU6Y3g9IjE3MS4wMDI2MyIgYm9yZGVyY29sb3I9IiM2NjY2NjYiIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIgYm9yZGVyb3BhY2l0eT0iMS4wIiBpbmtzY2FwZTp6b29tPSIxLjk3OTg5OSIgZml0LW1hcmdpbi10b3A9IjAiIGZpdC1tYXJnaW4tbGVmdD0iMCIgaW5rc2NhcGU6Y3k9IjQ1LjI2MDY4OSIgaWQ9ImJhc2UiIHNob3dncmlkPSJmYWxzZSIgdW5pdHM9Im1tIiBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjE2ODAiIGZpdC1tYXJnaW4tYm90dG9tPSIwIiBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJsYXllcjEiIGlua3NjYXBlOmRvY3VtZW50LXVuaXRzPSJtbSIgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iOTg4IiBpbmtzY2FwZTp3aW5kb3cteD0iLTgiIGlua3NjYXBlOndpbmRvdy15PSItOCIgZml0LW1hcmdpbi1yaWdodD0iMCIgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAuMCI+PC9zb2RpcG9kaTpuYW1lZHZpZXc+PHBhdGggaWQ9InBhdGgxMTkwNSIgc29kaXBvZGk6bm9kZXR5cGVzPSJjc3NzY2Njc2NjY2NjYyIgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgY2xhc3M9InN0MCIgZD0iTS0xMy40LDM4My44Yy0wLjUtMzkuNiw0LjQtNTkuNi0zOC4zLTYyLjNjLTMwLjYtMS41LTEwNy42LTEuNC0xMjIuMSwwLjFjLTE0LjksMS42LTIwLDQuMy0yNC4zLDEyLjdjLTUuNSwxMC45LTYuOSwyMi4yLTYuOCw1NS41YzAuMSw0Ny4xLDQuOCw2MC4xLDIzLjEsNjMuOWMzLjYsMC44LDM3LDEuMiw3Ny4zLDFjNzkuMy0wLjQsNzYuNy0wLjEsODMuNS0xMC40Qy0xNCw0MzMuOC0xMi45LDQyNC45LTEzLjQsMzgzLjh6Ii8+PHBhdGggZD0iTS0xMTEuOCwzNzEuNGg4LjF2MzIuNGgtOC4xVjM3MS40eiBNLTEyNS4zLDM3MS40aC0xNi4yYy0zLjIsMC01LjQsMi43LTUuNCw1LjR2MjEuNmMwLDIuNywyLjIsNS40LDUuNCw1LjRoMTYuMmMzLjIsMCw1LjQtMi43LDUuNC01LjR2LTEwLjhoLTguMXY4LjFoLTEwLjh2LTE2LjJoMTguOXYtMi43Qy0xMTkuOSwzNzQuMS0xMjIsMzcxLjQtMTI1LjMsMzcxLjR6IE0tNzEuMiwzNzkuNXYtOC4xaC0yNC4zdjMyLjRoOC4xVjM5M2gxMC44di04LjFoLTEwLjh2LTUuNEgtNzEuMnoiLz48L3N2Zz4=) no-repeat calc(100% - 15px) center;
     background-size:15px;
@@ -1580,7 +1580,7 @@ html.SHINE.shinebright .shine-settings-prompt{
 }
 
 html.settings-are-saved .settings-panel .settings-saved{
-    opacity:1;  
+    opacity:1;
 }
 
 
@@ -1640,7 +1640,7 @@ html.SHINE .shine-message a.message-button {
 
 
 
-/* SORTING CONTENT */ 
+/* SORTING CONTENT */
 
 html.SHINE .menuarea {
     position: relative;
@@ -1779,7 +1779,7 @@ html.SHINE.show-shine-bright .shine-bright-panel{
     padding:0px 45px 0 15px;
     font-size: 14px;
     font-weight: bold;
-    color: #fff;    
+    color: #fff;
     cursor: pointer;
     width:215px;
     margin-left:-215px;
@@ -1895,7 +1895,7 @@ html.SHINE.res-nightmode div#header-bottom-left
     background:#000 !important;
 }
 
-html.SHINE.res-nightmode #header-bottom-left #header-img-a, 
+html.SHINE.res-nightmode #header-bottom-left #header-img-a,
 html.SHINE.res-nightmode #header-bottom-left #header-img.default-header{
     /*background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItMjUxIDM3Ni44IDEwNy4zIDQxLjIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTI1MSAzNzYuOCAxMDcuMyA0MS4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGRkZGRjt9PC9zdHlsZT48Zz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNLTI1MCw0MTIuM2MxLjQsMC45LDMuOCwxLjYsNS44LDEuNmM0LjIsMCw2LjctMi44LDYuNy02LjhjMC0zLjctMi4yLTYtNS4zLTguNGMtMy4yLTIuMi03LjYtNi03LjYtMTEuMmMwLTYuMiw0LjMtMTAuNywxMC43LTEwLjdjMi41LDAsNC43LDAuOCw1LjcsMS41bC0xLjEsNGMtMS0wLjctMi43LTEuNC00LjgtMS40Yy00LDAtNS44LDMtNS44LDUuOGMwLDQsMi4xLDUuNiw1LjksOC4zYzQuOSwzLjQsNyw3LjEsNywxMS42YzAsNy00LjksMTEuMy0xMS4zLDExLjNjLTIuOCwwLTUuNy0wLjktNi44LTEuN0wtMjUwLDQxMi4zeiIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0tMjIyLjgsMzc3LjJ2MTcuM2gxMS4zdi0xNy4zaDQuNnY0MC40aC00LjZ2LTE4LjloLTExLjN2MTguOWgtNC42di00MC40SC0yMjIuOHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNLTE5NSwzNzcuMnY0MC40aC00LjZ2LTQwLjRILTE5NXoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNLTE4Ny43LDQxNy42di00MC40aDQuNGw3LjQsMTljMS43LDQuMywzLjgsOS43LDUuMiwxNC4xaDAuMWMtMC40LTYuNC0wLjUtMTEuNi0wLjUtMTguNnYtMTQuNWg0LjF2NDAuNGgtNC40bC03LjctMTkuNGMtMS42LTQuMS0zLjQtOC43LTQuOC0xMy43aC0wLjFjMC40LDUuNCwwLjUsMTAuNiwwLjUsMTkuMnYxNGgtNC4yVjQxNy42eiIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0tMTQ1LDM5OC40aC0xMC4ydjE1LjJoMTEuNXY0aC0xNi4xdi00MC40aDE1LjR2NGgtMTAuOHYxMy4zaDEwLjJWMzk4LjR6Ii8+PC9nPjwvc3ZnPg==);*/
 }
@@ -1928,7 +1928,7 @@ html.SHINE.res-nightmode ul#RESAccountSwitcherDropdown li {
     color: #fff;
 }
 
-html.SHINE.res-nightmode #header-bottom-right #mail, 
+html.SHINE.res-nightmode #header-bottom-right #mail,
 html.SHINE.res-nightmode #header-bottom-right #modmail{
 }
 
@@ -1952,17 +1952,17 @@ html.SHINE.res-nightmode #RESPrefsDropdown li{
     color:#fff !important;
 }
 
-html.SHINE.shine-list.res-nightmode .shine-expand .side-comments textarea, 
+html.SHINE.shine-list.res-nightmode .shine-expand .side-comments textarea,
 html.SHINE.shine-grid.res-nightmode .shine-expand .side-comments textarea {
     border-color: transparent;
 }
 
-html.SHINE.shine-list.res-nightmode .shine-expand .side-comments .content, 
+html.SHINE.shine-list.res-nightmode .shine-expand .side-comments .content,
 html.SHINE.shine-grid.res-nightmode .shine-expand .side-comments .content{
     background:transparent;
 }
 
-html.SHINE.shine-list.res-nightmode .shine-expand .toggle-child-comments, 
+html.SHINE.shine-list.res-nightmode .shine-expand .toggle-child-comments,
 html.SHINE.shine-grid.res-nightmode .shine-expand .toggle-child-comments{
     background:#333;
 }
@@ -1982,11 +1982,11 @@ html.SHINE.res-nightmode div#sr-header-area {
     border-bottom: 1px solid #555;
 }
 
-html.SHINE.res-nightmode div#RESShortcutsEditContainer, 
-html.SHINE.res-nightmode div#RESShortcutsSort, 
-html.SHINE.res-nightmode div#RESShortcutsRight, 
-html.SHINE.res-nightmode div#RESShortcutsLeft, 
-html.SHINE.res-nightmode div#RESShortcutsAdd, 
+html.SHINE.res-nightmode div#RESShortcutsEditContainer,
+html.SHINE.res-nightmode div#RESShortcutsSort,
+html.SHINE.res-nightmode div#RESShortcutsRight,
+html.SHINE.res-nightmode div#RESShortcutsLeft,
+html.SHINE.res-nightmode div#RESShortcutsAdd,
 html.SHINE.res-nightmode div#RESShortcutsTrash {
     background-color: transparent !important;
 }
@@ -2394,4 +2394,9 @@ html.SHINE #header ul.tabmenu li.res-toggle-filterline-visibility {
 
 html.SHINE #header ul.tabmenu:hover li.res-toggle-filterline-visibility {
     display: inline-block;
+}
+
+html.SHINE .spacer .toggle,
+html.SHINE .spacer .help-hoverable {
+  display: none;
 }
