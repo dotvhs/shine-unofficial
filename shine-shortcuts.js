@@ -79,6 +79,12 @@ $('body').keyup(function (e) {
 		case 37:
 			commentScroller('prev');
 			break;
+		case 74:
+			$('.shine-expand').prev().prev().click();
+			break;
+		case 75:
+			$('.shine-expand').next().next().click();
+			break;
 		}
 	}
 });
