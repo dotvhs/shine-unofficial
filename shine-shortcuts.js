@@ -85,6 +85,12 @@ $('body').keyup(function (e) {
 		case 75:
 			$('.shine-expand').next().next().click();
 			break;
+		case 87:
+			$('.active-thing').find('.arrow.up, .arrow.upmod').click();
+			break;
+		case 83:
+			$('.active-thing').find('.arrow.down, .arrow.downmod').click();
+			break;
 		}
 	}
 });
