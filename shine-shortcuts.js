@@ -80,7 +80,7 @@ $('body').keyup(function (e) {
 			commentScroller('prev');
 			break;
 		case 74:
-			$('.shine-expand').prev().prev().click();
+			$('.shine-expand').prev().prev().prev().click();
 			break;
 		case 75:
 			$('.shine-expand').next().next().click();
